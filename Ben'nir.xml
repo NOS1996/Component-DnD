@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Ben'nir</name>
+        <description>5e homebrew</description>
+        <author>NOS</author>
+        <update version="0.0.1">
+            <file name="Ben'nir.xml"/>
+        </update>
+    </info>
+
+    <element name="Ben'nir" type="Race" source="NOS" id="ID_NOS_RACE_Ben'nir">
+        <description>
+            <p class="flavor">"We're all made from stardust."</p>
+            <h4>PHYSICAL DESCRIPTION</h4>
+            <p>Ben'nir are mostly dark skinned people. Most of them prefer warm colours, but some of them tend towards colder colors in their clothing.</p>
+            <h4>HISTORY</h4>
+            <p>Ben'nir came from the stars. They traveled millions of miles, embedded in layers of sunshine, as the last wish of a dying  star to carry on it's legacy.</p>
+            <h4>SOCIETY</h4>
+            <p>The Ben'nir don't really have their own society, however they are intend on exploring those of other and are always curious.</p>
+            <h4>Ben'nir Names</h4>
+            <p>
+                <span class="feature">Male:</span>Rahav, Tzemach, Yoav, Avim, Tal<br/>
+                <span class="feature">Female:</span>Danel, Tzurit, Pe'erli, Shirat<br/>
+            </p>
+            <h4>BEN'NIR TRAITS</h4>
+            <p>Ben'nir are the souls of long dead stars, now wandering the planes.</p>
+                <span class="feature">Ability Score Increase.</span>Your Charisma score increases by 3, and your Dexterity or Strength score increases by 2.<br/>
+                <span class="feature">Age.</span>Ben'nir are born from the light of dying stars, they are the immortal souls of these dead stars.<br/>
+                <span class="feature">Alignment.</span>Being bron into this world, after so many years of seldom existence, Ben'nir are naturally curious, so their alignment tends towards chaotic behavior.<br/>
+                <span class="feature">Size.</span>Ben'nir reach from under 5 to almost 7 feet. Your size is medium.<br/>
+                <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
+                <span class="feature">Flight</span> You have a flying speed of 40 feet.<br/>
+                <span class="feature">Darkvision.</span> Thanks to your heritage, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.<br/>
+                <span class="feature">Radiant Soul.</span>You have immunity to radiant damage. Also whenever you start your turn in daylight you regain hit points equal to 1d6 + your charisma modifier.<br/>
+                <span class="feature">Star born.</span>You are the immortal soul of a dead star. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effects of exhaustion, starvation, thirst, or suffocation. You count as a celestial. All other conditions and effects affect you normally.<br/>
+                <span class="feature">Solar Origins.</span>You know the Produce Flame cantrip. Once you reach 3rd level you can cast the Daylight spell at will. Once you reach 5th level, you can also cast the Alter Self once per day. Charisma is your spellcasting ability for these spells.<br/>
+                <span class="feature">Languages.</span>You can speak, read, and write Common, Celestial and one extra language of your choice. .<br/>
+            </description>
+        <sheet display="false" />
+        <setters>
+            <set name="names" type="male">Rahav, Tzemach, Yoav, Avim, Tal</set>
+            <set name="names" type="female">Danel, Tzurit, Pe'erli, Shirat</set>
+            <set name="names-format">$(name)</set>
+        </setters>
+        <rules>
+            <stat name="Charisma" value="+3"/>
+            <select type="Racial Trait" name="Ability Score Increase (Ben'nir)" supports="ID_NOS_RACIAL_TRAIT_BEN'NIR_STRENGTH|ID_NOS_RACIAL_TRAIT_BEN'NIR_DEXTERITY" />
+            <stat name="Speed" value="+30" bonus="base"/>
+            <grant type="Size" name="SIZE_MEDIUM" />
+            <grant name="ID_VISION_DARKVISION" type="Vision" />
+            <grant type="Language" name="ID_LANGUAGE_COMMON" />
+            <grant type="Language" name="ID_LANGUAGE_PRIMORDIAL" />
+            <select type="Language" name="Language (Ben'nir)" />
+            <grant type="Racial Trait" name="ID_NOS_RACIAL_TRAIT_BEN'NIR_FLIGHT" />
+            <grant type="Racial Trait" name="ID_NOS_RACIAL_TRAIT_BEN'NIR_RADIANT_SOUL" />
+            <grant type="Racial Trait" name="ID_NOS_RACIAL_TRAIT_BEN'NIR_STAR_BORN" />
+            <grant type="Racial Trait" name="ID_NOS_RACIAL_TRAIT_BEN'NIR_SOLAR_ORIGINS" />
+        </rules>
+    </element>
+
+    <element name="Flight" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BEN'NIR_FLIGHT">
+        <description>
+            <p>You have a flying speed of 40 feet.</p>
+        </description>
+        <sheet>
+            <description>You have a flying speed of 40 feet.
+            </description>
+        </sheet>
+        <rules>
+            <stat name="speed:fly" value="40" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Radiant Soul" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BEN'NIR_RADIANT_SOUL">
+        <description>
+            <p>As the soul of a dead star you are immune to radiant damage, also every time you start your turn in daylight, you regain hit points equal to 1d6 + your %charisma mod%.</p>
+        </description>
+        <sheet>
+            <description>.As the soul of a dead star you are immune to radiant damage, also every time you start your turn in daylight, you regain hit points equal to 1d6 + your %charisma mod%.</description>
+        </sheet>
+        <rules>
+            <stat name="charisma mod" value="Charisma Modifier" />
+        </rules>
+        <rules>
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_RADIANT" />
+        </rules>
+    </element>
+    <element name="Star Born" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BEN'NIR_STAR_BORN">
+        <description>
+            <p>You are the immortal soul of a dead star. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effects of exhaustion, starvation, thirst, or suffocation. You count as a celestial. All other conditions and effects affect you normally.</p>
+        </description>
+        <sheet>
+            <description>You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effectS of exhaustion, starvation, thirst, or suffocation.</description>
+        </sheet>
+    </element>
+    <element name="Solar Origin" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BEN'NIR_SOLAR_ORIGINS">
+        <description>
+            <p>You know the Produce Flame cantrip. Once you reach 3rd level you can cast the Daylight spell at will. Once you reach 5th level, you can also cast the Alter Self once per day. Charisma is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet>
+            <description>You know the Produce Flame cantrip. (Charisma)</description>
+            <description level="3">You know the Produce Flame cantrip. You can cast the Daylight spell at will.(Charisma)</description>
+            <description level="5">You know the Produce Flame cantrip. You can cast the Daylight spell at will. You can also cast the Alter Self once per day. (Charisma)</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
+            <grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" level="5" />
+        </rules>
+    </element>
+
+
+  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BEN'NIR_STRENGTH">
+    <supports>Ben'nir</supports>
+    <requirements />
+    <description>
+      <p>Your Strength increases by 2".</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="Strength" value="+2"/>
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BEN'NIR_DEXTERITY">
+    <supports>Ben'nir</supports>
+    <requirements />
+    <description>
+      <p>Your Dexterity increases by 2".</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="Dexterity" value="+2"/>
+    </rules>
+  </element>
+</elements>
