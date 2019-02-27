@@ -3,13 +3,13 @@
     <info>
         <name>Ben'nir</name>
         <description>5e homebrew</description>
-        <author url="https://github.com/NOS1996">NOS</author>
+        <author url="https://github.com/NOS1996">NOS1996</author>
         <update version="0.0.1">
             <file name="Ben'nir.xml" url="https://github.com/NOS1996/Component-DnD/Ben'nir.xml"/>
         </update>
     </info>
 
-    <element name="Ben'nir" type="Race" source="NOS" id="ID_NOS_RACE_BEN'NIR">
+    <element name="Ben'nir" type="Race" source="NOS1996" id="ID_NOS_RACE_BEN'NIR">
         <description>
             <p class="flavor">"We're all made from stardust."</p>
             <h4>PHYSICAL DESCRIPTION</h4>
@@ -33,7 +33,7 @@
                 <span class="feature">Flight</span> You have a flying speed of 40 feet.<br/>
                 <span class="feature">Darkvision.</span> Thanks to your heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.<br/>
                 <span class="feature">Radiant Soul.</span>You have immunity to radiant and fire damage. Also whenever you start your turn in daylight you regain hit points equal to 1d6 + your charisma modifier.<br/>
-                <span class="feature">Star born.</span>You are the immortal soul of a dead star. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effects of exhaustion, starvation, thirst, or suffocation. You count as a celestial. All other conditions and effects affect you normally.<br/>
+                <span class="feature">Star born.</span>You are the immortal soul of a dead star. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effects of exhaustion, starvation, thirst, or suffocation. All other conditions and effects affect you normally.<br/>
                 <span class="feature">Solar Origins.</span>You know the Produce Flame cantrip. Once you reach 3rd level you can cast the Daylight spell at will. Once you reach 5th level, you can also cast the Alter Self once per day. Charisma is your spellcasting ability for these spells.<br/>
                 <span class="feature">Languages.</span>You can speak, read, and write Common, Primoridal and two extra languages of your choice. .<br/>
             </description>
@@ -60,7 +60,7 @@
         </rules>
     </element>
 
-    <element name="Flight" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BEN'NIR_FLIGHT">
+    <element name="Flight" type="Racial Trait" source="NOS1996" id="ID_NOS_RACIAL_TRAIT_BEN'NIR_FLIGHT">
         <description>
             <p>You have a flying speed of 40 feet.</p>
         </description>
@@ -72,7 +72,7 @@
             <stat name="speed:fly" value="40" bonus="base"/>
         </rules>
     </element>
-    <element name="Radiant Soul" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BEN'NIR_RADIANT_SOUL">
+    <element name="Radiant Soul" type="Racial Trait" source="NOS1996" id="ID_NOS_RACIAL_TRAIT_BEN'NIR_RADIANT_SOUL">
         <description>
             <p>As the soul of a dead star you are immune to radiant and fire damage, also every time you start your turn in daylight, you regain hit points equal to 1d6 + your charisma mod.</p>
         </description>
@@ -80,7 +80,7 @@
             <description>.As the soul of a dead star you are immune to radiant and fire damage, also every time you start your turn in daylight, you regain hit points equal to 1d6 + your charisma mod.</description>
         </sheet>
     </element>
-    <element name="Star Born" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BEN'NIR_STAR_BORN">
+    <element name="Star Born" type="Racial Trait" source="NOS1996" id="ID_NOS_RACIAL_TRAIT_BEN'NIR_STAR_BORN">
         <description>
             <p>You are the immortal soul of a dead star. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effects of exhaustion, starvation, thirst, or suffocation. You count as a celestial. All other conditions and effects affect you normally.</p>
         </description>
@@ -88,7 +88,7 @@
             <description>You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effectS of exhaustion, starvation, thirst, or suffocation.</description>
         </sheet>
     </element>
-    <element name="Solar Origin" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BEN'NIR_SOLAR_ORIGINS">
+    <element name="Solar Origin" type="Racial Trait" source="NOS1996" id="ID_NOS_RACIAL_TRAIT_BEN'NIR_SOLAR_ORIGINS">
         <description>
             <p>You know the Produce Flame cantrip. Once you reach 3rd level you can cast the Daylight spell at will. Once you reach 5th level, you can also cast the Alter Self once per day. Charisma is your spellcasting ability for these spells.</p>
         </description>
