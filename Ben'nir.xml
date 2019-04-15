@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Bennir</name>
+        <description>5e homebrew</description>
+        <author url="https://github.com/NOS1996">Nos</author>
+        <update version="0.0.4">
+            <file name="Ben'nir.xml" url="" />
+        </update>
+    </info>
+
+    <element name="Bennir" type="Race" source="NOS" id="ID_NOS_RACE_BENNIR">
+        <description>
+            <p class="flavor">"Radiant like their Ancestors"</p>
+            <h4>PHYSICAL DESCRIPTION</h4>
+            <p>Ben'nir tend to be daunting, looking almost dreamlike. Their physique closeley resembles those of elves, however they tend to be mor beautiful and endearing to the human eye.</p>
+            <h4>HISTORY</h4>
+            <p>Ben'nir are the children of long dead stars, that have been sent to the mortal realm to explore and quench the curiosity of their ancestors and bring light into every aspect of creation.</p>
+            <h4>SOCIETY</h4>
+            <p>Ben'nir tend to be crafty marksmen and powerful magicians. So they often take the role of individuals that are kind of separated from their society.</p>
+            <h4>BENNIR NAMES</h4>
+            <p>Ben'nir take names from the societies they interact with, but pronounce them in a more guttural and primordial way, hence the different sound of many names.</p>
+            <p>
+                <span class="feature">Male:</span>Leo, A'ira, 'ariel, Ga'anagan<br/>
+                <span class="feature">Female:</span>Rea, Gal'den, An'ara, 'aria<br/>
+            </p>
+            <h4>BENNIR TRAITS</h4>
+            <p>Ben'nir are the children of stars.</p>
+            <p>
+                <span class="feature">Ability Score Increase.</span>Your Charisma score increases by 3, and your Dexterity or Strength score increases by 2.<br/>
+                <span class="feature">Age.</span>Ben'nir being the children of stars are unable to age from the point they are created at. Otherwise they are immortal.<br/>
+                <span class="feature">Alignment.</span>Hence having no affiliation with the world, Ben'nir tend towards chaotic and neutral alignments.<br/>
+                <span class="feature">Size.</span>Ben'nir are the same size and build as humans. Your size is Medium.<br/>
+                <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
+                <span class="feature">Wings.</span>Your spectral wings grant you a flying speed of 50 feet.<br/>
+                <span class="feature">Stealthy.</span>You're biology closely resembles that of a chameleon. You're body is adapted to hide in virtually every environment.You have proficiency in the Stealth skill.<br/>
+                <span class="feature">Empowerment.</span>Ben'nir have an empowered Lifeforce that grants them excelled healing. After a short or long rest you gain temporary hit points equal to twice your level + your Constitution mod. Also if you lose any part of your body, it will regenerate over the course of a day. Any spells that would cause the caster to take damage deal half that rounded up.<br/>
+                <span class="feature">Starchild.</span>You are a Starchild. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effect of starvation, thirst, exhaustion, or suffocation. However you still benefit from short and long rests. All other conditions and effects affect you normally.<br/>
+                <span class="feature">Radiant Origin.</span>You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Hex spell at will as a 2nd-level spell. Once you reach 5th level, you can also cast the Alter Self at will. Charisma is your spellcasting ability for these spells.<br/>
+                <span class="feature">Languages.</span>You can speak, read, and write Common and two extra languages of your choice.<br/>
+            </p>
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="names" type="male">Leo, A'ira, 'ariel, Ga'anagan</set>
+            <set name="names" type="female">Rea, Gal'den, An'ara, 'aria</set>
+            <set name="names-format">{{name}}</set>
+        </setters>
+        <rules>
+            <stat name="charisma" value="3"/>
+            <select type="Racial Trait" name="Ability Score Increase (Bennir)" supports="ID_NOS_RACIAL_TRAIT_BENNIR_STRENGTH|ID_NOS_RACIAL_TRAIT_BENNIR_DEXTERITY" />
+            <stat name="innate speed" value="30" bonus="base"/>
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <select type="Language" name="Language (Bennir)" />
+            <select type="Language" name="Language (Bennir)" />
+            <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_WINGS" />
+            <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_STEALTHY"/>
+            <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_EMPOWERMENT" />
+            <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_STARCHILD" />
+            <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_RADIANT_ORIGIN" />
+        </rules>
+    </element>
+
+    <element name="Wings" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_WINGS">
+        <description>
+            <p>Your pair of spectral wings grant you a flying speed of 50 feet.</p>
+        </description>
+        <sheet>
+            <description>Your pair of spectral wings grant you a flying speed of 50 feet.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:fly" value="50" bonus="base" />
+        </rules>
+    </element>
+    <element name="Stealthy" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_STEALTHY">
+        <description>
+            <p> You're biology closely resembles that of a chameleon. You're body is adapted to hide in virtually every environment.</p>
+        </description>
+        <sheet>
+            <description>You can hide yourself like a chameleon.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+        </rules>
+    </element>
+    <element name="Empowerment" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_EMPOWERMENT">
+        <description>
+            <p>Ben'nir have an empowered Lifeforce that grants them excelled healing. After a short or long rest you gain temporary hit points equal to your twice level + your Constitution mod. Also if you lose any part of your body, it will regenerate over the course of a day. Any spells that would cause the caster to take damage deal half that rounded up.</p>
+        </description>
+        <sheet>
+            <description>After a short or long rest you gain {{lifeforce:hp:temp}} temporary hit points. Also if you lose any part of your body, it will regenerate over the course of a day. Any spells that would cause the caster to take damage deal half that rounded up.</description>
+        </sheet>
+        <rules>
+            <stat name="lifeforce:hp:temp" value="level" />
+            <stat name="lifeforce:hp:temp" value="level" />
+            <stat name="lifeforce:hp:temp" value="constitution:modifier" />
+        </rules>
+    </element>
+    <element name="Starchild" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_STARCHILD">
+        <description>
+            <p>You are a Starchild. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effect of starvation, thirst, exhaustion, or suffocation. However you still benefit from short and long rests. All other conditions and effects affect you normally.</p>
+        </description>
+        <sheet>
+            <description>You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effect of starvation, thirst, exhaustion, or suffocation.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Origins" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_RADIANT_ORIGIN">
+        <description>
+            <p>You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Hex spell at will as a 2nd-level spell. Once you reach 5th level, you can also cast the Alter Self at will. Charisma is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet>
+            <description>You know the Produce Flame cantrip. (Charisma)</description>
+            <description level="3">You know the Produce Flame cantrip. You can cast the Hex spell at will as a 2nd-level spell.(Charisma)</description>
+            <description level="5">You know the Produce Flame cantrip. You can cast the Hex spell at will as a 2nd-level spell. You can also cast the Alter Self at will. (Charisma)</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
+            <grant type="Spell" id="ID_PHB_SPELL_HEX" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" level="5" />
+        </rules>
+    </element>
+
+
+  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_STRENGTH">
+    <supports>Homunculus</supports>
+    <requirements />
+    <description>
+      <p>Your Strength increases by 2.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="strength" value="2"/>
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_DEXTERITY">
+    <supports>Homunculus</supports>
+    <requirements />
+    <description>
+      <p>Your Dexterity increases by 2.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="dexterity" value="2"/>
+    </rules>
+  </element>
+</elements>
