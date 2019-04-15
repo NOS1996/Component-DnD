@@ -5,7 +5,7 @@
         <description>5e homebrew</description>
         <author url="https://github.com/NOS1996">Nos</author>
         <update version="0.0.4">
-            <file name="Ben'nir.xml" url="" />
+            <file name="Ben'nir.xml" url="https://github.com/NOS1996/Component-DnD/blob/master/Ben'nir.xml" />
         </update>
     </info>
 
