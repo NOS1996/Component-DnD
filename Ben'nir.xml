@@ -55,7 +55,7 @@
             <select type="Language" name="Language (Bennir)" />
             <select type="Language" name="Language (Bennir)" />
             <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_WINGS" />
-            <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_STEALTHY"/>
+            <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_STEALTH"/>
             <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_EMPOWERMENT" />
             <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_STARCHILD" />
             <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_RADIANT_ORIGIN" />
@@ -73,7 +73,7 @@
             <stat name="innate speed:fly" value="50" bonus="base" />
         </rules>
     </element>
-    <element name="Stealthy" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_STEALTHY">
+    <element name="Stealth" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_STEALTH">
         <description>
             <p> You're biology closely resembles that of a chameleon. You're body is adapted to hide in virtually every environment.</p>
         </description>
