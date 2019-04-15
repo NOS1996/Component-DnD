@@ -33,7 +33,6 @@
                 <span class="feature">Size.</span>Ben'nir are the same size and build as humans. Your size is Medium.<br/>
                 <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
                 <span class="feature">Wings.</span>Your spectral wings grant you a flying speed of 50 feet.<br/>
-                <span class="feature">Stealthy.</span>You're biology closely resembles that of a chameleon. You're body is adapted to hide in virtually every environment.You have proficiency in the Stealth skill.<br/>
                 <span class="feature">Empowerment.</span>Ben'nir have an empowered Lifeforce that grants them excelled healing. After a short or long rest you gain temporary hit points equal to twice your level + your Constitution mod. Also if you lose any part of your body, it will regenerate over the course of a day. Any spells that would cause the caster to take damage deal half that rounded up.<br/>
                 <span class="feature">Starchild.</span>You are a Starchild. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effect of starvation, thirst, exhaustion, or suffocation. However you still benefit from short and long rests. All other conditions and effects affect you normally.<br/>
                 <span class="feature">Radiant Origin.</span>You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Hex spell at will as a 2nd-level spell. Once you reach 5th level, you can also cast the Alter Self at will. Charisma is your spellcasting ability for these spells.<br/>
@@ -71,17 +70,6 @@
         </sheet>
         <rules>
             <stat name="innate speed:fly" value="50" bonus="base" />
-        </rules>
-    </element>
-    <element name="Stealth" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_STEALTH">
-        <description>
-            <p> You're biology closely resembles that of a chameleon. You're body is adapted to hide in virtually every environment.</p>
-        </description>
-        <sheet>
-            <description>You can hide yourself like a chameleon.</description>
-        </sheet>
-        <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
         </rules>
     </element>
     <element name="Empowerment" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_EMPOWERMENT">
