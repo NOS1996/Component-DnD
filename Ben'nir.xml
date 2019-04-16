@@ -33,6 +33,8 @@
                 <span class="feature">Size.</span>Ben'nir are the same size and build as humans. Your size is Medium.<br/>
                 <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
                 <span class="feature">Wings.</span>Your spectral wings grant you a flying speed of 50 feet.<br/>
+                <span class="feature">Magic Heart.</span>You have advantage on saving throws against spells and other magical effects .<br/>
+                <span class="feature">Radiant Soul.</span>You are immune to radiant and resistant to fire damage.<br/>
                 <span class="feature">Darkvision.</span> You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br />
                 <span class="feature">Empowerment.</span>Ben'nir have an empowered Lifeforce that grants them excelled healing. After a short or long rest you gain temporary hit points equal to twice your level + your Constitution mod. Also if you lose any part of your body, it will regenerate over the course of a day. Any spells that would cause the caster to take damage deal half that rounded up.<br/>
                 <span class="feature">Starchild.</span>You are a Starchild. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effect of starvation, thirst, exhaustion, or suffocation. However you still benefit from short and long rests. All other conditions and effects affect you normally.<br/>
@@ -55,6 +57,8 @@
             <select type="Language" name="Language (Bennir)" />
             <select type="Language" name="Language (Bennir)" />
             <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_MAGIC_HEART" />
+            <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_RADIANT_SOUL" />
             <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_WINGS" />
             <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_STEALTH"/>
             <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_EMPOWERMENT" />
@@ -63,6 +67,27 @@
         </rules>
     </element>
 
+    <element name="Magic Heart" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_MAGIC_HEART">
+    <description>
+      <p>You have advantage on saving throws against spells and other magical effects.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on saving throws against spells and other magical effects.</description>
+    </sheet>
+    <rules />
+  </element>  
+    <element name="Radiant Soul" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_RADIANT_SOUL">
+        <description>
+            <p>You are immune to radiant and resistant to fire damage.</p>
+        </description>
+        <sheet>
+            <description>You are immune to radiant and resistant to fire damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_RADIANT" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+    </element>
     <element name="Wings" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_WINGS">
         <description>
             <p>Your pair of spectral wings grant you a flying speed of 50 feet.</p>
