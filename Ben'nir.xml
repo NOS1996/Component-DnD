@@ -36,7 +36,7 @@
                 <span class="feature">Darkvision.</span> You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br />
                 <span class="feature">Empowerment.</span>Ben'nir have an empowered Lifeforce that grants them excelled healing. After a short or long rest you gain temporary hit points equal to twice your level + your Constitution mod. Also if you lose any part of your body, it will regenerate over the course of a day. Any spells that would cause the caster to take damage deal half that rounded up.<br/>
                 <span class="feature">Starchild.</span>You are a Starchild. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effect of starvation, thirst, exhaustion, or suffocation. However you still benefit from short and long rests. All other conditions and effects affect you normally.<br/>
-                <span class="feature">Radiant Origin.</span>You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Hex spell at will as a 2nd-level spell. Once you reach 5th level, you can also cast the Alter Self at will. Charisma is your spellcasting ability for these spells.<br/>
+                <span class="feature">Radiant Origin.</span>You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Burning hands spell at will as a 2nd-level spell. Once you reach 5th level, you can also cast the Alter Self at will. Charisma is your spellcasting ability for these spells.<br/>
                 <span class="feature">Languages.</span>You can speak, read, and write Common and two extra languages of your choice.<br/>
             </p>
         </description>
@@ -97,16 +97,16 @@
     </element>
     <element name="Arcane Origins" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_RADIANT_ORIGIN">
         <description>
-            <p>You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Hex spell at will as a 2nd-level spell. Once you reach 5th level, you can also cast the Alter Self at will. Charisma is your spellcasting ability for these spells.</p>
+            <p>You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Burning Hands spell at will as a 2nd-level spell. Once you reach 5th level, you can also cast the Alter Self at will. Charisma is your spellcasting ability for these spells.</p>
         </description>
         <sheet>
             <description>You know the Produce Flame cantrip. (Charisma)</description>
-            <description level="3">You know the Produce Flame cantrip. You can cast the Hex spell at will as a 2nd-level spell.(Charisma)</description>
-            <description level="5">You know the Produce Flame cantrip. You can cast the Hex spell at will as a 2nd-level spell. You can also cast the Alter Self at will. (Charisma)</description>
+            <description level="3">You know the Produce Flame cantrip. You can cast the Burning Hands spell at will as a 2nd-level spell.(Charisma)</description>
+            <description level="5">You know the Produce Flame cantrip. You can cast the Burning Hands spell at will as a 2nd-level spell. You can also cast the Alter Self at will. (Charisma)</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
-            <grant type="Spell" id="ID_PHB_SPELL_HEX" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" />
             <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" level="5" />
         </rules>
     </element>
