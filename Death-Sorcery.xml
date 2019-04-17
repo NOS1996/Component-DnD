@@ -73,18 +73,15 @@
       <p>Starting at 6th level, you've gained the knowledge to channel the souls you harvest into your spells. You may store a number of souls equal to twice your sorcerer level from killing creatures with soul harvest for later use. You can consume souls to regain either sorcery points or up to a 6th level spell slot, which costs 2 souls for a 1st level spell and every additional spell level beyond. For instance, a 3rd level spell would consume 6 souls and one sorcery point would consume 2 souls. In addition, when you deal damage to a creature with a spell, you may consume any number of souls in your possession to deal additional necrotic damage equal to the number of souls you consume. </p>
     	</description>
     	<sheet>
-      	<description>You may store {{level:sorcerer}{level:sorcerer}} souls from killing creatures with soul harvest. You can consume souls to regain either sorcery points or up to a 6th level spell slot, which costs 2 souls per spell level slot/sorcery point. When you deal damage to a creature, you may consume any number of souls in your possession to deal additional necrotic damage equal to the number of souls you consume.</description>
+      	<description>You may store {{level:sorcerer}+{level:sorcerer}} souls from killing creatures with soul harvest. You can consume souls to regain either sorcery points or up to a 6th level spell slot, which costs 2 souls per spell level slot/sorcery point. When you deal damage to a creature, you may consume any number of souls in your possession to deal additional necrotic damage equal to the number of souls you consume.</description>
     	</sheet>
   	</element>
   	<element name="Lord of Death" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_DEATH_SORCERY_LORD_OF_DEATH">
 		<description>
-			<p>At 18th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action, you can magically teleport up to 120 feet to an unoccupied space you can see that is also in dim light or darkness. When you are hit by an attack, you can use your reaction to deal necrotic damage to the attacker. The damage equals your sorcerer level, and ignores resistance to necrotic damage.In addition, any spell or effect you create ignores resistance to fire damage and treats immunity to necrotic damage as resistance to necrotic damage. Your newfound affinity towards darkness also grants you darkvision out to 120 feet.</p>
+			<p>At 18th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action, you can magically teleport up to 120 feet to an unoccupied space you can see that is also in dim light or darkness. When you are hit by an attack, you can use your reaction to deal necrotic damage to the attacker. The damage equals your sorcerer level, and ignores resistance to necrotic damage.In addition, any spell or effect you create ignores resistance to necrotic damage and treats immunity to necrotic damage as resistance to necrotic damage.</p>
 		</description>
-		<sheet action="Bonus Action">
-			<description>When you are in dim light or darkness you can magically teleport up to 120 feet to an unoccupied space you can see that is also in dim light or darkness.</description>
-		</sheet>
 		<sheet>
-			<description>When you are hit by an attack, you can use your reaction to deal {{level:sorcerer}} necrotic damage to the attacker. In addition, any spell or effect you create ignores resistance to fire damage and treats immunity to necrotic damage as resistance to necrotic damage.You have darkvision ou to 120 feet.</description>
+			<description>When you are in dim light or darkness, as a bonus action, you can magically teleport up to 120 feet to an unoccupied space you can see that is also in dim light or darkness. When you are hit by an attack, you can use your reaction to deal necrotic damage to the attacker. The damage equals your sorcerer level, and ignores resistance to necrotic damage.In addition, any spell or effect you create ignores resistance to necrotic damage and treats immunity to necrotic damage as resistance to necrotic damage.</description>
 		</sheet>
 		<rules>
             <grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
