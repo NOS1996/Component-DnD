@@ -3,7 +3,7 @@
     <info>
        <name>Death Sorcerous Origin</name>
        <description>5e homebrew</description>
-       <author url="">NOS</author>
+       <author url="https://github.com/NOS1996">NOS</author>
        <update version="0.0.4">
            <file name="Death Sorcery.xml" url="https://github.com/NOS1996/Component-DnD/blob/master/Death-Sorcery.xml" />
        </update>
