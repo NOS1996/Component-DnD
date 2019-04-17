@@ -5,7 +5,7 @@
        <description>5e homebrew</description>
        <author url="">NOS</author>
        <update version="0.0.4">
-           <file name="Death Sorcery.xml" url="" />
+           <file name="Death Sorcery.xml" url="https://github.com/NOS1996/Component-DnD/blob/master/Death-Sorcery.xml" />
        </update>
     </info>
 	<element name="Death Sorcery" type="Archetype" source="NOS" id="ID_NOS_SORCERER_ARCHETYPE_DEATH_SORCERY">
