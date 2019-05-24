@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Starlight</name>
+		<update version="0.0.1">
+			<file name="starlight.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Starlight" type="Archetype" source="NOS" id="ID_NOS_ARCHETYPE_STARLIGHT">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Magic is the center of your world like the sun is the center of the solar system. You draw power from the light of the stars, and so over time became one yourself</p>
+			<p class="indent">Starlighters condemn all forces of darkness and strive, much like Paladins to rid the worlds of their evil. They strive to hunt down and eliminate magical threats and extraplanar entities, leaving only clairvoyant beauty in their wake.</p>
+			<p class="indent">Starlighters can most be found in Ben'nir, Elven or Fey communities, although in some human settlements you might find one or two Starlighters to secure their landly life.</p>
+			<div element="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_OZON_LAYER" />
+			<div element="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_CELESTIAL_FIRE" />
+			<div element="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_SOLAR_ORBIT" />
+			<div element="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_SOLAR_ORDER" />
+			<div element="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_BLACK_HOLE" />
+		 </description>
+		<sheet display="false">
+			<description>Starlighters strive to rid the worlds of their evil.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_OZON_LAYER" level="2" />
+			<grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_CELESTIAL_FIRE" level="2" />
+			<grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_SOLAR_ORBIT" level="6" />
+			<grant type="Archetype Feature" id="ID_XLN_ARCHETYPE_FEATURE_MAGE_HUNTER_SOLAR_ORDER" level="10" />
+			<grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_BLACK_HOLE" level="14" />
+		</rules>
+	</element>
+
+	<element name="Celestial Fire" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_CELESTIAL_FIRE">
+		<description>
+			<p>Beginning at 2nd level your spells and cantrips deal an additional 1d8 radiant damage. Furthermore your spells that deal radiant damage treat immunity to radiant damage as resistance to radiant damage, and ignore resistance to radiant damage. </p>
+		</description>
+		<sheet>
+			<description>Your spells and cantrips that deal damage deal an additional 1d8 radiant damage. Furthermore your spells that deal radiant damage treat immunity to radiant damage as resistance to radiant damage, and ignore resistance to radiant damage.</description>
+		</sheet>
+	</element>
+	<element name="Ozon Layer" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_OZON_LAYER">
+		<description>
+			<p>When you adopt this tradition at 2nd level, you gain proficiency with light armor, and you have advantage on saving throws against spells.</p>
+			<p class="indent">You also gain proficiency in the Perception skill if you don’t already have it.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+		<element name="Solar Orbit" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_SOLAR_ORBIT">
+		<description>
+			<p>At 6th level, you can forge a magical bond with a weapon. Choose a weapon in which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.</p>
+			<p class="indent">You can’t be disarmed of your bonded weapon as long as you are concious, also it may not be used by any creature other than you. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you must break the bond with the first.</p>
+			<p class="indent">While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. At 10th level, your effectiveness with the weapon improves as it gains a bonus of +1 to attack and damage rolls, and then again to a +2 bonus at 14th level.</p>
+			<p class="indent"></p>
+		</description>
+		<sheet>
+			<description>Choose a weapon in which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.
+			You can’t be disarmed of your bonded weapon as long as you are concious, also it may not be used by any  creature other than you. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you must break the bond with the first.
+			While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already.</description>
+			<description level="10">Choose a weapon in which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.
+			You can’t be disarmed of your bonded weapon as long as you are concious, also it may not be used by any  creature other than you. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you must break the bond with the first.
+			While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. Your effectiveness with the weapon improves as it gains a bonus of +1 to attack and damage rolls.</description>
+			<description level="14">Choose a weapon in which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.
+			You can’t be disarmed of your bonded weapon as long as you are concious, also it may not be used by any  creature other than you. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you must break the bond with the first.
+			While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. Your effectiveness with the weapon improves as it gains a bonus of +2 to attack and damage rolls.</description>
+		</sheet>
+	</element>
+	<element name="Solar Order" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_SOLAR_ORDER">
+  		<description>
+   		 <p>Beginning at 10th level, while you are concentrating on a spell, your concentration can’t be broken. Furthermore, you have resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Celestial Fire feature.</p>
+  		</description>
+  		<sheet>
+   		 <description>While you are concentrating on a spell, your concentration can’t be broken. Furthermore, you have resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Celestial Fire feature.</description>
+  		</sheet>
+	</element>
+ 	<element name="Black Hole" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_BLACK_HOLE">
+   	 <description>
+     	 <p>Starting at 14th level, you are able to absorb parts of the souls of the ones you slayed. At the end of your turn, if you or any creatures under your control have killed one or more creatures, you gain hit points equal to your starlighter level. If doing so would grant you more hit points than you can have, you gain temporary hit points equal to the amount of excess hit points received. Furthermore you may store a number of souls equal to your necromancer level from killing creatures with Absorber for later use. You can consume souls to regain upup to a 7th lvl spell slot, which costs 2 souls for 1st level spell and every additional spell level beyond. For instance, a 5rd level spell would consume 10 souls. In addition, when you deal damage to a creature with a spell, you may consume up to 10 souls in your possession to deal an additional 1d8 radiant damage per soul consumed. </p>
+   	 </description>
+     <sheet>
+      	<description>At the end of your turn, if you or any creatures under your control have killed one or more creatures, you gain {{level:starlight}} hit points. If doing so would grant you more hit points than you can have, you gain temporary hit points equal to the amount of excess hit points received.You may store {{level:starlight}} souls from killing creatures with soul harvest. You can consume souls to regain up to a 7th level spell slot, which costs 2 souls per spell level slot. When you deal damage to a creature, you may consume up to 10 souls in your possession to deal an additional 1d8 radiant damage per soul consumed.</description>
+     </sheet>
+  	</element>
+  
