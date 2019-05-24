@@ -26,7 +26,7 @@
 			<grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_OZON_LAYER" level="2" />
 			<grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_CELESTIAL_FIRE" level="2" />
 			<grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_SOLAR_ORBIT" level="6" />
-			<grant type="Archetype Feature" id="ID_XLN_ARCHETYPE_FEATURE_MAGE_HUNTER_SOLAR_ORDER" level="10" />
+			<grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_SOLAR_ORDER" level="10" />
 			<grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_BLACK_HOLE" level="14" />
 		</rules>
 	</element>
