@@ -87,4 +87,5 @@
       	<description>At the end of your turn, if you or any creatures under your control have killed one or more creatures, you gain {{level:starlight}} hit points. If doing so would grant you more hit points than you can have, you gain temporary hit points equal to the amount of excess hit points received.You may store {{level:starlight}} souls from killing creatures with soul harvest. You can consume souls to regain up to a 7th level spell slot, which costs 2 souls per spell level slot. When you deal damage to a creature, you may consume up to 10 souls in your possession to deal an additional 1d8 radiant damage per soul consumed.</description>
      </sheet>
   	</element>
+</elements>
   
