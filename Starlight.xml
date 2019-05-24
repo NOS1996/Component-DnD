@@ -3,7 +3,7 @@
 	<info>
 		<name>Starlight</name>
 		<update version="0.0.1">
-			<file name="starlight.xml" url="" />
+			<file name="starlight.xml" url="https://github.com/NOS1996/Component-DnD/blob/master/Starlight.xml" />
 		</update>
 	</info>
 
