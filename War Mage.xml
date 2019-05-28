@@ -33,3 +33,4 @@
             <stat name="blademaster:deflect" value="dexterity:modifier" bonus="ability" />
         </rules>
     </element>
+</elements>
