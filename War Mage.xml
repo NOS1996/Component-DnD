@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description></description>
+		<update version="0.0.!">
+			<file name="feats.xml" url="" />
+		</update>
+	</info>
+
+ <element name="War Mage" type="Feat" source="NOS" id="ID_NOS_FEAT_WAR_MAGE">
+        <supports />
+        <prerequisite>Dexterity 13 and the ability to cast at least one spell</prerequisite>
+        <requirements>[type:spell], [dex:13], ([int:15]||[wis:15]||[cha:15])</requirements>
+        <description>
+            <p><i>Prerequisites: Dexterity 13 or higher, the abilitiy to cast at least one spell, and Intelligence or Wisdom or Charisma 15 or higher</i></p>
+            <p>You are one with the blade, combining martial and magical prowess into powerful stances and swift maneuvers. While wielding a melee weapon that does not have the heavy property, you gain the following benefits:</p>
+            <ul>
+             	<li>You can use a melee weapon you are proficient with as a spell focus.</li>
+                <li>As a bonus action, a number of times per long rest equal to the modifier from your spellcasting ability (at least one) plus your proficiency bonus, you may imbue a melee weapon with elemental damage based on a cantrip you know. This quarterstaff will now deal 1d6 damage of this element type in addition to its regular damage. This effect lasts one minute, and only you may take advantage of it. You may choose not to deal this extra damage, or to only deal it. If you drop the quarterstaff for any reason the effect ends. With each attack, you may also expend a single spell slot to add a number of elemental d6's equal to the spell slot's level. Doing so counts as using a spell, so any applicable metamagic feats can be used.</li>
+                <li>When you are hit by a ranged weapon attack, you can use your reaction to deflect the missile. When you do so, the damage you take is reduced by 1d10 + your character level + your Dexterity modifier. If you reduce the damage to 0 or less, you slice the projectile out of the air, destroying it.</li>
+                <li>You gain a +1 bonus to AC.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>As a bonus action, a number of times per long rest equal to the modifier from your spellcasting ability (at least one) plus your proficiency bonus, imbue melee weapon with elemental damage based on a cantrip you know. It will now deal an additional 1d6 damage of this element type. This effect lasts one minute, and only you may take advantage of it. You may choose not to deal this extra damage, or to only deal it. If you drop the weapon for any reason the effect ends. With each attack, you may also expend a spell slot to add a number of d6's equal to the spell slot's level. This counts as using a spell, so any applicable metamagic feats can be used.
+			When you are hit by a ranged weapon attack, you can use your reaction to deflect the missile. When you do so, the damage you take is reduced by 1d10+{{blademaster:deflect}}. If you reduce the damage to 0 or less, you slice the projectile out of the air, destroying it.</description>
+        </sheet>
+        <rules>
+			<!-- conditional ac -->
+            <!-- <stat name="ac:misc" value="1" /> -->
+            <stat name="blademaster:deflect" value="level" />
+            <stat name="blademaster:deflect" value="dexterity:modifier" bonus="ability" />
+        </rules>
+    </element>
