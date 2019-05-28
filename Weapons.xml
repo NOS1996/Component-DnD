@@ -4,11 +4,11 @@
 		<name>Weapons</name>
 		<description></description>
 		<update version="0.0.1">
-			<file name="weapons.xml" url="" />
+			<file name="weapons.xml" url="https://github.com/NOS1996/Component-DnD/edit/master/Weapons.xml" />
 		</update>
 	</info>
 
-	<element name="Spellshard" type="Magic Item" source="NOS" id="ID_NOS_mAGIC_ITEM_SPELLSHARD">
+	<element name="Spellshard" type="Magic Item" source="NOS" id="ID_NOS_MAGIC_ITEM_SPELLSHARD">
 		<description>
 			<p>This dagger grants a +2 bonus to attack and damage rolls made with it. While you hold it, you gain a +2 bonus to spell attack rolls.</p>
 			<p class="indent">The dagger has 50 charges for the following properties. It regains 4d6 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 20, the dagger regains 1d12 + 1 charges.</p>
