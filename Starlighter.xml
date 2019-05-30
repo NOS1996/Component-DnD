@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Starlighter</name>
+    <description>A celestial magic wielder.</description>
+    <update version="0.0.1">
+      <file name="starlighter.xml" url="" />
+    </update>
+  </info>
+
+ <element name="Starlighter" type="Class" source="NOS" id="ID_NOS_CLASS_STARLIGHTER">
+    <description>
+      <p>Clad in the silver robes that denote her station, an elf closes her eyes to shut out the distractions of the battlefield and begins her quiet chant. Fingers weaving in front of her, she completes her spell and launches a tiny bead of fire toward the enemy ranks, where it erupts into a conflagration that engulfs the soldiers.</p>
+      <p class="indent">Checking and rechecking his work, a human scribes an intricate magic circle in chalk on the bare stone floor, then sprinkles powdered iron along every line and graceful curve. When the circle is complete, he drones a long incantation. A hole opens in space inside the circle, bringing a whiff of brimstone from the otherworldly plane beyond.</p>
+      <p class="indent">Crouching on the floor in a dungeon intersection, a gnome tosses a handful of small bones inscribed with mystic symbols, muttering a few words of power over them. Closing his eyes to see the visions more clearly, he nods slowly, then opens his eyes and points down the passage to his left.</p>
+      <p class="indent">Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, and brute-force mind control. Their magic conjures monsters from other planes of existence, glimpses the future, or turns slain foes into zombies. Their mightiest spells change one substance into another, call meteors down from the sky, or open portals to other worlds.</p>
+      <h4>SCHOLARS OF THE ARCANE</h4>
+      <p>Wild and enigmatic, varied in form and function, the power of magic draws students who seek to master its mysteries. Some aspire to become like the gods, shaping reality itself. Though the casting of a typical spell requires merely the utterance of a few strange words, fleeting gestures, and sometimes a pinch or clump of exotic materials, these surface components barely hint at the expertise attained after years of apprenticeship and countless hours of study.</p>
+      <p class="indent">Wizards live and die by their spells. Everything else is secondary. They learn new spells as they experiment and grow in experience. They can also learn them from other wizards, from ancient tomes or inscriptions, and from ancient creatures (such as the fey) that are steeped in magic.</p>
+      <h4>THE LURE OF KNOWLEDGE</h4>
+      <p>Wizards’ lives are seldom mundane. The closest a wizard is likely to come to an ordinary life is working as a sage or lecturer in a library or university, teaching others the secrets of the multiverse. Other wizards sell their services as diviners, serve in military forces, or pursue lives of crime or domination.</p>
+      <p class="indent">But the lure of knowledge and power calls even the most unadventurous wizards out of the safety of their libraries and laboratories and into crumbling ruins and lost cities. Most wizards believe that their counterparts in ancient civilizations knew secrets of magic that have been lost to the ages, and discovering those secrets could unlock the path to a power greater than any magic available in the present age.</p>
+      <h4>CREATING A WIZARD </h4>
+      <p>Creating a wizard character demands a backstory dominated by at least one extraordinary event. How did your character first come into contact with magic? How did you discover you had an aptitude for it? Do you have a natural talent, or did you simply study hard and practice incessantly? Did you encounter a magical creature or an ancient tome that taught you the basics of magic?</p>
+      <p class="indent">What drew you forth from your life of study? Did your first taste of magical knowledge leave you hungry for more? Have you received word of a secret repository of knowledge not yet plundered by any other wizard? Perhaps you’re simply eager to put your newfound magical skills to the test in the face of danger.</p>
+      <h5>QUICK BUILD</h5>
+      <p>You can make a starlighter quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Constitution or Dexterity. Second, choose the sage background.</p>
+      <h3>CLASS FEATURES</h3>
+      <p>As a starlighter, you gain the following class features.</p>
+      <h5>HIT POINTS</h5>
+      <p>
+        <span class="emphasis">Hit Dice:</span>1d6 per starlighter level<br/>
+        <span class="emphasis">Hit Points at 1st Level:</span>6 + your Constitution modifier<br/>
+        <span class="emphasis">Hit Points at Higher Levels:</span>1d6 (or 4) + your Constitution modifier per starlighter level after 1st<br/>
+      </p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="emphasis">Armor:</span>None<br/>
+        <span class="emphasis">Weapons:</span>Daggers, darts, slings, quarterstaffs, shortbows, sickles<br/>
+        <span class="emphasis">Tools:</span>None<br/>
+      </p>
+      <p>
+        <span class="emphasis">Saving Throws:</span>Intelligence, Wisdom<br/>
+        <span class="emphasis">Skills:</span>Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion<br/>
+      </p>
+      <h5>EQUIPMENT</h5>
+      <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+      <ul>
+        <li>(a) a quarterstaff or (b) two daggers</li>
+        <li>(a) a component pouch or (b) an arcane focus</li>
+        <li>(a) a shortbow and 20 bolts or (b) any simple weapon</li>
+        <li>(a) a scholar’s pack or (b) an explorer’s pack</li>
+      </ul>
+      <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELLCASTING_STARLIGHTER" />
+      <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_ABILITYSCOREIMPROVEMENT_STARLIGHTER" />
+      <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELL_MASTERY" />
+      <div element="ID_NOS_CLASS_FEATURE_CELESTIAL_RECOVERY" />
+      <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_MAGIC" />
+      <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER" />
+      <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_FIRE" />
+      <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT" />
+      <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORDER" />
+      <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_BLACK_HOLE" />
+    </description>
+    <sheet display="false">
+      <description>A celestial magic wielder, powered by the positive energy in reality.</description>
+    </sheet>
+    <setters>
+      <set name="short">A celestial magic wielder, powered by the positive energy in reality.</set>
+      <set name="hd">d6</set>
+    </setters>
+    <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
+
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
+
+      <select type="Proficiency" name="Skill Proficiency (Starlighter)" supports="Skill,Starlighter" number="2" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
+      
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELLCASTING_STARLIGHTER" level="1"/>
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_CELESTIAL_MAGIC" level="1" />
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_CELESTIAL_RECOVERY" level="1" />
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_ABILITYSCOREIMPROVEMENT_STARLIGHTER" level="4" />
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELL_MASTERY" level="18" />
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER" level="2" />
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_FIRE" level="4" />
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT" level="6" />
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORDER" level="10" />
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_BLACK_HOLE" level="15" />
+    </rules>
+    <multiclass id="ID_NOS_MULTICLASS_STARLIGHTER">
+      <prerequisite>Wisdom 13</prerequisite>
+      <requirements>[wis:13]</requirements>
+      <setters>
+        <set name="multiclass proficiencies">—</set>
+      </setters>
+      <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+      </rules>
+    </multiclass>
+  </element>
+  <element name="Spellcasting" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELLCASTING_STARLIGHTER">
+    <description>
+      <h5>CANTRIPS</h5>
+      <p>At 1st level, you know three cantrips of your choice from the Starlighter spell list. You learn additional Starlighter cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Starlighter table.</p>
+      <h5>SPELLBOOK</h5>
+      <p>At 1st level, you gain six 1st-­level Starlighter spells of your choice, which are, as well as any later added spells fixed in your mind.</p>
+      <h5>PREPARING AND CASTING SPELLS</h5>
+      <p>The Starlighter table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+      <p>You prepare the list of starlighter spells that are available for you to cast. To do so, choose a number of starlighter spells equal to your Wisdom modifier + your starlighter level (minimum of one spell). The spells must be of a level for which you have spell slots.</p>
+      <p>For example, if you’re a 3rd-level starlighter, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.</p>
+      <p>You can change your list of prepared spells when you finish a long rest. Preparing a new list of starlighter spells requires time spent rehearsing the incantations and gestures and meditating to attune to the world around you; to cast the spell: at least 1 minute per spell level for each spell on your list.</p>
+      <h5>SPELLCASTING ABILITY</h5>
+      <p>Wisdom is your spellcasting ability for your starlighter spells. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a starlighter spell you cast and when making an attack roll with one.</p>
+      <p>
+        <strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier
+      </p>
+      <p>
+        <strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier
+      </p>
+      <h5>RITUAL CASTING</h5>
+      <p>You can cast a starlighter spell as a ritual if that spell has the ritual tag. You don’t need to have the spell prepared.</p>
+      <h5>SPELLCASTING FOCUS</h5>
+      <p>You can use an arcane focus as a spellcasting focus for your starlighter spells.</p>
+      <h5>LEARNING SPELLS OF 1ST LEVEL AND HIGHER</h5>
+      <p>Each time you gain a starlighter level, you can add two starlighter spells of your choice to your knowledge compound. Each of these spells must be of a level for which you have spell slots, as shown on the Wizard table. On your adventures, you might find other spells that you can add to your knowledge.</p>
+    </description>
+    <sheet display="true">
+      <description>You can prepare {{starlighter:spellcasting:prepare}} spells. You use an arcane focus to cast spells and can also cast starlighter spells as a ritual.</description>
+    </sheet>
+    <spellcasting name="Starlighter" ability="Wisdom" prepare="true">
+      <list>Wizard</list>
+    </spellcasting>
+    <rules>
+      <grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+      <grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_ARCANE_FOCUS" />
+
+      <stat name="starlighter:spellcasting:slots:1" value="2" level="1" />
+      <stat name="starlighter:spellcasting:slots:1" value="1" level="2" />
+      <stat name="starlighter:spellcasting:slots:1" value="1" level="3" />
+      
+      <stat name="starlighter:spellcasting:slots:2" value="2" level="3" />
+      <stat name="starlighter:spellcasting:slots:2" value="1" level="4" />
+      <stat name="starlighter:spellcasting:slots:3" value="2" level="5" />
+      <stat name="starlighter:spellcasting:slots:3" value="1" level="6" />
+      <stat name="starlighter:spellcasting:slots:4" value="1" level="7" />
+      <stat name="starlighter:spellcasting:slots:4" value="1" level="8" />
+      <stat name="starlighter:spellcasting:slots:4" value="1" level="9" />
+      <stat name="starlighter:spellcasting:slots:5" value="1" level="9" />
+      <stat name="starlighter:spellcasting:slots:5" value="1" level="10" />
+      <stat name="starlighter:spellcasting:slots:5" value="1" level="18" />
+      <stat name="starlighter:spellcasting:slots:6" value="1" level="11" />
+      <stat name="starlighter:spellcasting:slots:6" value="1" level="19" />
+      <stat name="starlighter:spellcasting:slots:7" value="1" level="13" />
+      <stat name="starlighter:spellcasting:slots:7" value="1" level="20" />
+      <stat name="starlighter:spellcasting:slots:8" value="1" level="15" />
+      <stat name="starlighter:spellcasting:slots:9" value="1" level="17" />
+
+      <stat name="starlighter:spellcasting:prepare" value="wisdom:modifier" />
+      <stat name="starlighter:spellcasting:prepare" value="level:starlighter" />
+
+      <select type="Spell" name="Cantrip (Starlighter)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Wizard" />
+      <select type="Spell" name="Cantrip (Starlighter)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Wizard" />
+      <select type="Spell" name="Cantrip (Starlighter)" supports="$(spellcasting:list), 0" level="10" number="2" spellcasting="Wizard" />
+      
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="2" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="4" spellcasting="Starlighter" />
+    </rules>
+  </element>
+  <element name="Celestial Magic" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_MAGIC">
+    <spellcasting name="Starlighter" extend="true">
+    <extend>Cleric</extend>
+</spellcasting>
+</element>
+
+  <element name="Arcane Recovery" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_CELESTIAL_RECOVERY">
+    <description>
+      <p>You have learned to regain some of your magical energy by meditating. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.</p>
+      <p>For example, if you’re a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.</p>
+    </description>
+    <sheet>
+      <description>Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to half your starlighter level (rounded up).</description>
+    </sheet>
+  </element>
+  <element name="Ability Score Improvement (Starlighter)" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_ABILITYSCOREIMPROVEMENT_STARLIGHTER">
+    <description>
+      <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <!-- <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_4_STARLIGHTER" level="4" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_8_STARLIGHTER" level="8" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_12_STARLIGHTER" level="12" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_16_STARLIGHTER" level="16" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_19_STARLIGHTER" level="19" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" /> -->
+      <select type="Class Feature" name="Improvement Option (Starlighter 4)" supports="Improvement Option,Starlighter,4" level="4" />
+      <select type="Class Feature" name="Improvement Option (Starlighter 8)" supports="Improvement Option,Starlighter,8" level="8" />
+      <select type="Class Feature" name="Improvement Option (Starlighter 12)" supports="Improvement Option,Starlighter,12" level="12" />
+      <select type="Class Feature" name="Improvement Option (Starlighter 16)" supports="Improvement Option,Starlighter,16" level="16" />
+      <select type="Class Feature" name="Improvement Option (Starlighter 19)" supports="Improvement Option,Starlighter,19" level="19" />
+    </rules>
+  </element>
+  <element name="Spell Mastery" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELL_MASTERY">
+    <description>
+      <p>At 18th level, you have achieved such mastery over certain spells that you can cast them at will. Choose a 1st-level starlighter spell and a 2nd-­level starlighter spell, that you know. You can cast those spells at their lowest level without expending a spell slot when you have them prepared. If you want to cast either spell at a higher level, you must expend a spell slot as normal.</p>
+      <p>By spending 8 hours in study, you can exchange one or both of the spells you chose for different spells of the same levels.</p>
+    </description>
+    <sheet>
+      <description>You have achieved such mastery over certain spells that you can cast them at will.</description>
+    </sheet>
+  </element>
+  <element name="Celestial Fire" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_FIRE">
+    <description>
+      <p>Beginning at 4th level your attacks deal an additional 1d8 radiant damage. Furthermore your spells that deal radiant damage treat immunity to radiant damage as resistance to radiant damage, and ignore resistance to radiant damage. </p>
+    </description>
+    <sheet>
+      <description>Your attacks deal an additional 1d8 radiant damage. Furthermore your spells that deal radiant damage treat immunity to radiant damage as resistance to radiant damage, and ignore resistance to radiant damage.</description>
+    </sheet>
+  </element>
+  <element name="Ozon Layer" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER">
+    <description>
+      <p>When you adopt this tradition at 2nd level you gain advantage on saving throws against spells.</p>
+      <p class="indent">You also gain proficiency in the Perception skill if you don’t already have it.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on saving throws against spells.</description>
+    </sheet>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+      <grant type="Spell" id="ID_GFP_COFSA_SPELL_ANGELIC_REBUKE" spellcasting="Starlighter"/>
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_FLASHING_BLADES" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_HALO" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_PUNISHING_SMITE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CROWN_OF_STARS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_XGTE_SPELL_DAWN" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_XGTE_SPELL_FIND_GREATER_STEED" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_XGTE_SPELL_HOLY_WEAPON" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_XGTE_SPELL_WORD_OF_RADIANCE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_CELESTIAL" spellcasting="Starlighter" />
+    </rules>
+  </element>
+    <element name="Solar Orbit" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
+    <description>
+      <p>At 6th level, you can forge a magical bond with a weapon. Choose a weapon in which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.</p>
+      <p class="indent">You can’t be disarmed of your bonded weapon as long as you are concious, also it may not be used by any creature other than you. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you must break the bond with the first.</p>
+      <p class="indent">While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. At 10th level, your effectiveness with the weapon improves as it gains a bonus of +1 to attack and damage rolls, and then again to a +2 bonus at 14th level.</p>
+      <p class="indent"></p>
+    </description>
+    <sheet>
+      <description>Choose a weapon in which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.
+      You can’t be disarmed of your bonded weapon as long as you are concious, also it may not be used by any  creature other than you. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you must break the bond with the first.
+      While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already.</description>
+      <description level="10">Choose a weapon in which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.
+      You can’t be disarmed of your bonded weapon as long as you are concious, also it may not be used by any  creature other than you. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you must break the bond with the first.
+      While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. Your effectiveness with the weapon improves as it gains a bonus of +1 to attack and damage rolls.</description>
+      <description level="14">Choose a weapon in which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.
+      You can’t be disarmed of your bonded weapon as long as you are concious, also it may not be used by any  creature other than you. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you must break the bond with the first.
+      While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. Your effectiveness with the weapon improves as it gains a bonus of +2 to attack and damage rolls.</description>
+    </sheet>
+  </element>
+  <element name="Solar Order" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORDER">
+      <description>
+       <p>Beginning at 10th level, while you are concentrating on a spell, your concentration can’t be broken. Furthermore, you have resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Celestial Fire feature.</p>
+      </description>
+      <sheet>
+       <description>While you are concentrating on a spell, your concentration can’t be broken. Furthermore, you have resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Celestial Fire feature.</description>
+      </sheet>
+  </element>
+  <element name="Black Hole" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_BLACK_HOLE">
+     <description>
+       <p>Starting at 15th level, you absorb parts of the magic that surrounds you. Whenenver you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you gain hit points equal to twice the level of the spell. If doing so would grant you more hit points than you can have, you gain temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received. Furthermore you gain a number of weave points equal to the level of the spell. You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells. Chose two metamagic feats, each can be invoked upon a spell by expending weave points.</p>
+      </description>
+      <sheet>
+        <description>Whenenver you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you gain hit points equal to twice the level of the spell. If doing so would grant you more hit points than you can have, you gain temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received. Furthermore you gain a number of weave points equal to the level of the spell. You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells.</description>
+      </sheet>
+       <rules>
+       <stat name="weave-points" value="level:starlighter" />
+       <stat name="weave-points" value="level:starlighter" />
+       <select type="Class Feature" name="Weave Magic" supports="Weave Magic" level="14" number="2"/>
+       </rules>
+    </element>
+
+    <!-- Metamagic Options -->
+  <element name="Careful Spell" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BLACKHOLE_CAREFUL_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.</p>
+    </description>
+    <sheet>
+      <description>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 weave point and choose a number of those creatures equal to the weave points spent up to your intelligence modifier. A chosen creature automatically succeeds on its saving throw against the spell.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Distant Spell" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BLACKHOLE_DISTANT_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell. When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.</p>
+    </description>
+    <sheet>
+      <description>When you cast a spell that has a range of 5 feet or greater, you can spend 1 weave point to double the range of the spell. When you cast a spell that has a range of touch, you can spend 1 weave point to make the range of the spell 30 feet.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Extended Spell" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BLACKHOLE_EXTENDED_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 weave point to double its duration, to a maximum duration of 24 hours.</p>
+    </description>
+    <sheet>
+      <description>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 weave point to double its duration, to a maximum duration of 24 hours.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Quickened Spell" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BLACKHOLE_QUICKEND_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you cast a spell that has a casting time of 1 action, you can spend 3 weave points to change the casting time to 1 bonus action for this casting.</p>
+    </description>
+    <sheet>
+      <description>When you cast a spell that has a casting time of 1 action, you can spend 3 weave points to change the casting time to 1 bonus action for this casting.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Subtle Spell" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BLACKHOLE_SUBTLE_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you cast a spell, you can spend 1 weave point to cast it without any somatic or verbal components.</p>
+    </description>
+    <sheet>
+      <description>When you cast a spell, you can spend 1 weave point to cast it without any somatic or verbal components.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Twinned Spell" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BLACKHOLE_TWINNED_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you cast a spell that targets only one creature and doesn’t have a range of self, you can spend a number of weave points equal to the spell’s level to target a second creature in range with the same spell (1 weave point if the spell is a cantrip).</p>
+    </description>
+    <sheet>
+      <description>When you cast a spell that targets only one creature and doesn’t have a range of self, you can spend a number of weave points equal to the spell’s level to target a second creature in range with the same spell (1 weave point if the spell is a cantrip).</description>
+    </sheet>
+    <rules />
+  </element>
+</elements>
