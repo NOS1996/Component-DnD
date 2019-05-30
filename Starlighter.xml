@@ -4,7 +4,7 @@
     <name>Starlighter</name>
     <description>A celestial magic wielder.</description>
     <update version="0.0.1">
-      <file name="starlighter.xml" url="" />
+      <file name="starlighter.xml" url="https://github.com/NOS1996/Component-DnD/blob/master/Starlighter.xml" />
     </update>
   </info>
 
