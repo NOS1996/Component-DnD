@@ -27,7 +27,7 @@
             <h4>BENNIR TRAITS</h4>
             <p>Ben'nir are the children of stars.</p>
             <p>
-                <span class="feature">Ability Score Increase.</span>Your Charisma score increases by 3, and your Dexterity or Strength score increases by 2.<br/>
+                <span class="feature">Ability Score Increase.</span>Your Wisdom score increases by 3, and your Dexterity or Strength score increases by 2.<br/>
                 <span class="feature">Age.</span>Ben'nir being the children of stars are unable to age from the point they are created at. Otherwise they are immortal.<br/>
                 <span class="feature">Alignment.</span>Hence having no affiliation with the world, Ben'nir tend towards chaotic and neutral alignments.<br/>
                 <span class="feature">Size.</span>Ben'nir are the same size and build as humans. Your size is Medium.<br/>
@@ -37,7 +37,7 @@
                 <span class="feature">Darkvision.</span> You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br />
                 <span class="feature">Empowerment.</span>Ben'nir have an empowered Lifeforce that grants them excelled healing. After a short or long rest you gain temporary hit points equal to twice your level + your Constitution mod. Also if you lose any part of your body, it will regenerate over the course of a day. Any spells that would cause the caster to take damage deal half that rounded up.<br/>
                 <span class="feature">Starchild.</span>You are a Starchild. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effect of starvation, thirst, exhaustion, or suffocation. However you still benefit from short and long rests. All other conditions and effects affect you normally.<br/>
-                <span class="feature">Radiant Origin.</span>You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Burning hands spell at will as a 2nd-level spell. Once you reach 5th level, you can also cast the Alter Self at will. Charisma is your spellcasting ability for these spells.<br/>
+                <span class="feature">Radiant Origin.</span>You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Burning hands spell at will as a 2nd-level spell. Once you reach 5th level, you can also cast Alter Self at will. Wisdom is your spellcasting ability for these spells.<br/>
                 <span class="feature">Languages.</span>You can speak, read, and write Common and two extra languages of your choice.<br/>
             </p>
         </description>
@@ -48,7 +48,7 @@
             <set name="names-format">{{name}}</set>
         </setters>
         <rules>
-            <stat name="charisma" value="3"/>
+            <stat name="wisdom" value="3"/>
             <select type="Racial Trait" name="Ability Score Increase (Bennir)" supports="ID_NOS_RACIAL_TRAIT_BENNIR_STRENGTH|ID_NOS_RACIAL_TRAIT_BENNIR_DEXTERITY" />
             <stat name="innate speed" value="30" bonus="base"/>
             <grant type="Size" id="ID_SIZE_MEDIUM" />
@@ -87,18 +87,13 @@
             <stat name="innate speed:fly" value="50" bonus="base" />
         </rules>
     </element>
-    <element name="Empowerment" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_EMPOWERMENT">
+    <element name="Radiant Being" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_EMPOWERMENT">
         <description>
-            <p>Ben'nir have an empowered Lifeforce that grants them excelled healing. After a short or long rest you gain temporary hit points equal to your twice level + your Constitution mod. Also if you lose any part of your body, it will regenerate over the course of a day. Any spells that would cause the caster to take damage deal half that rounded up.</p>
+            <p>You are immune to being charmed or frightened, and magic can’t put you to sleep. Any spells that would cause the caster to take damage deal half that rounded up.</p>
         </description>
         <sheet>
-            <description>After a short or long rest you gain {{lifeforce:hp:temp}} temporary hit points. Also if you lose any part of your body, it will regenerate over the course of a day. Any spells that would cause the caster to take damage deal half that rounded up.</description>
+            <description>You are immune to being charmed or frightened, and magic can’t put you to sleep. Any spells that would cause the caster to take damage deal half that rounded up.</description>
         </sheet>
-        <rules>
-            <stat name="lifeforce:hp:temp" value="level" />
-            <stat name="lifeforce:hp:temp" value="level" />
-            <stat name="lifeforce:hp:temp" value="constitution:modifier" />
-        </rules>
     </element>
     <element name="Starchild" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_STARCHILD">
         <description>
