@@ -13,7 +13,7 @@
         <description>
             <p class="flavor">"Radiant like their Ancestors"</p>
             <h4>PHYSICAL DESCRIPTION</h4>
-            <p>Ben'nir tend to be daunting, looking almost dreamlike. Their physique closeley resembles those of elves, however they tend to be more beautiful and endearing to the human eye. Other races might find their appearance upsetting due to their glowing eyes.</p>
+            <p>Ben'nir tend to be daunting, looking almost dreamlike. Their physique closeley resembles those of elven children, however they tend to be more beautiful and endearing to the human eye. The only thing distinguishing this childlike people from their elven cousins are their white glowing irises, which eneable them to see where others don't.</p>
             <h4>HISTORY</h4>
             <p>Ben'nir are the children of long dead stars, that have been sent to the mortal realm to explore and quench the curiosity of their ancestors and bring light into every aspect of creation.</p>
             <h4>SOCIETY</h4>
@@ -28,17 +28,17 @@
             <p>Ben'nir are the children of stars.</p>
             <p>
                 <span class="feature">Ability Score Increase.</span>Your Wisdom score increases by 3, and your Dexterity or Strength score increases by 2.<br/>
-                <span class="feature">Age.</span>Ben'nir being the children of stars are unable to age from the point they are created at. Otherwise they are immortal.<br/>
+                <span class="feature">Age.</span>Ben'nir being the children of stars are unable to age and they always take on a childlike appearence. Otherwise they are immortal.<br/>
                 <span class="feature">Alignment.</span>Hence having no affiliation with the world, Ben'nir tend towards chaotic and neutral alignments.<br/>
                 <span class="feature">Size.</span>Ben'nir are the same size and build as humans. Your size is Medium.<br/>
                 <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
                 <span class="feature">Wings.</span>Your spectral wings grant you a flying speed of 50 feet.<br/>
+                <span class="feature">Truesight.</span>You have truesight out to 120 feet.<br/>
                 <span class="feature">Radiant Soul.</span>You are immune to radiant and resistant to fire damage.<br/>
-                <span class="feature">Darkvision.</span> You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br />
-                <span class="feature">Empowerment.</span>Ben'nir have an empowered Lifeforce that grants them excelled healing. After a short or long rest you gain temporary hit points equal to twice your level + your Constitution mod. Also if you lose any part of your body, it will regenerate over the course of a day. Any spells that would cause the caster to take damage deal half that rounded up.<br/>
+                <span class="feature">Radiant Being.</span> Due to your heritage as a star you are immune to being charmed or frightened, and magic can’t put you to sleep. For you watched those beings for thousands of years noothing can shock nor lull you anymore.Any spells that would cause the caster to take damage deal half that rounded up.<br/>
                 <span class="feature">Starchild.</span>You are a Starchild. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effect of starvation, thirst, exhaustion, or suffocation. However you still benefit from short and long rests. All other conditions and effects affect you normally.<br/>
                 <span class="feature">Radiant Origin.</span>You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Burning hands spell at will as a 2nd-level spell. Once you reach 5th level, you can also cast Alter Self at will. Wisdom is your spellcasting ability for these spells.<br/>
-                <span class="feature">Languages.</span>You can speak, read, and write Common and two extra languages of your choice.<br/>
+                <span class="feature">Languages.</span>You can speak, read, and write Common, Celestial and Druidic.<br/>
             </p>
         </description>
         <sheet display="false" />
@@ -46,6 +46,8 @@
             <set name="names" type="male">Leo, A'ira, 'ariel, Ga'anagan</set>
             <set name="names" type="female">Rea, Gal'den, An'ara, 'aria</set>
             <set name="names-format">{{name}}</set>
+            <set name="height" modifier="2d4">4'6"</set>
+            <set name="weight" modifier="2d4">90 lb.</set>
         </setters>
         <rules>
             <stat name="wisdom" value="3"/>
@@ -53,9 +55,9 @@
             <stat name="innate speed" value="30" bonus="base"/>
             <grant type="Size" id="ID_SIZE_MEDIUM" />
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
-            <select type="Language" name="Language (Bennir)" />
-            <select type="Language" name="Language (Bennir)" />
-            <grant type="Vision" id="ID_VISION_SUPERIOR_DARKVISION" />
+            <grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+            <grant type="Language" id="ID_LANGUAGE_DRUIDIC" />
+            <grant type="Vision" id="ID_VISION_TRUESIGHT" />
             <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_RADIANT_SOUL" />
             <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_WINGS" />
             <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_EMPOWERMENT" />
@@ -74,6 +76,8 @@
         <rules>
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_RADIANT" />
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+
         </rules>
     </element>
     <element name="Wings" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_WINGS">
@@ -89,10 +93,10 @@
     </element>
     <element name="Radiant Being" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_EMPOWERMENT">
         <description>
-            <p>You are immune to being charmed or frightened, and magic can’t put you to sleep. Any spells that would cause the caster to take damage deal half that rounded up.</p>
+            <p>You are immune to being charmed or frightened, and magic can’t put you to sleep.</p>
         </description>
         <sheet>
-            <description>You are immune to being charmed or frightened, and magic can’t put you to sleep. Any spells that would cause the caster to take damage deal half that rounded up.</description>
+            <description>You are immune to being charmed or frightened, and magic can’t put you to sleep.</description>
         </sheet>
     </element>
     <element name="Starchild" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_STARCHILD">
@@ -105,12 +109,12 @@
     </element>
     <element name="Arcane Origins" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_RADIANT_ORIGIN">
         <description>
-            <p>You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Burning Hands spell at will as a 2nd-level spell. Once you reach 5th level, you can also cast the Alter Self at will. Charisma is your spellcasting ability for these spells.</p>
+            <p>You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Burning Hands spell at will as a 2nd-level spell. Once you reach 5th level, you can also cast Alter Self at will. Charisma is your spellcasting ability for these spells.</p>
         </description>
         <sheet>
             <description>You know the Produce Flame cantrip. (Charisma)</description>
             <description level="3">You know the Produce Flame cantrip. You can cast the Burning Hands spell at will as a 2nd-level spell.(Charisma)</description>
-            <description level="5">You know the Produce Flame cantrip. You can cast the Burning Hands spell at will as a 2nd-level spell. You can also cast the Alter Self at will. (Charisma)</description>
+            <description level="5">You know the Produce Flame cantrip. You can cast the Burning Hands spell at will as a 2nd-level spell. You can also cast Alter Self at will. (Charisma)</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
