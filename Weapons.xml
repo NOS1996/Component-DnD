@@ -22,9 +22,9 @@
 					<tr><td>Distance from Origin</td><td>Damage</td></tr>
 				</thead>
 				<tbody>
-					<tr><td>10 ft. away or closer</td><td>8 x the number of charges in the staff</td></tr>
-					<tr><td>11 to 20 ft. away</td><td>6 x the number of charges in the staff</td></tr>
-					<tr><td>21 to 30 ft. away</td><td>4 x the number of charges in the staff</td></tr>
+					<tr><td>10 ft. away or closer</td><td>8 x the number of charges in the dagger</td></tr>
+					<tr><td>11 to 20 ft. away</td><td>6 x the number of charges in the dagger</td></tr>
+					<tr><td>21 to 30 ft. away</td><td>4 x the number of charges in the dagger</td></tr>
 				</tbody>
 			</table>
 		</description>
