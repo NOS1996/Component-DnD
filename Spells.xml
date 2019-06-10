@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Spells</name>
+    <description>Spells from NOS.</description>
+    <update version="0.0.1">
+      <file name="spells.xml" url="" />
+    </update>
+  </info>
+
+
+<element name="Dazzle" type="Spell" source="NOS" id="ID_NOS_SPELL_DAZZLE">
+    <supports>Sorcerer</supports>
+    <description>
+      <p>You create a bright flash of glittering lights around a targets face. The target must succeed on a Dexterity saving throw to look away or close its eyes. If it fails to do so, it takes 1d4 Radiant damage and has disadvantage on the next attack roll it makes before the end of its next turn. This spells damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4) and 17th level (4d4)..</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">0</set>
+      <set name="school">evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Starstrike" type="Spell" source="NOS" id="ID_NOS_SPELL_STARSTRIKE">
+    <supports>Sorcerer</supports>
+    <description>
+      <p>A glowing spear of light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage.</p>
+      <p class="indent">This spells damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">=</set>
+      <set name="school">Eevocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">90 feet</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+   </element>
+   <element name="Searing Light" type="Spell" source="NOS" id="ID_NOS_SPELL_SEARING_LIGHT">
+    <supports>Sorcerer</supports>
+    <description>
+      <p>You shoot a brilliant ray of pure concentrated light at a creature you can see. Make a ranged spell attack against the target, with advantage if the target is an undead or ooze. On a hit, the target takes 2d8 Radiant damage. Undead and oozes take half the damage even if you miss with your attack roll. This damage counts as Fire for the purpose of stopping Regeneration and similar traits.</p>
+      <p class="indent">At Higher Levels. If you cast this spell using a spell slot of 2nd level or higher, increase the Radiant damage by 1d8 per slot level above 1st.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">90 feet</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Angelskin" type="Spell" source="NOS" id="ID_NOS_SPELL_ANGELSKIN">
+    <supports>Sorcerer</supports>
+    <description>
+      <p>You imbue yourself with celestial radiance, causing your skin and hair to glimmer with a silvery sheen. For the duration, fiends and undead have disadvantage on attack rolls against you. Any time a fiend or undead rolls for melee damage to be dealt to you, it rolls the damage twice and uses the lesser roll. You also have resistance to Radiant damage.</p>
+      <p class="indent">At higher Levels. If you cast this spell using a spell slot of 3rd level you also shine bright light in a 5-foot radius and dim light in a 10-foot radius. If you cast this spell using a 4th level spell slot humanoids inside this radius have disadavantage on saving throws against being charmed by you. If you cast this spell using a 5th level spell slot the radius increases to 10-feet for the bright light and 20-feet for the dim light. Furthermore if any creature is within this radius they can either avert their eyes from you until the end of their next turn or make a wisdom saving throw or be blinded for 1 minute. If you cast this spell using a spell slot of 6th level you additionally gain resistance to necrotic damage. If you cast this spell using a spell slot of 7th level each round you can use your action to deal 2d4 radiant damage to all creatures inside the radius. If you cast this spell using a spell slot of 8th level you also gain resistance to nonmagical slashing piercing and bludgeoning damage. If you cast this spell using a spell slot of 9th level the radius of this spell gains the properties of a magic circle.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">abjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 hour</set>
+      <set name="range">self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >A lock of hair and a ruby worth at least 50 gp</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Golden Beam" type="Spell" source="NOS" id="ID_NOS_SPELL_GOLDEN_BEAM">
+    <supports>Sorcerer</supports>
+    <description>
+      <p>An arrow of golden radiance leaps out from your hand in a line 5 feet wide 60 feet long that emantates out from you. All targets in the affected area take 5d6 Radiant damage.</p>
+      <p class="indent">At Higher Levels When you cast this spell using a spell slot of 3rd level or higher, increases the damage by 1d6 per spell level.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Insanataneous</set>
+      <set name="range">60-foot line</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Shimmering Shield" type="Spell" source="NOS" id="ID_NOS_SPELL_SHIMMERING_SHIELD">
+    <supports>Sorcerer</supports>
+    <description>
+      <p>You create three translucent shimmering shields that appear in your space and whirl around you for the duration. When you are targeted by an attack roll, you can use your reaction to interpose one of the shields. If the attack hits, the shield takes the damage instead of you. A shield can absorb damage equal to 3 times your spellcasting ability modifier. If the shield takes more damage than it can absorb, you take any overflow damage. Once you use a shield in this way and the shield is hit by an attack, it shatters. Once you use the last shield, the spell ends.</p>
+      <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, you create one additional shield for every two slot levels above 3rd.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">abjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">10 minutes</set>
+      <set name="range">self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Radiant Veil" type="Spell" source="NOS" id="ID_NOS_SPELL_RADIANT_VEIL">
+    <supports>Sorcerer</supports>
+    <description>
+      <p>You create a protective veil around yourself and up to 5 allies you can see within 25 feet. When a protected creature takes damage, that damage is reduced by 1d4 + your spellcasting ability modifier. The spell ends for a creature when the shield absorbs 25 points of damage.</p>
+      <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, increase the amount of damage the shield can absorb before breaking by 5 for each spell level.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">abjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">10 minutes</set>
+      <set name="range">25 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+    <element name="Starfire" type="Spell" source="NOS" id="ID_NOS_SPELL_STARFIRE">
+    <supports>Sorcerer</supports>
+    <description>
+      <p>You summon a pillar of bright golden light that burns creatures in its area with its radiance. The spell affects a cylinder that is 40 feet high and has a 15-foot radius. All creatures in the area must make a Constitution saving throw, taking 6d8 Radiant damage on a failed save, or half as much on a successful one.</p>
+      <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, increase the radiant damage by 1d8 per slot level above 4th.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">120 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >a tiny golden mirror worth at least 50 gp</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Perfect Moment" type="Spell" source="NOS" id="ID_NOS_SPELL_PERFECT_MOMENT">
+    <supports>Sorcerer</supports>
+    <description>
+      <p>You and your allies have a perfect moment. Until the start of your next turn, you and up to 7 other creatures you choose within range have advantage on all attacks and saves while within range.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Divination</set>
+      <set name="time">1 bonus action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">30 feet</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >A crafted flower worth at least 75 gp</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Heavenly Burst" type="Spell" source="NOS" id="ID_NOS_SPELL_HEAVENLY_BURST">
+    <supports>Sorcerer</supports>
+    <description>
+      <p>You lash out at all nearby creatures with divine power. Each creature within 15 feet of you must make a Constitution saving throw. On a failure, an affected creature takes 8d6 Radiant damage and is frightened of you until the end of its next turn. On a success, it takes half damage and is not frightened.</p>
+      <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, increase the damage by 2d6 per spell level.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Celestial Presence" type="Spell" source="NOS" id="ID_NOS_SPELL_CELESTIAL_PRESENCE">
+    <supports>Sorcerer</supports>
+    <description>
+      <p>You end any effect that changes the form a creatures inside a 20-foot radius sphere centered on a point you can see within range. Any creature in the area that has had its physical form changed by magic, including shapeshifting, spells, and afflictions such as lycanthropy, is reverted to its original, natural form. If the form change is caused by a creatures natural abilities and the creature is CR 6 or higher, it can make a Charisma saving throw to retain its current form. If the changes are a result of a spell of 6th level or higher (such as flesh to stone, animal shapes, or shapechange), you can make an ability check with your spellcasting modifier (DC equal to 10 + the spells level), ending the spell on a success. If the creature has been changed against its will, no check or save is required. At Higher Levels. When you cast this spell with a spell slot of 6th level or higher, the CR threshold for the saving throw increases by 1 for every slot level above 5th. You also automatically end any form-changing spell of a level equal to that of the slot you use.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">5</set>
+      <set name="school">abjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 10 mintues</set>
+      <set name="range">self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Starbeam" type="Spell" source="NOS" id="ID_NOS_SPELL_STARBEAM">
+    <supports>Sorcerer</supports>
+    <description>
+      <p>You summon a beam of the fire that lives in the hearts of stars. A thin, brilliant beam of concentrated starlight shoots out from you in a 100 foot line. All creatures in the lines area must make a Dexterity saving throw, taking 10d8 Radiant damage on a failure and half as much on a succesfull save.</p>
+      <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, increase the damage by 2d8 per spell level.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">5</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">self (100x5-foot line)</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Starry Night" type="Spell" source="NOS" id="ID_NOS_SPELL_STARRY_NIGHT">
+    <supports>Sorcerer</supports>
+    <description>
+      <p>You spray a five foot cube of solid material with tiny glowing dots, twhich you can as an acttion cause to shed dim light in a 5-foot cube. If you cast this cantrip multiple times you can have up to 10 separate 5-foot cubes or a 50 feet cube or a 50 foot radius sphere filled with tiny dots, that have to adjacent to a solid material, like a wall or an item.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">0</set>
+      <set name="school">illusion</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 hour</set>
+      <set name="range">30 feet</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+</elements>
