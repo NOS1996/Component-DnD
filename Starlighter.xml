@@ -260,6 +260,19 @@
             <grant type="Spell" id="ID_XGTE_SPELL_WORD_OF_RADIANCE" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_PHB_SPELL_CONJURE_CELESTIAL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_DAZZLE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_STARSTRIKE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_SEARING_LIGHT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_ANGELSKIN" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_GOLDEN_BEAM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_SHIMMERING_SHIELD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_RADIANT_VEIL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_STARFIRE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_PERFECT_MOMENT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_HEAVENLY_BURST" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_CELESTIAL_PRESENCE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_STARBEAM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_STARRY_NIGHT" spellcasting="Starlighter" />
     </rules>
   </element>
     <element name="Solar Orbit" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
