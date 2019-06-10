@@ -4,7 +4,7 @@
     <name>Spells</name>
     <description>Spells from NOS.</description>
     <update version="0.0.1">
-      <file name="spells.xml" url="" />
+      <file name="spells.xml" url="https://github.com/NOS1996/Component-DnD/blob/master/Spells.xml" />
     </update>
   </info>
 
