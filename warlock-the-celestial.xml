@@ -4,7 +4,7 @@
     <name>The Celestial</name>
     <description>The Celestial Otherworldly Patron from NOS</description>
     <update version="0.0.1">
-      <file name="warlock-the-celestial.xml" url="" />
+      <file name="warlock-the-celestial.xml" url="https://github.com/NOS1996/Component-DnD/blob/master/warlock-the-celestial.xml" />
     </update>
   </info>
   <element name="The Celestial" type="Archetype" source="NOS" id="ID_NOS_ARCHETYPE_CELESTIAL">
