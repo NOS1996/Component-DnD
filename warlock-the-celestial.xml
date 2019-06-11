@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>The Celestial</name>
+    <description>The Celestial Otherworldly Patron from NOS</description>
+    <update version="0.0.1">
+      <file name="warlock-the-celestial.xml" url="" />
+    </update>
+  </info>
+  <element name="The Celestial" type="Archetype" source="NOS" id="ID_NOS_ARCHETYPE_CELESTIAL">
+    <supports>Otherworldly Patron</supports>
+    <requirements />
+    <description>
+      <p>Your patron is a powerful being of the Upper Planes. You have bound yourself to an ancient empyrean, solar, ki-rin, or unicorn or to another entity that resides in the planes of everlasting bliss. Your pact with that being allows you to experience the barest touch of the holy light that illuminates the multiverse.</p>
+      <p class="indent">Being connected to such power can cause changes in your behavior and beliefs. You might find yourself driven to annihilate the undead, to defeat fiends, and to protect the innocent. At times, your heart might also be filled with a longing for the celestial realm of your patron, a desire to wander that paradise for the rest of your days. But you know that your mission is among mortals for now and that your pact binds you to bring light even to the darkest places.</p>
+      <div element="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_EXPANDED_SPELL_LIST" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_HEAVENLY_MIGHT" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_IMMORTAL_NATURE" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_HEALING_POWER" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_RADIANT_SOUL" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_ANGELIC_FORM" />
+    </description>
+    <sheet>
+      <description>You have made your pact with a Celestial.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_EXPANDED_SPELL_LIST" level="1"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_HEAVENLY_MIGHT" level="1"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_IMMORTAL_NATURE" level="1"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_HEALING_POWER" level="6"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_RADIANT_SOUL" level="10"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_ANGELIC_FORM" level="14"/>
+    </rules>
+  </element>
+  <element name="Expanded Spell List" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <requirements />
+    <description>
+      <p>The Celestial lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>CELESTIAL EXPANDED SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>guiding bolt, cure wounds</em></td></tr>
+        <tr><td>2nd</td><td><em>flaming sphere, lesser restoration</em></td></tr>
+        <tr><td>3rd</td><td><em>daylight, revivify</em></td></tr>
+        <tr><td>4th</td><td><em>guardian of faith, wall of fire</em></td></tr>
+        <tr><td>5th</td><td><em>flame strike, greater restoration</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>The Celestial lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <spellcasting name="Warlock" extend="true">
+      <extend>ID_PHB_SPELL_GUIDING_BOLT</extend>
+      <extend>ID_PHB_SPELL_CURE_WOUNDS</extend>
+      <extend>ID_PHB_SPELL_FLAMING_SPHERE</extend>
+      <extend>ID_PHB_SPELL_LESSER_RESTORATION</extend>
+      <extend>ID_PHB_SPELL_DAYLIGHT</extend>
+      <extend>ID_PHB_SPELL_REVIVIFY</extend>
+      <extend>ID_PHB_SPELL_GUARDIAN_OF_FAITH</extend>
+      <extend>ID_PHB_SPELL_WALL_OF_FIRE</extend>
+      <extend>ID_PHB_SPELL_FLAME_STRIKE</extend>
+      <extend>ID_PHB_SPELL_GREATER_RESTORATION</extend>
+    </spellcasting>
+    <rules></rules>
+  </element>
+  <element name="Heavenly Might" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_HEAVENLY_MIGHT">
+    <description>
+      <p>At 1st level, the touch of your patrons heavenly might bestows you with two additional eldritch invocations.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Archetype Feature" name="Eldritch Invocation (Level 2)" supports="Eldritch Invocation" level="1" number="2" />
+    </rules>
+  </element>
+  <element name="Healing Power" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_HEALING_POWER">
+    <description>
+      <p>At 6th level, you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s that you spend to fuel this healing. The number of dice in the pool equals {{healing light:mod}} + your warlock level.</p>
+      <p class="indent">As a bonus action, you can heal one creature you can see within 60 feet of you, spending dice from the pool. The maximum number of dice you can spend at once equals your level. Roll the dice you spend, add them together, and restore a number of hit points equal to the total.</p>
+      <p class="indent">Your pool regains all expended dice when you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description>As a bonus action, you can use {{healing light:dice pool}} d6s to heal an ally you can see within 60 feet. The maximum number of dice you can use at once is {{healing light:max uses}}.</description>
+    </sheet>
+    <rules>
+      <stat name="healing light:dice pool" value="level:warlock" />
+      <stat name="healing light:dice pool" value="charisma:modifier" />
+      <stat name="healing light:max uses" value="level:warlock" />
+      <stat name="healing light:mod" value="charisma:modifier" />
+    </rules>
+  </element>
+  <element name="Radiant Soul" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_RADIANT_SOUL">
+    <description>
+      <p>Starting at 10th level, your link to the Celestial infuses you with even more of his heavenly energy. You have resistance to radiant damage and necrotic damage. Also your patron bestow upon you a pair of spectral wings. You gain a flying speed of 30 feet. </p>
+    </description>
+    <sheet>
+      <description>You gain resistance to radiant and necrotic damage damage. You gain a pair of spectral wings.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+      <grant Type="Condition" id="ID_INTERNAL_CONDTION_DAMAGE_RESISTANCE_NECROTIC" />
+      <stat name="innate speed:fly" value="30" bonus="base" />
+    </rules>
+  </element>
+   <element name="Angelic Form" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_ANGELIC_FORM">
+    <description>
+      <p>At 14th level, you can assume the form of an angelic avenger. Using your action, you undergo a transformation. For 1 minute, you gain the following benefits:</p>
+      <ul>
+        <li>You become resistant to bludgeoning, piercing, and slashing from nonmagical attacks.</li>
+        <li>You have advantage on saving throws against spells and other magical effects.</li>
+        <li>You are immune to the charmed and frightened conditions.</li>
+        <li>You lose all levels of exhaustion, and you cannot be exhausted.</li>
+        <li>Your angelic form lasts for 1 minute. It ends early if you are knocked unconscious. You can also end your angelic form on your turn as a bonus action.</li>
+      </ul>
+      <p class="indent">You can use this feature twice per long rest.</p>      
+    </description>
+    <sheet usage="2/Long Rest">
+      <description>For 1 minute, you gain the following benefits:
+        You become resistant to bludgeoning, piercing, and slashing from nonmagical attacks. You have advantage on saving throws against spells and other magical effects. You are immune to the charmed and frightened conditions. You lose all levels of exhaustion, and you cannot be exhausted.
+    </description>
+    </sheet>
+  </element>
+   <element name="Immortal Nature" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_CELESTIAL_IMMORTAL_NATURE">
+    <description>
+      <p>Beginning at 1st level, you can hold your breath indefinitely, and you don't require food, water, or sleep, although you still require rest to reduce exhaustion and still benefit from finishing short and long rests.</p>
+      <p class="indent">In addition, you age at a slower rate. For every 10 years that pass, your body ages only 1 year, and you are immune to being magically aged.</p>
+    </description>
+    <sheet>
+      <description>You can hold your breath indefinitely, and you don't require food, water, or sleep, although you still require rest to reduce exhaustion and still benefit from finishing short and long rests. In addition, you age at a slower rate. For every 10 years that pass, your body ages only 1 year, and you are immune to being magically aged.</description>
+    </sheet>
+    <rules />
+  </element>
+
+</elements>
