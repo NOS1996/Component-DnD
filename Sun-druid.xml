@@ -4,7 +4,7 @@
      <name>Circle of the Sun</name>
     <description>The Circle of the Sun Druid</description>
     <update version="0.0.1">
-      <file name="sun-druid.xml" url="" />
+      <file name="sun-druid.xml" url="https://github.com/NOS1996/Component-DnD/blob/master/Sun-druid.xml" />
     </update>
   </info>
 
