@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+     <name>Circle of the Sun</name>
+    <description>The Circle of the Sun Druid</description>
+    <update version="0.0.1">
+      <file name="sun-druid.xml" url="" />
+    </update>
+  </info>
+
+  <element name="Circle of the Sun" type="Archetype" source="NOS" id="ID_NOS_ARCHETYPE_CIRCLE_OF_THE_SUN">
+    <supports>Druid Circle</supports>
+    <description>
+      <p>Druids of the Circle of the Shepherd commune with the spirits of nature, especially the spirits of beasts and the fey, and call to those spirits for aid. These druids recognize that all living things play a role in the natural world, yet they focus on protecting animals and fey creatures that have difficulty defending themselves. Shepherds, as they are known, see such creatures as their charges. They ward off monsters that threaten them, rebuke hunters who kill more prey than necessary, and prevent civilization from encroaching on rare animal habitats and on sites sacred to the fey. Many of these druids are happiest far from cities and towns, content to spend their days in the company of animals and the fey creatures of the wilds.</p>
+      <p class="indent">Members of this circle become adventurers to oppose forces that threaten their charges or to seek knowledge and power that will help them safeguard their charges better. Wherever these druids go, the spirits of the wilderness are with them.</p>
+  <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_SUN_COMBAT_WILD_SHAPE" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_SUN_CIRCLE_FORMS" />
+      <div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_SUN_PRIMAL_STRIKE" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_CIRCLE_SUN_RADIANT_STRIKE" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_CIRCLE_SUN_RADIANT_DESCEND" />
+    </description>
+    <sheet>
+      <description>Druids of the Circle of the Moon are fierce guardians of the wilds.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_SUN_COMBAT_WILD_SHAPE" level="2" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_SUN_CIRCLE_FORMS" level="2" />
+      <grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_SUN_PRIMAL_STRIKE" level="6" />
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_CIRCLE_SUN_RADIANT_STRIKE" level="10" />
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_CIRCLE_SUN_RADIANT_DESCEND" level="14" />
+     </rules>
+  </element>
+
+  <element name="Combat Wild Shape" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_SUN_COMBAT_WILD_SHAPE">
+    <description>
+      <p>When you choose this circle at 2nd level, you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action.</p>
+      <p class="indent">Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</p>
+    </description>
+    <sheet>
+      <description>You gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action. Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Circle Forms" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_SUN_CIRCLE_FORMS">
+    <description>
+      <p>The rites of your circle grant you the ability to transform into more dangerous animal forms. Starting at 2nd level, you can use your Wild Shape to transform into a beast with a challenge rating as high as 1 (you ignore the Max. CR column of the Beast Shapes table, but must abide by the other limitations there).</p>
+      <p class="indent">Starting at 6th level, you can transform into a beast with a challenge rating as high as your druid level divided by 3, rounded down.</p>
+    </description>
+    <sheet>
+      <description level="2">You can use your Wild Shape to transform into a beast with a challenge rating as high as 1</description>
+      <description level="6">You can transform into a beast with a challenge rating as high as your druid level divided by 3, rounded down.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Primal Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_SUN_PRIMAL_STRIKE">
+    <description>
+      <p>Starting at 6th level, your attacks in beast form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+    </description>
+    <sheet>
+      <description level="6">Your attacks in beast form count as magical.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Radiant Srike" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_CIRCLE_SUN_RADIANT_STRIKE">
+  	<description>
+  		<p>Your attacks and cantrips deal an addtitonal 1d8 radiant damage and. This damage ignores resistance to radiant damage and treats immunity to radiant damage as resistance to radiant damage: You also deal this damage in beast form.</p>
+  	</description>
+  	<sheet>
+  		<description> Your weapon attacks and cantrips deal an additional 1d8 radiant damage.</description>
+  	</sheet>
+  	<rules/>
+  </element>
+  <element name="Radiant Descend" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_CIRCLE_SUN_RADIANT_DESCEND">
+  	<description>
+  	<p>You shine bright like the sun. You gain resistance to radiant damage and you can't be frightened or blinded. Ýou can use a bonus action a number of times per long rest equal to your wisdom modifier to cause yourself to shine bright light in a 20 foot radius. Creatures in that radius make a Wisdom saving throw against your spell save DC or be blinded until the end of your next turn.</p>
+  </description>
+  	<sheet> 
+  		<description> You are resistant to radiant damage and you can't be frightened or blinded. You can youse a bonus action {{radiant descend:amount}} per long rest to shed bright light in a 20 foot radius. Creatures in that radius make a Wisdom saving throw or be blinded until the end of your next turn.</description>
+  	</sheet>
+  	<rules>
+  		<grant type="Condition immunity" id="Id_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" level="14"/>
+  		<stat name="radiant descend:amount" value="charisma:modifier" level="14"/>
+  	</rules>
+  </element>
+ </elements>
+
