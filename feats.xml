@@ -4,12 +4,11 @@
         <name>Feats</name>
         <description>Feats from NOS</description>
         <update version="0.0.1">
-            <file name="feats.xml" url="" />
+            <file name="feats.xml" url="https://github.com/NOS1996/Component-DnD/blob/master/feats.xml" />
         </update>
     </info>
 
         <element name="Epitome of Power" type="Feat" source="NOS" id="ID_NOS_FEAT_EPITOME_OF_POWER">
-        <supports />
         <prerequisite>Bennir</prerequisite>
         <requirements>ID_RACE_BENNIR</requirements>
         <description>
