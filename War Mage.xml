@@ -3,7 +3,7 @@
 	<info>
 		<name>Feats</name>
 		<description></description>
-		<update version="0.0.!">
+		<update version="0.0.1">
 			<file name="feats.xml" url="https://github.com/NOS1996/Component-DnD/blob/master/War%20Mage.xml" />
 		</update>
 	</info>

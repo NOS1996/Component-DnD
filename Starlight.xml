@@ -31,6 +31,7 @@
 		</rules>
 	</element>
 
+
 	<element name="Celestial Fire" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_CELESTIAL_FIRE">
 		<description>
 			<p>Beginning at 2nd level your spells and cantrips deal an additional 1d8 radiant damage. Furthermore your spells that deal radiant damage treat immunity to radiant damage as resistance to radiant damage, and ignore resistance to radiant damage. </p>
@@ -50,6 +51,17 @@
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Spell" id="ID_GFP_COFSA_SPELL_ANGELIC_REBUKE" spellcasting="Wizard"/>
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_FLASHING_BLADES" spellcasting="Wizard" />
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_HALO" spellcasting="Wizard" />
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_PUNISHING_SMITE" spellcasting="Wizard" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CROWN_OF_STARS" spellcasting="Wizard" />
+            <grant type="Spell" id="ID_XGTE_SPELL_DAWN" spellcasting="Wizard" />
+            <grant type="Spell" id="ID_XGTE_SPELL_FIND_GREATER_STEED" spellcasting="Wizard" />
+            <grant type="Spell" id="ID_XGTE_SPELL_HOLY_WEAPON" spellcasting="Wizard" />
+            <grant type="Spell" id="ID_XGTE_SPELL_WORD_OF_RADIANCE" spellcasting="Wizard" />
+            <grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" spellcasting="Wizard" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_CELESTIAL" spellcasting="Wizard" />
 		</rules>
 	</element>
 		<element name="Solar Orbit" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_SOLAR_ORBIT">
@@ -81,11 +93,83 @@
 	</element>
  	<element name="Black Hole" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_STARLIGHT_BLACK_HOLE">
    	 <description>
-     	 <p>Starting at 14th level, you are able to absorb parts of the souls of the ones you slayed. At the end of your turn, if you or any creatures under your control have killed one or more creatures, you gain hit points equal to your starlighter level. If doing so would grant you more hit points than you can have, you gain temporary hit points equal to the amount of excess hit points received. Furthermore you may store a number of souls equal to your necromancer level from killing creatures with Absorber for later use. You can consume souls to regain upup to a 7th lvl spell slot, which costs 2 souls for 1st level spell and every additional spell level beyond. For instance, a 5rd level spell would consume 10 souls. In addition, when you deal damage to a creature with a spell, you may consume up to 10 souls in your possession to deal an additional 1d8 radiant damage per soul consumed. </p>
-   	 </description>
-     <sheet>
-      	<description>At the end of your turn, if you or any creatures under your control have killed one or more creatures, you gain {{level:wizard}} hit points. If doing so would grant you more hit points than you can have, you gain temporary hit points equal to the amount of excess hit points received.You may store {{level:wizard}} souls from killing creatures with soul harvest. You can consume souls to regain up to a 7th level spell slot, which costs 2 souls per spell level slot. When you deal damage to a creature, you may consume up to 10 souls in your possession to deal an additional 1d8 radiant damage per soul consumed.</description>
-     </sheet>
+     	 <p>Starting at 14th level, you absorb parts of the magic that surrounds you. Whenenver you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you gain hit points equal to twice the level of the spell. If doing so would grant you more hit points than you can have, you gain temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received. Furthermore you gain a number of weave points equal to the level of the spell. You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells. Chose two metamagic feats, each can be invoked upon a spell by expending weave points.</p>
+     	</description>
+      <sheet>
+      	<description>Whenenver you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you gain hit points equal to twice the level of the spell. If doing so would grant you more hit points than you can have, you gain temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received. Furthermore you gain a number of weave points equal to the level of the spell. You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells.</description>
+      </sheet>
+       <rules>
+     	 <stat name="weave-points" value="level:wizard" />
+     	 <stat name="weave-points" value="level:wizard" />
+     	 <select type="Archetype Feature" name="Weave Magic" supports="Weave Magic" level="14" number="2"/>
+       </rules>
   	</element>
-</elements>
-  
+
+  	<!-- Metamagic Options -->
+  <element name="Careful Spell" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_BLACKHOLE_CAREFUL_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.</p>
+    </description>
+    <sheet>
+      <description>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 weave point and choose a number of those creatures equal to the weave points spent up to your intelligence modifier. A chosen creature automatically succeeds on its saving throw against the spell.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Distant Spell" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_BLACKHOLE_DISTANT_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell. When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.</p>
+    </description>
+    <sheet>
+      <description>When you cast a spell that has a range of 5 feet or greater, you can spend 1 weave point to double the range of the spell. When you cast a spell that has a range of touch, you can spend 1 weave point to make the range of the spell 30 feet.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Extended Spell" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_BLACKHOLE_EXTENDED_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 weave point to double its duration, to a maximum duration of 24 hours.</p>
+    </description>
+    <sheet>
+      <description>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 weave point to double its duration, to a maximum duration of 24 hours.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Quickened Spell" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_BLACKHOLE_QUICKEND_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you cast a spell that has a casting time of 1 action, you can spend 3 weave points to change the casting time to 1 bonus action for this casting.</p>
+    </description>
+    <sheet>
+      <description>When you cast a spell that has a casting time of 1 action, you can spend 3 weave points to change the casting time to 1 bonus action for this casting.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Subtle Spell" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_BLACKHOLE_SUBTLE_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you cast a spell, you can spend 1 weave point to cast it without any somatic or verbal components.</p>
+    </description>
+    <sheet>
+      <description>When you cast a spell, you can spend 1 weave point to cast it without any somatic or verbal components.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Twinned Spell" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_BLACKHOLE_TWINNED_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you cast a spell that targets only one creature and doesn’t have a range of self, you can spend a number of weave points equal to the spell’s level to target a second creature in range with the same spell (1 weave point if the spell is a cantrip).</p>
+    </description>
+    <sheet>
+      <description>When you cast a spell that targets only one creature and doesn’t have a range of self, you can spend a number of weave points equal to the spell’s level to target a second creature in range with the same spell (1 weave point if the spell is a cantrip).</description>
+    </sheet>
+    <rules />
+  </element>
+  </elements>

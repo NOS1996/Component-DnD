@@ -3,6 +3,7 @@
     <info>
         <name>Feats</name>
         <description>Feats from NOS</description>
+        <author url="https://github.com/NOS1996">NOS</author>
         <update version="0.0.1">
             <file name="feats.xml" url="https://github.com/NOS1996/Component-DnD/blob/master/feats.xml" />
         </update>
@@ -10,14 +11,14 @@
 
         <element name="Epitome of Power" type="Feat" source="NOS" id="ID_NOS_FEAT_EPITOME_OF_POWER">
         <prerequisite>Bennir</prerequisite>
-        <requirements>ID_RACE_BENNIR</requirements>
+        <requirements>ID_NOS_RACE_BENNIR</requirements>
         <description>
             <p><i>Prerequisite: Bennir</i></p>
             <p>You unleash the power of your heritage, that was bestowed upon you by the elder stars, hidden deep beneath your veins it called to you from your very core, for you to become the epitome of the starborn. And you answered.  You gain the following benefits unleashing the full power of the Ben'nir:</p>
             <ul>
             	<li>You awaken long dormant power within your bloodline. You gain the ability to cast Produce flame, Burning Hands and Alter Self at will, at certain levels.</li>
                 <li>You gain a pair of spectral wings, that grant you an unimpaired flying speed of 50 feet. Being spectral your wings can be dismissed (no action required) and are not affected by (magical) air currents or other nonmagical effects that would cause you to lose balance or impede your flight.</li>
-                <li>You gain immune to radiant and fire damage. You count as a Celestial.</li>
+                <li>You gain immunity to radiant and fire damage. You count as a Celestial.</li>
                 <li>Your spell attacks ignore half and three-quarters cover.</li>
             </ul>
         </description>

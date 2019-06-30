@@ -15,9 +15,9 @@
       <p class="indent">Crouching on the floor in a dungeon intersection, a gnome tosses a handful of small bones inscribed with mystic symbols, muttering a few words of power over them. Closing his eyes to see the visions more clearly, he nods slowly, then opens his eyes and points down the passage to his left.</p>
       <p class="indent">Starlighters are supreme casters, empowered trough the positive energy that suffuses the multiverse. Drawing on the subtle weave of magic that permeates the cosmos, starlighters learn to shape reality to suit their wish. Their magic conjures monsters from other planes of existence, glimpses the future, or turns slain foes into zombies. Their mightiest spells change one substance into another, call meteors down from the sky, or open portals to other worlds.</p>
       <h4>EMPOWERED BY LIGHT</h4>
-      <p>Wild and enigmatic, varied in form and function, the power of magic draws students who seek to master its mysteries. The positive energy radiatiing from every single strand of the cosmical weave fuels the power of a Starlighter and allows them to shape reality as they please, granting them success where others failed.</p>
+      <p>Wild and enigmatic, varied in form and function, the power of magic draws students who seek to master its mysteries. The positive energy radiatiing from every single strand of the cosmical weave fuels the power of a Starlighter and allows them to shape reality as they please, granting them succes where others failed.</p>
       <h4>THE LURE OF ADVENTURE</h4>
-      <p>Starlighters strive for adventure, for they grow through the experience gained. True power can only be achieved through bridening ones horizon and gaining a deeper understanding of the force that upholds the multiverse and encompasses all and everyone.</p>
+      <p>Starlighters strive for adventure, for they grow through the experience gained. True power can only be achieved through bridening ones horizon and gaining a deeper understandning of the force that holds the multiverse together and encompasses all and everyone.</p>
       <h4>CREATING A STARLIGHTER</h4>
       <p>Creating a Starlighter character demands a backstory dominated by at least one extraordinary event. How did your character first come into contact with magic? How did you discover you had an aptitude for? Did you encounter a magical creature or an ancient tome that taught you the basics of magic?</p>
       <h5>QUICK BUILD</h5>
@@ -33,7 +33,7 @@
       <h5>PROFICIENCIES</h5>
       <p>
         <span class="emphasis">Armor:</span>None<br/>
-        <span class="emphasis">Weapons:</span>Daggers, darts, slings, quarterstaffs, shortbows, sickles, handaxes <br/>
+        <span class="emphasis">Weapons:</span>Daggers, darts, slings, quarterstaffs, shortbows, sickles<br/>
         <span class="emphasis">Tools:</span>None<br/>
       </p>
       <p>
@@ -53,7 +53,6 @@
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELL_MASTERY" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_RECOVERY" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_MAGIC" />
-      <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_DIVINE_MAGIC" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_FIRE" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT" />
@@ -76,7 +75,6 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
 
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
@@ -85,7 +83,6 @@
       
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELLCASTING_STARLIGHTER" level="1"/>
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_MAGIC" level="1" />
-      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_DIVINE_MAGIC" level="1" />
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_RECOVERY" level="1" />
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_ABILITYSCOREIMPROVEMENT_STARLIGHTER" level="4" />
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELL_MASTERY" level="18" />
@@ -110,7 +107,7 @@
     <description>
       <h5>CANTRIPS</h5>
       <p>At 1st level, you know three cantrips of your choice from the Starlighter spell list. You learn additional Starlighter cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Starlighter table.</p>
-      <h5>SPELLS</h5>
+      <h5>SPELLBOOK</h5>
       <p>At 1st level, you gain six 1st-­level Starlighter spells of your choice, which are, as well as any later added spells fixed in your mind.</p>
       <h5>PREPARING AND CASTING SPELLS</h5>
       <p>The Starlighter table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
@@ -194,19 +191,14 @@
   </element>
   <element name="Celestial Magic" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_MAGIC">
     <spellcasting name="Starlighter" extend="true">
-      <extend>Cleric</extend>
-    </spellcasting>
-  </element>
-  <element name="Divine Magic" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_DIVINE_MAGIC">
-    <spellcasting name="Starlighter" extend="true">
-      <extend>Starlighter</extend>
-    </spellcasting>
-  </element>
+    <extend>Cleric</extend>
+</spellcasting>
+</element>
 
   <element name="Celestial Recovery" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_RECOVERY">
     <description>
-      <p>You have learned to regain some of your magical energy by meditating. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your starlighter level (rounded up), and none of the slots can be 6th level or higher.</p>
-      <p>For example, if you’re a 4th-level starlighter, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.</p>
+      <p>You have learned to regain some of your magical energy by meditating. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.</p>
+      <p>For example, if you’re a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.</p>
     </description>
     <sheet>
       <description>Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to half your starlighter level (rounded up).</description>
@@ -249,10 +241,11 @@
   </element>
   <element name="Ozon Layer" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER">
     <description>
-      <p>When you adopt this tradition at 2nd level you gain advantage on saving throws against spells. Furthermore, effects, spells or features that would grant advantage on saving throws against your spells, do not apply.</p>
+      <p>When you adopt this tradition at 2nd level you gain advantage on saving throws against spells.</p>
+      <p class="indent">You also gain proficiency in the Perception skill if you don’t already have it.</p>
     </description>
     <sheet>
-      <description>You have advantage on saving throws against spells. No one can gain advantage against your spells or spell saving throws.</description>
+      <description>You have advantage on saving throws against spells.</description>
     </sheet>
     <rules>
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
@@ -267,19 +260,9 @@
             <grant type="Spell" id="ID_XGTE_SPELL_WORD_OF_RADIANCE" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_PHB_SPELL_CONJURE_CELESTIAL" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_NOS_SPELL_DAZZLE" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_NOS_SPELL_STARSTRIKE" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_NOS_SPELL_SEARING_LIGHT" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_NOS_SPELL_ANGELSKIN" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_NOS_SPELL_GOLDEN_BEAM" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_NOS_SPELL_SHIMMERING_SHIELD" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_NOS_SPELL_RADIANT_VEIL" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_NOS_SPELL_STARFIRE" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_NOS_SPELL_PERFECT_MOMENT" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_NOS_SPELL_HEAVENLY_BURST" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_NOS_SPELL_CELESTIAL_PRESENCE" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_NOS_SPELL_STARBEAM" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_NOS_SPELL_STARRY_NIGHT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_REMOVE_CURSE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_REGENERATE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="starlighter" />
     </rules>
   </element>
     <element name="Solar Orbit" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
@@ -311,10 +294,10 @@
   </element>
   <element name="Black Hole" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_BLACK_HOLE">
      <description>
-       <p>Starting at 15th level, you absorb parts of the magic that surrounds you. Whenenver a spell is cast in a 60ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you gain hit points equal to twice the level of the spell. If doing so would grant you more hit points than you can have, you gain temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received. Furthermore you gain a number of weave points equal to the level of the spell. You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells. Chose two metamagic feats, each can be invoked upon a spell by expending weave points.</p>
+       <p>Starting at 15th level, you absorb parts of the magic that surrounds you. Whenenver a spell is cast in a 60ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you gain hit points equal to twice the level of the spell. If doing so would grant you more hit points than you can have, you gain cummulative temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received. Furthermore you gain a number of weave points equal to the level of the spell. You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells. Chose two metamagic feats, each can be invoked upon a spell by expending weave points.</p>
       </description>
       <sheet>
-        <description>Whenenver a spell is cast in a 60ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you gain hit points equal to twice the level of the spell. If doing so would grant you more hit points than you can have, you gain temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received. Furthermore you gain a number of weave points equal to the level of the spell. You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells.</description>
+        <description>Whenenver a spell is cast in a 60ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you gain hit points equal to twice the level of the spell. If doing so would grant you more hit points than you can have, you gain cummulative temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received. Furthermore you gain a number of weave points equal to the level of the spell. You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells.</description>
       </sheet>
        <rules>
        <stat name="weave-points" value="level:starlighter" />
