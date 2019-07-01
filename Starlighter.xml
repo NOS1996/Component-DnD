@@ -130,7 +130,7 @@
       <h5>SPELLCASTING FOCUS</h5>
       <p>You can use an arcane focus as a spellcasting focus for your starlighter spells.</p>
       <h5>LEARNING SPELLS OF 1ST LEVEL AND HIGHER</h5>
-      <p>Each time you gain a starlighter level, you can add two starlighter spells of your choice to your knowledge compound. Each of these spells must be of a level for which you have spell slots, as shown on the Wizard table. On your adventures, you might find other spells that you can add to your knowledge.</p>
+      <p>Each time you gain a starlighter level, you can add two starlighter spells of your choice to your knowledge compound. Each of these spells must be of a level for which you have spell slots, as shown on the Wizard table.</p>
     </description>
     <sheet display="true">
       <description>You can prepare {{starlighter:spellcasting:prepare}} spells. You use an arcane focus to cast spells and can also cast starlighter spells as a ritual.</description>
@@ -247,7 +247,7 @@
       <description>Your attacks deal an additional 1d8 radiant damage. Furthermore your spells that deal radiant damage treat immunity to radiant damage as resistance to radiant damage, and ignore resistance to radiant damage.</description>
     </sheet>
   </element>
-  <element name="Ozon Layer" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER">
+  <element name="Ozone Layer" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER">
     <description>
       <p>When you adopt this tradition at 2nd level you gain advantage on saving throws against spells. Furthermore, effects, spells or features that would grant advantage on saving throws against your spells, do not apply.</p>
     </description>
@@ -280,7 +280,31 @@
             <grant type="Spell" id="ID_NOS_SPELL_CELESTIAL_PRESENCE" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_STARBEAM" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_STARRY_NIGHT" spellcasting="Starlighter" />
-    </rules>
+            <grant type="Spell" id="ID_NOS_SPELL_POSITIVE_BURST" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_BREATH_OF_LIFE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_CREATE_LIFE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_ETERNAL_REST" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_CELESTIAL_CROWN" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_EVOLVE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_FORM_LIFE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_FERTILITY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_FORCED_TRANSFORMATION" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_GLASSEE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_HOLY_STAR" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_IMPREGNATE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_KISS_OF_SLEEP" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_LIGHT_OF_HEAVENS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_MAGNETISM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_CRUMBLE" spellcasting="Starlighter"/>
+            <grant type="Spell" id="ID_NOS_SPELL_INVISIBLE_OBJECT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_HOLY_RAIN" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_MASS_DOMINATION" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_METALLIC_ARTISTRY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_SECRET_PAGE"  spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_SKYCASTLE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_FLAMETRAVEL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_STARMANTLE" spellcasting="Starlighter" />
+    </rules> 
   </element>
     <element name="Solar Orbit" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
     <description>
