@@ -1244,7 +1244,7 @@
     </setters>
   </element>
       <element name="Flametravel" type="Spell" source="NOS" id="ID_NOS_SPELL_FLAMETRAVEL">
-    <supports>Starlighter</supports>
+    <supports>Starlighter, Druid</supports>
     <description>
       <p>You gain the ability to enter a flame of at least Small size and move from inside it to another flame within 1 miles. You must use 5 feet of movement to enter the fire, and you take no damage from it. You instantly know the location of all fires within 1 miles. You appear in a spot of your choice within 5 feet of the destination fire, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the fire you entered. You can use this transportation ability once per round for the duration. You must end each turn outside a fire.  At Higher Levels. When you cast this spell with a higher-level spell slot, you increase the range. When you use a 7thlevel spell slot, you increase the range to 5 miles. When you use an 8th-level spell slot, you increase the range to 10 miles. When you use a 9th-level spell slot, you increase the range to 20 miles. </p>
     </description>
@@ -1304,9 +1304,9 @@
     </setters>
   </element>
       <element name="Suffocate" type="Spell" source="NOS" id="ID_NOS_SPELL_SUFFOCATE">
-    <supports></supports>
+    <supports>Necromancer, Wizard</supports>
     <description>
-      <p> You draw the breath out of all creatures in range. Each creature in range must make a Constitution saving throw to resist. On a failure, the creature begins to suffocate (as per the Player’s Handbook,, page 183).</p>
+      <p> You draw the breath out of all creatures in range. Each creature in range must make a Constitution saving throw to resist. On a failure, the creature begins to suffocate (as per the Player’s Handbook, page 183).</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -1343,5 +1343,164 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-
+  <element name="Anchor" type="Spell" source="NOS" id="ID_NOS_SPELL_ANCHOR">
+    <supports>Wizard, Druid, Cleric, Necromancer</supports>
+    <description>
+      <p>You tie the life force of a humanoid or monstrosity to a particular building, an estate, a fenced location, or another place with a clearly-defined border. The target may make a Wisdom saving throw to resist. While the spell is in effect, the target cannot leave that place without taking damage. The area outside the location becomes difficult terrain for the target, and it takes 1d10 force damage each time it ends its turn outside the designated place. You or the location’s owner (unless that’s also the target) may permit the target to leave the area for a period of time no longer than 3 hours at a time. At the end of that period, it will begin taking 1d10 force damage at the end of each minute until it returns to the location. This spell can be ended with a dispel magic or remove curse. If the location to which the creature is bound is destroyed, the spell also ends.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">7</set>
+      <set name="school">enchantment</set>
+      <set name="time">1 action</set>
+      <set name="duration">until dispelled</set>
+      <set name="range">touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >A chain of gold worth at least 500gp</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Carnivorous" type="Spell" source="NOS" id="ID_NOS_SPELL_CARNIVOROUS">
+    <supports>Druid</supports>
+    <description>
+      <p>You pick a point within range. All flowering plants within 20 feet of that point temporarily awaken and become carnivorous. The plant has the attributes of the awakened shrub from the Monster Manual (page 317), except that its attack does 4d6 piercing damage.  The animated flowers also spit pollen. This causes disabling sneezing and choking while in the spell’s area. All creatures have their movement reduced by 10 feet and disadvantage on all Dexterity-based rolls. </p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">transmutation</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">100 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Submerge" type="Spell" source="NOS" id="ID_NOS_SPELL_SUBMERGE">
+    <supports>Druid, Wizard, Sorcerer</supports>
+    <description>
+      <p> With this powerful spell, you give a ship of any size the ability to travel underwater. It can move at a speed of 2 miles per hour, or whatever its normal speed is, whichever is lower. At the same time, it surrounds the ship with a bubble of air that will remain clean for the spell’s duration. It is possible to move in and out of the bubble without disturbing it or letting water in. Objects will also penetrate the bubble if the ship comes too close, but creatures must make a conscious effort to enter the bubble (this is automatic but requires that the creature wills it).  The ship will move by your mental command for as long as you hold the miniature rudder. You may also choose to give the rudder to someone else, thus handing control to that person; however, if you lose the rudder or leave it unattended, the spell ends. Once the spell ends, the magic will linger for up to 1 minute and the ship will rise to the surface at the rate of 60 feet per round. If it’s still underwater at the end of the minute, the air bubble collapses and passengers risk drowning. </p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">8</set>
+      <set name="school">transmutation</set>
+      <set name="time">1 action</set>
+      <set name="duration">12 hours</set>
+      <set name="range">touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >A miniature rudder inlaid with silver worth 2,500 gp</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Sunscorch" type="Spell" source="NOS" id="ID_NOS_SPELL_SUNSCORCH">
+    <supports>Starlighter</supports>
+    <description>
+      <p> An intense blast of heat and light emanates from your hand, forming a narrow beam that curves around obstacles and moves to follow its target, which it strikes unerringly. The blast deals 2d10 fire damage and 1d10 radiant damage. If the creature is wearing metal armor or a shield, or holding any metal item that is larger than Small, then it takes an additional 2d10 fire damage as the sun heats the metal up to unbearable temperatures and has to doff the armor or let go off the weapon. At Higher Levels. When you cast this spell with a 4th-level or higher spell slot, it does an additional 1d10 fire or radiant damage per slot level above 3rd. </p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Earths Weapon" type="Spell" source="NOS" id="ID_NOS_SPELL_EARTHS_WEAPON">
+    <supports>Druid, Wizard</supports>
+    <description>
+      <p>You pick up a chunk of rock or a handful of sand or soil and transform it into a melee weapon of your choice. It acts as a normal weapon but is immune to spells and effects that target metal. </p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">transmutation</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Weapon Return" type="Spell" source="NOS" id="ID_NOS_SPELL_WEAAPON_RETURN">
+    <supports>Wizard, Warlock</supports>
+    <description>
+      <p> You touch a throwing weapon; you may use this weapon or give it to someone else to use. When it is thrown, it will instantly return to the thrower’s hand and can be used again the following round.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">enchantment</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Whispers" type="Spell" source="NOS" id="ID_NOS_SPELL_WHISPERS">
+    <supports>Wizard, Druid, Sorcerer, Warlock, Necromancer</supports>
+    <description>
+      <p>You direct the breezes to carry the sounds of distant conversation to you. You can hear what any speaking creature you can see within range as clearly as if they were right next to you.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">enchantment</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
+      <set name="range"></set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+  <element name="Wingbind" type="Spell" source="NOS" id="ID_NOS_SPELL_WINGBIND">
+    <supports>Wizard, Necromancer</supports>
+    <description>
+      <p>You create a web of force that wraps around the wings and body of any one flying creature within range. The creature is grappled (escape DC equal to your spell save DC) and restrained as long as the grapple remains.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">5</set>
+      <set name="school">evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">400 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
 </elements>
