@@ -309,6 +309,11 @@
             <grant type="Spell" id="ID_NOS_SPELL_SUNSCORCH" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_WHISPERS" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_WINGBIND" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_SUN_BODY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_GOLEM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_AUGMENT_FAMILIAR" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_GLYPH_REVEALING" spellcasting="Starlighter" />
     </rules> 
   </element>
     <element name="Solar Orbit" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">

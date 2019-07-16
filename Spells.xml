@@ -280,7 +280,7 @@
   <element name="Living Sacrifice" type="Spell" source="NOS" id="ID_NOS_SPELL_LIVING_SACRIFICE">
     <supports>Necromancer, Wizard</supports>
     <description>
-      <p>You draw from the deepest depths of your grimoire a spell of utter foulness and cruelty, that prolongs the life of the caster or a chosen creature that is within 10 feet of the caster during the ritual of sacrifice. As part of the ritual you slay a humanoid and transfer its lifeforce to yourself or that of another creature. After succesfully sacrfifcing the humanoid you add the doubble of your original lifespan to your lifespan, as long as the dagger used to slay the humanoid is in your possession. A humanoid slain by the living sacrifice spell can not be restored to life by any means short of a wish spell. Restoring the slain humanoid to life forces the creature that benefitted from the sacrifice to instantly drop to 0 hit points and to make death saving throws with disadvantage, it cannot be stabilised, by any means other than success in their death saving throws, nor can it benefit from any effect that would aid them. You can cast this spell only once every ten years. If you cast this spell more than once, you begin to attract the attention of druids and celestials. You have a 5% chance to attract a druid or celestial with the goal of foiling your twisted magic and ending your foul life. Every casting after the second time adds another 10%. If you reach over 50% you have a chance of attracting 1 high level druid or a celestial lke a deva. If you reach over 100% you attract two high level druids or a celestial like a Planetar and so forth. If you reach over 150% you attract 4 high level druids or a celestial like a Solar.</p>
+      <p>You draw from the deepest depths of your grimoire a spell of utter foulness and cruelty, that prolongs the life of the caster or a chosen creature that is within 10 feet of the caster during the ritual of sacrifice. As part of the ritual you slay a humanoid and transfer its lifeforce to yourself or that of another creature. After succesfully sacrfifcing the humanoid you add the doubble of your original lifespan to your lifespan, as long as the dagger used to slay the humanoid is in your possession. A humanoid slain by the living sacrifice spell can not be restored to life by any means short of a wish spell. Restoring the slain humanoid to life forces the creature that benefitted from the sacrifice to instantly drop to 0 hit points and to make death saving throws with disadvantage, it cannot be stabilised, by any means other than success in their death saving throws, nor can it benefit from any effect that would aid them. You can cast this spell only once every ten years. If you cast this spell more than once, you begin to attract the attention of druids and celestials. You have a 5% chance to attract a druid or cleric with the goal of foiling your twisted magic and ending your foul life. Every casting after the second time adds another 10%. If you reach over 30% you have a chance of attracting 1 high level druid or a cleric. If you reach over 50% you attract two high level druids or clerics. If you reach over 70% you attract 4 high level druids or clerics.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -341,7 +341,7 @@
 <element name="Aging" type="Spell" source="NOS" id="ID_NOS_SPELL_AGING">
     <supports>Necromancer, Wizard</supports>
     <description>
-      <p> st 500 gp) Duration: Instantaneous Source: The Great Net Spellbook  A sickly gray bolt of energy shoots out from your outstretched hand towards a creature within range. Make a ranged spell attack. On a hit, the target must make a Constitution saving throw. The target takes 6d10 necrotic damage and instantly ages that many years on a failed saving throw, or half as much damage and years on a successful one. In either case, the creature is also knocked unconscious for 1 minute. If the target dies from this damage, it is considered to have died of old age and can only be brought back through a wish. The aging is permanent unless reversed with a greater restoration spell. The aging has no game affects unless the DM determines that the target has been pushed into old age, in which case the subject suffers from one level of exhaustion, which is permanent until the aging has been reversed. Celestials, constructs, elementals, fey, fiends, undead, and any other sort of creature that doesn’t age is immune to this spell.</p>
+      <p>A sickly gray bolt of energy shoots out from your outstretched hand towards a creature within range. Make a ranged spell attack. On a hit, the target must make a Constitution saving throw. The target takes 6d10 necrotic damage and instantly ages that many years on a failed saving throw, or half as much damage and years on a successful one. In either case, the creature is also knocked unconscious for 1 minute. If the target dies from this damage, it is considered to have died of old age and can only be brought back through a wish. The aging is permanent unless reversed with a greater restoration spell. The aging has no game affects unless the DM determines that the target has been pushed into old age, in which case the subject suffers from one level of exhaustion, which is permanent until the aging has been reversed. Celestials, constructs, elementals, fey, fiends, undead, and any other sort of creature that doesn’t age is immune to this spell.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -361,7 +361,7 @@
 <element name="Airboat" type="Spell" source="NOS" id="ID_NOS_SPELL_AIRBOAT">
     <supports>Wizard, Necromancer, Sorcerer, Druid</supports>
     <description>
-      <p>You must be outside to cast this spell. You point to a cloud, which immediately descends towards you and changes shape until it becomes a ship made of clouds. You determine its shape (caravel, dragon-galley, rowboat, etc.), but that has no bearing on its performance.  You and up to eight other creatures of your choice may board the airboat, which flies at a speed of 100 feet under your telepathic command. You are considered to have proficiency with the airboat. While captaining the boat, you have resistance to lightning and thunder damage and are immune to harm caused by nonmagical winds. The airboat has an AC of 13 and 100 hit points.  At Higher Levels. When cast with a 9thlevel spell slot, you may bring up to sixteen other creatures onboard with you.</p>
+      <p>You must be outside to cast this spell. You point to a cloud, which immediately descends towards you and changes shape until it becomes a ship made of clouds. You determine its shape (caravel, dragon-galley, rowboat, etc.), but that has no bearing on its performance. You and up to eight other creatures of your choice may board the airboat, which flies at a speed of 100 feet under your telepathic command. You are considered to have proficiency with the airboat. While captaining the boat, you have resistance to lightning and thunder damage and are immune to harm caused by nonmagical winds. The airboat has an AC of 13 and 100 hit points.  At Higher Levels. When cast with a 9thlevel spell slot, you may bring up to sixteen other creatures onboard with you.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -421,7 +421,7 @@
     <element name="Wormhole" type="Spell" source="NOS" id="ID_NOS_SPELL_WORMHOLE">
     <supports>Wizard</supports>
     <description>
-      <p>You open up a wormhole between your current location and an area that is well known to you and that is no more than 5,000 miles away. If anyone else comes within 5 feet of either opening, that creature may make a Dexterity saving throw or get sucked through and instantly expelled at the other end. You may enter the tunnel (or not) as you wish.  The arcane tunnel can stay open for as long as 10 minutes, but you can dismiss it as a bonus action.  You can create a permanent arcane tunnel if you cast this spell in both locations every day for one year. If you do so, you may specify a triggering circumstance or password that will cause the tunnel to open. This trigger may be as general or detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the object.  .</p>
+      <p>You open up a wormhole between your current location and an area that is well known to you and that is no more than 5,000 miles away. If anyone else comes within 15 feet of either opening, that creature may make a Dexterity saving throw or get sucked through and instantly expelled at the other end. You may enter the tunnel (or not) as you wish. The arcane tunnel can stay open for as long as 10 minutes, but you can dismiss it as a bonus action.  You can create a permanent arcane tunnel if you cast this spell in both locations every day for one year. If you do so, you may specify a triggering circumstance or password that will cause the tunnel to open. This trigger may be as general or detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the object.  .</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -481,7 +481,7 @@
     <element name="Breath of Death" type="Spell" source="NOS" id="ID_NOS_SPELL_BREATH_OF_DEATH">
     <supports>Necromancer, Wizard</supports>
     <description>
-      <p>  You exhale a foul-smelling breath which turns into a breeze that radiates outward. This causes all creatures within range except for you to make a Constitution saving throw or contract a magical, lifethreatening disease. When you cast this spell, you may choose to have it only affect one type of creature (such as only humanoids or only beasts). It takes one day for an infected creature to manifest symptoms. Symptoms include pain, nausea, weakness, fatigue, and horrific-looking lesions that begin to form all over the body. The infected creature takes 1d3 levels of exhaustion and cannot regain hit points by spending Hit Dice or taking a long rest. At the end of each long rest, an infected creature must make a new Constitution saving throw. On a failure, it takes 3d6 necrotic damage and its hit point total is reduced by that amount. This reduction lasts until the disease is completely cured. On a successful save, the creature takes no damage. If the creature makes three successful saves (which do not have to be consecutive), it will stop taking damage, but is not cured. Instead, it must continue to make a Constitution saving throw daily. On a success, its level of exhaustion decreases by one level. If a successful saving throw reduces the infected creature’s level of exhaustion below 1, the creature recovers from the disease, and may begin to heal lost hit points naturally. This disease is somewhat contagious. A healthy creature that comes into physical contact with an infected creature must make a Constitution saving throw or contract the disease. A creature needs to make this saving throw only once each day, no matter how many diseased individuals it comes into contact with. Since this spell induces a powerful magical disease, nonmagical treatments and spells of 3rd-level and below (including lesser restoration) do not cure the disease; they do give the individual a +2 bonus on its next saving throw. .</p>
+      <p>  You exhale a foul-smelling breath which turns into a breeze that radiates outward. This causes all creatures within range except for you to make a Constitution saving throw or contract a magical, lifethreatening disease. When you cast this spell, you may choose to have it only affect one type of creature (such as only humanoids or only beasts). It takes one day for an infected creature to manifest symptoms. Symptoms include pain, nausea, weakness, fatigue, and horrific-looking lesions that begin to form all over the body. The infected creature takes 1d3 levels of exhaustion and cannot regain hit points by spending Hit Dice or taking a long rest. At the end of each long rest, an infected creature must make a new Constitution saving throw. On a failure, it takes 3d6 necrotic damage and its hit point total is reduced by that amount. This reduction lasts until the disease is completely cured. On a successful save, the creature takes no damage. If the creature makes three successful saves (which do not have to be consecutive), it will stop taking damage, but is not cured. Instead, it must continue to make a Constitution saving throw daily. On a success, its level of exhaustion decreases by one level. If a successful saving throw reduces the infected creature’s level of exhaustion below 1, the creature recovers from the disease, and may begin to heal lost hit points naturally. This disease is somewhat contagious. A healthy creature that comes into physical contact with an infected creature must make a Constitution saving throw or contract the disease. A creature needs to make this saving throw only once each day, no matter how many diseased individuals it comes into contact with. Since this spell induces a powerful magical disease, nonmagical treatments and spells of 3rd-level and below (including lesser restoration) do not cure the disease; they do give the individual a +2 bonus on its next saving throw.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -561,7 +561,7 @@
     <element name="Pocket Beast" type="Spell" source="NOS" id="ID_NOS_SPELL_POCKET_BEAST">
     <supports>Wizrad, Sorcerer, Warlock</supports>
     <description>
-      <p>You touch one friendly beast, dragon, or monstrosity of Intelligence 4 or less and turn it into a stone figurine that is small enough to fit in the palm of your hand. While in this form, the creature is petrified. It will remain in this form indefinitely until you dispel it; to do so, you must place the figurine on the ground and speak a command word that you specified when casting this spell.  If the figurine is damaged, the creature takes 2d8 force damage when it is returned to its normal form. If completely broken, it takes 5d8 damage.</p>
+      <p>You touch one friendly beast, dragon, or monstrosity of Intelligence 4 or less and turn it into a stone figurine that is small enough to fit in the palm of your hand. While in this form, the creature is petrified. It will remain in this form indefinitely until you dispel it; to do so, you must place the figurine on the ground and speak a command word that you specified when casting this spell. If the figurine is damaged, the creature takes 2d8 force damage when it is returned to its normal form. If completely broken, it takes 5d8 damage.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -581,7 +581,7 @@
     <element name="Create Life" type="Spell" source="NOS" id="ID_NOS_SPELL_CREATE_LIFE">
     <supports>Wizard, Necromancer</supports>
     <description>
-      <p> You create a living creature, body and soul. It may be of any species you like, or it may be something you have created wholecloth, but it must be an aberration, beast, dragon, giant, humanoid, monstrosity, ooze, or plant.  The new creature is an adult but has the mentality of an infant. It learns quickly, however, and will typically reach intellectual and emotional maturity in 1d4 years. Its lifespan will be fairly random—it will live for an additional 4d20+40 years. Without the aid of magic, however, it is sterile.</p>
+      <p> You create a living creature, body and soul. It may be of any species you like, or it may be something you have created wholecloth, but it must be an aberration, beast, dragon, giant, humanoid, monstrosity, ooze, or plant. The new creature is an adult but has the mentality of an infant. It learns quickly, however, and will typically reach intellectual and emotional maturity in 1d4 years. Its lifespan will be fairly random—it will live for an additional 4d20+40 years. Without the aid of magic, however, it is sterile.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -627,7 +627,7 @@
       <set name="keywords"></set>
       <set name="level">8</set>
       <set name="school">abjuration</set>
-      <set name="time">1 avtion</set>
+      <set name="time">1 action</set>
       <set name="duration">Instantaneous</set>
       <set name="range">90 feet</set>
       <set name="hasVerbalComponent">false</set>
@@ -659,7 +659,7 @@
     </setters>
   </element>
       <element name="Fertility" type="Spell" source="NOS" id="ID_NOS_SPELL_FERTILITY">
-    <supports>Druid, Necromancer, Wizard, Warlock, Sorcerer</supports>
+    <supports>Druid, Necromancer, Wizard, Warlock, Sorcerer, Bard</supports>
     <description>
       <p> You touch a willing creature or any beast or monstrosity with an Intelligence of 4 or lower. For the duration, that creature becomes incredibly fertile. The creature is all but guaranteed to become pregnant or sire offspring with its next mating. You may not use this spell on yourself, although you can use it on your partner.</p>
     </description>
@@ -684,7 +684,7 @@
       <p> You touch a pregnant beast, dragon, giant, humanoid, or monstrosity, or an egg laid by one of those creatures, and alter the fetus within it choose a selected few of the the following ways: 
         Armor. You thicken the creature’s skin, add scales or leathery hide, or cover it with a shell. It’s AC improves by +1.  Attack. You give the creature larger claws, sharper teeth, stronger arms, a spiked tail, etc. to use as a weapon. It gains a new attack form or does one additional die of damage to an existing attack. Optionally, you can give it a second attack each of its turns. Breathing. You alter the creature’s respiratory system, giving it the ability to breathe water, air, or both. Diet. You alter the creature’s digestive track, turning it into a herbivore, carnivore, omnivore, hemovore (creature that feeds on blood), liquivore (creature that feeds on liquefied internal organs), or even a doleovore (creature that feeds on pain) or metuovore (creature that feeds on fear). You can also alter the creature’s diet in less severe ways, such as by turning a carnivore into a insectivore. Energy Attack. You give the creature a poisonous bite, fiery breath, acidic spittle, lightning stare, etc. This attack can do no more than 1d8 damage per hit die it has. Heads. You give the creature an additional head. Hide Covering. You change the creature’s coloration or type of skin, giving it skin, fur, feathers, scales, and so on. This doesn’t alter its AC. Innate Spellcasting. You give the creature the ability to cast one cantrip or one 1st-level spell once per day. Limbs and Extremities. You give the creatures another pair of limbs or a tail, turn existing limbs into functioning wings (flying speed equal to twice its walking move) or turn wings into arms or legs, change its mouth into a beak or vice versa, turn a normal tail prehensile, turn paws into hands or vice versa, give it the ability to swim, burrow, leap, or walk if it couldn’t do so before, or increase or decrease one type of movement by 25%. Magic Resistance. You give the creature advantage on saving throws against spells and magical effects. Mighty. You improve one or two of its attributes by a total of +3. Morality. You breed it to have a strong inclination to good, evil, chaos, or law. Resistances. You give the creature resistance to one type of damage. Senses. You give the creature keen senses (up to two senses), darkvision, or tremorsense. Size. You increase or decrease the creature’s adult size by one size category. Vigorous. You improve its hit dice by 25%.
 
-  These feats are hereditary and are being passed onward through all gnerations of offspring, effectively being capable to change an entire race or create a new one over the course of several months. 
+  These feats are hereditary and are being passed onward through all generations of offspring, effectively being capable to change an entire race or create a new one over the course of several months. 
 
  You make a wisdom saving throw, equal to your wisdom modifier plus 5 times the number of selected changes made to the fetus. You may cast this spell on the fetus multiple times. However, each time you do so causes you to have a cumulative -4 penalty on your wisdom saving throw. At Higher Levels. When you cast this spell with a 9th-level spell slot, you always roll with advantage.</p>
     </description>
@@ -706,7 +706,7 @@
       <element name="Forced Transformation" type="Spell" source="NOS" id="ID_NOS_SPELL_FORCED_TRANSFORMATION">
     <supports>Wizard, Sorcerer, Warlock, Necromancer</supports>
     <description>
-      <p> You point to one creature within range that you can see. If that creature is shapechanged or polymorphed, either through natural ability or by spell, it is forced back into its natural shape and must make a Constitution saving throw. It takes 3d10 force damage on a failed saving throw, or half as much on a successful one.  This spell has no effect on illusory disguises. .</p>
+      <p> You point to one creature within range that you can see. If that creature is shapechanged or polymorphed, either through natural ability or by spell, it is forced back into its natural shape and must make a Constitution saving throw. It takes 3d10 force damage on a failed saving throw, or half as much on a successful one. This spell has no effect on illusory disguises. A Druid using Wildshape makes a wisdom saving throw, with advantage, against your spell save DC to determine wether he is forced to revert to his normal form, he also does not take any damage from this spell.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -726,7 +726,7 @@
       <element name="Transference" type="Spell" source="NOS" id="ID_NOS_SPELL_TRANSFERENCE">
     <supports>Necromancer, Wizard</supports>
     <description>
-      <p> You permanently take over the body of a humanoid that is within reach and incapacitated, at all times durig the casating of this ritual; effectively switching bodies with the target. Your game statistics are replaced by the statistics of the creature, though you retain your alignment and your Intelligence, Wisdom, and Charisma scores. You retain the benefit of your own class features. If the target is unwilling it can make a wisdom savng throw against your spell save DC. The humanoid used in the casting dies at the end of the ritual, effectively prolonging your life by the amount of years, they would still have left. Additionally, you add half of their hit point maximum to your hit point maximum.</p>
+      <p> You permanently take over the body of a humanoid that is within reach and incapacitated, at all times durig the casting of this ritual; effectively switching bodies with the target. Your game statistics are replaced by the statistics of the creature, though you retain your alignment your hp maximum and your Intelligence, Wisdom, and Charisma scores. You retain the benefit of your own class features. If the target is unwilling it can make a wisdom savng throw against your spell save DC. The humanoid used in the casting dies at the end of the ritual, effectively prolonging your life by the amount of years, they would still have left. Additionally, you add half of their hit point maximum to your hit point maximum.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -786,7 +786,7 @@
       <element name="Holy Star" type="Spell" source="NOS" id="ID_NOS_SPELL_HOLY_STAR">
     <supports>Cleric</supports>
     <description>
-      <p>   A glowing mote of divine energy appears and hovers above your shoulder, shedding dim light in a 5-foot radius. Each round, as a reaction, you may mentally command it perform one of the following actions: Fire Bolt. It fires a beam of energy at one target you see within 90 feet; you must make a ranged spell attack to hit. It inflicts 9d10 fire damage on a successful strike. Protection. Until the beginning of your next turn, the mote surrounds you with a protective shield, increasing your Armor Class by +6. Spell Turning. You have advantage on saving throws against any spell that affects only you, as per a ring of spell turning.</p>
+      <p>   A glowing mote of divine energy appears and hovers above your shoulder, shedding dim light in a 5-foot radius. Each round, as a reaction, you may mentally command it to perform one of the following actions: Fire Bolt. It fires a beam of energy at one target you see within 90 feet; you must make a ranged spell attack to hit. It inflicts 9d10 fire damage on a successful strike. Protection. Until the beginning of your next turn, the mote surrounds you with a protective shield, increasing your Armor Class by +6. Spell Turning. You have advantage on saving throws against any spell that affects only you, as per a ring of spell turning.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -826,7 +826,7 @@
       <element name="Ivy Siege" type="Spell" source="NOS" id="ID_NOS_SPELL_IVY_SIEGE">
     <supports>Druid</supports>
     <description>
-      <p>Ivy vines grow at lightning speed over a building or structure; in 10 minutes, the vines have spread so thickly it’s nearly impossible to see the building underneath. The building must be on the ground; ships and flying objects are immune.  After it has completely covered the building, the ivy deepens in color to greenblack and begins squeezing the walls. It does 4d10 bludgeoning damage every minute for the spell’s duration.   A 10-foot-square section of ivy has an armor class of 10 and 10 hit points. It is vulnerable to fire damage, resistant to bludgeoning and piercing damage, and is immune to psychic damage. If a section is destroyed, it will grow back in 10 minutes.  At the end of the spell’s duration, the ivy begins to wither and dies.</p>
+      <p>Ivy vines grow at lightning speed over a building or structure; in 1 minute, the vines have spread so thickly it’s nearly impossible to see the building underneath. The building must be on the ground; ships and flying objects are immune.  After it has completely covered the building, the ivy deepens in color to greenblack and begins squeezing the walls. It does 4d10 bludgeoning damage every minute for the spell’s duration.   A 10-foot-square section of ivy has an armor class of 10 and 10 hit points. It is vulnerable to fire damage, resistant to bludgeoning and piercing damage, and is immune to psychic damage. If a section is destroyed, it will grow back in 10 minutes.  At the end of the spell’s duration, the ivy begins to wither and dies.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -893,7 +893,7 @@
       <set name="level">5</set>
       <set name="school">conjuration</set>
       <set name="time">1 action</set>
-      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="duration">10 minutes</set>
       <set name="range">self</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
@@ -906,7 +906,7 @@
     <element name="Log to Lizard" type="Spell" source="NOS" id="ID_NOS_SPELL_LOG_TO_LIZARD">
     <supports>Druid</supports>
     <description>
-      <p>You may transform a log or branch of at least 6 feet in length into a crocodile (Monster Manual, page 320). Roll initiative for it, as it has its own actions. It will obey any verbal commands that you issue to it (no action required by you). If you don’t issue any commands to it, it defends itself from hostile creatures but otherwise takes no actions. At the end of the spell’s duration, it turns back into a log.  The DM has the creature’s statistics.  At Higher Levels. If you cast this spell with a 6th-level or higher spell slot, it turns into a giant crocodile (p. 324) instead</p>
+      <p>You may transform a log or branch of at least 6 feet in length into a crocodile (Monster Manual, page 320). Roll initiative for it, as it has its own actions. It will obey any verbal commands that you issue to it (no action required by you). If you don’t issue any commands to it, it defends itself from hostile creatures but otherwise takes no actions. At the end of the spell’s duration, it turns back into a log. The DM has the creature’s statistics. At Higher Levels. If you cast this spell with a 6th-level or higher spell slot, it turns into a giant crocodile (p. 324) instead</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -986,7 +986,7 @@
     <element name="Masterful Mechanism" type="Spell" source="NOS" id="ID_NOS_SPELL_MASTERFUL_MECHANISM">
     <supports>Wizard</supports>
     <description>
-      <p> You hide any protective spells or magical traps that have been previously cast on an object, such as glyphs of warding or signs of sealing. If another creature attempts to detect magic on the item, the DM will secretly roll the creature’s spellcasting ability against your spell save DC. If it fails, that creature will believe that there are no additional spells on the item. This spell does not prevent an item’s regular enchantment from being seen: if you cast a venomdust on a sword +1, and another spellcaster casts detect magic but fails you beat your spell save DC, that spellcaster will learn that it is magical weapon but not that it is trapped.</p>
+      <p> You hide any protective spells or magical traps that have been previously cast on an object, such as glyphs of warding or signs of sealing. If another creature attempts to detect magic on the item, the DM will secretly roll the creature’s spellcasting ability against your spell save DC. If it fails, that creature will believe that there are no spells on the item. This spell does not prevent an item’s regular enchantment from being seen: if you cast a venomdust on a sword +1, and another spellcaster casts detect magic but fails you beat your spell save DC, that spellcaster will learn that it is magical weapon but not that it is trapped.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -1006,7 +1006,7 @@
     <element name="Invisible Object" type="Spell" source="NOS" id="ID_NOS_SPELL_INVISIBLE_OBJECT">
     <supports>Wizard, Druid</supports>
     <description>
-      <p>One non-living object that weighs 25 pounds or less is rendered invisible. While this spell is in effect, you may turn the invisibility on and off, rendering the object visible and then invisible again. If you use the object to attack, the object becomes visible; however, you may use your action to make it invisible again 1 minute later. At Higher Levels. When you cast this spell with a spell slot of 2nd level, you may affect a 50-pound object. When you cast it with a 3rd-level spell slot, you may affect a 100-pound object. When you cast it with a 4th-level spell slot, you may affect a 250pound object. When you cast it with a 5thlevel or higher spell slot, the object may weigh an additional 250 pounds per slot level above 4th.</p>
+      <p>One non-living object that weighs 25 pounds or less is rendered invisible. While this spell is in effect, you may turn the invisibility on and off, rendering the object visible and then invisible again. If you use the object to attack, the object becomes visible; however, you may use your action to make it invisible again 1 minute later. At Higher Levels. When you cast this spell with a spell slot of 2nd level, you may affect a 50-pound object. When you cast it with a 3rd-level spell slot, you may affect a 100-pound object. When you cast it with a 4th-level spell slot, you may affect a 250pound object. When you cast it with a 5th-level or higher spell slot, the object may weigh an additional 250 pounds per slot level above 4th.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -1024,9 +1024,9 @@
     </setters>
   </element>
     <element name="Holy Rain" type="Spell" source="NOS" id="ID_NOS_SPELL_HOLY_RAIN">
-    <supports>Cleric</supports>
+    <supports>Cleric, Bard</supports>
     <description>
-      <p>A rain of holy water appears in a 30-foot radius of location you choose within range. All undead and fiends in the area must make a Dexterity saving throw each time they end their turn in the area. A creature takes 8d8 radiant damage on a failed saving throw, or half as much on a successful one.  At Higher Levels. When you cast this spell with a 7th-level or higher spell slot, the spell’s area increases by a 10-foot radius for each slot level above 6th.</p>
+      <p>A rain of holy water appears in a 30-foot radius of location you choose within range. All undead and fiends in the area must make a Dexterity saving throw each time they end their turn in the area. A creature takes 8d8 radiant damage on a failed saving throw, or half as much on a successful one. At Higher Levels. When you cast this spell with a 7th-level or higher spell slot, the spell’s area increases by a 10-foot radius for each slot level above 6th.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -1246,7 +1246,7 @@
       <element name="Flametravel" type="Spell" source="NOS" id="ID_NOS_SPELL_FLAMETRAVEL">
     <supports>Starlighter, Druid</supports>
     <description>
-      <p>You gain the ability to enter a flame of at least Small size and move from inside it to another flame within 1 miles. You must use 5 feet of movement to enter the fire, and you take no damage from it. You instantly know the location of all fires within 1 miles. You appear in a spot of your choice within 5 feet of the destination fire, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the fire you entered. You can use this transportation ability once per round for the duration. You must end each turn outside a fire.  At Higher Levels. When you cast this spell with a higher-level spell slot, you increase the range. When you use a 7thlevel spell slot, you increase the range to 5 miles. When you use an 8th-level spell slot, you increase the range to 10 miles. When you use a 9th-level spell slot, you increase the range to 20 miles. </p>
+      <p>You gain the ability to enter a flame of at least Small size and move from inside it to another flame within 1 miles. You must use 5 feet of movement to enter the fire, and you take no damage from it. You instantly know the location of all fires within 1 miles. You appear in a spot of your choice within 5 feet of the destination fire, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the fire you entered. You can use this transportation ability once per round for the duration. You must end each turn outside a fire.  At Higher Levels. When you cast this spell with a higher-level spell slot, you increase the range, additionally you may now travel through flames as big as tiny, such as a lit candle. When you use a 7th-level spell slot, you increase the range to 5 miles. When you use an 8th-level spell slot, you increase the range to 10 miles. When you use a 9th-level spell slot, you increase the range to 20 miles. </p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -1366,7 +1366,7 @@
     <element name="Carnivorous" type="Spell" source="NOS" id="ID_NOS_SPELL_CARNIVOROUS">
     <supports>Druid</supports>
     <description>
-      <p>You pick a point within range. All flowering plants within 20 feet of that point temporarily awaken and become carnivorous. The plant has the attributes of the awakened shrub from the Monster Manual (page 317), except that its attack does 4d6 piercing damage.  The animated flowers also spit pollen. This causes disabling sneezing and choking while in the spell’s area. All creatures have their movement reduced by 10 feet and disadvantage on all Dexterity-based rolls. </p>
+      <p>You pick a point within range. All flowering plants within 20 feet of that point temporarily awaken and become carnivorous. The plant has the attributes of the awakened shrub from the Monster Manual (page 317), except that its attack does 4d6 piercing damage. The animated flowers also spit pollen. This causes disabling sneezing and choking while in the spell’s area. All creatures have their movement reduced by 10 feet and disadvantage on all Dexterity-based rolls. </p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -1474,7 +1474,7 @@
       <set name="school">enchantment</set>
       <set name="time">1 action</set>
       <set name="duration">1 minute</set>
-      <set name="range"></set>
+      <set name="range">150</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
@@ -1495,6 +1495,327 @@
       <set name="time">1 action</set>
       <set name="duration">Concentration, up to 1 minute</set>
       <set name="range">400 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Agitate Wounds" type="Spell" source="NOS" id="ID_NOS_SPELL_AGITATE_WOUNDS">
+    <supports>Necromancer, Wizard</supports>
+    <description>
+      <p> You choose one creature that you see within range that has recently been injured by an edged weapon (i.e., not at full hit points and not yet been treated with a healer’s kit, a curative potion, or with healing magic), or by another attack that caused bleeding. This spell will cause the wounds to open and bleed profusely. The target takes 2d6 damage and must make a Constitution saving throw. On a success, the target takes no more damage. On a failure, the target takes another 1d4 damage each round until the wound is treated. </p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">necromancy</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+      <element name="Alter Path" type="Spell" source="NOS" id="ID_NOS_SPELL_ALTER_PATH">
+    <supports>Ranger, Druid</supports>
+    <description>
+      <p>When you cast this spell, you pick one of the following options: 
+        Clear Path. The road ahead of you to a distance of ten feet is cleared of debris as you walk, providing you with an easy path on which to walk.  Clutter Path. The road behind you is strewed with debris to a distance of ten feet, turning the path behind you into difficult terrain. Only relatively light debris (light branches, gravel, 3 inches or less of snow, or puddles no more than an inch deep) is moved. Large obstacles such as fallen trees, heavy branches, and boulders are unaffected.   At Higher Levels. When you cast this spell with a 5th-level or higher spell slot, you increase the range by 5 feet per slot level above 4th. </p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">transmutation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 hour</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>   
+   <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
+    <supports></supports>
+    <description>
+      <p></p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level"></set>
+      <set name="school"></set>
+      <set name="time"></set>
+      <set name="duration"></set>
+      <set name="range"></set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>    
+  <element name="Golem" type="Spell" source="NOS" id="ID_NOS_SPELL_GOLEM">
+    <supports></supports>
+    <description>
+      <p>You cast this spell on an inanimate body made of clay, flesh, iron, stone, or other material, summoning a nearly-mindless elemental spirit to inhabit the body, which animates it as a golem under your command. Note that the cost of the spell does not include to cost of creating the golem. You do not need to personally construct the golem’s body. Your DM has its attributes.  On each of your turns, you can use a bonus action to mentally command the golem if it is within 60 feet of you (if you control multiple golems, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the golem will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the golem only defends itself against hostile creatures. Once given an order, the golem continues to follow it until its task is complete.  Each week, roll a d20. On a roll of 1, it may make a Wisdom saving throw. If it succeeds, it will break free of your control and stops obeying any command you’ve given it. To re-establish control of the golem if this occurs, you must cast this spell on the creature again.  At higher levels. If you cast this spell as a 9th-level spell, your control over the golem is permanent.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">7</set>
+      <set name="school">conjuration</set>
+      <set name="time">8 hours</set>
+      <set name="duration">Special</set>
+      <set name="range">touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >an ounce of gorgon’s blood, and incense worth at least 1,000 gp, which is consumed when you cast this spell</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>    
+  <element name="Augment Familiar" type="Spell" source="NOS" id="ID_NOS_SPELL_AUGMENT_FAMILIAR">
+    <supports></supports>
+    <description>
+      <p> For the spell’s duration, you grant your familiar or animal companion 10 temporary hit points, resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons, and advantage on all saving throws.  At Higher Levels. When you cast this spell with a 3rd-level or higher spell slot, you grant the creature an additional 10 temporary hit points per spell slot above 2nd.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">abjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Permanent</set>
+      <set name="range">30 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >A diamond worth at least 10gp, which the spell consumes</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>    
+  <element name="Glyph Revealing" type="Spell" source="NOS" id="ID_NOS_SPELL_GLYPH_REVEALING">
+    <supports>Cleric, Wizard</supports>
+    <description>
+      <p>You inscribe a special rune on a flat, horizontal surface. All other magical runes, marks, glyphs, symbols, and other forms of written magic become visible, allowing them to be read or identified without being accidentally triggered.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">5</set>
+      <set name="school">Divination</set>
+      <set name="time">1 action</set>
+      <set name="duration">10 minutes</set>
+      <set name="range">self 60 (foot cone)</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >ink made out of the juice of crushed eyebright flowers, white chalk, and powdered quartz</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>    
+  <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
+    <supports></supports>
+    <description>
+      <p></p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level"></set>
+      <set name="school"></set>
+      <set name="time"></set>
+      <set name="duration"></set>
+      <set name="range"></set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>   
+   <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
+    <supports></supports>
+    <description>
+      <p></p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level"></set>
+      <set name="school"></set>
+      <set name="time"></set>
+      <set name="duration"></set>
+      <set name="range"></set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>   
+   <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
+    <supports></supports>
+    <description>
+      <p></p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level"></set>
+      <set name="school"></set>
+      <set name="time"></set>
+      <set name="duration"></set>
+      <set name="range"></set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>   
+   <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
+    <supports></supports>
+    <description>
+      <p></p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level"></set>
+      <set name="school"></set>
+      <set name="time"></set>
+      <set name="duration"></set>
+      <set name="range"></set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>  
+    <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
+    <supports></supports>
+    <description>
+      <p></p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level"></set>
+      <set name="school"></set>
+      <set name="time"></set>
+      <set name="duration"></set>
+      <set name="range"></set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>    
+  <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
+    <supports></supports>
+    <description>
+      <p></p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level"></set>
+      <set name="school"></set>
+      <set name="time"></set>
+      <set name="duration"></set>
+      <set name="range"></set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>   
+   <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
+    <supports></supports>
+    <description>
+      <p></p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level"></set>
+      <set name="school"></set>
+      <set name="time"></set>
+      <set name="duration"></set>
+      <set name="range"></set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>   
+   <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
+    <supports></supports>
+    <description>
+      <p></p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level"></set>
+      <set name="school"></set>
+      <set name="time"></set>
+      <set name="duration"></set>
+      <set name="range"></set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>   
+   <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
+    <supports></supports>
+    <description>
+      <p></p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level"></set>
+      <set name="school"></set>
+      <set name="time"></set>
+      <set name="duration"></set>
+      <set name="range"></set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>   
+   <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
+    <supports></supports>
+    <description>
+      <p></p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level"></set>
+      <set name="school"></set>
+      <set name="time"></set>
+      <set name="duration"></set>
+      <set name="range"></set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
