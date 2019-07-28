@@ -30,7 +30,7 @@
                 <span class="feature">Ability Score Increase.</span>Your Wisdom score increases by 3, and your Dexterity or Strength score increases by 2.<br/>
                 <span class="feature">Age.</span>Ben'nir being the children of elder stars inherited their immortal nature.<br/>
                 <span class="feature">Alignment.</span>Hence having no affiliation with the world, Ben'nir tend towards chaotic and neutral alignments.<br/>
-                <span class="feature">Size.</span>Ben'nir are the same size and build as human children. Your size is Medium.<br/>
+                <span class="feature">Size.</span>Ben'nir are the same size and build as human children. Your size is Small.<br/>
                 <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
                 <span class="feature">Eyes of Radiance.</span>You have truesight out to 120 feet and cannot be blinded.<br/>
                 <span class="feature">Radiant Being.</span> Due to your heritage as a star you are immune to being blinded, charmed or frightened, and magic can’t put you to sleep. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effect of starvation, thirst, exhaustion, or suffocation. However you still benefit from short and long rests. All other conditions and effects affect you normally.<br/>
@@ -43,7 +43,7 @@
             <set name="names" type="male">Leo, A'ira, 'ariel, Ga'anagan</set>
             <set name="names" type="female">Rea, Gal'den, An'ara, 'aria</set>
             <set name="names-format">{{name}}</set>
-            <set name="height" modifier="1d4">4'6"</set>
+            <set name="height" modifier="1d4">4'3"</set>
             <set name="weight" modifier="1d4">90 lb.</set>
         </setters>
         <rules>

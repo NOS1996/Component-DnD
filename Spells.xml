@@ -703,27 +703,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-      <element name="Forced Transformation" type="Spell" source="NOS" id="ID_NOS_SPELL_FORCED_TRANSFORMATION">
-    <supports>Wizard, Sorcerer, Warlock, Necromancer</supports>
-    <description>
-      <p> You point to one creature within range that you can see. If that creature is shapechanged or polymorphed, either through natural ability or by spell, it is forced back into its natural shape and must make a Constitution saving throw. It takes 3d10 force damage on a failed saving throw, or half as much on a successful one. This spell has no effect on illusory disguises. A Druid using Wildshape makes a wisdom saving throw, with advantage, against your spell save DC to determine wether he is forced to revert to his normal form, he also does not take any damage from this spell.</p>
-    </description>
-    <setters>
-      <set name="keywords"></set>
-      <set name="level">5</set>
-      <set name="school">transmutation</set>
-      <set name="time">1 action</set>
-      <set name="duration">Instantaneous</set>
-      <set name="range">100 feet</set>
-      <set name="hasVerbalComponent">true</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
-      <set name="isConcentration">false</set>
-      <set name="isRitual">false</set>
-    </setters>
-  </element>
-      <element name="Transference" type="Spell" source="NOS" id="ID_NOS_SPELL_TRANSFERENCE">
+  <element name="Transference" type="Spell" source="NOS" id="ID_NOS_SPELL_TRANSFERENCE">
     <supports>Necromancer, Wizard</supports>
     <description>
       <p> You permanently take over the body of a humanoid that is within reach and incapacitated, at all times durig the casting of this ritual; effectively switching bodies with the target. Your game statistics are replaced by the statistics of the creature, though you retain your alignment your hp maximum and your Intelligence, Wisdom, and Charisma scores. You retain the benefit of your own class features. If the target is unwilling it can make a wisdom savng throw against your spell save DC. The humanoid used in the casting dies at the end of the ritual, effectively prolonging your life by the amount of years, they would still have left. Additionally, you add half of their hit point maximum to your hit point maximum.</p>
@@ -1026,7 +1006,7 @@
     <element name="Holy Rain" type="Spell" source="NOS" id="ID_NOS_SPELL_HOLY_RAIN">
     <supports>Cleric, Bard</supports>
     <description>
-      <p>A rain of holy water appears in a 30-foot radius of location you choose within range. All undead and fiends in the area must make a Dexterity saving throw each time they end their turn in the area. A creature takes 8d8 radiant damage on a failed saving throw, or half as much on a successful one. At Higher Levels. When you cast this spell with a 7th-level or higher spell slot, the spell’s area increases by a 10-foot radius for each slot level above 6th.</p>
+      <p>You bless the rains down in Africa. A rain of holy water appears in a 30-foot radius of location you choose within range. All undead and fiends in the area must make a Dexterity saving throw each time they end their turn in the area. A creature takes 8d8 radiant damage on a failed saving throw, or half as much on a successful one. At Higher Levels. When you cast this spell with a 7th-level or higher spell slot, the spell’s area increases by a 10-foot radius for each slot level above 6th.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -1474,7 +1454,7 @@
       <set name="school">enchantment</set>
       <set name="time">1 action</set>
       <set name="duration">1 minute</set>
-      <set name="range">150</set>
+      <set name="range">150 feet</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
@@ -1543,29 +1523,9 @@
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
-  </element>   
-   <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
-    <supports></supports>
-    <description>
-      <p></p>
-    </description>
-    <setters>
-      <set name="keywords"></set>
-      <set name="level"></set>
-      <set name="school"></set>
-      <set name="time"></set>
-      <set name="duration"></set>
-      <set name="range"></set>
-      <set name="hasVerbalComponent">true</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
-      <set name="isConcentration">false</set>
-      <set name="isRitual">false</set>
-    </setters>
-  </element>    
+  </element>      
   <element name="Golem" type="Spell" source="NOS" id="ID_NOS_SPELL_GOLEM">
-    <supports></supports>
+    <supports>Wizard</supports>
     <description>
       <p>You cast this spell on an inanimate body made of clay, flesh, iron, stone, or other material, summoning a nearly-mindless elemental spirit to inhabit the body, which animates it as a golem under your command. Note that the cost of the spell does not include to cost of creating the golem. You do not need to personally construct the golem’s body. Your DM has its attributes.  On each of your turns, you can use a bonus action to mentally command the golem if it is within 60 feet of you (if you control multiple golems, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the golem will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the golem only defends itself against hostile creatures. Once given an order, the golem continues to follow it until its task is complete.  Each week, roll a d20. On a roll of 1, it may make a Wisdom saving throw. If it succeeds, it will break free of your control and stops obeying any command you’ve given it. To re-establish control of the golem if this occurs, you must cast this spell on the creature again.  At higher levels. If you cast this spell as a 9th-level spell, your control over the golem is permanent.</p>
     </description>
@@ -1585,7 +1545,7 @@
     </setters>
   </element>    
   <element name="Augment Familiar" type="Spell" source="NOS" id="ID_NOS_SPELL_AUGMENT_FAMILIAR">
-    <supports></supports>
+    <supports>Wizard, Warlock</supports>
     <description>
       <p> For the spell’s duration, you grant your familiar or animal companion 10 temporary hit points, resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons, and advantage on all saving throws.  At Higher Levels. When you cast this spell with a 3rd-level or higher spell slot, you grant the creature an additional 10 temporary hit points per spell slot above 2nd.</p>
     </description>
@@ -1615,27 +1575,67 @@
       <set name="school">Divination</set>
       <set name="time">1 action</set>
       <set name="duration">10 minutes</set>
-      <set name="range">self 60 (foot cone)</set>
+      <set name="range">30 foot radius</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">true</set>
-      <set name="materialComponent" >ink made out of the juice of crushed eyebright flowers, white chalk, and powdered quartz</set>
+      <set name="materialComponent" >Ink made out of the juice of crushed eyebright flowers, white chalk, and powdered quartz</set>
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
   </element>    
-  <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
-    <supports></supports>
+  <element name="Gullship" type="Spell" source="NOS" id="ID_NOS_SPELL_GULLSHIP">
+    <supports>Sorcerer, Wizard, Necromancer</supports>
     <description>
-      <p></p>
+      <p>You give a boat or ship that you touch the ability to fly. You control the boat’s altitude (you may rise no higher than 1 mile in the air) and attitude. The boat is dependent on the winds to move or other such methods, but it can’t be rowed.  When the spell ends, the ship gently lowers itself to ground or sea level.  If you cast this spell on a boat every day for a year, the spell becomes permanent. You need not cause the boat to fly when you cast the spell in this way. The ship does not have to be completely built while you are casting gullship in this manner, but it will not be able to fly until the ship is finished, even if you have cast the spell every day for a year. At Higher Levels. When you cast this spell with a 8th-level or higher spell slot, the duration increases to 24 hours</p>
     </description>
     <setters>
       <set name="keywords"></set>
-      <set name="level"></set>
-      <set name="school"></set>
-      <set name="time"></set>
-      <set name="duration"></set>
-      <set name="range"></set>
+      <set name="level">6</set>
+      <set name="school">transmutation</set>
+      <set name="time">1 minute</set>
+      <set name="duration">12 hours</set>
+      <set name="range">touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >A silvered, crystal adorned, feather, worth at least 100gp</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>   
+   <element name="Animate Armor" type="Spell" source="NOS" id="ID_NOS_SPELL_ANIMATE_ARMOR">
+    <supports>Wizard</supports>
+    <description>
+      <p>You summon a suit of animated armor (Monster Manual, page 19) that fights for you. Roll initiative for the armor, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don’t issue any commands to it, it defends you an itself from hostile creatures, but otherwise takes no actions. The DM has the creature’s statistics.   At Higher Levels. When you cast this spell with a 3rd-level or higher spell slot, you summon one additional suit of animated armor for each slot level above 2nd.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">conjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">30 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >A piece of metal</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>   
+   <element name="Drama Baby Drama" type="Spell" source="NOS" id="ID_NOS_SPELL_DRAMA_BABY_DRAMA">
+    <supports>Bard</supports>
+    <description>
+      <p>One creature you can see within range gains a soundtrack that plays appropriately dramatic music whenever that creature performs deliberate actions. An unwilling creature may make a Wisdom saving throw at advantage to resist. If the creature fails, it will be unable to be stealthy. </p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Illusion</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 hour</set>
+      <set name="range">60 feet</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
@@ -1644,184 +1644,65 @@
       <set name="isRitual">false</set>
     </setters>
   </element>   
-   <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
-    <supports></supports>
+   <element name="Inlay" type="Spell" source="NOS" id="ID_NOS_SPELL_INLAY">
+    <supports>Druid, Wizard</supports>
     <description>
-      <p></p>
+      <p> You create a pocket dimension inside an egg or gemstone, allowing you to store any sort of material inside. The total weight depends on the size of the egg/gemstone: Small (sparrow’s egg / 25gp gemstone) 25 pounds; Medium (hen’s egg / 50 gp gemstone) 50 pounds; Large (ostrich or owlbear’s egg /75 gp gemstone) 100 pounds; Very Large (dragon or roc’s egg / 150 gp gemstone) 500 pounds.
+      You place the object or objects you wish stored next to the egg/gemstone while casting this spell. They then disappear into the egg/gemstone. Objects remain in stasis while inside. Living creatures will not need to eat, drink, breathe while inside, nor will they age; flames will not burn out, nor will they continue to burn their fuel; food will not go stale or rot; and so on. Only willing creatures can be stored inside the egg/gemstone.  When the spell ends or the egg/gemstone breaks, the objects reappear in an unoccupied space within 10 feet of the space in which the egg/gemstone is broken, in exactly the same condition they were in when they were placed inside the egg/gemstone. The egg/gemstone is no more durable than a normal egg (1 week).  At Higher Levels. When you cast this spell with a 5th-level or higher spell slot, you increase the duration by 1 week for each spell slot above 4th.</p>
     </description>
     <setters>
       <set name="keywords"></set>
-      <set name="level"></set>
-      <set name="school"></set>
-      <set name="time"></set>
-      <set name="duration"></set>
-      <set name="range"></set>
+      <set name="level">4</set>
+      <set name="school">transmutation</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 week</set>
+      <set name="range">touch</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
-      <set name="isConcentration">false</set>
-      <set name="isRitual">false</set>
-    </setters>
-  </element>   
-   <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
-    <supports></supports>
-    <description>
-      <p></p>
-    </description>
-    <setters>
-      <set name="keywords"></set>
-      <set name="level"></set>
-      <set name="school"></set>
-      <set name="time"></set>
-      <set name="duration"></set>
-      <set name="range"></set>
-      <set name="hasVerbalComponent">true</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
-      <set name="isConcentration">false</set>
-      <set name="isRitual">false</set>
-    </setters>
-  </element>   
-   <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
-    <supports></supports>
-    <description>
-      <p></p>
-    </description>
-    <setters>
-      <set name="keywords"></set>
-      <set name="level"></set>
-      <set name="school"></set>
-      <set name="time"></set>
-      <set name="duration"></set>
-      <set name="range"></set>
-      <set name="hasVerbalComponent">true</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >A miniature carving of an egg, worth at least 25gp, which the spell consumes</set>
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
   </element>  
-    <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
-    <supports></supports>
+    <element name="Heart of Stone" type="Spell" source="NOS" id="ID_NOS_SPELL_HEART_OF_STONE">
+    <supports>Necromancer, Wizard</supports>
     <description>
-      <p></p>
+      <p>You remove your heart from your own body and replace it with a heart made of stone. While this spell is effect, you have resistance to all forms of damage and are immune to being paralyzed, petrified, poisoned, and knocked unconscious. You don’t bleed, have advantage on death saving throws, and you age half as slowly as normally. However, your heart has AC 10 and 1 hit point and if it is destroyed, you die instantly. In addition, you do not regain hit points at the end of a long rest; you must spend hit dice as if you had just finished a short rest, and you only regain half the number of hit points. </p>
     </description>
     <setters>
       <set name="keywords"></set>
-      <set name="level"></set>
-      <set name="school"></set>
-      <set name="time"></set>
-      <set name="duration"></set>
-      <set name="range"></set>
+      <set name="level">8</set>
+      <set name="school">necromancy</set>
+      <set name="time">1 day</set>
+      <set name="duration">Until Dispelled</set>
+      <set name="range">self</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >a life-sized heart carved out of a precious stone worth at least 1,000 gp</set>
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
-  </element>    
-  <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
-    <supports></supports>
+  </element>  
+    <element name="Starborne" type="Spell" source="NOS" id="ID_NOS_SPELL_STARBORNE">
+    <supports>Starlighter</supports>
     <description>
-      <p></p>
+      <p>Brilliant light erupts from inside you in a radius of 60 feet, so bright that it blinds everyone within range, except creatures with truesight. All creatures and objects that you choose, which are within 30 feet of you or start their turn there, make a constitution saving throw or take 8d10 radiant damage.This Spell dispells magical and nonmagical darkness and madness of any level. Additonally you begin to hover, gaining a flying speed of 120 feet for the duration.</p>
     </description>
     <setters>
       <set name="keywords"></set>
-      <set name="level"></set>
+      <set name="level">9</set>
       <set name="school"></set>
-      <set name="time"></set>
-      <set name="duration"></set>
-      <set name="range"></set>
+      <set name="time">1 action</set>
+      <set name="duration">10 minutes</set>
+      <set name="range">self</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >a circlet made of gemstones and precious metals, that you must wear throughout the whole duration of the spell, worth at least 5000gp</set>
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
-  </element>   
-   <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
-    <supports></supports>
-    <description>
-      <p></p>
-    </description>
-    <setters>
-      <set name="keywords"></set>
-      <set name="level"></set>
-      <set name="school"></set>
-      <set name="time"></set>
-      <set name="duration"></set>
-      <set name="range"></set>
-      <set name="hasVerbalComponent">true</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
-      <set name="isConcentration">false</set>
-      <set name="isRitual">false</set>
-    </setters>
-  </element>   
-   <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
-    <supports></supports>
-    <description>
-      <p></p>
-    </description>
-    <setters>
-      <set name="keywords"></set>
-      <set name="level"></set>
-      <set name="school"></set>
-      <set name="time"></set>
-      <set name="duration"></set>
-      <set name="range"></set>
-      <set name="hasVerbalComponent">true</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
-      <set name="isConcentration">false</set>
-      <set name="isRitual">false</set>
-    </setters>
-  </element>   
-   <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
-    <supports></supports>
-    <description>
-      <p></p>
-    </description>
-    <setters>
-      <set name="keywords"></set>
-      <set name="level"></set>
-      <set name="school"></set>
-      <set name="time"></set>
-      <set name="duration"></set>
-      <set name="range"></set>
-      <set name="hasVerbalComponent">true</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
-      <set name="isConcentration">false</set>
-      <set name="isRitual">false</set>
-    </setters>
-  </element>   
-   <element name="" type="Spell" source="NOS" id="ID_NOS_SPELL_">
-    <supports></supports>
-    <description>
-      <p></p>
-    </description>
-    <setters>
-      <set name="keywords"></set>
-      <set name="level"></set>
-      <set name="school"></set>
-      <set name="time"></set>
-      <set name="duration"></set>
-      <set name="range"></set>
-      <set name="hasVerbalComponent">true</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-      <set name="materialComponent" />
-      <set name="isConcentration">false</set>
-      <set name="isRitual">false</set>
-    </setters>
-  </element>
+  </element>  
 </elements>
