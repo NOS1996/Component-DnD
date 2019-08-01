@@ -32,7 +32,7 @@
          	</description>
         </sheet>
         <rules>
-        	<stat name="innate speed:fly" value="50" bonus="base" />
+        	<stat name="innate speed:fly" value="70" bonus="base" />
         	<grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
             <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" />
             <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" level="5" />

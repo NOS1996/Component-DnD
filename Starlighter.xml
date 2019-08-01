@@ -113,11 +113,8 @@
       <p>At 1st level, you know three cantrips of your choice from the Starlighter spell list. You learn additional Starlighter cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Starlighter table.</p>
       <h5>SPELLS</h5>
       <p>At 1st level, you gain six 1st-­level Starlighter spells of your choice, which are, as well as any later added spells fixed in your mind.</p>
-      <h5>PREPARING AND CASTING SPELLS</h5>
+      <h5>CASTING SPELLS</h5>
       <p>The Starlighter table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
-      <p>You prepare the list of starlighter spells that are available for you to cast. To do so, choose a number of starlighter spells equal to your Wisdom modifier + your starlighter level (minimum of one spell). The spells must be of a level for which you have spell slots.</p>
-      <p>For example, if you’re a 3rd-level starlighter, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.</p>
-      <p>You can change your list of prepared spells when you finish a long rest. Preparing a new list of starlighter spells requires time spent meditating to attune to the world around you; to cast the spell: at least 1 minute per spell level for each spell on your list.</p>
       <h5>SPELLCASTING ABILITY</h5>
       <p>Wisdom is your spellcasting ability for your starlighter spells. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a starlighter spell you cast and when making an attack roll with one.</p>
       <p>
@@ -134,7 +131,7 @@
       <p>Each time you gain a starlighter level, you can add two starlighter spells of your choice to your knowledge compound. Each of these spells must be of a level for which you have spell slots, as shown on the Starlighter table.</p>
     </description>
     <sheet display="true">
-      <description>You can prepare {{starlighter:spellcasting:prepare}} spells. You use an arcane focus to cast spells and can also cast starlighter spells as a ritual.</description>
+      <description> You use an arcane focus to cast spells and can also cast starlighter spells as a ritual.</description>
     </sheet>
     <spellcasting name="Starlighter" ability="Wisdom" prepare="true">
       <list>Wizard</list>
@@ -164,8 +161,7 @@
       <stat name="starlighter:spellcasting:slots:8" value="1" level="15" />
       <stat name="starlighter:spellcasting:slots:9" value="1" level="17" />
 
-      <stat name="starlighter:spellcasting:prepare" value="wisdom:modifier" />
-      <stat name="starlighter:spellcasting:prepare" value="level:starlighter" />
+      
 
       <select type="Spell" name="Cantrip (Starlighter)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Starlighter" />
       <select type="Spell" name="Cantrip (Starlighter)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Starlighter" />
@@ -174,10 +170,10 @@
       <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Starlighter" />
       <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="3" spellcasting="Starlighter" />
       <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="2" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="4" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="5" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="5" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="5" spellcasting="Starlighter" />
       <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="3" spellcasting="Starlighter" />
       <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="3" spellcasting="Starlighter" />
       <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="3" spellcasting="Starlighter" />
@@ -292,7 +288,7 @@
             <grant type="Spell" id="ID_NOS_SPELL_INVISIBLE_OBJECT" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_HOLY_RAIN" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_MASS_DOMINATION" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_NOS_SPELL_METALLIC_ARTISTRY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_ARTISTRY" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_SECRET_PAGE"  spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_SKYCASTLE" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_FLAMETRAVEL" spellcasting="Starlighter" />
@@ -311,6 +307,24 @@
             <grant type="Spell" id="ID_NOS_SPELL_ANIMATE_ARMOR" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_INLAY" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_STARBORNE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_RAARKFELL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_WEATHER" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_GOLDEN_BARDING" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_HISTORY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_GLASSTORM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_QUIET" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_MINDLOCK_MESSAGE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_STORMWRACK" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_NYMPHS_BEAUTY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_OASIS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_CONTROL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_IRKAAR" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_TELEPATHY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_RUST" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_SAND_GEM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_SHROUD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_SEAL_OF_FATE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_TRACK_TELEPORTER" spellcasting="Starlighter" />
     </rules> 
   </element>
     <element name="Stellarium" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
@@ -356,7 +370,7 @@
     </element>
     <element name="Magium" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELL_MASTERY">
     <description>
-      <p>At 18th level, you are inured to the very fabric of magic itself so thatyou can cast certai spells at will. Choose a 1st-level starlighter spell and a 2nd-­level starlighter spell, that you know. You can cast those spells at their lowest level without expending a spell slot. If you want to cast either spell at a higher level, you must expend a spell slot as normal.</p>
+      <p>At 18th level, you are inured to the very fabric of magic itself so that you can cast certain spells at will. Choose a 1st-level starlighter spell and a 2nd-­level starlighter spell, that you know. You can cast those spells at their lowest level without expending a spell slot. If you want to cast either spell at a higher level, you must expend a spell slot as normal.</p>
       <p>By spending 8 hours in meditation, you can exchange one or both of the spells you chose for different spells of the same levels.</p>
     </description>
     <sheet>
