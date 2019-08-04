@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Bender</name>
+    <update version="0.0.1">
+      <file name="bender.xml" url="" />
+    </update>
+  </info>
+
+ <element name="Bender" type="Class" source="NOS" id="ID_NOS_CLASS_BENDER">
+    <description>
+      <p class="indent">Under the power of a Great Comet, a disowned prince of a nation fights a duel for the throne, dispelling high-intensity flames from his maddened sister time and time again. A young promising water bender strikes her opponent with a tendril of water only to freeze it and by extension them in place, ending the fight.</p>
+      <p class="indent">A spiritual air bender sees his last earthly tether, his lover, die, as he takes a step off a cliff and fly's through the sky.A blind earth bender senses every movement, breath, and object as she fights reading her opponents like a book and striking at the precise moment.</p>
+      <p class="indent">Bending is the ability to manipulate an elements form and shape. There are four known bending arts each bending a specific physical element. The four elemental bending arts are based on the four classical elements, water, earth, fire, and air, and each is manipulated through certain martial art styles which are reminiscent of the qualities of the element itself. While bending is traditionally performed through the motions of one's hands and feet, skilled benders are able to effectively manipulate their element with only minimal movement of their body, such as by using just their head or torso. In even rarer cases, master benders are able to perform their bending without the aid of any physical movement at all, by instead using sheer focus and force of will, a skill known as psychic bending.</p>          
+      <h4>CREATING A BENDER</h4>
+      <p>You can make an Element Bender quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Dexterity or Constitution depending on your bending nature. Second, choose the hermit background.</p>
+      <h3>CLASS FEATURES</h3>
+      <p>As a Bender, you gain the following class features.</p>
+      <h5>HIT POINTS</h5>
+      <p>
+        <span class="emphasis">Hit Dice:</span>1d8 per bender level<br />
+        <span class="emphasis">Hit Points at 1st Level:</span>8 + your Constitution modifier<br />
+        <span class="emphasis">Hit Points at Higher Levels:</span>1d8 (or 5) + your Constitution modifier per bender level after 1st<br />
+      </p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="emphasis">Armor:</span>None<br />
+        <span class="emphasis">Weapons:</span>None<br />
+      </p>
+      <p>
+        <span class="emphasis">Saving Throws:</span>Wisdom, Dexterity<br />
+        <span class="emphasis">Skills:</span>Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth<br />
+      </p>
+      <h5>EQUIPMENT</h5>
+      <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+      <ul>
+        <li>(a) a dungeoneer’s pack or (b) an explorer’s pack</li>
+      </ul>
+      <div element="ID_NOS_CLASS_FEATURE_TRANSFORM" />
+      <div element="ID_NOS_CLASS_FEATURE_BENDER_ABILITYSCOREIMPROVEMENT_BENDER" />
+      <div element="ID_NOS_CLASS_FEATURE_BENDER_ELEMENT" />
+      <div element="ID_NOS_CLASS_FEATURE_BENDING" />
+      <div element="ID_NOS_CLASS_FEATURE_BENDER_UNARMORED_DEFENSE" />
+    </description>
+    <sheet display="false">
+      <description>A Bender of the elements.</description>
+    </sheet>
+    <setters>
+      <set name="short">A Bender of the elements.</set>
+      <set name="hd">d8</set>
+    </setters>
+    <rules>
+      <!-- <grant type="Grants" id="ID_INTERNAL_GRANTS_AVERAGE_HP_D8" /> -->
+
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_NOS_MULTICLASS_BENDER" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_NOS_MULTICLASS_BENDER" />
+      <select type="Proficiency" name="Skill Proficiency (Bender)" supports="Skill,Bender" number="2" requirements="!ID_NOS_MULTICLASS_BENDER" />
+
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_BENDER_UNARMORED_DEFENSE" level="1" />
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_BENDING" level="1" />
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_BENDER_ELEMENT" level="1" />
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_BENDER_ABILITYSCOREIMPROVEMENT_BENDER" level="4" />
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_TRANSFORM" level="18" />
+    </rules>
+    <multiclass id="ID_NOS_MULTICLASS_BENDER">
+      <prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
+      <requirements>([dex:13],[wis:13])</requirements>
+      <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+      </rules>
+    </multiclass>
+  </element>
+
+   <element name="Element" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BENDER_ELEMENT">
+    <description>
+      <p>Starting at 1st level you are inured to one element you choose, this is youre bending element. Your element grants you features at 3rd level and again at 6th, 11th, and 17th level.</p>
+    </description>
+    <sheet />
+    <rules>
+      <select type="Archetype" name="Element" supports="Element" />
+    </rules>
+  </element>
+  <element name="Unarmored Defense" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BENDER_UNARMORED_DEFENSE">
+    <supports>Bender</supports>
+    <description>
+      <p>Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</p>
+    </description>
+    <sheet>
+      <description>While you are wearing no armor and not wielding a shield, your AC equals {{ac:unarmored defense bender}}.</description>
+    </sheet>
+    <rules>
+		<stat name="ac:unarmored defense bender:base" value="10" />
+		<stat name="ac:unarmored defense bender:dexterity" value="dexterity:modifier" />
+		<stat name="ac:unarmored defense bender:wisdom" value="wisdom:modifier" />
+		<stat name="ac:unarmored defense bender" value="ac:unarmored defense bender:base" />
+		<stat name="ac:unarmored defense bender" value="ac:unarmored defense bender:dexterity" />
+		<stat name="ac:unarmored defense bender" value="ac:unarmored defense bender:wisdom" />
+		<stat name="ac:calculation" value="ac:unarmored defense bender" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Bender)" />
+    </rules>
+  </element>
+  <element name="Bending" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BENDING">
+    <description>
+    <p>Starting at 1st level, you are able to manipulate your bending element to a significant degree. You gain the Bend action which allows you to control your element. You cannot create your element, only change and move it, your element must be present in some form for you to bend.
+
+    When you take the Bend action, your bending has a limited amount of power. You can only cause one effect at a time.
+
+    Elemental damage types; air is force, earth is magical bludgeoning, fire is fire, and water is cold.
+
+    Elemental Strike; You throw a projectile made of your element at an enemy, you make a spell attack roll against a creature within range and deal 1d10 damage. At higher levels (2d10)  (3d10)  (4d10). You do not have disadvantage on attacks into melee.
+
+    Elemental Attack; You control your element to attack your enemies. Pick from Strength, Dexterity or Constitution, this is the ability for their save. Instead of just throwing a projectile, you take your time to attack precisely. They make a save against your bending save DC, taking 1d6 damage on a failure, taking no damage on a success. At higher levels (2d10)/(3d10)/(4d10).
+
+    Elemental Push; You use your element to move your enemies, a creature within range makes a str save against your bending save DC or they are knocked prone or are moved 5ft in any direction.
+    Element Hold; You use your element to hold an enemy in place, you make a grapple check against a creature within range, you must concentrate to maintain the grapple.
+    
+    The range of your bending action is 30 feet and increases to 35 feet at level 5, to 45 feet at level 11 and to 60 feet at level 20. The maximum volume of your element that you can manipulate at any one time is a cube with sides equal to your element bender level in feet. You are not ristricted to bending in a cube that size, it is just that it is equal to your maximum volume.
+
+     # of 5ft cubes per Level: Level 5, one 5ft cube Level 7, 2 5ft cubes- Level 8, 4- 9, 5- 10, 8- 11, 10- 12, 13- 13, 17- 14, 21- 15, 27- 16, 32- 17, 39- 18, 46- 19, 54- 20, 64-
+    </p>
+    </description>
+    <sheet>
+      <description>You can only cause one effect at a time.
+
+    Elemental Strike; You throw a projectile made of your element at an enemy, you make a spell attack roll against a creature within range and deal 1d10 damage. At higher levels (2d10)  (3d10)  (4d10). You do not have disadvantage on attacks into melee.
+
+    Elemental Attack; You control your element to attack your enemies. Pick from Strength, Dexterity or Constitution, this is the ability for their save. Instead of just throwing a projectile, you take your time to attack precisely. They make a save against your bending save DC, taking 1d6 damage on a failure, taking no damage on a success. At higher levels (2d10)/(3d10)/(4d10).
+
+    Elemental Push; You use your element to move your enemies, a creature within range makes a str save against your bending save DC or they are knocked prone or are moved 5ft in any direction.
+    Element Hold; You use your element to hold an enemy in place, you make a grapple check against a creature within range, you must concentrate to maintain the grapple.
+    
+    The range of your bending action is 30 feet and increases to 35 feet at level 5, to 45 feet at level 11 and to 60 feet at level 20. The maximum volume of your element that you can manipulate at any one time is a cube with sides equal to your element bender level in feet. You are not ristricted to bending in a cube that size, it is just that it is equal to your maximum volume.
+
+     # of 5ft cubes per Level: Level 5, one 5ft cube Level 7, 2 5ft cubes- Level 8, 4- 9, 5- 10, 8- 11, 10- 12, 13- 13, 17- 14, 21- 15, 27- 16, 32- 17, 39- 18, 46- 19, 54- 20, 64-</description>
+    </sheet>
+  </element>
+  
+	<element name="Transform" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_TRANSFORM">
+		<description>
+			<p>At 18th level you can transform into the elemental of your bending nature. You use an action to transform and it lasts until you detransform (no action) or you complete a long rest. You then cannot use this feature again until you complete a long rest. This transformation otherwise follows the same rules as the druids wild shape feature</p>
+		</description>
+		<sheet>
+			<description>You use an action to transform into an elemental of your bending nature and it lasts until you detransform (no action) or you complete a long rest. You then cannot use this feature again until you complete a long rest. This transformation otherwise follows the same rules as the druids wild shape feature</description>
+		</sheet>
+	</element>
+  <element name="Ability Score Improvement (Bender)" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BENDER_ABILITYSCOREIMPROVEMENT_BENDER">
+    <description>
+      <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <select type="Class Feature" name="Improvement Option (Bender 4)" supports="Improvement Option,Bender,4" level="4" />
+      <select type="Class Feature" name="Improvement Option (Bender 8)" supports="Improvement Option,Bender,8" level="8" />
+      <select type="Class Feature" name="Improvement Option (Bender 12)" supports="Improvement Option,Bender,12" level="12" />
+      <select type="Class Feature" name="Improvement Option (Bender 16)" supports="Improvement Option,Bender,16" level="16" />
+      <select type="Class Feature" name="Improvement Option (Bender 19)" supports="Improvement Option,Bender,19" level="19" />
+    </rules>
+  </element>
+ 
+
+
+
+
+  <!-- Air -->
+  <element name="Air" type="Archetype" source="NOS" id="ID_NOS_ARCHETYPE_BENDER_AIR">
+    <supports>Element</supports>  
+    <description>
+      <p>You are an Air Bender. Air bending, one of the four elemental bending arts, is the aerokinetic ability to control and manipulate air. Air is the element of freedom and as such Air benders detached themselves from worldly problems and concerns; finding peace and freedom as the key to solving their difficulties in life. The trait to constantly seek spiritual enlightenment is common among air benders.
+
+      The key to air bending is flexibility and finding and following the path of least resistance. Air bending is notable for being almost purely defensive, as well as the most dynamic of the four bending arts. Air benders can overwhelm many opponents at once with large and powerful attacks that could prove fatal; however, due to the pacifist nature of most air benders, such attacks are rarely used. Due to their aforementioned spirituality, they often adapt to the situation surrounding them and employ negative jing, preferring evasive maneuvers as opposed to direct confrontation.
+
+      Air benders in battle concentrate on speed and evasion, forgoing a strong offense for a greater defense. It is the most dynamic of all the bending arts. As the element of freedom, air benders use their capability to bend unencumbered by the ground or any other environmental factors and use their own momentum as a weapon, evading attacks with astounding agility to tire their opponents out or building up massive inertia for explosive gusts of wind to make their counterattacks finishing moves. Air benders, when resorting to a physical confrontation, are able to harness the immense and intangible power of wind.
+
+      Air bending's opposite is earth bending and the confrontational style that serves as an earth benders foundation</p>
+      <p class="indent">Many monks of this tradition tattoo their bodies with arrows, showing their spiritual devotion.</p>
+      <div element="ID_NOS_ARCHETYPE_FEATURE_AIR_WINDBORN" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_AIR_DEFENSIVE_CURRENT" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_AIR_AIR_STYLE" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_AIR_ELEMENT_OF_FREEDOM" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_AIR_WINDVANE" />
+    </description>
+    <sheet>
+      <description>You are an Air Bender.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_AIR_WINDBORN" level="3"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_AIR_DEFENSIVE_CURRENT" level="3"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_AIR_AIR_STYLE" level="3"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_AIR_ELEMENT_OF_FREEDOM" level="3"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_AIR_WINDVANE" level="3"/>
+    </rules>
+  </element>
+
+   <element name="Windborn" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_AIR_WINDBORN">
+    <description>
+      <p>You have learned to enhance your movements in battle using your air bending by decreasing the air resistance around you. Your speed inncreases while you are not wearing armor or wielding a shield. You gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</p>
+      </description>
+    </sheet>
+        <description>
+          <p>Your speed increases by {{monk:unarmored movement}} feet while you are not wearing armor or wielding a shield. You gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</p>
+       </description>
+      <rules>
+        <stat name="monk:unarmored movement" value="10" bonus="unarmored movement" level="2" />
+        <stat name="monk:unarmored movement" value="15" bonus="unarmored movement" level="6" />
+        <stat name="monk:unarmored movement" value="20" bonus="unarmored movement" level="10" />
+        <stat name="monk:unarmored movement" value="25" bonus="unarmored movement" level="14" />
+        <stat name="monk:unarmored movement" value="30" bonus="unarmored movement" level="18" />
+        
+        <stat name="innate speed:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:1]" />
+        <stat name="innate speed:climb:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:climb:1]" />
+        <stat name="innate speed:fly:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:fly:1]" />
+        <stat name="innate speed:swim:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:swim:1]" />
+        <stat name="innate speed:burrow:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:burrow:1]" />
+      </rules>
+   </sheet>
+  </element>
+   <element name="Defensive Current" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_AIR_DEFENSIVE_CURRENT">
+    <description>
+      <p>Starting at 1st level, you have a passive wind current that flows around you like a shield, ranged attack rolls as well as spells made against you and those standing within 5ft of you have disadvantage. As an action you can expand this current to a size equal your Bendable Mass, centred on you, knocking creatures of choice out of the radius and granting those within it the same passive benefit. Moving through this space is considered difficult terrain to those not permitted to enter by you. This field can be maintained for 1 minute as if concentrating on a spell. When the duration ends the effect stops and the user no longer gains the passive or active effect of this feature. Use twice per short rest.</p>
+    </description>
+    <sheet>
+      <description>Starting at 1st level, you have a passive wind current that flows around you like a shield, ranged attack rolls as well as spells made against you and those standing within 5ft of you have disadvantage. As an action you can expand this current to a size equal your Bendable Mass, centred on you, knocking creatures of choice out of the radius and granting those within it the same passive benefit. Moving through this space is considered difficult terrain to those not permitted to enter by you. This field can be maintained for 1 minute as if concentrating on a spell. When the duration ends the effect stops and the user no longer gains the passive or active effect of this feature. Use twice per short rest.</description>
+    </sheet>
+  </element>
+   <element name="Air Style" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_AIR_AIR_STYLE">
+    <description>
+      <p>You cannot be surprised. In addition, your dedication to the employment of negative jing enhances your evasive maneuvers to the point where you can avoid attacks that would have normally hit you. When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>
+    </description>
+    <sheet>
+      <description>You cannot be surprised. When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you</description>
+    </sheet>
+  </element>
+     <element name="Element of Freedom" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_AIR_ELEMENT_OF_FREEDOM">
+    <description>
+      <p>At 11th level, You cannot be hindered, through your embodiment of the element of freedom you gain the following traits:
+
+          - You are immune to piercing damage
+
+          - You have advantage on checks made to escape from grapples
+
+          - Standing up from being prone knocks targets back 10ft and doesn't cost any movement
+
+          - If you are subject to an effect that allows you to take half damage on a successful save you instead take no damage on a successful save.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on checks made to escape from grapples. Standing up from being prone knocks targets back 10ft and doesn't cost any movement. If you are subject to an effect that allows you to take half damage on a successful save you instead take no damage on a successful save.</description>
+      <rules>
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PIERCING" />
+      </rules>
+    </sheet>
+  </element>
+  <element name="Windvane" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_AIR_WINDVANE">
+    <description>
+      <p>The ability to fly is unlocked by releasing oneself of all his earthly tethers, achieving true and complete freedom. The complete mastery of this technique is rare even among master air benders. Being able to fly without an aid, such as a glider, grants the practitioner more stability and freedom in the sky, while also permitting easier use of bending mid-flight. Although a powerful technique, the ability is hindered by additional weight and the currents of the wind.
+
+      Starting at 17th level, you gain a flying speed of 60 feet. However, to gain full use of this feature you must of let go of all your earthly desires.
+
+      Windblade: You may cast the spell Windblade thrice per short rest.
+
+      Whirlwind: You may cast Whirlwind once per short rest.
+
+      Windvane: You may cast gust of wind at will.
+    </p>
+    </description>
+    <sheet>
+      <description>
+      Windblade: You may cast the spell Windblade thrice per short rest.
+      Whirlwind: You may cast Whirlwind once per short rest.
+      Windvane: You may cast gust of wind at will.</description>
+      <rules>
+        <grant name="innate speed:fly" value="60" bonus="base" />
+      </rules>
+    </sheet>
+  </element>
+
+
+
+ 
+
+  <!-- Water -->
+  <element name="Water" type="Archetype" source="NOS" id="ID_NOS_ARCHETYPE_BENDER_WATER">
+    <supports>Element</supports>  
+    <description>
+      <p>You are a Water Bender. Water bending, one of the four elemental bending arts, is the hydrokinetic ability to control water in all of its various forms. Water is a versatile element, as is fitting for the element of change. The moon is the source of power in water bending, and the original water benders learned to bend by observing how the moon pushed and pulled the tides.
+
+      Similar to their element, water benders are extremely adaptable and versatile. Water bending concentrates on the flow of energy and focuses less on strength and more on turning the opponent's own energy against them. The fighting style of water bending is mostly fluid and graceful, acting in concert with the environment. Water benders deal with the flow of energy; they let their defense become their offense, turning their opponents' own forces against them. Even when water benders do take an attack stance, their moves always appear to flow from one to the other. While a generally a bender's victory in battle depends on their skill or ingenuity, water benders, unlike other benders, gain a serious advantage or disadvantage depending on the amount of water around them. As the element of change, water benders can fluidly and quickly alternate from defense to offense, from a wall of ice to a jet of water, turning their opponent's strength against them.
+
+      The opposite of water bending is fire bending, with its relatively stagnant and direct philosophy</p>
+      <div element="ID_NOS_ARCHETYPE_FEATURE_WATER_EBB_AND_FLOW" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_WATER_MOONBORN" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_WATER_WATER_STYLE" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_WATER_ELEMENT_OF_CHANGE" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_WATER_BLOOD_BENDING" />
+    </description>
+    <sheet>
+      <description>You are a Water Bender.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_WATER_EBB_AND_FLOW" level="1"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_WATER_MOONBORN" level="1"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_WATER_WATER_STYLE" level="6"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_WATER_ELEMENT_OF_CHANGE" level="14"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_WATER_BLOOD_BENDING" level="17"/>
+    </rules>
+  </element>
+
+   <element name="Ebb and Flow" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_WATER_EBB_AND_FLOW">
+    <description>
+      <p>Water benders possess the ability to alter the physical state of the water they manipulate, between liquid, solid and gas. Changing the phase of water allows for multiple techniques in the course of a battle, from encasing an opponent in ice to hiding behind a wall of mist. Ice and steam/fog can also be molded in a diverse range of shapes. Ice provides a degree of hard lethality since it can be molded into spikes or blades to pin down or impale opponents. Steam or mist can obscure a battlefield and mask movement. Whenever you take a bend action option, you can also turn water into fog the size of your maximum bend volume or control fog of the same size, within your bend range. The fog is, by default, lightly obscuring. At level # you can compress the fog 10x to make it heavily obscuring. (note; 1 gram of water makes a 1 foot cube of fog)</p>
+    </description>
+    <sheet>
+      <description>Whenever you take a bend action option, you can also turn water into fog the size of your maximum bend volume or control fog of the same size, within your bend range. The fog is, by default, lightly obscuring. At level # you can compress the fog 10x to make it heavily obscuring. (note; 1 gram of water makes a 1 foot cube of fog)</description>
+    </sheet>
+  </element>
+   <element name="Moonborn" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_WATER_MOONBORN">
+    <description>
+      <p>At 1st level, you can use your water bending to propel across and in water, you gain a swim speed equal of 30 feet. You can also anchor water, holding it in place so you can step or hold onto it. Additional when you are at least standing in a foot of water you can use it to move faster, at first the increase to your speed is 5ft then at level 5 it is 10ft, level 10 is 15ft, level 15 is 20 and level 20 is 30ft.</p>
+    </description>
+    <sheet>
+      <description> You can also anchor water, holding it in place so you can step or hold onto it. Additional when you are at least standing in a foot of water you can use it to move faster, at first the increase to your speed is 5ft then at level 5 it is 10ft, level 10 is 15ft, level 15 is 20 and level 20 is 30ft.</description>
+      <rules>
+        <grant name="innate speed:swim" value="30" bonus="base" />
+      </rules>
+    </sheet>
+  </element>
+   <element name="Water Style" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_WATER_WATER_STYLE">
+    <description>
+      <p>At level 6 you have learned you can use your opponent's energy against them. Once per round as a reaction if an opponent makes a successful physical strike against you, you may half incoming damage and reflect a quarter of it back on the attacker.</p>
+    </description>
+    <sheet>
+      <description>Once per round, half incoming melee/ranged damage as reaction. Reflect 1/4 back to attacker.</description>
+    </sheet>
+  </element>
+   <element name="Element of Change" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_WATER_ELEMENT_OF_CHANGE">
+    <description>
+      <p>At 14th Level You cannot be limited, through your embodiment of the element of change you gain the following traits:
+
+          - You are resistant to cold, fire and piercing damage.
+
+          - You can move across difficult terrain created by liquid or any form of water without spending extra movement.
+
+          - At will, you can choose to make the ground in a 10-foot radius around you icy, becoming difficult terrain for creatures other than you. The radius moves with you</p>
+    </description>
+    <sheet>
+      <description>
+           You can move across difficult terrain created by liquid or any form of water without spending extra movement. At will, you can choose to make the ground in a 10-foot radius around you icy, becoming difficult terrain for creatures other than you. The radius moves with you</description>
+      <rules>
+       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+     </rules>
+    </sheet>
+  </element>
+  <element name="Blood Bending" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_WATER_BLOOD_BENDING">
+    <description>
+      <p>You have learned the taboo skill of Blood Bending which allows you to hydrokinetically take hold of and manipulate the various fluids within an organism's body. This technique is referred to as the darkest, most powerful, and most feared of all bending techniques and is the only art known to endanger the user's mental state.
+
+      The forms and styles used by blood benders resemble how a puppeteer controls a marionette. Whereas water bending uses flowing motions with the arms, blood bending seems to require a more rigid and abrupt form of movement, further highlighting how different it is from the primary water bending stances.
+
+      Starting at 17th level, You gain the ability to manipulate blood like it was water. Granting you the following techniques:
+
+      Disconnect: When you simultaneously use all your bend options and hit/affect one creature, they must make an additional con save or become unconscious. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. If the target takes damage, while unconscious they wake up instantly otherwise it lasts 1 minute.
+
+      Compel: Another bend option; You can try to compel a creature you can see within range, to follow your commands. The target must succeed on a Constitution saving throw or are affected as if by the command spell.
+
+      Dominate: When you take the bend action, you can choose to only perform the following option; You use blood bending to contol a creature you can see within range. The target must succeed on a Constitution saving throw or are affected as if by the Dominate Monster spell for 1 minute. After you take this option then until you complete a long rest, whenever you take this option again you must make a DC 20 Wisdom saving throw or become affected by a rondom effect on the short-term madness table or an effect of your DM's choosing
+
+      Heal: When you take the bending action you may instead heal a creature for 4d10 + your level. Use thrice per long rest.
+    </p>
+    </description>
+    <sheet>
+      <description>Starting at 17th level, You gain the ability to manipulate blood like it was water. Granting you the following techniques:
+
+      Disconnect:  The target of your bend attack must make an additional con save or become unconscious. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. If the target takes damage, while unconscious they wake up instantly otherwise it lasts 1 minute. You can use ability this once per long rest.
+
+      Compel: Another bend option; You can try to compel a creature you can see within range, to follow your commands. The target must succeed on a Constitution saving throw or are affected as if by the command spell.
+
+      Dominate: When you take the bend action, you can choose to only perform the following option; You use blood bending to contol a creature you can see within range. The target must succeed on a Constitution saving throw or are affected as if by the Dominate Monster spell for 1 minute. After you take this option then until you complete a long rest, whenever you take this option again you must make a DC 20 Wisdom saving throw or become affected by a rondom effect on the short-term madness table or an effect of your DM's choosing
+
+      Heal: When you take the bending action you may instead heal a creature for 4d10 + your level. Use thrice per long rest.
+    </description>
+    </sheet>
+  </element> 
+
+
+
+
+    <!-- Fire -->
+  <element name="Fire" type="Archetype" source="NOS" id="ID_NOS_ARCHETYPE_BENDER_FIRE">
+    <supports>Element</supports>  
+    <description>
+      <p>You are a Fire Bender. Fire bending, one of the four elemental bending arts, is the pyrokinetic ability to control fire and is considered to be the most aggressive bending art. It is unique among the bending arts, as it is the only one in which the performer can generate their element. Fire bending draws its power from the sun, and the first human fire benders derived their fire bending techniques from the dragons.
+
+      As the element of power, fire benders have to be able to maintain a constant source of energy and balance in battle, unleashing a volley of direct, successive attacks, consisting of overpowering force tempered by the unflinching will to accomplish tasks and desires. However, some users twist this into a fire bending technique that is fueled by rage, hatred, and anger.
+
+      Fire bending is known for its intense and aggressive attacking style and general lack of adequate defensive moves, although fire benders can modify offensive maneuvers to function as a defense, such as creating large walls of fire or shooting down incoming attacks with fire jabs. Fire bending's relatively simple and direct style contrasts the complex and changing style of water bending. Due to its solar affinity, fire bending is stronger during the day, but completely ineffective during a solar eclipse. When a comet passes close to the planet, the power of a fire bender is greatly increased.</p>
+      <div element="ID_NOS_ARCHETYPE_FEATURE_FIRE_SUNBORN" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_FIRE_JUMPING_FLAME" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_FIRE_FIRE_STYLE" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_FIRE_ELEMENT_OF_POWER" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_FIRE_LIGHTNING_BENDING" />
+    </description>
+    <sheet>
+      <description>You are a Fire Bender.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_FIRE_SUNBORN" level="1"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_FIRE_JUMPING_FLAME" level="1"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_FIRE_FIRE_STYLE" level="6"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_FIRE_ELEMENT_OF_POWER" level="14"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_FIRE_LIGHTNING_BENDING" level="17"/>
+    </rules>
+  </element>
+
+   <element name="Sunborn" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_FIRE_SUNBORN">
+    <description>
+      <p>You've learned to use fire to propel yourself at high speeds. You now are able to move the full distance when you jump regardless of the amount of movement you have. Your jumping distance increases by 15ft for Long and High Jumps.</p>
+    </description>
+    <sheet>
+      <description>You've learned to use fire to propel yourself at high speeds. You now are able to move the full distance when you jump regardless of the amount of movement you have. Your jumping distance increases by 15ft for Long and High Jumps.</description>
+    </sheet>
+  </element> 
+  <element name="Jumping Flame" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_FIRE_JUMPING_FLAME">
+    <description>
+      <p>Beginning at 1st level, you are a continuous blur of fiery motion in battle as you dart in, attack, and slip away to safety. During your turn, if you make an attack against a creature, that creature cannot make opportunity attacks against you for the rest of your turn.</p>
+    </description>
+    <sheet>
+      <description>During your turn, if you make an attack against a creature, that creature cannot make opportunity attacks against you for the rest of your turn</description>
+    </sheet>
+  </element> 
+  <element name="Fire Style" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_FIRE_FIRE_STYLE">
+    <description>
+      <p>At 6th level, landing two successive attacks against the same target you may add one bending die for damage against that target. Your amount of bending die can only be increased this way by an amount equal to half your proficiency bonus.</p>
+    </description>
+    <sheet>
+      <description>Landing two successive attacks against the same target you may add one bending die for damage against that target. Your amount of bending die can only be increased this way by an amount equal to half your proficiency bonus</description>
+    </sheet>
+  </element> 
+  <element name="Element of Power" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_FIRE_ELEMENT_OF_POWER">
+    <description>
+      <p>Starting at 14th level, you cannot be dampened, through your embodiment of the element of power you gain the following traits:
+              - Standing up from being prone knocks targets back 10ft and doesn't cost any movement
+
+              - If you are subject to an effect that allows you to take half damage on a successful save you instead take no damage on a successful save.</p>
+    </description>
+    <sheet>
+      <description>Standing up from being prone knocks targets back 10ft and doesn't cost any movement. If you are subject to an effect that allows you to take half damage on a successful save you instead take no damage on a successful save
+      </description>
+      <rules>
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" />
+      </rules>
+    </sheet>
+  </element>
+    <element name="Lightning Bending" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_FIRE_LIGHTNING_BENDING">
+    <description>
+      <p>You take your stance, creating circular motion with your arms. (You must have both hands free)
+
+          You calm yourself mentally, becoming completely absent of emotion and reaching a peace of mind. (Your character must have a certain degree of emotional discipline in this moment (Up to the DM))
+
+          Once you reach 17th level, You can feel the positive and negative energy of your flame, separating them with one motion, and in another colliding them to create lightning. (You cannot do this while squeezing)
+
+          If one attempts to conjure lightning without the required emotional discipline or the correct motions, they must make a Wisdom saving throw or else the equivalent of a fireball spell as if cast at third level is expelled from them causing them to take full damage, ignoring their resistance, and causes them to become paralyzed for 1 minute. If they pass they take 1d4 lightning damage and nothing else happens.
+
+          You have gained the ability to create and then strike your opponents with lightning so you can choose for your bending attacks to deal lighting damage. In addition, you gain the following techniques:
+
+          Stunning Strike: As an action, you may strike a target forcing them to make a Constitution saving throw or be stunned until the end of your next turn and dealing damage equal to your Bender Die.
+
+          Lightning Redirection: As a reaction to when you take lightning damage, you can instead take quarter damage rounded up to redirect that lightning damage to a target of your choice. That target must make a Dexterity saving throw or take full damage from the original lightning plus your Bending Die. On a successful save the target takes half damage.
+
+          Chain Lightning As an action you create a bolt of lightning that arcs toward a target of your choice that you can see within range. Five bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts. A target must make a Dexterity saving throw. The target takes 10d8 lightning damage on a failed save, or half as much on a successful one. Twice per long rest.</p>
+    </description>
+    <sheet>
+      <description>Stunning Strike: As an action, you may strike a target forcing them to make a Constitution saving throw or be stunned until the end of your next turn and dealing damage equal to your Bender Die.
+
+          Lightning Redirection: As a reaction to when you take lightning damage, you can instead take quarter damage rounded up to redirect that lightning damage to a target of your choice. That target must make a Dexterity saving throw or take full damage from the original lightning plus your Bending Die. On a successful save the target takes half damage.
+
+          Chain Lightning As an action you create a bolt of lightning that arcs toward a target of your choice that you can see within range. Five bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts. A target must make a Dexterity saving throw. The target takes 10d8 lightning damage on a failed save, or half as much on a successful one. Twice per long rest</description>
+    </sheet>
+  </element>
+
+
+
+
+
+    <!-- Earth -->
+  <element name="Earth" type="Archetype" source="NOS" id="ID_NOS_ARCHETYPE_BENDER_EARTH">
+    <supports>Element</supports>  
+    <description>
+      <p>You are an Earth Bender. Earth bending, one of the four elemental bending arts, is the geokinetic ability to manipulate earth and rock in all their various forms. Earth is the element of substance and as such earth benders are diverse, strong, and enduring.
+      The key to earth bending is utilizing neutral jing, which involves waiting and listening for the right moment to strike and, when that moment comes, acting decisively. In other words, earth benders generally endure their enemies' attacks until the right opportunity to counterattack reveals itself.
+      Like water benders, earth benders gain an advantage or disadvantage in battle based on the amount of earth around them, though the conditions are not as extreme. Because of their element's stability and its stress on neutral jing, earth benders stand their ground, absorbing or intercepting attacks until they completely overwhelm their opponents.
+      Earth bending is in stark contrast to air bending as air bending's emphasis is on evasion and mobility while earth bending's emphasis is on fortitude and strength.</p>
+      <div element="ID_NOS_ARCHETYPE_FEATURE_EARTH_DEFENSE" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_EARTH_TREMORSENSE" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_EARTH_EARTH_STYLE" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_EARTH_METAL_BENDING" />
+      <div element="ID_NOS_ARCHETYPE_FEATURE_EARTH_ELEMENT_OF_SUBSTANCE" />
+    </description>
+    <sheet>
+      <description>You are an Earth Bender.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_EARTH_TREMORSENSE" level="1"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_EARTH_DEFENSE" level="1"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_EARTH_EARTH_STYLE" level="6"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_EARTH_ELEMENT_OF_SUBSTANCE" level="14"/>
+      <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_EARTH_METAL_BENDING" level="17"/>
+    </rules>
+  </element>
+
+   <element name="Tremorsense" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_EARTH_TREMORSENSE">
+    <description>
+      <p>At 1st level you have learned to use earth bending as an extension of your senses granting you the ability to "see" every vibration that passes through the ground. You have tremorsense up to 30ft as long as you're feet are on the solid ground of you.</p>
+    </description>
+    <sheet display="false">
+      <rules>
+        <grant type="Vision" id="ID_VISION_TREMORSENSE" />
+      </rules>
+    </sheet>
+  </element> 
+  <element name="Defense" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_EARTH_DEFENSE">
+    <description>
+      <p>You can fully encase yourself in a ball of Earthen Mass, while in this form you cannot move or attack. The mass has an Armor Class of 15 and half your hit point maximum and gains whatever resistances or immunities you have as well as an immunity to psychic and poison damage. Once you use Earthen Mass you cannot use it again until you complete a short or long rest.</p>
+    </description>
+    <sheet>
+      <description>You can fully encase yourself in a ball of Earthen Mass, while in this form you cannot move or attack. The mass has an Armor Class of 15 and half your hit point maximum and gains whatever resistances or immunities you have as well as an immunity to psychic and poison damage. Once per long rest.</description>
+    </sheet>
+  </element> 
+  <element name="Earth Style" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_EARTH_EARTH_STYLE">
+    <description>
+      <p>At 6th level you have learned how to capitalize on the openings and vulnerabilities in your enemies defences. Once per round when an enemy makes an attack against you and misses, you may make a single element strick against them as a reaction if they are within 30ft.</p>
+    </description>
+    <sheet>
+      <description>Once per round when an enemy makes an attack against you and misses, you may make a single element strick against them as a reaction if they are within 30ft.</description>
+    </sheet>
+  </element> 
+  <element name="Element of Substance" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_EARTH_ELEMENT_OF_SUBSTANCE">
+    <description>
+      <p>At 14th level, You can no longer be broken, through your embodiment of the element of substance you gain the following traits:
+        - You are immune to being petrified.
+
+        - You have resistance to nonmagical bludgeoning, piercing, and slashing damage.
+
+        - You can move across difficult terrain made of earth or stone without spending extra movement.</p>
+    </description>
+    <sheet>
+      <description>You are immune to being petrified. in Addition you can move across difficult terrain made of earth or stone without spending extra movement</description>
+      <rules>
+       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+       <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" /> 
+      </rules>
+    </sheet>
+  </element>
+  <element name="Metal Bending" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_EARTH_METAL_BENDING">
+    <description>
+      <p>hrough your experience and experimentation, you have discovered that metal is but derived from ore, which is found in the earth and that metal is just a part of earth that has been purified and refined. As such, through locating the impurities in metal, you can manipulate them in order to bend them to a degree.
+
+      Starting at 17th level, you gain the ability to bend metal. In addition, you gain the following techniques:
+
+      Metallic Defense: Your Earthen Armor can now implement metal. When you call metal to you, your Armor Class is 14 plus your Wisdom modifier and you do not suffer a penalty to your movement speed.
+
+      Lava Bending: By observing how metal can be transformed into a molten state, you have learned how to heat up your bending substance. If you spend an action while bending earth or metal, you may heat it to the point at which it becomes a liquid. This adds 2 additional bending die to it's damage, in addition, the damage type is fire. It remains heated for an amount of rounds equal to your Element Bender level.
+
+      Advanced Bending: Metal is, by nature, a more solid and refined substance when compared to rock and earth. When bending metal in an offensive form, you increase DCs by 2.
+
+      In metals that are highly purified, such as platinum, where there are no or not enough particles left to bend and as such renders the material impervious to metal bending technique.
+    </description>
+    <sheet>
+      <description> Metallic Defense: Your Earthen Armor can now implement metal. When you call metal to you, your Armor Class is 14 + your Wisdom modifier and you do not suffer a penalty to your movement speed.
+
+      Lava Bending: By observing how metal can be transformed into a molten state, you have learned how to heat up your bending substance. If you spend an action while bending earth or metal, you may heat it to the point at which it becomes a liquid. This adds 2 additional bending die to it's damage, in addition, the damage type is fire. It remains heated for an amount of rounds equal to your Element Bender level.
+
+      Advanced Bending: Metal is, by nature, a more solid and refined substance when compared to rock and earth. When bending metal in an offensive form, you increase DCs by 2.
+
+      In metals that are highly purified, such as platinum, where there are no or not enough particles left to bend and as such renders the material impervious to metal bending technique.</description>
+    </sheet>
+  </element>
+  
+
+</elements>
+
