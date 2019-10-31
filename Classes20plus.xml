@@ -4,7 +4,7 @@
     <name>20+</name>
     <description>The Classes on lvl 20+.</description>
     <update version="0.2.4">
-      <file name="classes-20plus.xml" url="" />
+      <file name="classes-20plus.xml" url="https://github.com/NOS1996/Component-DnD/blob/master/Classes20plus.xml" />
     </update>
   </info>
 
