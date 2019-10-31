@@ -13,30 +13,30 @@
       <p>The Classes for DnD Sessions at levels 20+.</p>   
       <h4>HOW IT WORKS</h4>
       <p>The different classes are managed as subclasses and the features are all stocked up to level 10, making it possible for you to multiclass in one of the post 20 level extra classes (which typically have 10 levels each). Effectively making it possible for you to play up to a lvl 30 Character.</p>
-      <p class="indent">Do not let the features of this class distract you. Just take 10 levels of the subclass that you want to be your main class (like monk, wizard, etc) and then multiclass into one of the post lvl 20 classes and you will gain all your precious features and such.<p> 
+      <p class="indent">Do not let the features of this class distract you. Just take 10 levels of the subclass that you want to be your main class (like monk, wizard, etc) and then multiclass into one of the post lvl 20 classes and you will gain all your precious features and such.</p> 
       <h5>QUICK BUILD</h5>
       <p>Chose Ability scores like this:</p>
-      <p class="indent">Artificier: Inteligence, Constitution/Dexterity<p>
-      <p class="indent">Artificier: Intelligence, Constitution/Dexterity<p>
-      <p class="indent">Barbarian: Strength, Constitution<p>
-      <p class="indent">Bard: Charisma, Dexterity<p>
-      <p class="indent">Bender: Wisdom, Dexterity<p>
-      <p class="indent">Bloodunter: Strength/Dexterity, Wisdom/Constitution<p>
-      <p class="indent">Cleric: Wisdom, Stregth/Constitution<p>
-      <p class="indent">Cook: Constitution, Dexterity<p>
-      <p class="indent">Druid: Wisdom, Constitution<p>
-      <p class="indent">Fighter: Strength/Dexterity, Constitution<p>
-      <p class="indent">Monk: Dexterity, Wisdom<p>
-      <p class="indent">Mystic: Intelligence, Dexterity/Constitution<p>
-      <p class="indent">Necromancer: Charisma, Constitution, Dexterity<p>
-      <p class="indent">Paladin: Strength, Charisma<p>
-      <p class="indent">Ranger: Dexterity/Strength, Wisdom<p>
-      <p class="indent">Rogue: Dexterity, Intelligence/Charisma<p>
-      <p class="indent">Sorcerer: Charisma, Constitution<p>
-      <p class="indent">Starlighter: Wisdom, Constitution/Dexterity<p>
-      <p class="indent">Warlock: Charisma, Constitution<p>
-      <p class="indent">Weapon Master: Strength/Dexterity, Constitution<p>
-      <p class="indent">Wizard: Intelligence, Constitution/Dexterity<p>
+      <p class="indent">Artificier: Inteligence, Constitution/Dexterity</p>
+      <p class="indent">Artificier: Intelligence, Constitution/Dexterity</p>
+      <p class="indent">Barbarian: Strength, Constitution</p>
+      <p class="indent">Bard: Charisma, Dexterity</p>
+      <p class="indent">Bender: Wisdom, Dexterity</p>
+      <p class="indent">Bloodunter: Strength/Dexterity, Wisdom/Constitution</p>
+      <p class="indent">Cleric: Wisdom, Stregth/Constitution</p>
+      <p class="indent">Cook: Constitution, Dexterity</p>
+      <p class="indent">Druid: Wisdom, Constitution</p>
+      <p class="indent">Fighter: Strength/Dexterity, Constitution</p>
+      <p class="indent">Monk: Dexterity, Wisdom</p>
+      <p class="indent">Mystic: Intelligence, Dexterity/Constitution</p>
+      <p class="indent">Necromancer: Charisma, Constitution, Dexterity</p>
+      <p class="indent">Paladin: Strength, Charisma</p>
+      <p class="indent">Ranger: Dexterity/Strength, Wisdom</p>
+      <p class="indent">Rogue: Dexterity, Intelligence/Charisma</p>
+      <p class="indent">Sorcerer: Charisma, Constitution</p>
+      <p class="indent">Starlighter: Wisdom, Constitution/Dexterity</p>
+      <p class="indent">Warlock: Charisma, Constitution</p>
+      <p class="indent">Weapon Master: Strength/Dexterity, Constitution</p>
+      <p class="indent">Wizard: Intelligence, Constitution/Dexterity</p>
       <h3>CLASS FEATURES</h3>
       <p>This was a fuckton of work.</p>
       <h5>HIT POINTS</h5>
@@ -109,4 +109,4 @@
     </rules>
   </element>
 
-  
+</elements>
