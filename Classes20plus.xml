@@ -47,13 +47,13 @@
       </p>
       <h5>PROFICIENCIES</h5>
       <p>
-        <span class="emphasis">Armor:</span>See subclass<br />
-        <span class="emphasis">Weapons:</span>See subclass<br />
-        <span class="emphasis">Tools:</span>See subclass<br />
+        <span class="emphasis">Armor:</span>None<br />
+        <span class="emphasis">Weapons:</span>None<br />
+        <span class="emphasis">Tools:</span>None<br />
       </p>
       <p>
-        <span class="emphasis">Saving Throws:</span>See subclass<br />
-        <span class="emphasis">Skills:</span>See subclass<br />
+        <span class="emphasis">Saving Throws:</span>Constitution<br />
+        <span class="emphasis">Skills:</span>None<br />
       </p>
       <h5>EQUIPMENT</h5>
       <p>See subclass description.</p>
@@ -70,11 +70,19 @@
     </setters>
     <rules>
       <!-- <grant type="Grants" id="ID_INTERNAL_GRANTS_AVERAGE_HP_D6" /> -->
+      <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
 
-      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_TWENTYPLUS_SUBCLASS" level="1" />
-      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_TWENTYPLUS_ABILITYSCOREIMPROVEMENT_TWENTYPLUS" level="1" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_NOS_MULTICLASS_TWENTYPLUS"/>
+      
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_TWENTYPLUS_SUBCLASS" />
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_TWENTYPLUS_ABILITYSCOREIMPROVEMENT_TWENTYPLUS"/>
     </rules>
-    <multiclass id="ID_NOS_MULTICLASS_TWENTYPLUS">
+  <multiclass id="ID_NOS_MULTICLASS_TWENTYPLUS">
+    <prerequisite>Dexterity 11</prerequisite>
+    <requirements>([dex:11])</requirements>
+      <setters>
+        <set name="multiclass proficiencies">—</set>
+      </setters>
       <rules>
         <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
       </rules>
@@ -100,12 +108,12 @@
       <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_3_TWENTYPLUS" level="3" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
       <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_5_TWENTYPLUS" level="5" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
       <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_7_TWENTYPLUS" level="7" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
-      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_9_TWENTYPLUS" level="9" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />-->
-      <select type="Class Feature" name="Improvement Option (20+ 1)" supports="Improvement Option,20plus,1" level="1" />
-      <select type="Class Feature" name="Improvement Option (20+ 3)" supports="Improvement Option,20plus,3" level="3" />
-      <select type="Class Feature" name="Improvement Option (20+ 5)" supports="Improvement Option,20plus,5" level="5" />
-      <select type="Class Feature" name="Improvement Option (20+ 7)" supports="Improvement Option,20plus,7" level="7" />
-      <select type="Class Feature" name="Improvement Option (20+ 9)" supports="Improvement Option,20plus,9" level="9" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_9_TWENTYPLUS" level="9" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" /> -->
+      <select type="Class Feature" name="Improvement Option (20plus 1)" supports="Improvement Option,20plus,1" level="1" />
+      <select type="Class Feature" name="Improvement Option (20plus 3)" supports="Improvement Option,20plus,3" level="3" />
+      <select type="Class Feature" name="Improvement Option (20plus 5)" supports="Improvement Option,20plus,5" level="5" />
+      <select type="Class Feature" name="Improvement Option (20plus 7)" supports="Improvement Option,20plus,7" level="7" />
+      <select type="Class Feature" name="Improvement Option (20plus 9)" supports="Improvement Option,20plus,9" level="9" />
     </rules>
   </element>
 
