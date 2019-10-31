@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>20+</name>
+    <description>The Classes on lvl 20+.</description>
+    <update version="0.2.4">
+      <file name="classes-20plus.xml" url="" />
+    </update>
+  </info>
+
+ <element name="20plus" type="Class" source="NOS" id="ID_NOS_CLASS_TWENTYPLUS">
+    <description>
+      <p>The Classes for DnD Sessions at levels 20+.</p>   
+      <h4>HOW IT WORKS</h4>
+      <p>The different classes are managed as subclasses and the features are all stocked up to level 10, making it possible for you to multiclass in one of the post 20 level extra classes (which typically have 10 levels each). Effectively making it possible for you to play up to a lvl 30 Character.</p>
+      <p class="indent">Do not let the features of this class distract you. Just take 10 levels of the subclass that you want to be your main class (like monk, wizard, etc) and then multiclass into one of the post lvl 20 classes and you will gain all your precious features and such.<p> 
+      <h5>QUICK BUILD</h5>
+      <p>Chose Ability scores like this:</p>
+      <p class="indent">Artificier: Inteligence, Constitution/Dexterity<p>
+      <p class="indent">Artificier: Intelligence, Constitution/Dexterity<p>
+      <p class="indent">Barbarian: Strength, Constitution<p>
+      <p class="indent">Bard: Charisma, Dexterity<p>
+      <p class="indent">Bender: Wisdom, Dexterity<p>
+      <p class="indent">Bloodunter: Strength/Dexterity, Wisdom/Constitution<p>
+      <p class="indent">Cleric: Wisdom, Stregth/Constitution<p>
+      <p class="indent">Cook: Constitution, Dexterity<p>
+      <p class="indent">Druid: Wisdom, Constitution<p>
+      <p class="indent">Fighter: Strength/Dexterity, Constitution<p>
+      <p class="indent">Monk: Dexterity, Wisdom<p>
+      <p class="indent">Mystic: Intelligence, Dexterity/Constitution<p>
+      <p class="indent">Necromancer: Charisma, Constitution, Dexterity<p>
+      <p class="indent">Paladin: Strength, Charisma<p>
+      <p class="indent">Ranger: Dexterity/Strength, Wisdom<p>
+      <p class="indent">Rogue: Dexterity, Intelligence/Charisma<p>
+      <p class="indent">Sorcerer: Charisma, Constitution<p>
+      <p class="indent">Starlighter: Wisdom, Constitution/Dexterity<p>
+      <p class="indent">Warlock: Charisma, Constitution<p>
+      <p class="indent">Weapon Master: Strength/Dexterity, Constitution<p>
+      <p class="indent">Wizard: Intelligence, Constitution/Dexterity<p>
+      <h3>CLASS FEATURES</h3>
+      <p>This was a fuckton of work.</p>
+      <h5>HIT POINTS</h5>
+      <p>
+        <span class="emphasis">Hit Dice:</span>1d6 per level<br />
+        <span class="emphasis">Hit Points at 1st Level:</span>6 + your Constitution modifier<br />
+        <span class="emphasis">Hit Points at Higher Levels:</span>1d6 (or 5) + your Constitution modifier per level after 1st<br />
+      </p>
+      <h5>PROFICIENCIES</h5>
+      <p>
+        <span class="emphasis">Armor:</span>See subclass<br />
+        <span class="emphasis">Weapons:</span>See subclass<br />
+        <span class="emphasis">Tools:</span>See subclass<br />
+      </p>
+      <p>
+        <span class="emphasis">Saving Throws:</span>See subclass<br />
+        <span class="emphasis">Skills:</span>See subclass<br />
+      </p>
+      <h5>EQUIPMENT</h5>
+      <p>See subclass description.</p>
+
+      <div element="ID_NOS_CLASS_FEATURE_TWENTYPLUS_SUBCLASS" />
+      <div element="ID_NOS_CLASS_FEATURE_TWENTYPLUS_ABILITYSCOREIMPROVEMENT_TWENTYPLUS" />
+    </description>
+    <sheet display="false">
+      <description>Classes for Characters level 20+.</description>
+    </sheet>
+    <setters>
+      <set name="short">Classes for Characters level 20+.</set>
+      <set name="hd">d6</set>
+    </setters>
+    <rules>
+      <!-- <grant type="Grants" id="ID_INTERNAL_GRANTS_AVERAGE_HP_D6" /> -->
+
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_TWENTYPLUS_SUBCLASS" level="1" />
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_TWENTYPLUS_ABILITYSCOREIMPROVEMENT_TWENTYPLUS" level="1" />
+    </rules>
+    <multiclass id="ID_NOS_MULTICLASS_TWENTYPLUS">
+      <rules>
+        <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+      </rules>
+    </multiclass>
+  </element>
+
+  <element name="Subclass" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_TWENTYPLUS_SUBCLASS">
+    <description>
+      <p>At first level choose one of the subclasses as your main class.</p>
+    </description>
+    <sheet />
+    <rules>
+      <select type="Archetype" name="Subclass" supports="Subclass" />
+    </rules>
+  </element>
+  <element name="Ability Score Improvement (20plus)" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_TWENTYPLUS_ABILITYSCOREIMPROVEMENT_TWENTYPLUS">
+    <description>
+      <p> At first level, and again at 3rd, 5th, 7th, and 9th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <!-- <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_1_TWENTYPLUS" level="1" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_3_TWENTYPLUS" level="3" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_5_TWENTYPLUS" level="5" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_7_TWENTYPLUS" level="7" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_9_TWENTYPLUS" level="9" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />-->
+      <select type="Class Feature" name="Improvement Option (20+ 1)" supports="Improvement Option,20plus,1" level="1" />
+      <select type="Class Feature" name="Improvement Option (20+ 3)" supports="Improvement Option,20plus,3" level="3" />
+      <select type="Class Feature" name="Improvement Option (20+ 5)" supports="Improvement Option,20plus,5" level="5" />
+      <select type="Class Feature" name="Improvement Option (20+ 7)" supports="Improvement Option,20plus,7" level="7" />
+      <select type="Class Feature" name="Improvement Option (20+ 9)" supports="Improvement Option,20plus,9" level="9" />
+    </rules>
+  </element>
+
+  
