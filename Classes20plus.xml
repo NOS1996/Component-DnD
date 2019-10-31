@@ -57,7 +57,6 @@
       </p>
       <h5>EQUIPMENT</h5>
       <p>See subclass description.</p>
-
       <div element="ID_NOS_CLASS_FEATURE_TWENTYPLUS_SUBCLASS" />
       <div element="ID_NOS_CLASS_FEATURE_TWENTYPLUS_ABILITYSCOREIMPROVEMENT_TWENTYPLUS" />
     </description>
@@ -98,22 +97,18 @@
       <select type="Archetype" name="Subclass" supports="Subclass" />
     </rules>
   </element>
-  <element name="Ability Score Improvement (20plus)" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_TWENTYPLUS_ABILITYSCOREIMPROVEMENT_TWENTYPLUS">
+  <element name="Ability Score Improvement (Twentyplus)" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_TWENTYPLUS_ABILITYSCOREIMPROVEMENT_TWENTYPLUS">
     <description>
-      <p> At first level, and again at 3rd, 5th, 7th, and 9th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.</p>
+      <p>When you reach 2nd level, and again at 3rd, 4th, 6th, 8th, and 9th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1.</p>
     </description>
     <sheet display="false" />
     <rules>
-      <!-- <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_1_TWENTYPLUS" level="1" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
-      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_3_TWENTYPLUS" level="3" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
-      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_5_TWENTYPLUS" level="5" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
-      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_7_TWENTYPLUS" level="7" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
-      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_9_TWENTYPLUS" level="9" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" /> -->
-      <select type="Class Feature" name="Improvement Option (20plus 1)" supports="Improvement Option,20plus,1" level="1" />
-      <select type="Class Feature" name="Improvement Option (20plus 3)" supports="Improvement Option,20plus,3" level="3" />
-      <select type="Class Feature" name="Improvement Option (20plus 5)" supports="Improvement Option,20plus,5" level="5" />
-      <select type="Class Feature" name="Improvement Option (20plus 7)" supports="Improvement Option,20plus,7" level="7" />
-      <select type="Class Feature" name="Improvement Option (20plus 9)" supports="Improvement Option,20plus,9" level="9" />
+      <select type="Class Feature" name="Improvement Option (twentyplus 2)" supports="Improvement Option,Twentyplus,2" level="2" />
+      <select type="Class Feature" name="Improvement Option (twentyplus 3)" supports="Improvement Option,Twentyplus,3" level="3" />
+      <select type="Class Feature" name="Improvement Option (twentyplus 4)" supports="Improvement Option,Twentyplus,4" level="4" />
+      <select type="Class Feature" name="Improvement Option (twentyplus 6)" supports="Improvement Option,Twentyplus,6" level="6" />
+      <select type="Class Feature" name="Improvement Option (twentyplus 8)" supports="Improvement Option,Twentyplus,8" level="8" />
+      <select type="Class Feature" name="Improvement Option (twentyplus 9)" supports="Improvement Option,Twentyplus,9" level="9" />
     </rules>
   </element>
 
