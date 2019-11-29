@@ -11,18 +11,18 @@
  <element name="Starlighter" type="Class" source="NOS" id="ID_NOS_CLASS_STARLIGHTER">
     <description>
       <p>Clad in the silver robes that denote her status, an elf closes her eyes to shut out the distractions of the battlefield and begins her quiet chant. Fingers weaving in front of her, she completes her spell and launches a tiny bead of fire toward the enemy ranks, where it erupts into a conflagration that engulfs the soldiers.</p>
-      <p class="indent">Checking and rechecking his work, a human scribes an intricate magic circle in chalk on the bare stone floor, then sprinkles powdered iron along every line and graceful curve. When the circle is complete, he drones a long incantation. A hole opens in space inside the circle, bringing a whiff of brimstone from the otherworldly plane beyond.</p>
-      <p class="indent">Crouching on the floor in a dungeon intersection, a gnome tosses a handful of small bones inscribed with mystic symbols, muttering a few words of power over them. Closing his eyes to see the visions more clearly, he nods slowly, then opens his eyes and points down the passage to his left.</p>
+      <p class="indent">Delving deep into meditation, a human finds solace in the wisdom of the universe, emerging from the planes of magic into a state of pure being, raising a token on the battelfield and outlasting his enemies and strenghtening his allies he shines bright like the sun. </p>
+      <p class="indent">Crouching on the floor in a dungeon intersection, a gnome closes her eyes to feel the flow of the multiverse. After a few moments she opens them again, shining light bright stars in the night sky, turning a stealthy herd of orcs ahead of her into stone.</p>
       <p class="indent">Pointing his hand in a simple gesture, a loxodon conjures a bright streak of light to diminish his enemy to fine gray dust.</p>
-      <p class="indent">Starlighters are supreme casters, empowered trough the positive energy that suffuses the multiverse. Drawing on the subtle weave of magic that permeates the cosmos, starlighters learn to shape reality to suit their wishes. Their magic conjures monsters from other planes of existence, glimpses the future, or turns slain foes into zombies. Their mightiest spells change one substance into another, call meteors down from the sky, open portals to other worlds or change the fabric of the world itself.</p>
+      <p class="indent">Starlighters are supreme casters, empowered trough the positive energy that suffuses the multiverse. Drawing on the subtle weave of magic that permeates the cosmos, starlighters learn to shape reality to suit their needs. They delve deep into the very foundations of magic, the source of the multiverse itself, to bring balance to all life, becoming pillars of magic themselves in the process.</p>
       <h4>EMPOWERED BY LIGHT</h4>
-      <p>Wild and enigmatic, varied in form and function, the power of magic draws students who seek to master its mysteries. The positive energy radiating from every single strand of the cosmical weave fuels the power of a Starlighter and allows them to shape reality as they please, granting them success where others failed.</p>
+      <p>The wisdom of the multiverse seeks to quench those who thirst for balance and peace and a deeper understanding of themselves and the nature of the multiverse.</p>
       <h4>THE LURE OF ADVENTURE</h4>
-      <p>Starlighters strive for adventure, for they grow through the experience gained. True power can only be achieved through bridening ones horizon and gaining a deeper understanding of the force that upholds the multiverse and encompasses all and everyone.</p>
+      <p>Starlighters feel the balance in the multiverse, they strive for cosmic peace, which doesn't always mean conventional peace. Some Starlighters are Avatars of War, taking their peace to the enemies of cosmic balance. They often seek out evil beings and necromantic powers to reestablish balance in the deep flow of the magic suffusing the multiverse. </p>
       <h4>CREATING A STARLIGHTER</h4>
-      <p>Creating a Starlighter character demands a backstory dominated by at least one extraordinary event. How did your character first come into contact with magic? How did you discover you had an aptitude for? Did you encounter a magical creature or an ancient tome that taught you the basics of magic?</p>
+      <p>Creating a Starlighter character demands a backstory dominated by at least one extraordinary event. How did your character first come into contact with magic? How did you discover you had an aptitude for? When did you begin to feel the flow suffusing the multiverse and how to interpret it's will?</p>
       <h5>QUICK BUILD</h5>
-      <p>You can make a starlighter quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Constitution or Dexterity. Second, choose the sage background.</p>
+      <p>You can make a starlighter quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Constitution or Dexterity. Second, choose the Witch hunter background.</p>
       <h3>CLASS FEATURES</h3>
       <p>As a starlighter, you gain the following class features.</p>
       <h5>HIT POINTS</h5>
@@ -52,7 +52,6 @@
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELLCASTING_STARLIGHTER" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_ABILITYSCOREIMPROVEMENT_STARLIGHTER" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELL_MASTERY" />
-      <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_RECOVERY" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_MAGIC" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_DIVINE_MAGIC" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER" />
@@ -87,7 +86,6 @@
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELLCASTING_STARLIGHTER" level="1"/>
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_MAGIC" level="1" />
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_DIVINE_MAGIC" level="1" />
-      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_RECOVERY" level="1" />
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_ABILITYSCOREIMPROVEMENT_STARLIGHTER" level="4" />
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER" level="2" />
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_FIRE" level="4" />
@@ -110,13 +108,13 @@
   <element name="Spellcasting" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELLCASTING_STARLIGHTER">
     <description>
       <h5>CANTRIPS</h5>
-      <p>At 1st level, you know three cantrips of your choice from the Starlighter spell list. You learn additional Starlighter cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Starlighter table.</p>
+      <p>Cantrips are the very start for every mage and even the Sttarlighters are no exception to that rule. You begin with a certain number of Cantrips and learn more later on.</p>
       <h5>SPELLS</h5>
-      <p>At 1st level, you gain six 1st-­level Starlighter spells of your choice, which are, as well as any later added spells fixed in your mind.</p>
+      <p>At 1st level, you gain some 1st-­level Starlighter spells of your choice, which are, as well as any later added spells fixed in your mind.</p>
       <h5>CASTING SPELLS</h5>
       <p>The Starlighter table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
       <h5>SPELLCASTING ABILITY</h5>
-      <p>Wisdom is your spellcasting ability for your starlighter spells. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a starlighter spell you cast and when making an attack roll with one.</p>
+      <p>Wisdom is your spellcasting ability for your starlighter spells. You use Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a starlighter spell you cast and when making an attack roll with one.</p>
       <p>
         <strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier
       </p>
@@ -124,14 +122,12 @@
         <strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier
       </p>
       <h5>RITUAL CASTING</h5>
-      <p>You can cast a starlighter spell as a ritual if that spell has the ritual tag. You don’t need to have the spell prepared.</p>
+      <p>You can cast a starlighter spell as a ritual if that spell has the ritual tag.</p>
       <h5>SPELLCASTING FOCUS</h5>
       <p>You can use an arcane focus as a spellcasting focus for your starlighter spells.</p>
-      <h5>LEARNING SPELLS OF 1ST LEVEL AND HIGHER</h5>
-      <p>Each time you gain a starlighter level, you can add two starlighter spells of your choice to your knowledge compound. Each of these spells must be of a level for which you have spell slots, as shown on the Starlighter table.</p>
     </description>
     <sheet display="true">
-      <description> You do not need to prepare spells. You use an arcane focus to cast spells and can also cast starlighter spells as a ritual.</description>
+      <description>You use an arcane focus to cast spells and can also cast Starlighter spells as a ritual.</description>
     </sheet>
     <spellcasting name="Starlighter" ability="Wisdom" prepare="false">
       <list>Wizard</list>
@@ -223,17 +219,17 @@
   </element>
 
 
-  <element name="Celestial Fire" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_FIRE">
+  <element name="Cosmic Agent" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_FIRE">
     <description>
-      <p>Beginning at 4th level your attacks/spells deal an additional 2d8 radiant damage. Furthermore your attacks/spells that deal radiant damage treat immunity to radiant damage as resistance to radiant damage, and ignore resistance to radiant damage. </p>
+      <p>Becoming inured to the flow of the cosmos, you noticed, that you act like a sieve for the current of magic. You redirect a part of the cosmic flow into your body, causing your spells and attacks to deal an additional 1d8 radiant damage. Furthermore your attacks and spells that deal radiant damage now treat immunity to radiant damage as resistance to radiant damage, and ignore resistance to radiant damage. </p>
     </description>
     <sheet>
-      <description>Your attacks/spells deal an additional 2d8 radiant damage. Furthermore your attacks/spells that deal radiant damage treat immunity to radiant damage as resistance to radiant damage, and ignore resistance to radiant damage.</description>
+      <description>Your attacks and spells deal an additional 1d8 radiant damage. Your attacks and spells ignore resistance to radiant damage and treat immunity like resistance.</description>
     </sheet>
   </element>
   <element name="Heavenly Protection" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER">
     <description>
-      <p>When you adopt this tradition at 2nd level you gain advantage on saving throws against spells. Furthermore, effects, spells or features that would grant advantage on saving throws against your spells, do not apply.</p>
+      <p>As a Starlighter you meditate deeply inside the river of magic, that suffuses the multiverse, feeling it's current and becoming attuned to it's flow. You gain advantage on saving throws against spells and spells or features that would grant advantage on saving throws against your spells, do not apply.</p>
     </description>
     <sheet>
       <description>You have advantage on saving throws against spells. No one can gain advantage against your spells or spell saving throws.</description>
@@ -325,39 +321,62 @@
             <grant type="Spell" id="ID_NOS_SPELL_SPOUT" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_SEAL_PORTAL" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_TIME_TRAVEL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_ABSORPTION" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_ANIMATE_ELEMENT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_ATTUNE_FORM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_BACKBITER" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_BACKLASH" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_LIGHTNING_BALL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_ERKASTREY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_PUSH" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_BODY_OF_WAR" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_CYCLONIC_BLAST" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_DISTORT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_ELEMENTAL_BODY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_DISARM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_MANIFEST_MIMIC" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_OGHMAS_KNOWLEDGE_TRANSFERAL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_BORROWED_TIME" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_LINGERING_VITALITY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_RAMPART_OF_DISPEL_MAGIC" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_KELEMVORS_IRRADIATING_BEAM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_ALLUVIAL_POOL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_LEVITATE_LANDSCAPE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_BIXMODEUS_BINDING_OF_PERDURING_POSSESSION" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_REPLICATE" spellcasting="Starlighter" />
     </rules> 
   </element>
-    <element name="Stellarium" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
+    <element name="Magic River" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
     <description>
       <p>"You forge a bond with a single weapon and just like a planet unerringly seeks it's path around the sun it shall never fall from your hand"</p>
-      <p>At 6th level, you can forge a magical bond with a weapon. Choose a weapon in which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.</p>
-      <p class="indent">You can’t be disarmed of your bonded weapon as long as you are concious, also it may not be used by any creature other than you. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you must break the bond with the first.</p>
+      <p>At 6th level, you can forge a magical bond with a weapon or summon a weapon of pure magical energy that deals radiant damage and glows with dim light in a 5 feet radius. Choose a weapon with which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.</p>
+      <p class="indent">You can’t be disarmed of your bonded weapon as long as you are concious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.</p>
       <p class="indent">While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. At 10th level, your effectiveness with the weapon improves as it gains a bonus of +1 to attack and damage rolls, and then again to a +2 bonus at 14th level.</p>
       <p class="indent"></p>
     </description>
     <sheet>
-      <description>Choose a weapon in which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.
-      You can’t be disarmed of your bonded weapon as long as you are concious, also it may not be used by any  creature other than you. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you must break the bond with the first.
+      <description>Choose a weapon with which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals radiant damage and glows with dim light in a 5 feet radius.
+      You can’t be disarmed of your bonded weapon as long as you are conscious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.
       While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already.</description>
-      <description level="10">Choose a weapon in which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.
-      You can’t be disarmed of your bonded weapon as long as you are concious, also it may not be used by any  creature other than you. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you must break the bond with the first.
-      While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. Your effectiveness with the weapon improves as it gains a bonus of +1 to attack and damage rolls.</description>
-      <description level="14">Choose a weapon in which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.
-      You can’t be disarmed of your bonded weapon as long as you are concious, also it may not be used by any  creature other than you. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you must break the bond with the first.
-      While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. Your effectiveness with the weapon improves as it gains a bonus of +2 to attack and damage rolls.</description>
+      <description level="10">Choose a weapon in which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals radiant damage and glows with dim light in a 5 feet radius.
+      You can’t be disarmed of your bonded weapon as long as you are conscious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.
+      While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. It gains a bonus of +1 to attack and damage rolls.</description>
+      <description level="14">Choose a weapon in which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals radiant damage and glows with dim light in a 5 feet radius.
+      You can’t be disarmed of your bonded weapon as long as you are concious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.
+      While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. It gains a bonus of +2 to attack and damage rolls.</description>
     </sheet>
   </element>
   <element name="Celestial Stele" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORDER">
       <description>
-       <p>You have become a pillar to the very foundation of magic and a part of the comsic power of the positive plane is now permanently rooted in you. Beginning at 10th level, while you are concentrating on a spell, your concentration can’t be broken. Furthermore, you have resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Celestial Fire feature. Should you die, the place of your burial becomes a sphere of free magic.</p>
+       <p>You have become a pillar to the very foundation of magic and a part of the comsic power of the positive plane is now permanently rooted through you. Beginning at 10th level, while you are concentrating on a spell, your concentration can’t be broken. Furthermore, you have resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Cosmic Agent feature. Should you die, the place of your burial becomes a sphere of free magic after 1d4 days.</p>
       </description>
       <sheet>
-       <description>While you are concentrating on a spell, your concentration can’t be broken. Furthermore, you have resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Celestial Fire feature.</description>
+       <description>While you are concentrating on a spell, your concentration can’t be broken. You gain resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Cosmic Agent feature.</description>
       </sheet>
   </element>
-  <element name="Black Hole" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_BLACK_HOLE">
+  <element name="Cosmic Weave" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_BLACK_HOLE">
      <description>
-       <p>Starting at 15th level, you absorb parts of the magic that surrounds you. Whenenver a spell is cast in a 60ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you gain hit points equal to twice the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received. Furthermore you gain a number of weave points equal to the level of the spell. You may store weave points equal to two times your level. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells. Chose two metamagic feats, each can be invoked upon a spell by expending weave points.</p>
+       <p>Starting at 15th level, you have learned to redirect strands of magic from nearby castings into yourself to fuel and empower yourself. Whenenver a spell is cast in a 60ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you gain hit points equal to twice the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received. Furthermore you gain a number of weave points equal to the level of the spell. You may store weave points equal to two times your level. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells. Chose two metamagic feats, each can be invoked upon a spell by expending weave points.</p>
       </description>
       <sheet>
         <description>Whenenver a spell is cast in a 60ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you gain hit points equal to twice the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received. Furthermore you gain a number of weave points equal to the level of the spell. You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells.</description>
@@ -370,11 +389,11 @@
     </element>
     <element name="Magium" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELL_MASTERY">
     <description>
-      <p>At 18th level, you are inured to the very fabric of magic itself so that you can cast certain spells at will. Choose a 1st-level starlighter spell and a 2nd-­level starlighter spell, that you know. You can cast those spells at their lowest level without expending a spell slot. If you want to cast either spell at a higher level, you must expend a spell slot as normal.</p>
+      <p>At 18th level, you are inured to the very fabric of magic itself, pouring out strands of magic effortlessly. So much so that you may cast certain spells at will. Choose a 1st-level starlighter spell and a 2nd-­level starlighter spell, that you know. You can cast those spells at their lowest level without expending a spell slot. If you want to cast either spell at a higher level, you must expend a spell slot as normal.</p>
       <p>By spending 8 hours in meditation, you can exchange one or both of the spells you chose for different spells of the same levels.</p>
     </description>
     <sheet>
-      <description>You are inured to the very fabric of magic so that you can cast certain spells at will.</description>
+      <description>Choose one 1st and one 2nd level spell that you can now cast without expanding a spell lot.</description>
     </sheet>
   </element>
 
