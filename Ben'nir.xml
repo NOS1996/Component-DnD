@@ -17,7 +17,7 @@
             <h4>HISTORY</h4>
             <p>Ben'nir are the children of long dead stars, that have been sent to the mortal realm to explore and quench the curiosity of their ancestors and bring light into every aspect of creation. Bennir don't reproduce, they are the seed, sown upon the universe, when one of the elder stars die.</p>
             <h4>SOCIETY</h4>
-            <p>Ben'nir tend to be crafty marksmen and powerful magicians. So they often take the role of individuals that are secluded from the society they are currently living ín.</p>
+            <p>Ben'nir tend to be crafty marksmen and powerful magicians. So they often take the role of individuals that are secluded from the society they are currently living in, always on a hunt to explore new things.</p>
             <h4>BENNIR NAMES</h4>
             <p>Ben'nir take names from the societies they interact with, but pronounce them in a more guttural and primordial way, hence the different sound of many names.</p>
             <p>
@@ -29,12 +29,11 @@
             <p>
                 <span class="feature">Ability Score Increase.</span>Your Wisdom score increases by 3, and your Dexterity or Strength score increases by 2.<br/>
                 <span class="feature">Age.</span>Ben'nir being the children of elder stars inherited their immortal nature.<br/>
-                <span class="feature">Alignment.</span>Hence having no affiliation with the world, Ben'nir tend towards chaotic and neutral alignments.<br/>
+                <span class="feature">Alignment.</span>Hence having no affiliation with the world, Ben'nir tend towards chaotic alignments.<br/>
                 <span class="feature">Size.</span>Ben'nir are the same size and build as human children. Your size is Medium or Small.<br/>
                 <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
-                <span class="feature">Eyes of Radiance.</span>You have truesight out to 120 feet and cannot be blinded.<br/>
-                <span class="feature">Radiant Being.</span> Due to your heritage as a star you are immune to being blinded, charmed or frightened, and magic can’t put you to sleep. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effect of starvation, thirst, exhaustion, or suffocation. However you still benefit from short and long rests. All other conditions and effects affect you normally.<br/>
-                <span class="feature">Starchild.</span>You are a Starchild. When you die, you spring back into existence in a firey explosion, that deals 2d8 radiant damage to creatures inside a radius of 10feet centered on you, after 1d4 days.<br/>
+                <span class="feature">Eyes of Radiance.</span>Your iris glows with a faint light. You have truesight out to 120 feet and cannot be blinded.<br/>
+                <span class="feature">Radiant Being.</span> Due to your heritage as a star you are immune to being blinded, charmed or frightened, and magic can’t put you to sleep. You do not need to eat, drink, breathe, or sleep. However you still benefit from short and long rests. All other conditions and effects affect you normally.<br/>
                 <span class="feature">Languages.</span>You can speak, read, and write Common, Celestial and Druidic.<br/>
             </p>
         </description>
@@ -55,7 +54,6 @@
             <grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
             <grant type="Language" id="ID_LANGUAGE_DRUIDIC" />
             <grant type="Vision" id="ID_VISION_TRUESIGHT" />
-            <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_STARCHILD" />
             <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_RADIANT_BEING" />
         </rules>
     </element>
@@ -66,14 +64,6 @@
         </description>
         <sheet>
             <description>You are immune to being blinded, charmed or frightened, and you can’t be put to sleep. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effect of starvation, thirst, exhaustion, or suffocation</description>
-        </sheet>
-    </element>
-    <element name="Starchild" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_STARCHILD">
-        <description>
-            <p>You are a Starchild. When you die, you spring back into existence in a firey explosion, that deals 2d8 radiant damage to creatures inside a radius of 10feet centered on you, after 1d4 days.</p>
-        </description>
-        <sheet>
-            <description>When you die, you spring back into existence in a firey explosion, that deals 2d8 radiant damage to creatures inside a radius of 10feet centered on you, after 1d4 days.</description>
         </sheet>
     </element>
 
