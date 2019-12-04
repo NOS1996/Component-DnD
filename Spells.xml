@@ -966,7 +966,7 @@
     <element name="Masterful Mechanism" type="Spell" source="NOS" id="ID_NOS_SPELL_MASTERFUL_MECHANISM">
     <supports>Wizard</supports>
     <description>
-      <p> You hide any protective spells or magical traps that have been previously cast on an object, such as glyphs of warding or signs of sealing. If another creature attempts to detect magic on the item, the DM will secretly roll the creature’s spellcasting ability against your spell save DC. If it fails, that creature will believe that there are no spells on the item. This spell does not prevent an item’s regular enchantment from being seen: if you cast a venomdust on a sword +1, and another spellcaster casts detect magic but fails you beat your spell save DC, that spellcaster will learn that it is magical weapon but not that it is trapped.</p>
+      <p> You hide any protective spells or magical traps that have been previously cast on an object, such as glyphs of warding or signs of sealing. If another creature attempts to detect magic on the item, the DM will secretly roll the creature’s spellcasting ability against your spell save DC. If it fails, that creature will believe that there are no spells on the item. This spell does not prevent an item’s regular enchantment from being seen: if you cast a venomdust on a sword +1, and another spellcaster casts detect magic but fails you beat your spell save DC, that spellcaster will learn that it is magical weapon but not that it is trapped. This spell cast on yourself hides all spells previously cast on yourself or on any items you carry from Rampart of Dispell magic.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -1143,7 +1143,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-      <element name="Repair" type="Spell" source="NOS" id="ID_NOS_SPELL_REAPAIR">
+      <element name="Repair" type="Spell" source="NOS" id="ID_NOS_SPELL_REPAIR">
     <supports>Wizard, Druid, Cleric, Necromancer</supports>
     <description>
       <p>An inanimate object you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell can be used to heal undead and constructs as well.  At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.</p>
@@ -1264,7 +1264,7 @@
     </setters>
   </element>
       <element name="Stormrage" type="Spell" source="NOS" id="ID_NOS_SPELL_STORMRAGE">
-    <supports>Wizard, Druid</supports>
+    <supports>Wizard, Druid, Sorcerer</supports>
     <description>
       <p> The power of storms wraps around you, giving you many powers. You gain a flying speed of 60 feet (if you already have a flying speed, it increases by 60 feet). You are immune to damage and other effects caused by magical and natural winds. You become immune to bludgeoning, piercing, and slashing damage from nonmagical thrown weapons and missiles, and gain resistance to lightning and thunder damage. Finally, once each turn you may use your action to fire a bolt of lightning from your eyes. This inflicts 5d10 lightning damage on a successful hit.</p>
     </description>
@@ -2410,6 +2410,653 @@
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
       <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Tomes of Old: Howi" type="Spell" source="NOS" id="ID_NOS_SPELL_HOWI">
+    <supports>Wizard, Druid, Cleric, Necromancer</supports>
+    <description>
+      <p>You pick a point within range. All creatures within a 30-foot radius that have 40 or fewer hit points fall asleep instantly. Creatures with a greater number of hit points may make a Wisdom saving throw or fall asleep. A sleeping creature will stay asleep until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the creature awake.  At Higher Levels. When you cast this spell with an 8th-level spell slot, the duration increases to 8 hours. When you cast it with a 9th-level spell slot, the duration increases to 24 hours.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">7</set>
+      <set name="school">enchantment</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 hour</set>
+      <set name="range">6 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Tomes of Old: Asrk" type="Spell" source="NOS" id="ID_NOS_SPELL_ASRK">
+    <supports>Wizard, Necromancer</supports>
+    <description>
+      <p>Your word of great power utterly destroys one inorganic, inanimate, nonmagical object of Large size or smaller. The object vanishes as if it had never existed in the first place. Only a wish can restore that item. If you cast this spell against a building you only partially vaporize it, you may vaporize a 20 foot long by 20 foot high by 2 foot thick section of nonmagical, unenchanted material.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">7</set>
+      <set name="school">transmutation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Libris Mortis: Terror" type="Spell" source="NOS" id="ID_NOS_SPELL_TERROR">
+    <supports>Wizard, Necromancer</supports>
+    <description>
+      <p>You draw a magical rune on the ground. An unusually dark and ominous, reddish or purplish storm cloud develops over the next half-hour and then begins to rain (if a storm is already present, the spell takes place immediately). In addition to normal water, the cloud rains noxious things into the area. Choose one of the following to make up the rain:  
+      ash or mud lumps of slime bats rats birds salamanders bits of mold small stones blood and skin snakes centipedes spiders fish strips of meat lizards toads lumps of fat worms 
+      If the rain consists of animals of some sort, the DM will roll a die. On an odd number, all the animals will be dead. On an even number, they will still be alive. None of the animals are capable of harming anyone.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">6</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 minute</set>
+      <set name="duration">Concentration, up to 6 hours</set>
+      <set name="range">touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element> 
+    <element name="Libris Mortis: Sarcophagus" type="Spell" source="NOS" id="ID_NOS_SPELL_SARCOPHAGUS">
+    <supports>Necromancer, Wizard, Cleric, Warlock, Sorcerer</supports>
+    <description>
+      <p> A coffin-shaped rectangle of force forms around one target you can see within range. That target must make a Dexterity saving throw to avoid being trapped inside. The sarcophagus is completely airtight and cannot be broken from the inside unless magic of 5th level or higher is used. A creature inside will begin to suffocate (Dungeon Master’s Guide, page 183) unless it has a way of providing itself with air or doesn’t need to breathe. On the outside, it is a physical object that has AC 15, hit points equal to your hit point maximum, and resistance to all forms of damage. If it drops to 0 hit points, the spell ends.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">5</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 hour</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Spout" type="Spell" source="NOS" id="ID_NOS_SPELL_SPOUT">
+    <supports>Sorcerer, Wizard</supports>
+    <description>
+      <p>You hold of your hand and a gout of boiling water shoots forth at a target you choose within range. Make a ranged spell attack to hit. On a hit, you inflict 3d10 bludgeoning damage and 4d10 fire damage to the target.  At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the spell does an additional 1d10 fire damage for each slot level above 2nd..</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">100 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Tomes of Old: Seal Portal" type="Spell" source="NOS" id="ID_NOS_SPELL_SEAL_PORTAL">
+    <supports>Wizard</supports>
+    <description>
+      <p> You permanently seal an interplanar gate or portal, preventing any use of it. This doesn’t destroy the gate; if this spell is dispelled, then the gate is usable again.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">6</set>
+      <set name="school">abjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Permanent</set>
+      <set name="range">30 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >A bar of silver worth 50 gp</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Libris Mortis: Sentry" type="Spell" source="NOS" id="ID_NOS_SPELL_SENTRY">
+    <supports>Necromancer</supports>
+    <description>
+      <p> You turn a freshly severed humanoid head (from a creature that has been dead no more than 24 hours) into a sentry. You attach the head to a pole, tree branch, or other stable object—if the head is removed, the spell ends. The head can swivel in place and has darkvision to 60 feet. In addition, if you are within 500 feet of the head, you may use your action to switch your senses to its, allowing you to see through its eyes and hear through its ears. While you are doing so, your Perception bonus is doubled, but you are blind and deaf to your own surroundings. You may also set conditions that will trigger the skull, causing it to send you a mental alert when the conditions are met, as long as you are within 500 feet. The triggering circumstance can be as general or as detailed as you like, although it must be based on vision or audible conditions that occur within 30 feet of the object. If you have multiple sentry skulls, you will know which one alerted you. This spell does not animate the head in any manner other than as mentioned above.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">5</set>
+      <set name="school">necromancy</set>
+      <set name="time">1 hour</set>
+      <set name="duration">Permanent</set>
+      <set name="range">touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >an onyx worth at least 100 gp</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+      <element name="Tomes of Old: Time Travel" type="Spell" source="NOS" id="ID_NOS_SPELL_TIME_TRAVEL">
+    <supports>Wizard</supports>
+    <description>
+      <p>You and up to 10 willing creatures that you choose within 10 foot of you are sent backward or forward in time. It encases those affected in a null-time bubble and then moves along the timestream, reenters reality at the desired date, and releases the travelers. To the travelers, no time has passed. The caster specifies the point in time to be transported to. The travelers will bring with them all objects that they are carrying or wearing. They will end up as close as possible to the beforehand announced location. </p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">9</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 minute</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >silver coins or other silver items with a total worth of at least 10,000 gp.</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Compendium: Absorption" type="Spell" source="NOS" id="ID_NOS_SPELL_ABSORPTION">
+    <supports>Sorcerer, Paladin, Wizard, Warlock, Necromancer</supports>
+    <description>
+      <p>The weapon you hold in your hand begins to fade from existence as you complete the spell. With the last words of the spell it disappears completely. A the same moment, a weapon-shaped red blotch appears on your arm. You can harmlessly absorb a weapon you are touching (even a poisoned one) into your arm, as long as it is not in another creature’s possession. The absorbed weapon cannot be felt under the skin and doesn’t restrict your range of motion in any way. An absorbed weapon cannot be detected with even a careful search, although detect magic reveals the presence of a magical aura. The only evidence of its presence is a faint blotch on your skin shaped vaguely like the weapon. When you touch the spot (an action equivalent to drawing a weapon), or when the spell duration expires, the weapon appears in your hand and the spell ends. You can attack with the weapon in the same round that you retrieve it from its hiding place. An intelligent magic weapon gets a saving throw against this spell, but other weapons do not.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">Abjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Compendium: Amanuensis" type="Spell" source="NOS" id="ID_NOS_SPELL_AMANUENSIS">
+    <supports>Wizard, Warlock, Necromancer</supports>
+    <description>
+      <p>You point at the writing and then move your hand as though holding a stylus or quill. As you intone the spell, the script appears on a sheet of paper close at hand. You cause writing from one source (such as a book) to be copied into a book, paper, or parchment. This spell copies 250 words per minute and creates a perfect duplicate of the original. The spell triggers writing-based magic traps in the material being copied. Blank paper, parchment, or a book must be provided for the spell to write upon. If the target has multiple pages, the spell automatically turns to the next blank page whenever necessary. If more pages in the target exist than blank pages are available, the spell copies the original until it runs out of blank pages. At any time during the spell’s duration you can redirect the magic to copy from another target, copy onto a different blank source, or resume a duplication that was interrupted by a shortfall of blank pages. The spell does not translate the copied writing. If you do not understand the original, you have no additional ability to understand the copy. </p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">6</set>
+      <set name="school">Transmutation</set>
+      <set name="time">action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >Special ink, worth at least 100 gp per page, which is consumed upon the casting.</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Compendium: Animate Element" type="Spell" source="NOS" id="ID_NOS_SPELL_ANIMATE_ELEMENT">
+    <supports>Druid, Wizard, Necromancer</supports>
+    <description>
+      <p>By casting the mixture in your hand, you complete the spell. Immediately thereafter, a part of the  element (either, earth, air, fire or ice; which has to be chosen upon the casting) coalesces into a vaguely humanoid shape more solid looking than the rest. You animate an element, which must be approximately the size of a campﬁre. The animated element has the statistics of a Magmin (MM 213), attacks as you direct and cannot move.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Conjuration</set>
+      <set name="time">action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >A handful of the desired element</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Compendium: Appraise" type="Spell" source="NOS" id="ID_NOS_SPELL_APPRAISE">
+    <supports>Wizard, Bard, Warlock</supports>
+    <description>
+      <p>Encircling your eye with thumb and foreﬁnger as if holding a jeweler’s lens, you speak the arcane words that complete the spell. Objects near you suddenly seem clearer, more in focus. You note blemishes and imperfections you had missed before. You gain an intuitive insight into the value of objects you come into contact with. You gain a +10 insight bonus on checks to determine the value of items you touch while this spell is in effect.  Even if you fail a check while this spell is in effect, you never mistakenly estimate the worth of an item by more than 50%. </p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Divivnation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+<element name="Compendium: Arrow Storm" type="Spell" source="NOS" id="ID_NOS_SPELL_ARROW_STORM">
+    <supports>Ranger</supports>
+    <description>
+      <p>Your bow glows blue for an instant and now feels as light as a feather in your hand. In your mind’s eye you see the arrows in your quiver, and your hand feels drawn to them. You can cast this spell only at the beginning of your turn, before you take any other actions. After casting arrow storm, you can use a full-round action to make one ranged attack with a bow with which you are proﬁcient against every foe within a distance equal to the weapon’s range increment. You can attack a maximum number of individual targets equal to your character level. If you choose not to spend a full-round action in this fashion after casting the spell, the spell has no effect. </p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Compendium: Attune Form" type="Spell" source="NOS" id="ID_NOS_SPELL_ATTUNE_FORM">
+    <supports>Wizard, Druid, Cleric, Necromancer</supports>
+    <description>
+      <p>You touch the pebble against your allies’ ﬂesh and bring them into attunement with the plane. This spell allows you to attune the affected creatures to the plane you are currently on, negating the harmful effects of that plane.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Abjuration</set>
+      <set name="time">action</set>
+      <set name="duration">24 hours</set>
+      <set name="range">touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >A bit of stone or earth from your home plane.</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Compendium: Backbiter" type="Spell" source="NOS" id="ID_NOS_SPELL_BACKBITER">
+    <supports>Wizard, Warlock, Sorcerer, Druid, Ranger, Cleric, Necromancer </supports>
+    <description>
+      <p>The weapon you indicate during the spell’s casting brieﬂy shimmers with a black aura that disappears in an eyeblink. You cast this spell on any melee weapon. The next time that weapon is used to make a melee attack, its shaft twists around so that the weapon strikes the wielder instead. The weapon hits automatically, and no attack roll is made. The wielder gets no warning or knowledge of the spell’s effect on his weapon, and although he makes the attack, the self-dealt damage can’t be consciously reduced or changed to nonlethal damage. Once the weapon attacks its wielder, the spell ends. Magic weapons targeted by this spell receive a Wisdowm save. An item in a creature’s possession uses its own Wisdom save bonus or its wielder’s bonus, whichever is higher.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Enchantment</set>
+      <set name="time">1 bonus action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">30 ft</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Compendium: Backlash" type="Spell" source="NOS" id="ID_NOS_SPELL_BACKLASH">
+    <supports>Druid</supports>
+    <description>
+      <p>You point a finger at your opponent and a red aura entwines him, then fades without further effect. You back away as your opponent laughs and begins to cast a spell.The ﬁrst time the target creature attempts to cast a spell or use a spelllike ability (excluding Counterspell), the magic of that spell backﬁres. The spell is expended, and the creature takes 1d6 points of damage per level of the spell being cast. This discharge ends the spell.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">5</set>
+      <set name="school">Enchantment</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Compendium: Ball Lightning" type="Spell" source="NOS" id="ID_NOS_SPELL_LIGHTNING_BALL">
+    <supports>Wizard, Druid, Sorcerer, Warlock, Necromancer</supports>
+    <description>
+      <p>With a circuitous pass of your hand through the air, a crackling ball of lightning appears before you, accompanied by the smell of ozone. You create a 5-foot-diameter ball of concentrated electricity that rolls in whichever direction you point, dealing electricity damage to creatures it strikes. It moves 30 feet per round. As part of this movement, it can ascend or jump up to 30 feet to strike a subject. If it enters a space with a creature, it stops moving for the round and deals 1d6 points of electricity damage per caster level (maximum 15d6), though a successful Dexterity save halves that damage. The ball moves as long as you actively direct it (a move action for you), otherwise it merely stays at rest, damaging any creature in its space. It cannot push aside unwilling creatures or batter down large obstacles. The lightning winks out if it exceeds the spell’s range.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">6</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">120 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >A handful of copper and iron pellets</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Compendium: Blackfire" type="Spell" source="NOS" id="ID_NOS_SPELL_BLACKFIRE">
+    <supports>Necromancer</supports>
+    <description>
+      <p>With the dark words still on your tongue, a ray of black energy springs from your hand to wrap the indicated target in black ﬂames that absorb heat rather than create it. The black ﬁre crackles and hisses, emanating the smells of hot metal and sulfur. You must succeed on a ranged touch attack with the ray to strike a target. On a successful attack, a living target is engulfed in chill black ﬂames that feed on the fuel of their victim’s life force. A creature engulfed in blackﬁre must make a successful Constitution save each round that the spell is in effect or take 1d4 points of Constitution damage and become nauseated. A creature that makes its Constitution save takes no damage for that round and is sickened instead. In addition to its effects on the subject, blackﬁre can spread rapidly. Each round on its turn, any living creature adjacent to a creature engulfed in blackﬁre must succeed on a Dexterity save or become engulfed itself. Any creature that has its Constitution reduced to 0 or lower by the spell is turned into a pile of black ash and can be returned to life only by true resurrection or wish. If a creature succeeds on its Constitution save in 3 consecutive rounds, the blackﬁre affecting it gutters out. The black ﬂames cannot otherwise be extinguished by normal means (such as immersion in water or smothering), but antimagic ﬁeld, a successful dispel magic, remove curse, or break enchantment snuffs it out. As well, a creature protected by death ward has immunity to blackﬁre’s effects.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">8</set>
+      <set name="school">Necromancy</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">90 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Compendium: Erkastrey" type="Spell" source="NOS" id="ID_NOS_SPELL_ERKASTREY">
+    <supports>Warlock, Sorcerer, Druid, Ranger</supports>
+    <description>
+      <p>With a word your weapons burst into ﬂame/ is encrusted in a thin sheet of deadly ice/ erupts in sparks of lightning/ is cocooned in a layer of acid. Your melee weapons each deal an extra 1d8 points of ﬁre/cold/lightning/acid damage. This damage stacks with any energy damage your weapons already deal, which kind of energy damage it deals has to be declared upon casting. If the weapon leaves your hands the spell ends.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Enchantment</set>
+      <set name="time">1 bonus action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Compendium: Push" type="Spell" source="NOS" id="ID_NOS_SPELL_PUSH">
+    <supports>Wizard, Druid, Sorcerer</supports>
+    <description>
+      <p>Drawing upon magic in its purest form, you send invisible energy whistling through the air to batter your foe. You must succeed on a ranged touch attack with the ray to strike a target. A blast of force deals 5d6 force damage. In addition, a successful hit forces the subject to make a Strength save or be knocked prone and pushed 10 feet away from the caster </p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Compendium: Blood Sirocco" type="Spell" source="NOS" id="ID_NOS_SPELL_BLOOD_SIROCCO">
+    <supports>Necromancer, Wizard</supports>
+    <description>
+      <p>With a hot exhalation and a circular wave of your outstretched arm, a stiﬂing wind tears across the landscape, kicking up clouds of dust and sand and spreading out to blow over your foes. A blood sirocco blows out from your location with the force of a windstorm. Creatures in the affected area of Small or smaller size are knocked prone and rolled 1d4×10 feet, taking 1d4 points of nonlethal damage per 10 feet. Medium creatures are knocked prone, and creatures of Large or Huge size are unable to move toward the origin point of the cone. A successful Constitution save allows the creature to move normally in that round. In addition, the stiﬂing winds dehydrate those within the cone. In each round when an affected living creature fails its saving throw, it takes 2 points of damage. The wind of a blood sirocco automatically extinguishes candles, torches, and similar unprotected ﬂames. It causes protected ﬂames, such as those of lanterns, to dance wildly and has a 50% chance to extinguish these lights. The wind of a blood sirocco continues to blow from the origin point to the wide end of the cone for the duration of the spell. Any creature within this area is entitled a saving throw each round to ignore the effects of the blood sirocco.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">6</set>
+      <set name="school">Necromancy</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Compendium: Blood Star" type="Spell" source="NOS" id="ID_NOS_SPELL_BLOOD_STAR">
+    <supports>Necromancer</supports>
+    <description>
+      <p>In a ruby ﬂash a blood-colored, glowing crystal appears near your foes to suck the blood from their wounds. You create a magic construct called a bloodstar that shoots from your hand and hovers in the air anywhere within the limit of the range (each round, you can move the bloodstar anywhere within range with a standard action spent concentrating on the new position). The bloodstar pulses with ruby light (providing illumination in a 20-foot radius). Any creature you initially designate within 20 feet of the bloodstar that takes damage from any source must make a saving throw. On a failed save, the victim takes 1 point of Constitution damage. Each time victims are damaged, they can attempt new saves. The bloodstar cannot be attacked or harmed by physical attacks. </p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Necromancy</set>
+      <set name="time">1 action</set>
+      <set name="duration">2 minutes</set>
+      <set name="range">20 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" ></set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Compendium: Body of War" type="Spell" source="NOS" id="ID_NOS_SPELL_BODY_OF_WAR">
+    <supports>Wizard, Warlock, Sorcerer</supports>
+    <description>
+      <p>Throwing back your arms as you complete the spell, you feel your body grow heavy and unresponsive. A moment of panic grips you as your chest ceases to expand and you realize you are no longer breathing. Cold sweeps over your body as you glance down at your now-metallic ﬂesh. When you cast this spell, you assume the physical appearance and many of the qualities and abilities of a warforged titan (Google it lol). While under the effect of the spell, your creature type changes to construct, and your size changes to Huge. You have the space and reach of a warforged titan (15 feet/15 feet). Your mindset changes so that you relish combat and cannot cast spells, not even through magic items. You gain the Strength and Dexterity of an average warforged titan (Str 28, Dex 8), but you retain your own mental ability scores. You have no Constitution score while affected by this spell. Your base land speed becomes 50 feet. You gain darkvision out to 60 feet. You also gain low-light vision. Your class and level, hit points, alignment all remain the same. You lose any extraordinary special abilities of your own form, as well as spell-like and supernatural abilities. You keep all extraordinary special attacks derived from class levels (such as a barbarian’s rage or a rogue’s sneak attack), but you lose any from your normal form that are not derived from class levels. You cannot speak or cast spells while in warforged titan form. Your natural armor bonus becomes +21, regardless of any natural armor bonus from your normal form, and you gain resistance to nonmagical slashing, piercing and bludgeoning damage.  As a construct, you have the following qualities: immunity to all mind-affecting spells and abilities, poison, sleep effects, paralysis, stunning, disease, death effects, necromancy effects, critical hits, nonlethal damage, ability drain, fatigue, exhaustion, energy drain, and to any effect that requires a Constitution save (unless the effect also works on objects or is harmless). You also gain the warforged titan’s two attack forms (axe and maul), along with the trample special ability (damage 2d8+13; Dex DC 25 half). The warforged titan’s axe deals 3d8 points of slashing damage and has a ×3 critical modiﬁer; its maul (essentially a huge warhammer that counts as a siege weapon) deals 2d8 points of bludgeoning damage, 2x against buildings, and also has a ×3 critical modiﬁer. Your equipment melds into your new form and becomes nonfunctional. After the spell ends you cant take any actions or reactions for 1d4 rounds, as this spell is very taxing, even for the most advanced casters.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">9</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 round</set>
+      <set name="duration">10 minutes</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >A miniature bronze Hammer.</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Compendium: Briar" type="Spell" source="NOS" id="ID_NOS_SPELL_BRIAR">
+    <supports>Druid, Ranger</supports>
+    <description>
+      <p>With a sound like a thousand knives being unsheathed, the plants in the area grow sharp thorns and warp into a thick briar patch. This spell causes grasses, weeds, bushes, and even trees to grow thorns and wrap and twist around creatures in or entering the area. The spell’s area becomes difﬁcult terrain, and creatures move at half speed within the affected area. Any creature moving through the area also takes 1 point of nonmagical piercing damage for each 5 feet moved. A creature with freedom of movement or the woodland stride ability is unaffected by this spell.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 action</set>
+      <set name="duration">10 minutes</set>
+      <set name="range">40 feet sphere</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Compendium: Bruning blood" type="Spell" source="NOS" id="ID_NOS_SPELL_BURNING_BLOOD">
+    <supports>Necromancer</supports>
+    <description>
+      <p>The taste of copper ﬁlls your mouth and bloody spatters punctuate the last few words that unlock the spell. You gag slightly as the blood in your mouth congeals, but disappears even as you release the spell. You taint a living creature’s blood with a hot, corrosive infusion, dealing 1d8 points of acid damage and 1d8 points of ﬁre damage per round. The subject can attempt a Constitution save each round to negate the damage, but a successful save does not prevent damage in future rounds. Searing pain limits the subject to a single move action in any round when it fails its Con save. Burning blood does not affect creatures of the construct, elemental, ooze, plant, or undead types</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">5</set>
+      <set name="school">Necromancy</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >A drop of blood and a pinch of saltpeter. </set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Compendium: Cursed Blade" type="Spell" source="NOS" id="ID_NOS_SPELL_CURSED_BLADE">
+    <supports>Wizard, Warlock, Necromancer</supports>
+    <description>
+      <p>Drawing upon dark powers, you whisper a vehement curse and draw your ﬁnger down the weapon. A weapon affected by this spell deals wounds that can’t be healed in the usual fashion. Any damage dealt by the weapon (not including damage from special weapon properties such as ﬂaming, holy, wounding, and so on) cannot be cured by any means until the damaged individual has received a remove curse spell (or some other effect that neutralizes a curse). If a creature is slain by a weapon that is under the effect of this spell, it can’t be raised from the dead unless a remove curse spell (or similar effect) is cast on the body or a true resurrection spell is used.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Necromancy</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">one weapon you are holding</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Compendium: Cyclonic Blast" type="Spell" source="NOS" id="ID_NOS_SPELL_CYCLONIC_BLAST">
+    <supports>Druid, Wizard, Sorcerer, Warlock</supports>
+    <description>
+      <p>Cupping a child’s top, you forcefully thrust your hand forward, simultaneously speaking the ﬁnal words of the spell’s proscribed formula. Immediately thereafter, a blast of whirling wind issues forth from your outstretched ﬁngers, sweeping up within it all who stand in its way. You send a twisting torrent of wind, not unlike a tornado turned on its side, toward your enemies. A cyclonic blast deals 1d6 points of damage per caster level (maximum 15d6 points of damage) to all creatures and objects in the area. Objects bigger than Large take half damage. The cyclonic blast begins at your ﬁngertips. Creatures who fail their Dex saving throws against a cyclonic blast are additionally knocked back by the force of the wind by 20 feet for medium size, 30 feet for small size, 40 feet for tiny size. Airborne creatures are treated as if they were one size category smaller. If the damage caused to an interposing barrier by the blast shatters or breaks through it, the cyclonic blast can continue beyond the barrier if the spell’s range permits; otherwise, it stops at the barrier just as any other spell effect does.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">7</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 minute</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">120 feet long, 20-100(start-end) feet wide cone</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Compendium: Darkfire" type="Spell" source="NOS" id="ID_NOS_SPELL_DARKFIRE">
+    <supports>Necromancer, Cleric, Wizard</supports>
+    <description>
+      <p>Dark ﬂames appear in your hand. You can hurl them or use them to touch enemies. The ﬂames appear in your open hand and harm neither you nor your equipment. They emit no light but produce the same amount of heat as an actual ﬁre. Beginning the following round, you can strike opponents with a melee touch attack, dealing 5d6 fire damage. Alternatively, you can hurl the ﬂames up to 120 feet as a thrown weapon. When doing so, you make a ranged spell attack and deal the same damage. No sooner do you hurl the ﬂames than a new set appears in your hand. The darkﬁre is invisible to normal vision but can be seen with darkvision as easily as a normal ﬂame can be seen in darkness (this means that darkﬁre can be used as a signal or beacon for creatures with darkvision). The spell does function underwater.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Necromancy</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Compendium: Dead End" type="Spell" source="NOS" id="ID_NOS_SPELL_DEAD_END">
+    <supports>Druid, Ranger</supports>
+    <description>
+      <p>Sprinkling spice on the ground, you complete the ﬁnal step of the spell. Upon touching your intended targets, you note with satisfaction that the area around all of you seems a little cleaner and less tread upon. This spell ﬂawlessly disguises the trail left by the subjects, concealing their tracks, scent, and other signs of their passage with an illusion that defeats even the senses of taste and touch. Any creature making an Investigation check, using the scent ability, or using the Survival skill to track a creature affected by this spell interacts with the illusion and may make a wisdom saving throw. Creatures that succeed on the save can detect the subjects normally. Creatures merely passing through an area the subjects passed through do not count as interacting with the illusion.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">Illusion</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" ></set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+      <element name="Compendium: Distort" type="Spell" source="NOS" id="ID_NOS_SPELL_DISTORT">
+    <supports>Bard</supports>
+    <description>
+      <p>By pointing and making a number of loud, nonsensical sounds you release the power of the spell. The target attempts to speak, but spews forth only gibberish instead. For the duration of this spell, the subject has a 50% chance to miscast spells that have verbal components, and any time the subject speaks (including the use of magic items activated by command words), there is a 50% chance that the utterance is completely incomprehensible and therefore ineffective. Wisdom saving throw to negate.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">30 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+      <element name="Compendium: Elemental Body" type="Spell" source="NOS" id="ID_NOS_SPELL_ELEMENTAL_BODY">
+    <supports>Druid</supports>
+    <description>
+      <p>Drawing upon the power of the elemental planes, your transform your body in a ﬂash of light. You can transform your body into a particular type of elemental substance. You and your possessions appear to be made of that element, though in the same general shape and size as your normal appearance. You gain the following abilities when you cast elemental body: • You have the beneﬁts of the attune form spell with respect to the appropriate element. If you choose a water body, for example, you can breathe normally on waterdominant planes. • You are immune to poison, sleep, paralysis, and stunning, and are not subject to extra damage from critical hits or ﬂanking. You gain darkvision out to 60 feet. • Your creature type remains unchanged, so you are unaffected by spells that target elementals, but you gain the air, earth, ﬁre, or water subtype depending on the elemental substance you chose. In addition, you gain the following exceptional abilities according to the element chosen:         Air: Fly at twice your normal speed (perfect maneuverability), air mastery (airborne creatures take a –4 penalty on attack rolls and damage rolls against you),immunity to bludgeoning damage, + 4 to AC.       Earth: Earth mastery (you gain a +2 bonus on attack rolls and damage rolls if both you and your foe touch the ground), push (you can start try to knock an enemy prone without provoking attacks of opportunity), immunity to slashing damage, +5 natural armor bonus to AC.      Fire: Fire immunity, burn (those you hit in melee and those who attack you with natural weapons must make a Dex save or catch ﬁre, with a save DC equal to that of a ﬁre elemental).        Water: Swim at your normal speed, water mastery (you gain a +1 bonus on attack rolls and damage rolls if both you and your opponent touch water), drench (you can use your elemental form to put out nonmagical open ﬂames and dispel magical ﬁre you touch as if casting dispel magic at your caster level), cold immunity, +2 to AC, resistance to nonmagical slashing and piercing damage. </p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">8</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 round</set>
+      <set name="duration">1 hour</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >A bit of the element in question from a plane other than the one where the spell is being cast</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Lair" type="Spell" source="NOS" id="ID_NOS_SPELL_LAIR">
+    <supports>Druid, Wizard</supports>
+    <description>
+      <p>You create a lair inside a 1000ft cube. The area you cast this spell on could include a cave, a clearing, a mountain etc, you can also create a building inside a 500ft cube stuffed with furniture and decoration of your liking or shape the area to suit your needs as per the Artistry spell, for example you may create a stone pillar inside a cave or for a terrace into a mountain or a trapdoor that leads to an underground tunnel. Inside your lair is a staff off max 300 invisible servants as per the unseen servant spell, which obey orders by you and creatures you designate upon the casting. Your lair contains sufficient food to serve a nine-course banquet for up to 200 people each day. Furnishings, food, and other objects created by this spell crumble to dust if removed from your lair. Your lair is protected as per the Guards and Wards spell, without its limitations in height and you may choose three of the additional magical effects. Also all hostile creatures have disadvantage on attack rolls and ability checks while within your lair. The effects of this spell are permanent or until you cast it somwhere else.     
+      For modern settings: Your lair may include any kind of technology, but not weapons or the like. Also you may choose one are effect, which you may change by casting this spell again on the same spot, that covers a radius of up to 1 mile around your lair:
+      Storm.    The sky around your lair is constantly torn in thunderstorms and lightning crackles through the air. Heavy winds and clouds obscure the area heavily. Hostile Creatres have a 25% chance to get hit by lightning as per the call lightning spell, with disadvantage on the saving throw.
+      Growth.    You enrich the land and vines grow over buildings, all normal animals grow up to be one size larger and all normal plants become thick and overgrown, also the land yields 4 times the normal amount of food when harvested. A creature moving through the area must spend 5 feet of movement for every 1 foot it moves.
+      Heat/Cold.    The area around your lair is filled with an unbearable heat/cold that makes it virtually imossible for most species to live there. Sandstorms(or whirlwinds)/Bilzzards frequently fill the area around your lair. For each day a creature not accumulated to hot/cold climates spends around (not in) your lair, they suffer one level of exhaustion, that can only be reduced if the creatures can cool/warm itself enough.
+      Utopia.    The area around your lair is filled with cheer and song; everything seems brighter, colour and taste seem more intense. Creatures love spending time around your lair for it is a place of utopia and harmony. Every creature around your lair is under the sanctuary spell, also at dawn every creature in the area regains their full hitpoints, as long as they haven't been reduced to 0 beforehand. </p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">9</set>
+      <set name="school">Conjuration</set>
+      <set name="time">10 minutes</set>
+      <set name="duration">Instantenous</set>
+      <set name="range">10 miles</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" ></set>
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>

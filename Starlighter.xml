@@ -344,6 +344,7 @@
             <grant type="Spell" id="ID_DMSG_GRGR_SPELL_LEVITATE_LANDSCAPE" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_DMSG_GRGR_SPELL_BIXMODEUS_BINDING_OF_PERDURING_POSSESSION" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_DMSG_GRGR_SPELL_REPLICATE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_LAIR" spellcasting="Starlighter" />
     </rules> 
   </element>
     <element name="Magic River" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
