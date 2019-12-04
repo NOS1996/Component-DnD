@@ -3056,7 +3056,7 @@
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">true</set>
-      <set name="materialComponent" ></set>
+      <set name="materialComponent" >Crystals worth at least 5000gp, which the spell consumes.</set>
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
