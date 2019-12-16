@@ -227,10 +227,10 @@
   </element>
   <element name="Heavenly Protection" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER">
     <description>
-      <p>As a Starlighter you meditate deeply inside the river of magic, that suffuses the multiverse, feeling it's current and becoming attuned to it's flow. You gain advantage on saving throws against spells and spells or features that would grant advantage on saving throws against your spells, do not apply.</p>
+      <p>As a Starlighter you meditate deeply inside the river of magic, that suffuses the multiverse, feeling it's current and becoming attuned to it's flow, learning how to bypass even the sturdiest defenses or magical barriers. Spells or features that would grant advantage on saving throws against your spells, do not apply. Should you die, the place of your burial becomes a sphere of free magic after 1d4 days.</p>
     </description>
     <sheet>
-      <description>You have advantage on saving throws against spells. No one can gain advantage against your spells or spell saving throws.</description>
+      <description>No one can gain advantage against your spells or spell saving throws. Should you die, the place of your burial becomes a sphere of free magic after 1d4 days.</description>
     </sheet>
     <rules>
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
@@ -365,7 +365,7 @@
   </element>
   <element name="Celestial Stele" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORDER">
       <description>
-       <p>You have become a pillar to the very foundation of magic and a part of the comsic power of the positive plane is now permanently rooted through you. Beginning at 10th level, while you are concentrating on a spell, your concentration can’t be broken. Furthermore, you have resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Cosmic Agent feature. Also you now are considered to be a spellcasting focus, so others may use you as such, as well as yourself. Should you die, the place of your burial becomes a sphere of free magic after 1d4 days.</p>
+       <p>You have become a pillar to the very foundation of magic and a part of the comsic power of the positive plane is now permanently rooted through you. Beginning at 10th level, while you are concentrating on a spell, your concentration can’t be broken. Furthermore, you have resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Cosmic Agent feature. Also you now are considered to be a spellcasting focus, so others may use you as such, as well as yourself.</p>
       </description>
       <sheet>
        <description>While you are concentrating on a spell, your concentration can’t be broken. You gain resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Cosmic Agent feature. You are a spellcasting focus.</description>
@@ -380,6 +380,7 @@
        <p class="indent">You gain a flying speed of 60 feet.</p>
        <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this movement.</p>
        <p class="indent">You gain resistance to nonmagical piercing, slashing and bludegeoning damage.</p> 
+       <p class="indent">You gain advantage on saving throws against spells.</p>
       </description>
       <sheet>
        <description>
@@ -389,6 +390,7 @@
         <p class="indent">You gain a flying speed of 60 feet.</p>
         <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this ability.</p>
         <p class="indent">You gain resistance to nonmagical piercing, slashing and bludegeoning damage.</p> 
+        <p class="indent">You gain advantage on saving throws against spells.</p>
        </description>
       </sheet>
        <rules>
