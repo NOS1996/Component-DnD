@@ -377,17 +377,17 @@
        <p class="indent">Furthermore you gain a number of weave points equal to the level of the spell. You may store weave points equal to two times your level. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. 
        <p class="indent">Additionally, you can use your weave points to augment you spells. Chose two metamagic feats, each can be invoked upon a spell by expending weave points. 
        <p class="indent">Whenever you have 5 or more weave points, you may spend them and transform into a being of pure magical energy for one minute, gaining the following benefits:</p>
-       <p class="indent">You gain a flying speed of 60 feet.<p>
-       <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this movement.<p>
-       <p class="indent">You gain resistance to nonmagical piercing, slashing and bludegeoning damage<p> 
+       <p class="indent">You gain a flying speed of 60 feet.</p>
+       <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this movement.</p>
+       <p class="indent">You gain resistance to nonmagical piercing, slashing and bludegeoning damage.</p> 
       </description>
       <sheet>
        <description>Whenenver a spell is cast in a 60ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you regain hit points equal to the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received. 
         <p class="indent">Furthermore you gain a number of weave points equal to the level of the spell. You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells.
         <p class="indent">Whenever you have 5 or more weave points, you may spend them and transform into a being of pure magical energy for one minute, gaining the following benefits:</p>
-        <p class="indent">You gain a flying speed of 60 feet.<p>
-        <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this ability.<p>
-        <p class="indent">You gain resistance to nonmagical piercing, slashing and bludegeoning damage.<p> 
+        <p class="indent">You gain a flying speed of 60 feet.</p>
+        <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this ability.</p>
+        <p class="indent">You gain resistance to nonmagical piercing, slashing and bludegeoning damage.</p> 
        </description>
       </sheet>
        <rules>
