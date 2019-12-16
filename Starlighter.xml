@@ -108,7 +108,7 @@
   <element name="Spellcasting" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELLCASTING_STARLIGHTER">
     <description>
       <h5>CANTRIPS</h5>
-      <p>Cantrips are the very start for every mage and even the Sttarlighters are no exception to that rule. You begin with a certain number of Cantrips and learn more later on.</p>
+      <p>Cantrips are the very start for every mage and even the Starlighters are no exception to that rule. You begin with a certain number of Cantrips and learn more later on.</p>
       <h5>SPELLS</h5>
       <p>At 1st level, you gain some 1st-­level Starlighter spells of your choice, which are, as well as any later added spells fixed in your mind.</p>
       <h5>CASTING SPELLS</h5>
@@ -123,8 +123,6 @@
       </p>
       <h5>RITUAL CASTING</h5>
       <p>You can cast a starlighter spell as a ritual if that spell has the ritual tag.</p>
-      <h5>SPELLCASTING FOCUS</h5>
-      <p>You can use an arcane focus as a spellcasting focus for your starlighter spells.</p>
     </description>
     <sheet display="true">
       <description>You use an arcane focus to cast spells and can also cast Starlighter spells as a ritual.</description>
@@ -349,16 +347,14 @@
   </element>
     <element name="Magic River" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
     <description>
-      <p>"You forge a bond with a single weapon and just like a planet unerringly seeks it's path around the sun it shall never fall from your hand"</p>
-      <p>At 6th level, you can forge a magical bond with a weapon or summon a weapon of pure magical energy that deals radiant damage and glows with dim light in a 5 feet radius. Choose a weapon with which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.</p>
-      <p class="indent">You can’t be disarmed of your bonded weapon as long as you are concious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.</p>
+      <p>At 6th level, you can forge a magical bond with a weapon or summon a weapon of pure magical energy, that deals radiant damage  instead of its original damage type and glows with dim light in a 5 feet radius. Choose a weapon with which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.</p>
+      <p class="indent">You can’t be disarmed of your bonded weapon as long as you are conscious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.</p>
       <p class="indent">While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. At 10th level, your effectiveness with the weapon improves as it gains a bonus of +1 to attack and damage rolls, and then again to a +2 bonus at 14th level.</p>
-      <p class="indent"></p>
     </description>
     <sheet>
       <description>Choose a weapon with which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals radiant damage and glows with dim light in a 5 feet radius.
       You can’t be disarmed of your bonded weapon as long as you are conscious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.
-      While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already.</description>
+      While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. You may use this weapon as a spellcasting focus.</description>
       <description level="10">Choose a weapon in which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals radiant damage and glows with dim light in a 5 feet radius.
       You can’t be disarmed of your bonded weapon as long as you are conscious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.
       While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. It gains a bonus of +1 to attack and damage rolls.</description>
@@ -369,18 +365,30 @@
   </element>
   <element name="Celestial Stele" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORDER">
       <description>
-       <p>You have become a pillar to the very foundation of magic and a part of the comsic power of the positive plane is now permanently rooted through you. Beginning at 10th level, while you are concentrating on a spell, your concentration can’t be broken. Furthermore, you have resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Cosmic Agent feature. Should you die, the place of your burial becomes a sphere of free magic after 1d4 days.</p>
+       <p>You have become a pillar to the very foundation of magic and a part of the comsic power of the positive plane is now permanently rooted through you. Beginning at 10th level, while you are concentrating on a spell, your concentration can’t be broken. Furthermore, you have resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Cosmic Agent feature. Also you now are considered to be a spellcasting focus, so others may use you as such, as well as yourself. Should you die, the place of your burial becomes a sphere of free magic after 1d4 days.</p>
       </description>
       <sheet>
-       <description>While you are concentrating on a spell, your concentration can’t be broken. You gain resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Cosmic Agent feature.</description>
+       <description>While you are concentrating on a spell, your concentration can’t be broken. You gain resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Cosmic Agent feature. You are a spellcasting focus.</description>
       </sheet>
   </element>
   <element name="Cosmic Weave" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_BLACK_HOLE">
      <description>
-       <p>Starting at 15th level, you have learned to redirect strands of magic from nearby castings into yourself to fuel and empower yourself. Whenenver a spell is cast in a 60ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you gain hit points equal to twice the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received. Furthermore you gain a number of weave points equal to the level of the spell. You may store weave points equal to two times your level. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells. Chose two metamagic feats, each can be invoked upon a spell by expending weave points.</p>
+       <p>Starting at 15th level, you have learned to redirect strands of magic from nearby castings into yourself to fuel and empower yourself. Whenenver a spell is cast in a 60ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you regain hit points equal to the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received.
+       <p class="indent">Furthermore you gain a number of weave points equal to the level of the spell. You may store weave points equal to two times your level. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. 
+       <p class="indent">Additionally, you can use your weave points to augment you spells. Chose two metamagic feats, each can be invoked upon a spell by expending weave points. 
+       <p class="indent">Whenever you have 5 or more weave points, you may spend them and transform into a being of pure magical energy for one minute, gaining the following benefits:</p>
+       <p class="indent">You gain a flying speed of 60 feet.<p>
+       <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this movement.<p>
+       <p class="indent">You gain resistance to nonmagical piercing, slashing and bludegeoning damage<p> 
       </description>
       <sheet>
-        <description>Whenenver a spell is cast in a 60ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you gain hit points equal to twice the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received. Furthermore you gain a number of weave points equal to the level of the spell. You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells.</description>
+       <description>Whenenver a spell is cast in a 60ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you regain hit points equal to the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received. 
+        <p class="indent">Furthermore you gain a number of weave points equal to the level of the spell. You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells.
+        <p class="indent">Whenever you have 5 or more weave points, you may spend them and transform into a being of pure magical energy for one minute, gaining the following benefits:</p>
+        <p class="indent">You gain a flying speed of 60 feet.<p>
+        <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this ability.<p>
+        <p class="indent">You gain resistance to nonmagical piercing, slashing and bludegeoning damage.<p> 
+       </description>
       </sheet>
        <rules>
        <stat name="weave-points" value="level:starlighter" />
