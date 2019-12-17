@@ -343,6 +343,29 @@
             <grant type="Spell" id="ID_DMSG_GRGR_SPELL_BIXMODEUS_BINDING_OF_PERDURING_POSSESSION" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_DMSG_GRGR_SPELL_REPLICATE" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_LAIR" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_MUSG_SPELL_POWER_WORD_BLIND" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_MUSG_SPELL_BLAST_OF_FLAME" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_MUSG_SPELL_CACOPHONIC_BURST" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_MUSG_SPELL_FIST_OF_STONE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_MUSG_SPELL_FLASHBURST" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_MUSG_SPELL_MELFS_MALICIOUS_GRAVEL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_MUSG_SPELL_NIGHTMARE_LULLABY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_MUSG_SPELL_STONE_SPIDERS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_MUSG_SPELL_STONE_TELL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_GLACIAL_BLADE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_GLEAM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_LULLABY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_TORMENTING_FLAME" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_EARTHEN_PILLAR" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_INNER_FIRE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_INTERPRET_BONE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_SKEIN_OF_VINES" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_SMOLDER" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_ANALYZE_BLOOD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_AVIAN_GEYSER" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_BARRICADE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_PREDOMINANCE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_GRGR_SPELL_SACRED_WARD" spellcasting="Starlighter" />
     </rules> 
   </element>
     <element name="Magic River" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
