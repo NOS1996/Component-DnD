@@ -16,7 +16,7 @@
       <p class="indent">Pointing his hand in a simple gesture, a loxodon conjures a bright streak of light to diminish his enemy to fine gray dust.</p>
       <p class="indent">Starlighters are supreme casters, empowered trough the positive energy that suffuses the multiverse. Drawing on the subtle weave of magic that permeates the cosmos, starlighters learn to shape reality to suit their needs. They delve deep into the very foundations of magic, the source of the multiverse itself, to bring balance to all life, becoming pillars of magic themselves in the process.</p>
       <h4>EMPOWERED BY LIGHT</h4>
-      <p>The wisdom of the multiverse seeks to quench those who thirst for balance and peace and a deeper understanding of themselves and the nature of the multiverse.</p>
+      <p>The wisdom of the multiverse seeks to quench those who thirst for balance and peace and a deeper understanding of themselves and the nature of the multiverse. Unlike Other wizards or magic users, starlighters directly interact with the cosmic weave that suffuses the multiverse and in essence become pillars to the very fabric of magic itself, Agents of cosmic balance. They let the very river of pure magic flow through them, learning how to direct it's current. </p>
       <h4>THE LURE OF ADVENTURE</h4>
       <p>Starlighters feel the balance in the multiverse, they strive for cosmic peace, which doesn't always mean conventional peace. Some Starlighters are Avatars of War, taking their peace to the enemies of cosmic balance. They often seek out evil beings and necromantic powers to reestablish balance in the deep flow of the magic suffusing the multiverse. </p>
       <h4>CREATING A STARLIGHTER</h4>
@@ -366,6 +366,102 @@
             <grant type="Spell" id="ID_DMSG_GRGR_SPELL_BARRICADE" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_DMSG_GRGR_SPELL_PREDOMINANCE" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_DMSG_GRGR_SPELL_SACRED_WARD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMC_SPELL_ABSOLUTE_COMMAND" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMC_SPELL_ANALYZE_DEVICE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMC_SPELL_ANIMATE_CONSTRUCT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMC_SPELL_CATAPULT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMC_SPELL_HEARTSTOP" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMC_SPELL_LOCK_ARMOR" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMC_SPELL_MASS_REPAIR_METAL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMC_SPELL_MECHANICAL_UNION" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMC_SPELL_POWER_WORD_RESTORE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMC_SPELL_REPAIR_METAL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMC_SPELL_ROBE_OF_SHARDS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMC_SPELL_SOUL_OF_THE_MACHINE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMC_SPELL_TIME_IN_A_BOTTLE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMC_SPELL_TIRELESS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMRM_SPELL_DEEP_BREATH" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMRM_SPELL_FREEZE_POTION" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMRM_SPELL_GLIDING_STEP" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMRM_SPELL_GOATS_HOOF_CHARM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMRM_SPELL_PRISMATIC_RAY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMRM_SPELL_TRIUMPH_OF_ICE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMVM_SPELL_CRUSHING_CURSE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMVM_SPELL_MADDENING_WHISPERS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMVM_SPELL_PROTECTION_FROM_THE_VOID" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMIM_SPELL_COMPELLING_FATE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMIM_SPELL_FLICKERING_FATE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMIM_SPELL_ICY_GRASP_OF_THE_ETHER" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMIM_SPELL_LAST_RAYS_OF_THE_DYING_SUN" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMIM_SPELL_ORB_OF_LIGHT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMIM_SPELL_SHADOW_BLINDNESS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMIM_SPELL_SHIELD_OF_STAR_AND_SHADOW" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMIM_SPELL_STARBURST" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMIM_SPELL_STARFALL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMIM_SPELL_STARRY_VISION" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMIM_SPELL_STARS_HEART" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMIM_SPELL_SUMMON_STAR" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMLL_SPELL_AMPLIFY_LEY_FIELD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMLL_SPELL_DISRUPTIVE_AURA" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMLL_SPELL_GREATER_LEY_PULSE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMLL_SPELL_LAND_BOND" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMLL_SPELL_LEY_SENSE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMLL_SPELL_LEY_STORM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMLL_SPELL_LEY_SURGE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMLL_SPELL_VOLLEY_SHIELD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMAS_SPELL_BLADE_OF_WRATH" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMAS_SPELL_BLESSED_HALO" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMAS_SPELL_GREATER_SEAL_OF_SANCTUARY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMAS_SPELL_HEAVENLY_CROWN" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMAS_SPELL_QUINTESSENCE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMCM_SPELL_ENTROPIC_DAMAGE_FIELD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMCM_SPELL_PARAGON_OF_CHAOS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMBM_SPELL_INSPIRING_SPEECH" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMBM_SPELL_INSTANT_FORTIFICATION" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMBM_SPELL_MASS_BLADE_WARD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMBM_SPELL_REPOSITION" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMBM_SPELL_WRESTING_WIND" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMRM_SPELL_BITTER_CHAINS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMRM_SPELL_INNOCUOUS_ASPECT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMRM_SPELL_RINGWARD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMSM_SPELL_SHADOW_REALM_GATEWAY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMEHM_SPELL_CELEBRATION" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMEHM_SPELL_CLEARING_THE_FIELD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMEHM_SPELL_GUEST_OF_HONOR" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMEHM_SPELL_SHADOWS_BROUGHT_TO_LIGHT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMEHM_SPELL_TONGUE_TIED" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMBD_SPELL_AS_YOU_WERE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMBD_SPELL_BLOOD_LURE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMBD_SPELL_BLOOD_SPOOR" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMBD_SPELL_DOOM_OF_THE_CRACKED_SHIELD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMEM_SPELL_BLIZZARD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMEM_SPELL_FROZEN_RAZORS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMEM_SPELL_PYROCLASM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMHM_SPELL_ARCANE_SIGHT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMHM_SPELL_BEGUILING_GIFT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMHM_SPELL_BLESS_THE_DEAD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMHM_SPELL_EIDETIC_MEMORY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMHM_SPELL_ENCRYPT_DECRYPT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMHM_SPELL_EXTRACT_KNOWLEDGE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMHM_SPELL_MIRE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMTM_SPELL_ACCELERATE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMTM_SPELL_CHRONAL_LANCE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMTM_SPELL_DECELERATE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMTM_SPELL_RESET" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMTM_SPELL_TIME_LOOP" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMTM_SPELL_TIME_STEP" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMTM_SPELL_TIME_VORTEX" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMTM_SPELL_WALL_OF_TIME" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMMM_SPELL_RIGHT_THE_STARS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMMM_SPELL_VOORISH_SIGN" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMCD_SPELL_ANTICIPATE_ATTACK" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMCD_SPELL_ANTICIPATE_WEAKNESS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMCD_SPELL_AVOID_GRIEVOUS_INJURY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMCD_SPELL_SEERS_REACTION" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMCD_SPELL_SLIPPERY_FINGERS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMWM_SPELL_BREATHTAKING_WIND" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMWM_SPELL_FREEZE_BLOOD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMA_SPELL_BOTTLED_ARCANA" spellcasting="Starlighter" />
     </rules> 
   </element>
     <element name="Magic River" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
