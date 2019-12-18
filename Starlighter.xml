@@ -452,8 +452,6 @@
             <grant type="Spell" id="ID_KBP_DMTM_SPELL_TIME_STEP" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_KBP_DMTM_SPELL_TIME_VORTEX" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_KBP_DMTM_SPELL_WALL_OF_TIME" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_KBP_DMMM_SPELL_RIGHT_THE_STARS" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_KBP_DMMM_SPELL_VOORISH_SIGN" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_KBP_DMCD_SPELL_ANTICIPATE_ATTACK" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_KBP_DMCD_SPELL_ANTICIPATE_WEAKNESS" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_KBP_DMCD_SPELL_AVOID_GRIEVOUS_INJURY" spellcasting="Starlighter" />
