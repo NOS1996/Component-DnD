@@ -428,6 +428,10 @@
       <p>By spending 8 hours in meditation, you can exchange one or both of the spells you chose for different spells of the same levels.</p>
     </description>
     <sheet>
+      <description>Choose a 1st-level starlighter spell and a 2nd-­level starlighter spell, that you know. You can cast those spells at their lowest level without expending a spell slot</description>
+    </sheet>
+    <rules />
+  </element>
 
     <!-- Metamagic Options -->
   <element name="Careful Spell" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BLACKHOLE_CAREFUL_SPELL">
