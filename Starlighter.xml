@@ -460,6 +460,11 @@
             <grant type="Spell" id="ID_KBP_DMWM_SPELL_BREATHTAKING_WIND" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_KBP_DMWM_SPELL_FREEZE_BLOOD" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_KBP_DMA_SPELL_BOTTLED_ARCANA" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMDM_SPELL_CATCH_THE_BREATH" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMDM_SPELL_LEGEND_KILLER" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMDM_SPELL_RAID_THE_LAIR" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMDM_SPELL_SHADE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_KBP_DMA_SPELL_ACID_GATE" spellcasting="Starlighter" />
     </rules> 
   </element>
     <element name="Magic River" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
