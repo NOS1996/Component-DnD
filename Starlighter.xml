@@ -487,7 +487,7 @@
   </element>
   <element name="Celestial Stele" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORDER">
       <description>
-       <p>You have become a pillar to the very foundation of magic and a part of the comsic power of the positive plane is now permanently rooted through you. Beginning at 10th level, while you are concentrating on a spell, your concentration can’t be broken. Furthermore, you have resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Cosmic Agent feature. Also you now are considered to be a spellcasting focus, so others may use you as such, as well as yourself.</p>
+       <p>You have become a pillar to the very foundation of magic and a part of the comsic power of the positive plane is now permanently rooted through you. Beginning at 10th level, while you are concentrating on a spell, your concentration can only be broken by you ending the spell or by your death. Furthermore, you have resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Cosmic Agent feature. Also you now are considered to be a spellcasting focus, so others may use you as such, as well as yourself.</p>
       </description>
       <sheet>
        <description>While you are concentrating on a spell, your concentration can’t be broken. You gain resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Cosmic Agent feature. You are a spellcasting focus.</description>
