@@ -219,18 +219,18 @@
 
   <element name="Cosmic Agent" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_FIRE">
     <description>
-      <p>Becoming inured to the flow of the cosmos, you noticed, that you act like a sieve for the current of magic. You redirect a part of the cosmic flow into your body, causing your spells and attacks to deal an additional 1d8 radiant damage. Furthermore your attacks and spells that deal radiant damage now treat immunity to radiant damage as resistance to radiant damage, and ignore resistance to radiant damage. </p>
+      <p>Becoming inured to the flow of the cosmos, you noticed, that you act like a sieve for the current of magic. You redirect a part of the cosmic flow into your body, causing your spells and attacks to deal an additional 1d8 radiant damage. Since your body contains a maelstrom of magical energy, upon your death fountains of magic erupt from within you, leaving no physical trace of the body except for a sphere of lightly radiating free magic</p>
     </description>
     <sheet>
-      <description>Your attacks and spells deal an additional 1d8 radiant damage. Your attacks and spells ignore resistance to radiant damage and treat immunity like resistance.</description>
+      <description>Your attacks and spells deal an additional 1d8 radiant damage. </description>
     </sheet>
   </element>
   <element name="Heavenly Protection" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER">
     <description>
-      <p>As a Starlighter you meditate deeply inside the river of magic, that suffuses the multiverse, feeling it's current and becoming attuned to it's flow, learning how to bypass even the sturdiest defenses or magical barriers. Spells or features that would grant advantage on saving throws against your spells, do not apply. Should you die, the place of your burial becomes a sphere of free magic after 1d4 days.</p>
+      <p>As a Starlighter you meditate deeply inside the river of magic, that suffuses the multiverse, feeling it's current and becoming attuned to it's flow. Moving with the current you get a feeling for perfect timing and are capable of bypassing even the sturdiest defenses or magical barriers. Targets of your spells gain no benefit from advantage against your spells or spell saving throws, regardless of the source of their advantage. Furthermore your attacks and spells that deal radiant damage now treat immunity to radiant damage as resistance to radiant damage, and ignore resistance to radiant damage.</p>
     </description>
     <sheet>
-      <description>No one can gain advantage against your spells or spell saving throws. Should you die, the place of your burial becomes a sphere of free magic after 1d4 days.</description>
+      <description>Targets of your spells gain no benefit from advantage against your spells or spell saving throws. Your attacks and spells ignore resistance to radiant damage and treat immunity like resistance.</description>
     </sheet>
     <rules>
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
@@ -495,20 +495,20 @@
   </element>
   <element name="Cosmic Weave" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_BLACK_HOLE">
      <description>
-       <p>Starting at 15th level, you have learned to redirect strands of magic from nearby castings into yourself to fuel and empower yourself. Whenenver a spell is cast in a 60ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you regain hit points equal to the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received.</p>
-       <p class="indent">Furthermore you gain a number of weave points equal to the level of the spell. You may store weave points equal to two times your level. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level.</p>
+       <p>Starting at 15th level, you have learned to redirect strands of magic from nearby castings into yourself to fuel and empower yourself. Whenenver a spell is cast in a 90ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you regain hit points equal to the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received.</p>
+       <p class="indent">Furthermore you gain a number of weave points equal to  half the level of the spell (rounded up). You may store weave points equal to your level. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level.</p>
        <p class="indent">Additionally, you can use your weave points to augment you spells. Chose two metamagic feats, each can be invoked upon a spell by expending weave points.</p>
-       <p class="indent">Whenever you have 5 or more weave points, you may spend them and transform into a being of pure magical energy for one minute, gaining the following benefits:</p>
+       <p class="indent">Whenever you have 3 or more weave points, you may spend them and transform into a being of pure magical energy for 1 minute, gaining the following benefits:</p>
        <p class="indent">You gain a flying speed of 60 feet.</p>
-       <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this movement.</p>
+       <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this ability. If you are inside an object or a creature at the when your transformation ends, you are shunted to the nearest unoccupied space and take 1d10 force damage</p>
        <p class="indent">You gain resistance to nonmagical piercing, slashing and bludegeoning damage.</p> 
        <p class="indent">You gain advantage on saving throws against spells.</p>
       </description>
       <sheet>
        <description>
-        <p>Whenenver a spell is cast in a 60ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you regain hit points equal to the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received.</p>
-        <p class="indent">Furthermore you gain a number of weave points equal to the level of the spell. You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells.</p>
-        <p class="indent">Whenever you have 5 or more weave points, you may spend them and transform into a being of pure magical energy for one minute, gaining the following benefits:</p>
+        <p>Whenenver a spell is cast in a 90ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you regain hit points equal to the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received.</p>
+        <p class="indent">Furthermore you gain a number of weave points equal to the half level of the spell (rounded up). You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells.</p>
+        <p class="indent">Whenever you have 3 or more weave points, you may spend them and transform into a being of pure magical energy for 1 minute, gaining the following benefits:</p>
         <p class="indent">You gain a flying speed of 60 feet.</p>
         <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this ability.</p>
         <p class="indent">You gain resistance to nonmagical piercing, slashing and bludegeoning damage.</p> 
@@ -516,7 +516,6 @@
        </description>
       </sheet>
        <rules>
-       <stat name="weave-points" value="level:starlighter" />
        <stat name="weave-points" value="level:starlighter" />
        <select type="Class Feature" name="Weave Magic" supports="Weave Magic" level="15" number="2"/>
        </rules>
@@ -537,10 +536,10 @@
     <supports>Weave Magic</supports>
     <requirements />
     <description>
-      <p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.</p>
+      <p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Widom modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.</p>
     </description>
     <sheet>
-      <description>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 weave point and choose a number of those creatures equal to the weave points spent up to your intelligence modifier. A chosen creature automatically succeeds on its saving throw against the spell.</description>
+      <description>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 weave point and choose a number of those creatures equal to the weave points spent up to your wisdom modifier. A chosen creature automatically succeeds on its saving throw against the spell.</description>
     </sheet>
     <rules />
   </element>
@@ -592,10 +591,10 @@
     <supports>Weave Magic</supports>
     <requirements />
     <description>
-      <p>When you cast a spell that targets only one creature and doesn’t have a range of self, you can spend a number of weave points equal to the spell’s level to target a second creature in range with the same spell (1 weave point if the spell is a cantrip).</p>
+      <p>When you cast a spell that targets only one creature and doesn’t have a range of self, you can spend a number of weave points equal to half the spell’s level to target a second creature in range with the same spell (1 weave point if the spell is a cantrip).</p>
     </description>
     <sheet>
-      <description>When you cast a spell that targets only one creature and doesn’t have a range of self, you can spend a number of weave points equal to the spell’s level to target a second creature in range with the same spell (1 weave point if the spell is a cantrip).</description>
+      <description>When you cast a spell that targets only one creature and doesn’t have a range of self, you can spend a number of weave points equal to half the spell’s level to target a second creature in range with the same spell (1 weave point if the spell is a cantrip).</description>
     </sheet>
     <rules />
   </element>
