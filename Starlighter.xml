@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
   <info>
-    <name>Starlighter</name>
-    <description>A celestial magic wielder.</description>
+    <name>Caster</name>
+    <description>A magic wielder trained to hunt down evil mages.</description>
     <update version="0.0.1">
-      <file name="starlighter.xml" url="https://github.com/NOS1996/Component-DnD/blob/master/Starlighter.xml" />
+      <file name="caster.xml" url="https://github.com/NOS1996/Component-DnD/blob/master/Starlighter.xml" />
     </update>
   </info>
 
- <element name="Starlighter" type="Class" source="NOS" id="ID_NOS_CLASS_STARLIGHTER">
+ <element name="Caster" type="Class" source="NOS" id="ID_NOS_CLASS_STARLIGHTER">
     <description>
       <p>Clad in the silver robes that denote her status, an elf closes her eyes to shut out the distractions of the battlefield and begins her quiet chant. Fingers weaving in front of her, she completes her spell and launches a tiny bead of fire toward the enemy ranks, where it erupts into a conflagration that engulfs the soldiers.</p>
       <p class="indent">Delving deep into meditation, a human finds solace in the wisdom of the universe, emerging from the planes of magic into a state of pure being, raising a token on the battelfield and outlasting his enemies and strenghtening his allies he shines bright like the sun. </p>
-      <p class="indent">Crouching on the floor in a dungeon intersection, a gnome closes her eyes to feel the flow of the multiverse. After a few moments she opens them again, shining light bright stars in the night sky, turning a stealthy herd of orcs ahead of her into stone.</p>
-      <p class="indent">Pointing his hand in a simple gesture, a loxodon conjures a bright streak of light to diminish his enemy to fine gray dust.</p>
-      <p class="indent">Starlighters are supreme casters, empowered trough the positive energy that suffuses the multiverse. Drawing on the subtle weave of magic that permeates the cosmos, starlighters learn to shape reality to suit their needs. They delve deep into the very foundations of magic, the source of the multiverse itself, to bring balance to all life, becoming pillars of magic themselves in the process.</p>
+      <p class="indent">Crouching on the floor in a dungeon intersection, a gnome closes her eyes to feel the flow of the multiverse. After a few moments she opens them again, shining bright like stars in the nightsky and turns a stealthy herd of orcs ahead of her into stone.</p>
+      <p class="indent">Pointing his hand in a simple gesture, a loxodon conjures a bright streak of light to diminish a necromancer to fine gray dust.</p>
+      <p class="indent">Casters are supreme magic weilders, empowered trough the positive energy that suffuses the multiverse. Drawing on the subtle weave of magic that permeates the cosmos, casters learn to shape reality to suit their needs. They delve deep into the very foundations of magic, the source of the multiverse itself, to bring balance to all life, becoming pillars of magic themselves in the process.</p>
       <h4>EMPOWERED BY LIGHT</h4>
-      <p>The wisdom of the multiverse seeks to quench those who thirst for balance and peace and a deeper understanding of themselves and the nature of the multiverse. Unlike Other wizards or magic users, starlighters directly interact with the cosmic weave that suffuses the multiverse and in essence become pillars to the very fabric of magic itself, Agents of cosmic balance. They let the very river of pure magic flow through them, learning how to direct it's current. </p>
-      <h4>THE LURE OF ADVENTURE</h4>
-      <p>Starlighters feel the balance in the multiverse, they strive for cosmic peace, which doesn't always mean conventional peace. Some Starlighters are Avatars of War, taking their peace to the enemies of cosmic balance. They often seek out evil beings and necromantic powers to reestablish balance in the deep flow of the magic suffusing the multiverse. </p>
-      <h4>CREATING A STARLIGHTER</h4>
-      <p>Creating a Starlighter character demands a backstory dominated by at least one extraordinary event. How did your character first come into contact with magic? How did you discover you had an aptitude for? When did you begin to feel the flow suffusing the multiverse and how to interpret it's will?</p>
+      <p>The wisdom of the multiverse seeks to quench those who thirst for balance and peace and a deeper understanding of themselves and the nature of the multiverse. Unlike Other wizards or magic users, starlighters directly interact with the cosmic weave that suffuses the multiverse and in essence become pillars to the very fabric of magic itself, Agents of cosmic balance. They let the very river of pure magic flow through them, learning to direct it's current.</p>
+      <h4>THE HUNT</h4>
+      <p>Some cultures understood that magic is best battled with magic. Casters feel the balance in the multiverse and strive for cosmic peace, which doesn't always mean conventional peace. Some Casters are Avatars of War, taking their peace to the enemies of cosmic balance. They often seek out evil beings and necromantic powers to reestablish balance in the deep flow of the magic suffusing the multiverse. </p>
+      <h4>CREATING A Caster</h4>
+      <p>Creating a Caster character demands a backstory dominated by at least one extraordinary event. How did your character first come into contact with magic? How did you discover you had an aptitude for? When did you begin to feel the flow suffusing the multiverse and how to interpret it's will?</p>
       <h5>QUICK BUILD</h5>
-      <p>You can make a starlighter quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Constitution or Dexterity. Second, choose the Witch hunter background.</p>
+      <p>You can make a caster quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Constitution or Dexterity. Second, choose the Witch hunter background.</p>
       <h3>CLASS FEATURES</h3>
-      <p>As a starlighter, you gain the following class features.</p>
+      <p>As a caster, you gain the following class features.</p>
       <h5>HIT POINTS</h5>
       <p>
-        <span class="emphasis">Hit Dice:</span>1d6 per starlighter level<br/>
+        <span class="emphasis">Hit Dice:</span>1d6 per caster level<br/>
         <span class="emphasis">Hit Points at 1st Level:</span>6 + your Constitution modifier<br/>
-        <span class="emphasis">Hit Points at Higher Levels:</span>1d6 (or 4) + your Constitution modifier per starlighter level after 1st<br/>
+        <span class="emphasis">Hit Points at Higher Levels:</span>1d6 (or 4) + your Constitution modifier per caster level after 1st<br/>
       </p>
       <h5>PROFICIENCIES</h5>
       <p>
         <span class="emphasis">Armor:</span>None<br/>
-        <span class="emphasis">Weapons:</span>Daggers, Spears, slings, quarterstaffs, shortbows, sickles, handaxes<br/>
+        <span class="emphasis">Weapons:</span>Daggers, Spears, slings, quarterstaffs, shortbows, shortswords, sickles, handaxes<br/>
         <span class="emphasis">Tools:</span>None<br/>
       </p>
       <p>
@@ -44,14 +44,13 @@
       <h5>EQUIPMENT</h5>
       <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
       <ul>
-        <li>(a) a quarterstaff or (b) two daggers</li>
+        <li>(a) a shortsword or (b) two daggers</li>
         <li>(a) a component pouch or (b) an arcane focus</li>
         <li>(a) a shortbow and 20 bolts or (b) any simple weapon</li>
-        <li>(a) a scholar’s pack or (b) an explorer’s pack</li>
+        <li>(a) a dungeon delver's pack or (b) an explorer’s pack</li>
       </ul>
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELLCASTING_STARLIGHTER" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_ABILITYSCOREIMPROVEMENT_STARLIGHTER" />
-      <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELL_MASTERY" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_MAGIC" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_DIVINE_MAGIC" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER" />
@@ -59,12 +58,14 @@
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORDER" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_BLACK_HOLE" />
+      <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_AEGIS" />
+      <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELL_MASTERY" />
     </description>
     <sheet display="false">
-      <description>A celestial magic wielder, powered by the positive energy in reality.</description>
+      <description>A magic wielder trained to hunt down evil mages.</description>
     </sheet>
     <setters>
-      <set name="short">A celestial magic wielder, powered by the positive energy in reality.</set>
+      <set name="short">A magic wielder trained to hunt down evil mages.</set>
       <set name="hd">d6</set>
     </setters>
     <rules>
@@ -81,7 +82,7 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
 
-      <select type="Proficiency" name="Skill Proficiency (Starlighter)" supports="Skill" number="2" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
+      <select type="Proficiency" name="Skill Proficiency (Caster)" supports="Skill" number="2" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
       
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELLCASTING_STARLIGHTER" level="1"/>
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_MAGIC" level="1" />
@@ -93,6 +94,7 @@
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORDER" level="10" />
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_BLACK_HOLE" level="15" />
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELL_MASTERY" level="18" />
+      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_AEGIS" level="18" />
     </rules>
     <multiclass id="ID_NOS_MULTICLASS_STARLIGHTER">
       <prerequisite>Wisdom 13</prerequisite>
@@ -108,24 +110,20 @@
   <element name="Spellcasting" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELLCASTING_STARLIGHTER">
     <description>
       <h5>CANTRIPS</h5>
-      <p>Cantrips are the very start for every mage and even the Starlighters are no exception to that rule. You begin with a certain number of Cantrips and learn more later on.</p>
+      <p>Cantrips are the very start for every mage and even Casters are no exception to that rule. You begin with a certain number of Cantrips and learn more later on.</p>
       <h5>SPELLS</h5>
-      <p>At 1st level, you gain some 1st-­level Starlighter spells of your choice, which are, as well as any later added spells fixed in your mind.</p>
+      <p>At 1st level, you gain some 1st-­level Caster spells of your choice, which are, as well as any later added spells fixed in your mind.</p>
       <h5>CASTING SPELLS</h5>
       <p>The Starlighter table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
       <h5>SPELLCASTING ABILITY</h5>
-      <p>Wisdom is your spellcasting ability for your starlighter spells. You use Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a starlighter spell you cast and when making an attack roll with one.</p>
-      <p>
-        <strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier
-      </p>
-      <p>
-        <strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier
-      </p>
+      <p>Wisdom is your spellcasting ability for your Caster spells. You use Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a caster spell you cast and when making an attack roll with one.</p>
+      <p> <strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+      <p> <strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
       <h5>RITUAL CASTING</h5>
-      <p>You can cast a starlighter spell as a ritual if that spell has the ritual tag.</p>
+      <p>You can cast a caster spell as a ritual if that spell has the ritual tag.</p>
     </description>
     <sheet display="true">
-      <description>You use an arcane focus to cast spells and can also cast Starlighter spells as a ritual.</description>
+      <description>You use an arcane focus to cast spells and can also cast Caster spells as a ritual.</description>
     </sheet>
     <spellcasting name="Starlighter" ability="Wisdom" prepare="false">
       <list>Wizard</list>
@@ -137,7 +135,6 @@
       <stat name="starlighter:spellcasting:slots:1" value="2" level="1" />
       <stat name="starlighter:spellcasting:slots:1" value="1" level="2" />
       <stat name="starlighter:spellcasting:slots:1" value="1" level="3" />
-      
       <stat name="starlighter:spellcasting:slots:2" value="2" level="3" />
       <stat name="starlighter:spellcasting:slots:2" value="1" level="4" />
       <stat name="starlighter:spellcasting:slots:3" value="2" level="5" />
@@ -155,47 +152,40 @@
       <stat name="starlighter:spellcasting:slots:8" value="1" level="15" />
       <stat name="starlighter:spellcasting:slots:9" value="1" level="17" />
 
-      
 
-      <select type="Spell" name="Cantrip (Starlighter)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Cantrip (Starlighter)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Starlighter" />
-      <select type="Spell" name="Cantrip (Starlighter)" supports="$(spellcasting:list), 0" level="10" number="2" spellcasting="Starlighter" />
+      <select type="Spell" name="Cantrip (Caster)" supports="$(spellcasting:list), 0" level="1" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Cantrip (Caster)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Starlighter" />
+      <select type="Spell" name="Cantrip (Caster)" supports="$(spellcasting:list), 0" level="10" number="2" spellcasting="Starlighter" />
       
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="4" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="5" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="5" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="5" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="6" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="7" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="2" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Starlighter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="1" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="4" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="5" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="5" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="5" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="3" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="6" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="7" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="2" spellcasting="Starlighter" />
+      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="1" spellcasting="Starlighter" />
     </rules>
   </element>
-  <element name="Celestial Magic" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_MAGIC">
+  <element name="Arcane Weave" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_MAGIC">
     <spellcasting name="Starlighter" extend="true">
       <extend>Cleric</extend>
-    </spellcasting>
-  </element>
-  <element name="Divine Magic" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_DIVINE_MAGIC">
-    <spellcasting name="Starlighter" extend="true">
       <extend>Starlighter</extend>
-    </spellcasting>
-  </element>
 
 
-  <element name="Ability Score Improvement (Starlighter)" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_ABILITYSCOREIMPROVEMENT_STARLIGHTER">
+  <element name="Ability Score Improvement (Caster)" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_ABILITYSCOREIMPROVEMENT_STARLIGHTER">
     <description>
       <p>When you reach 4th level, and again at 8th, 12th, 14th, 16th, and 18th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
     </description>
@@ -207,30 +197,30 @@
       <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_14_STARLIGHTER" level="14" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
       <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_16_STARLIGHTER" level="16" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
       <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_18_STARLIGHTER" level="18" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" /> -->
-      <select type="Class Feature" name="Improvement Option (Starlighter 4)" supports="Improvement Option,Starlighter,4" level="4" />
-      <select type="Class Feature" name="Improvement Option (Starlighter 8)" supports="Improvement Option,Starlighter,8" level="8" />
-      <select type="Class Feature" name="Improvement Option (Starlighter 12)" supports="Improvement Option,Starlighter,12" level="12" />
-      <select type="Class Feature" name="Improvement Option (Starlighter 14)" supports="Improvement Option,Starlighter,14" level="14" />
-      <select type="Class Feature" name="Improvement Option (Starlighter 16)" supports="Improvement Option,Starlighter,16" level="16" />
-      <select type="Class Feature" name="Improvement Option (Starlighter 18)" supports="Improvement Option,Starlighter,18" level="18" />
+      <select type="Class Feature" name="Improvement Option (Caster 4)" supports="Improvement Option,Caster,4" level="4" />
+      <select type="Class Feature" name="Improvement Option (Caster 8)" supports="Improvement Option,Caster,8" level="8" />
+      <select type="Class Feature" name="Improvement Option (Caster 12)" supports="Improvement Option,Caster,12" level="12" />
+      <select type="Class Feature" name="Improvement Option (Caster 14)" supports="Improvement Option,Caster,14" level="14" />
+      <select type="Class Feature" name="Improvement Option (Caster 16)" supports="Improvement Option,Caster,16" level="16" />
+      <select type="Class Feature" name="Improvement Option (Caster 18)" supports="Improvement Option,Caster,18" level="18" />
     </rules>
   </element>
 
 
-  <element name="Cosmic Agent" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_FIRE">
+  <element name="Agent of Cosmic Balance" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_FIRE">
     <description>
-      <p>Becoming inured to the flow of the cosmos, you noticed, that you act like a sieve for the current of magic. You redirect a part of the cosmic flow into your body, causing your spells and attacks to deal an additional 1d8 radiant damage. Since your body contains a maelstrom of magical energy, upon your death fountains of magic erupt from within you, leaving no physical trace of the body except for a sphere of lightly radiating free magic</p>
+      <p>Becoming inured to the flow of the cosmos, you noticed, that you act like a sieve for the current of magic. You redirect a part of the cosmic flow into your body, causing your spells and attacks to deal an additional 1d8 force damage. Since your body contains a maelstrom of magical energy, upon your death fountains of magic erupt from within you, leaving no physical trace of the body except for a sphere of lightly radiating free magic.</p>
     </description>
     <sheet>
-      <description>Your attacks and spells deal an additional 1d8 radiant damage. </description>
+      <description>Your attacks and spells deal an additional 1d8 force damage. </description>
     </sheet>
   </element>
-  <element name="Heavenly Protection" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER">
+  <element name="Arcane Warfare" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER">
     <description>
-      <p>As a Starlighter you meditate deeply inside the river of magic, that suffuses the multiverse, feeling it's current and becoming attuned to it's flow. Moving with the current you get a feeling for perfect timing and are capable of bypassing even the sturdiest defenses or magical barriers. Targets of your spells gain no benefit from advantage against your spells or spell saving throws, regardless of the source of their advantage. Furthermore your attacks and spells that deal radiant damage now treat immunity to radiant damage as resistance to radiant damage, and ignore resistance to radiant damage.</p>
+      <p>As a Caster you meditate deeply inside the river of magic, that suffuses the multiverse, feeling it's current and becoming attuned to it's flow. Moving with the current you get a feeling for perfect timing and are capable of bypassing even the sturdiest defenses or magical barriers. Targets of your spells gain no benefit from advantage against your spells or spell saving throws, regardless of the source of their advantage. Furthermore your attacks and spells that deal force damage ignore resistance and immunity to force damage.</p>
     </description>
     <sheet>
-      <description>Targets of your spells gain no benefit from advantage against your spells or spell saving throws. Your attacks and spells ignore resistance to radiant damage and treat immunity like resistance.</description>
+      <description>Targets of your spells gain no benefit from advantage against your spells or spell saving throws. Your attacks and spells that deal force damage ignore resistance and immunity to force damae.</description>
     </sheet>
     <rules>
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
@@ -467,7 +457,7 @@
             <grant type="Spell" id="ID_KBP_DMA_SPELL_ACID_GATE" spellcasting="Starlighter" />
     </rules> 
   </element>
-    <element name="Magic River" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
+    <element name="Hunter Training" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
     <description>
       <p>At 6th level, you can forge a magical bond with a weapon or summon a weapon of pure magical energy, that deals radiant damage  instead of its original damage type and glows with dim light in a 5 feet radius. Choose a weapon with which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.</p>
       <p class="indent">You can’t be disarmed of your bonded weapon as long as you are conscious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.</p>
@@ -485,50 +475,60 @@
       While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. It gains a bonus of +2 to attack and damage rolls.</description>
     </sheet>
   </element>
-  <element name="Celestial Stele" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORDER">
+  <element name="Unbound Magic" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORDER">
       <description>
-       <p>You have become a pillar to the very foundation of magic and a part of the comsic power of the positive plane is now permanently rooted through you. Beginning at 10th level, while you are concentrating on a spell, your concentration can only be broken by you ending the spell or by your death. Furthermore, you have resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Cosmic Agent feature. Also you now are considered to be a spellcasting focus, so others may use you as such, as well as yourself.</p>
+       <p> Through decades of training you have become a pillar to the very foundation of magic and a part of the comsic power of the positive plane is now permanently rooted through you. Beginning at 10th level, while you are concentrating on a spell, your concentration can only be broken by you ending the spell or by your death. However you can only concentrate on as many as 2 spells at once.</p>
       </description>
       <sheet>
-       <description>While you are concentrating on a spell, your concentration can’t be broken. You gain resistance to the damage of spells. All spells you cast that deal fire damage, count as radiant in regards to your Cosmic Agent feature. You are a spellcasting focus.</description>
+       <description>While you are concentrating on a spell, your concentration can’t be broken. However you can only concentrate on as many as 2 spells at once.</description>
       </sheet>
   </element>
-  <element name="Cosmic Weave" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_BLACK_HOLE">
+  <element name="Weave-Walker" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_BLACK_HOLE">
      <description>
        <p>Starting at 15th level, you have learned to redirect strands of magic from nearby castings into yourself to fuel and empower yourself. Whenenver a spell is cast in a 90ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you regain hit points equal to the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received.</p>
        <p class="indent">Furthermore you gain a number of weave points equal to  half the level of the spell (rounded up). You may store weave points equal to your level. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level.</p>
        <p class="indent">Additionally, you can use your weave points to augment you spells. Chose two metamagic feats, each can be invoked upon a spell by expending weave points.</p>
-       <p class="indent">Whenever you have 3 or more weave points, you may spend them and transform into a being of pure magical energy for 1 minute, gaining the following benefits:</p>
+       <p class="indent">Whenever you have 5 or more weave points, you may spend them and transform into a being of pure magical energy for 1 minute, gaining the following benefits:</p>
        <p class="indent">You gain a flying speed of 60 feet.</p>
        <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this ability. If you are inside an object or a creature at the when your transformation ends, you are shunted to the nearest unoccupied space and take 1d10 force damage</p>
        <p class="indent">You gain resistance to nonmagical piercing, slashing and bludegeoning damage.</p> 
        <p class="indent">You gain advantage on saving throws against spells.</p>
+       <p class="indent">You gain resistance to force damage.</p>
+
       </description>
       <sheet>
        <description>
         <p>Whenenver a spell is cast in a 90ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you regain hit points equal to the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received.</p>
         <p class="indent">Furthermore you gain a number of weave points equal to the half level of the spell (rounded up). You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells.</p>
-        <p class="indent">Whenever you have 3 or more weave points, you may spend them and transform into a being of pure magical energy for 1 minute, gaining the following benefits:</p>
+        <p class="indent">Whenever you have 5 or more weave points, you may spend them and transform into a being of pure magical energy for 1 minute, gaining the following benefits:</p>
         <p class="indent">You gain a flying speed of 60 feet.</p>
         <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this ability.</p>
         <p class="indent">You gain resistance to nonmagical piercing, slashing and bludegeoning damage.</p> 
         <p class="indent">You gain advantage on saving throws against spells.</p>
+        <p class="indent">You gain resistance to force damage.</p>
        </description>
       </sheet>
        <rules>
        <stat name="weave-points" value="level:starlighter" />
-       <select type="Class Feature" name="Weave Magic" supports="Weave Magic" level="15" number="2"/>
+       <select type="Class Feature" name="Weave Magic" supports="Weave Magic" level="15" number="3"/>
        </rules>
     </element>
     <element name="Magium" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELL_MASTERY">
     <description>
-      <p>At 18th level, you are inured to the very fabric of magic itself, pouring out strands of magic effortlessly. So much so that you may cast certain spells at will. Choose a 1st-level starlighter spell and a 2nd-­level starlighter spell, that you know. You can cast those spells at their lowest level without expending a spell slot. If you want to cast either spell at a higher level, you must expend a spell slot as normal.</p>
-      <p>By spending 8 hours in meditation, you can exchange one or both of the spells you chose for different spells of the same levels.</p>
+      <p>After decades of training under an Eldritch being of magical power, you became inured to the very fabric of magic itself, learning to pour strands of magic out of the weave effortlessly. So much so that you may cast certain spells without expending spell slots. Choose a 1st-level and a 2nd-­level caster spell, that you know. You can cast those spells at their lowest level without expending a spell slot. If you want to cast either spell at a higher level, you must expend a spell slot as normal.</p>
     </description>
     <sheet>
       <description>Choose a 1st-level starlighter spell and a 2nd-­level starlighter spell, that you know. You can cast those spells at their lowest level without expending a spell slot</description>
     </sheet>
     <rules />
+  </element>
+  <element name="Aegis" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_AEGIS">
+    <description>
+      <p>Standing in the rivers of the Wevae for so long changed you. Bursting out from deep inside you, you subconsciously protect your physical form from damage creating an Aegis around you, that grants you resistance to the damage of spells.</p>
+    </description>
+    <sheet>
+      <description>You gain resistance to the damage of spells.</description>
+    </sheet>
   </element>
 
     <!-- Metamagic Options -->
@@ -595,6 +595,17 @@
     </description>
     <sheet>
       <description>When you cast a spell that targets only one creature and doesn’t have a range of self, you can spend a number of weave points equal to half the spell’s level to target a second creature in range with the same spell (1 weave point if the spell is a cantrip).</description>
+    </sheet>
+    <rules />
+  </element>
+    <element name="Unbound Spell" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BLACKHOLE_UNBOUND_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you cast a spell that deals damage, you may expend a number of weave points equal to the spells level to overcome even the strongest defenses. Your spell ignores resistances and Features such as the Terrasque's Reflective Carrapace Feature and Abjuration spells of 4th level or lower.</p>
+    </description>
+    <sheet>
+      <description>When you cast a spell that deals damage, you may expend a number of weave points equal to the spells level to overcome even the strongest defenses. Your spell ignores resistances and Features such as the Terrasque's Reflective Carrapace Feature and Abjuration spells of 4th level or lower.</description>
     </sheet>
     <rules />
   </element>
