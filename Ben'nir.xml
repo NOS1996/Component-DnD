@@ -33,7 +33,7 @@
                 <span class="feature">Size.</span>Ben'nir are the same size and build as human children. Your size is Medium or Small.<br/>
                 <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
                 <span class="feature">Eyes of Radiance.</span>Your iris glows with a faint light. You have truesight out to 120 feet and cannot be blinded.<br/>
-                <span class="feature">Radiant Being.</span> Due to your heritage as a star you are immune to being blinded, charmed or frightened, and magic can’t put you to sleep. You do not need to eat, drink, breathe, or sleep. However you still benefit from short and long rests. All other conditions and effects affect you normally.<br/>
+                <span class="feature">Radiant Being.</span> Due to your heritage as a star you are immune to being blinded, charmed or frightened, and magic can’t put you to sleep. You do not need to eat, drink, breathe, or sleep. However you still benefit from short and long rests.<br/>
                 <span class="feature">Languages.</span>You can speak, read, and write Common, Celestial and Druidic.<br/>
             </p>
         </description>
@@ -60,7 +60,7 @@
     
     <element name="Radiant Being" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_BENNIR_RADIANT_BEING">
         <description>
-            <p>You are immune to being blinded, charmed, frightened and being put to sleep. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effect of starvation, thirst, exhaustion, or suffocation. However you still benefit from short and long rests. All other conditions and effects affect you normally.</p>
+            <p>You are immune to being blinded, charmed, frightened and being put to sleep. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effect of starvation, thirst, exhaustion, or suffocation. However you still benefit from short and long rests.</p>
         </description>
         <sheet>
             <description>You are immune to being blinded, charmed or frightened, and you can’t be put to sleep. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effect of starvation, thirst, exhaustion, or suffocation</description>

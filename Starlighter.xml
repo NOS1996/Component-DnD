@@ -15,11 +15,11 @@
       <p class="indent">Crouching on the floor in a dungeon intersection, a gnome closes her eyes to feel the flow of the multiverse. After a few moments she opens them again, shining bright like stars in the nightsky and turns a stealthy herd of orcs ahead of her into stone.</p>
       <p class="indent">Pointing his hand in a simple gesture, a loxodon conjures a bright streak of light to diminish a necromancer to fine gray dust.</p>
       <p class="indent">Casters are supreme magic weilders, empowered trough the positive energy that suffuses the multiverse. Drawing on the subtle weave of magic that permeates the cosmos, casters learn to shape reality to suit their needs. They delve deep into the very foundations of magic, the source of the multiverse itself, to bring balance to all life, becoming pillars of magic themselves in the process.</p>
-      <h4>EMPOWERED BY LIGHT</h4>
-      <p>The wisdom of the multiverse seeks to quench those who thirst for balance and peace and a deeper understanding of themselves and the nature of the multiverse. Unlike Other wizards or magic users, starlighters directly interact with the cosmic weave that suffuses the multiverse and in essence become pillars to the very fabric of magic itself, Agents of cosmic balance. They let the very river of pure magic flow through them, learning to direct it's current.</p>
+      <h4>AGENTS OF BALANCE</h4>
+      <p>The wisdom of the multiverse seeks to quench those who thirst for balance and peace and a deeper understanding of themselves and the nature of the multiverse. Unlike Other wizards or magic users, casters directly interact with the cosmic weave that suffuses the multiverse and in essence become pillars to the very fabric of magic itself, Agents of cosmic balance. They let the very river of pure magic flow through them, learning to direct it's current.</p>
       <h4>THE HUNT</h4>
       <p>Some cultures understood that magic is best battled with magic. Casters feel the balance in the multiverse and strive for cosmic peace, which doesn't always mean conventional peace. Some Casters are Avatars of War, taking their peace to the enemies of cosmic balance. They often seek out evil beings and necromantic powers to reestablish balance in the deep flow of the magic suffusing the multiverse. </p>
-      <h4>CREATING A Caster</h4>
+      <h4>CREATING A CASTER</h4>
       <p>Creating a Caster character demands a backstory dominated by at least one extraordinary event. How did your character first come into contact with magic? How did you discover you had an aptitude for? When did you begin to feel the flow suffusing the multiverse and how to interpret it's will?</p>
       <h5>QUICK BUILD</h5>
       <p>You can make a caster quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Constitution or Dexterity. Second, choose the Witch hunter background.</p>
@@ -52,7 +52,6 @@
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELLCASTING_STARLIGHTER" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_ABILITYSCOREIMPROVEMENT_STARLIGHTER" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_MAGIC" />
-      <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_DIVINE_MAGIC" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_FIRE" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT" />
@@ -86,7 +85,6 @@
       
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELLCASTING_STARLIGHTER" level="1"/>
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_MAGIC" level="1" />
-      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_DIVINE_MAGIC" level="1" />
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_ABILITYSCOREIMPROVEMENT_STARLIGHTER" level="4" />
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER" level="2" />
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_FIRE" level="4" />
@@ -183,6 +181,8 @@
     <spellcasting name="Starlighter" extend="true">
       <extend>Cleric</extend>
       <extend>Starlighter</extend>
+     </spellcasting>
+  </element>
 
 
   <element name="Ability Score Improvement (Caster)" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_ABILITYSCOREIMPROVEMENT_STARLIGHTER">
@@ -488,29 +488,32 @@
        <p>Starting at 15th level, you have learned to redirect strands of magic from nearby castings into yourself to fuel and empower yourself. Whenenver a spell is cast in a 90ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you regain hit points equal to the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received.</p>
        <p class="indent">Furthermore you gain a number of weave points equal to  half the level of the spell (rounded up). You may store weave points equal to your level. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level.</p>
        <p class="indent">Additionally, you can use your weave points to augment you spells. Chose two metamagic feats, each can be invoked upon a spell by expending weave points.</p>
-       <p class="indent">Whenever you have 5 or more weave points, you may spend them and transform into a being of pure magical energy for 1 minute, gaining the following benefits:</p>
+       <p class="indent">Whenever you have 5 or more weave points, you may spend them and transform into a being of pure magical energy for 10 minutes (per 5 weave points), gaining the following benefits:</p>
        <p class="indent">You gain a flying speed of 60 feet.</p>
        <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this ability. If you are inside an object or a creature at the when your transformation ends, you are shunted to the nearest unoccupied space and take 1d10 force damage</p>
        <p class="indent">You gain resistance to nonmagical piercing, slashing and bludegeoning damage.</p> 
        <p class="indent">You gain advantage on saving throws against spells.</p>
        <p class="indent">You gain resistance to force damage.</p>
+      <p class="indent">You can invoke metamagic feats for half their price (rounded down)</p>
 
       </description>
       <sheet>
        <description>
         <p>Whenenver a spell is cast in a 90ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you regain hit points equal to the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received.</p>
         <p class="indent">Furthermore you gain a number of weave points equal to the half level of the spell (rounded up). You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells.</p>
-        <p class="indent">Whenever you have 5 or more weave points, you may spend them and transform into a being of pure magical energy for 1 minute, gaining the following benefits:</p>
+        <p class="indent">Whenever you have 5 or more weave points, you may spend them and transform into a being of pure magical energy for 10 minutes (per 5weave points), gaining the following benefits:</p>
         <p class="indent">You gain a flying speed of 60 feet.</p>
         <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this ability.</p>
         <p class="indent">You gain resistance to nonmagical piercing, slashing and bludegeoning damage.</p> 
         <p class="indent">You gain advantage on saving throws against spells.</p>
         <p class="indent">You gain resistance to force damage.</p>
+        <p class="indent">You can invoke metamagic feats for half their cost (rounded down)</p>
        </description>
       </sheet>
        <rules>
        <stat name="weave-points" value="level:starlighter" />
-       <select type="Class Feature" name="Weave Magic" supports="Weave Magic" level="15" number="3"/>
+       <select type="Class Feature" name="Weave Magic" supports="Weave Magic" level="15" number="2"/>
+       <select type="Class Feature" name="Weave Magic" supports="Weave Magic" level="18" number="3"/>
        </rules>
     </element>
     <element name="Magium" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELL_MASTERY">
@@ -580,10 +583,10 @@
     <supports>Weave Magic</supports>
     <requirements />
     <description>
-      <p>When you cast a spell, you can spend 1 weave point to cast it without any somatic or verbal components.</p>
+      <p>When you cast a spell, you can spend 1 weave point to cast it without any somatic or verbal components. You can invoke this even if you have already used a different Metamagic option.</p>
     </description>
     <sheet>
-      <description>When you cast a spell, you can spend 1 weave point to cast it without any somatic or verbal components.</description>
+      <description>When you cast a spell, you can spend 1 weave point to cast it without any somatic or verbal components. You can invoke this even if you have already used a different Metamagic option</description>
     </sheet>
     <rules />
   </element>
@@ -602,10 +605,76 @@
     <supports>Weave Magic</supports>
     <requirements />
     <description>
-      <p>When you cast a spell that deals damage, you may expend a number of weave points equal to the spells level to overcome even the strongest defenses. Your spell ignores resistances and Features such as the Terrasque's Reflective Carrapace Feature and Abjuration spells of 4th level or lower.</p>
+      <p>When you cast a spell that deals damage, you may expend a number of weave points equal to the spells level to overcome even the strongest defenses. Your spell ignores resistances and Features such as the Terrasque's Reflective Carrapace Feature and Shield spells of 4th level or lower such as magic armor, shield or barkskin. You can invoke this even if you have already used a different Metamagic option.</p>
     </description>
     <sheet>
-      <description>When you cast a spell that deals damage, you may expend a number of weave points equal to the spells level to overcome even the strongest defenses. Your spell ignores resistances and Features such as the Terrasque's Reflective Carrapace Feature and Abjuration spells of 4th level or lower.</description>
+      <description>When you cast a spell that deals damage, you may expend a number of weave points equal to the spells level to overcome even the strongest defenses. Your spell ignores resistances and Features such as the Terrasque's Reflective Carrapace Feature and Shield spells of 4th level or lower such as magic armor, shield or barkskin. You can invoke this even if you have already used a different Metamagic option.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Persusaive Spell" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BLACKHOLE_PERSUASIVE_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you cast a spell that requires a creature to mae a Stregth, Dexterity or Constitution saving throw, you can spend 3 weave points to require them to make a Wisdom saving throw instead. Creatures that are immune to being charmed, automatically succeed on this saving throw.</p>
+    </description>
+    <sheet>
+     <description>When you cast a spell that requires a creature to mae a Stregth, Dexterity or Constitution saving throw, you can spend 3 weave points to require them to make a Wisdom saving throw instead. Creatures that are immune to being charmed, automatically succeed on this saving throw.</description>
+    </sheet>
+    <rules />
+  </element>
+  <element name="Chilled Spell" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BLACKHOLE_CHILLED_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When casting a spell that deals cold damage, you may spend 2 weave points to cause creatures that took damage from that spell to make a Constitution saving throw. On a failed save, the creature is restrained until the end of your next turn. This metamagic cannot be used on spells that already have restraining effects.</p>
+    </description>
+    <sheet>
+     <description>When casting a spell that deals cold damage, you may spend 2 weave points to cause creatures that took damage from that spell to make a Constitution saving throw. On a failed save, the creature is restrained until the end of your next turn. This metamagic cannot be used on spells that already have restraining effects</description>
+    </sheet>
+    <rules />
+  </element>
+    <element name="Invisible Spell" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BLACKHOLE_INVISIBLE_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you cast a spell with a duration of instantaneous that other creatures can see, you can expend 1 sorcery point to make any visual manifestations of the spell's casting invisible. You can use Invisible Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
+    </description>
+    <sheet>
+     <description>When you cast a spell with a duration of instantaneous that other creatures can see, you can expend 1 sorcery point to make any visual manifestations of the spell's casting invisible. You can use Invisible Spell even if you have already used a different Metamagic option during the casting of the spell.</description>
+    </sheet>
+    <rules />
+  </element>
+    <element name="Smiting Spell" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BLACKHOLE_SMITING_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you hit with a melee weapon attack, you can spend 3 sorcery points to expend a spell slot and add the damage and/or effect of one of your spells capable of targeting a single creature cast at the level of the expended slot to the weapon attack's damage. Any attack throw for the chosen spell is considered an automatic success due to the successful weapon attack, and any saving throw for the chosen spell is made with disadvantage. You can invoke this even if you have already used a different Metamagic option</p>
+    </description>
+    <sheet>
+     <description>When you hit with a melee weapon attack, you can spend 3 sorcery points to expend a spell slot and add the damage and/or effect of one of your spells capable of targeting a single creature cast at the level of the expended slot to the weapon attack's damage. Any attack throw for the chosen spell is considered an automatic success due to the successful weapon attack, and any saving throw for the chosen spell is made with disadvantage. You can invoke this even if you have already used a different Metamagic option.</description>
+    </sheet>
+    <rules />
+  </element>
+    <element name="Widened Spell" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BLACKHOLE_WIDENED_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>You can spend 2 sorcery points to increase the area of a spell's effect. Spells that have a cone, cube, cylinder or sphere area of effect have a 50% increase in dimension, to the nearest 5-foot increment.</p>
+    </description>
+    <sheet>
+     <description>You can spend 2 sorcery points to increase the area of a spell's effect. Spells that have a cone, cube, cylinder or sphere area of effect have a 50% increase in dimension, to the nearest 5-foot increment.</description>
+    </sheet>
+    <rules />
+  </element>
+    <element name="Translocator Spell" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BLACKHOLE_TRANSLOCATOR_SPELL">
+    <supports>Weave Magic</supports>
+    <requirements />
+    <description>
+      <p>When you cast a spell, you can expend 2 sorcery points to change the origin of the spell to any space you choose within 30 feet of you. If the spell affects another creature, you must be able to see that creature.</p>
+    </description>
+    <sheet>
+     <description>When you cast a spell, you can expend 2 sorcery points to change the origin of the spell to any space you choose within 30 feet of you. If the spell affects another creature, you must be able to see that creature.</description>
     </sheet>
     <rules />
   </element>
