@@ -459,18 +459,16 @@
   </element>
     <element name="Hunter Training" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
     <description>
-      <p>At 6th level, you can forge a magical bond with a weapon or summon a weapon of pure magical energy, that deals radiant damage  instead of its original damage type and glows with dim light in a 5 feet radius. Choose a weapon with which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.</p>
+      <p>At 6th level, you can forge a magical bond with a weapon or summon a weapon of pure magical energy, that deals 1d8 radiant damage instead of its original damage type and glows with dim light in a 5 feet radius, attacks with it count as magical and you may use this weapon as a spellcasting focus. Choose a weapon with which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.</p>
       <p class="indent">You can’t be disarmed of your bonded weapon as long as you are conscious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.</p>
       <p class="indent">While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. At 10th level, your effectiveness with the weapon improves as it gains a bonus of +1 to attack and damage rolls, and then again to a +2 bonus at 14th level.</p>
     </description>
     <sheet>
-      <description>Choose a weapon with which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals radiant damage and glows with dim light in a 5 feet radius.
-      You can’t be disarmed of your bonded weapon as long as you are conscious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.
-      While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. You may use this weapon as a spellcasting focus.</description>
-      <description level="10">Choose a weapon in which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals radiant damage and glows with dim light in a 5 feet radius.
+      <description>Choose a weapon with which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals 1d8 radiant damage and glows with dim light in a 5 feet radius,  attacks with it count as magical and you may use this weapon as a spellcasting focus.You can’t be disarmed of your bonded weapon as long as you are conscious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. You may use this weapon as a spellcasting focus.</description>
+      <description level="10">Choose a weapon in which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals 1d8 radiant damage and glows with dim light in a 5 feet radius,  attacks with it count as magical and you may use this weapon as a spellcasting focus.
       You can’t be disarmed of your bonded weapon as long as you are conscious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.
       While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. It gains a bonus of +1 to attack and damage rolls.</description>
-      <description level="14">Choose a weapon in which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals radiant damage and glows with dim light in a 5 feet radius.
+      <description level="14">Choose a weapon in which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals 1d8 radiant damage and glows with dim light in a 5 feet radius,  attacks with it count as magical and you may use this weapon as a spellcasting focus.
       You can’t be disarmed of your bonded weapon as long as you are concious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.
       While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. It gains a bonus of +2 to attack and damage rolls.</description>
     </sheet>
@@ -543,28 +541,6 @@
     </description>
     <sheet>
       <description>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 weave point and choose a number of those creatures equal to the weave points spent up to your wisdom modifier. A chosen creature automatically succeeds on its saving throw against the spell.</description>
-    </sheet>
-    <rules />
-  </element>
-  <element name="Distant Spell" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BLACKHOLE_DISTANT_SPELL">
-    <supports>Weave Magic</supports>
-    <requirements />
-    <description>
-      <p>When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell. When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.</p>
-    </description>
-    <sheet>
-      <description>When you cast a spell that has a range of 5 feet or greater, you can spend 1 weave point to double the range of the spell. When you cast a spell that has a range of touch, you can spend 1 weave point to make the range of the spell 30 feet.</description>
-    </sheet>
-    <rules />
-  </element>
-  <element name="Extended Spell" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_BLACKHOLE_EXTENDED_SPELL">
-    <supports>Weave Magic</supports>
-    <requirements />
-    <description>
-      <p>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 weave point to double its duration, to a maximum duration of 24 hours.</p>
-    </description>
-    <sheet>
-      <description>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 weave point to double its duration, to a maximum duration of 24 hours.</description>
     </sheet>
     <rules />
   </element>

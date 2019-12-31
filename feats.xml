@@ -16,28 +16,23 @@
             <p><i>Prerequisite: Bennir</i></p>
             <p>You unleash the power of your heritage, that was bestowed upon you by the elder stars, hidden deep beneath your veins it called to you from your very core, for you to become the epitome of the starborn. And you answered.  You gain the following benefits unleashing the full power of the Ben'nir:</p>
             <ul>
-            	<li>You awaken long dormant power within your bloodline. You gain the ability to cast Produce flame, Burning Hands and Alter Self at will, at certain levels.</li>
-                <li>You gain a pair of spectral wings, that grant you an unimpaired flying speed of 50 feet. Being spectral your wings can be dismissed (no action required) and are not affected by (magical) air currents or other nonmagical effects that would cause you to lose balance or impede your flight.</li>
+            	<li>You awaken long dormant power within your bloodline. You gain the ability to cast Produce flame.</li>
+                <li>You gain a pair of spectral wings, that grant you an unimpaired flying speed of 70 feet. Being spectral your wings can be dismissed (no action required) and are not affected by air currents or other nonmagical effects that would cause you to lose balance or impede your flight.</li>
                 <li>You gain immunity to radiant and fire damage. You count as a Celestial.</li>
+                <li>You can change your form as per the alter self spell. However, you stay in your new form until you change back. Your game statistics (if not specifically mentioned by the alter self spell) do not change, neither does your equipment. You retain your wings in your new form.</li>
             </ul>
         </description>
         <sheet>
             <description>    
-             <p>You gain the following benefits:</p>
-              <ul>
-                <li>You count as a Celestial.</li>
-                <li>Your spell attacks ignore half and three-quarters cover.</li>
-              </ul>
+            <p>You count as a Celestial.</p>
+            <P> You can change your form as per the alter self spell. However, you stay in your new form until you change back. Your game statistics (if not specifically mentioned by the alter self spell) do not change, neither does your equipment. You retain your wings in your new form.</P>
          	</description>
         </sheet>
         <rules>
         	<stat name="innate speed:fly" value="70" bonus="base" />
         	<grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
-            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" />
-            <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" level="5" />
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_RADIANT" level="1" />
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" level="10" />
-            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
         </rules>
     </element>
 
