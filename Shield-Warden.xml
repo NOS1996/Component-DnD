@@ -38,7 +38,7 @@
 			<description>
 			<p action="bonus action">You can activate or deactivate a magical barrier. This barrier has {{barrier-hp}} hit points and regains all hit points whenever you finish a long rest. While this barrier is active, you radiate dim light in a 5 foot radius. This barrier deactivates automatically whenever you become unconscious, or when it is reduced to 0 hit points.</p>
 			<p action="reaction">While your barrier is active, whenever a creature or object you can see would take damage while within 10 feet of you, you can use the barrier to take that damage instead. If this damage reduces the barrier to 0 hit points, that creature or object takes any remaining damage.</p>
-			<p>Further, whenever you regain hit points, you can have your barrier regain those hit points instead, plus {{extra-hp}} .
+			<p>Further, whenever you regain hit points, you can have your barrier regain those hit points instead, plus {{extra-hp}}.</p>
 			</description>
 		</sheet>
 		<rules>
