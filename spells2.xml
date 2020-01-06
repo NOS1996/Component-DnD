@@ -1,0 +1,133 @@
+ <?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Spells2</name>
+    <description>Spells from NOS.</description>
+    <update version="0.0.2">
+      <file name="spells2.xml" url="https://github.com/NOS1996/Component-DnD/blob/master/Spells2.xml" />
+    </update>
+  </info>
+
+  <element name="Bind to Service" type="Spell" source="NOS" id="ID_NOS_SPELL_BIND_TO_SERVICE">
+    <supports>Wizard, Starlighter, Necromancer</supports>
+    <description>
+      <p>Select a Creature you are currently able to directly communicate with, and design a contract. You cannot target yourself with this spell. The creature immediateky becomes aware of the terms of the contract. If they agree to the contract, they become a Walrlock bound to your service. if they are not already a warlock or a level 20 character, they gain 1 level in the Warlock class. You get to choose the Warlock pact. Additionally  you gain possesion of their soul. After death, you choose which plane it goes to and where exacly on that plane it goes to and you may do with it as you wish. You cannot cast this spell on the same creaure again. If your Warlock violates the terms of the pact, you can engage in a ritual to remove their Warlock abilities. YOu may either choose to remove their Warlock levels, which takes 1 hour per level or make them loose one Warlock Featur eof your hoice per hour of the ritaul held, you can choose do so only temporary if you wish. Once you cast this spell you cannot cast it again for 30 days.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">9</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 minute</set>
+      <set name="duration">Special</set>
+      <set name="range">Special</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">´true</set>
+      <set name="materialComponent" >A jewel worth at least 5000gp</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Conjurers Arsenal" type="Spell" source="NOS" id="ID_NOS_SPELL_CONJURERS_ARSENAL">
+    <supports>Sorcerer, Wizard</supports>
+    <description>
+      <p>You call upon the infinte armories of the outer planes, summoning replicaas of the weapons to strike your foes. When you cast this spell, and as an action on each of your turns therafter,you can 10 spectral weapons that each strike a creature you can see dealing 1d10 bludgeouning, pirering, or slashing damage (your choice). The weapons all strike simultaneously and you can driect them to hit one creature or several.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">9</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, 1 minute</set>
+      <set name="range">120 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">treu</set>
+      <set name="materialComponent" >An ornately crafted key worth a least 500gp</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Opposing Force" type="Spell" source="NOS" id="ID_NOS_SPELL_OPPOSING_FORCE">
+    <supports>Druid, Warlock, Sorcerer, Wizard, Bard, Necromancer, Cleric</supports>
+    <description>
+      <p>You revert some of the force of an attack back against the attacker. Roll 1d10 + your spellcasting ability modifier (minimum 1). You reduce the damage dealt by the resultand amount, the attacker takes the reduced amount of the same damage type dealt.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">2</set>
+      <set name="school">abjuration</set>
+      <set name="time">1 reaction, which you take, when you take damage from bludgeoning, slashing or piercing damage</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Swift Ward" type="Spell" source="NOS" id="ID_NOS_SPELL_SWIFT_WARD">
+    <supports>Warlock, Sorcerer, Wizard, Necromancer, Druid, Bard, Cleric</supports>
+    <description>
+      <p>You ward yourself in an impermanent barrier of magical force. The ward has hit points equal to 6d6 + twice your spellcasting ability modifier.If you would take damage other than psychic or poison damage, the ward takes that damage instead. If the ward is reduced to 0 hit points you take any remaining damage and the spell ends.</p>
+      <p class="indent">At higher levels. When you cast the spell using a spell slot of 4th level or higher, the wards hit points increase by 2d6 for each slot level above 3rd.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Abjuration</set>
+      <set name="time">1 reaction, which you take just before you would take damage</set>
+      <set name="duration">1 round</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Shimmer" type="Spell" source="NOS" id="ID_NOS_SPELL_SHIMMER">
+    <supports>Sorcerer, Cleric</supports>
+    <description>
+      <p>A shimmering whip strikes a target you can see within range. Make a melee spel attack against the target. On a hit, the target takes 3d8 radiant damage and it has disadvantage on the next weapon attack toll it makes before the end of its next turn. If the target is an undead or fiend, you have advantage on the attack roll.</p>
+      <p class="indent">At higher levels. When you cast this spell as a 2nd level spell or higher, the damage increases by 1d8 per spell slot above 1st.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">60 feet</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Celestial Brigade" type="Spell" source="NOS" id="ID_NOS_SPELL_CELESTIAL_BRIGADE">
+    <supports>Paladin</supports>
+    <description>
+      <p>You mark a creature within range for wrath. The target can make a Charisma saving throw to avoid the celestial incursion. On a failure, celestials appear around the target, blitzing it with celestial weapons, dealing 5d6 radiant and 5d6 piercing damage. On a success the creature takes half damage.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">5</set>
+      <set name="school">conjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">90 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+</elements>

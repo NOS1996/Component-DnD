@@ -455,6 +455,12 @@
             <grant type="Spell" id="ID_KBP_DMDM_SPELL_RAID_THE_LAIR" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_KBP_DMDM_SPELL_SHADE" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_KBP_DMA_SPELL_ACID_GATE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_BIND_TO_SERVICE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_CONJURERS_ARSENAL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_OPPOSING_FORCE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_SWIFT_WARD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_SHIMMER" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NO_SPELL_CELESTIAL_BRIGADE" spellcasting="Starlighter" />
     </rules> 
   </element>
     <element name="Hunter Training" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">

@@ -36,4 +36,161 @@
         </rules>
     </element>
 
+        <element name="Metamagic Baby" type="Feat" source="NOS" id="ID_NOS_FEAT_METAMAGIC_BABY">
+        <prerequisite>Sorcerer</prerequisite>
+        <requirements>ID_WOTC_PHB_CLASS_SORCERER</requirements>
+        <description>
+            <p><i>Prerequisite: Sorcerer</i></p>
+            <p>You gain 3 additional metamagic options</p>
+        </description>
+        <sheet>
+            <description>You are a powerfull sorcerer.</description>
+        </sheet>
+        <setters>
+            <set name="allow duplicate">true</set>
+        </setters>
+        <rules>
+            <select type="Feat Feature" name="Metamagic (Feat)" supports="Metamagic Baby" />
+            <select type="Feat Feature" name="Metamagic (Feat)" supports="Metamagic Baby" />
+            <select type="Feat Feature" name="Metamagic (Feat)" supports="Metamagic Baby" />
+        </rules>
+    </element>
+
+    <element name="Metamagic (Careful Spell)" type="Feat Feature" source="Player’s Handbook" id="ID_NOS_FEAT_METAMAGIC_BABY_CAREFUL_SPELL">
+        <supports>Metamagic Baby</supports>
+        <description>
+            <p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 sorcery point and choose up to {{metamagic careful spell:creatures}} of those creatures. A chosen creature automatically succeeds on its saving throw against the spell.</description>
+        </sheet>
+        <rules>
+            <stat name="metamagic careful spell:creatures" value="1" bonus="base" />
+            <stat name="metamagic careful spell:creatures" value="charisma:modifier" bonus="base" />
+        </rules>
+    </element>
+    <element name="Metamagic (Distant Spell)" type="Feat Feature" source="Player’s Handbook" id="ID_NOS_FEAT_METAMAGIC_BABY_DISTANT_SPELL">
+        <supports>Metamagic Baby</supports>
+        <description>
+            <p>When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell. When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell. When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.</description>
+        </sheet>
+    </element>
+    <element name="Metamagic (Empowered Spell)" type="Feat Feature" source="Player’s Handbook" id="ID_NOS_FEAT_METAMAGIC_BABY_EMPOWERED_SPELL">
+        <supports>Metamagic Baby</supports>
+        <description>
+            <p>When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.</p>
+            <p class="indent">You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
+        </description>
+        <sheet>
+            <description>When you roll damage for a spell, you can spend 1 sorcery point to reroll {{metamagic empowered spell:rerolls}} damage dice. You must use the new rolls. You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.</description>
+        </sheet>
+        <rules>
+            <stat name="metamagic empowered spell:rerolls" value="1" bonus="base" />
+            <stat name="metamagic empowered spell:rerolls" value="charisma:modifier" bonus="base" />
+        </rules>
+    </element>
+    <element name="Metamagic (Extended Spell)" type="Feat Feature" source="Player’s Handbook" id="ID_NOS_FEAT_METAMAGIC_BABY_EXTENDED_SPELL">
+        <supports>Metamagic Baby</supports>
+        <description>
+            <p>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.</description>
+        </sheet>
+    </element>
+    <element name="Metamagic (Heightened Spell)" type="Feat Feature" source="Player’s Handbook" id="ID_NOS_FEAT_METAMAGIC_BABY_HEIGHTENED_SPELL">
+        <supports>Metamagic Baby</supports>
+        <description>
+            <p>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell.</description>
+        </sheet>
+    </element>
+    <element name="Metamagic (Quickened Spell)" type="Feat Feature" source="Player’s Handbook" id="ID_NOS_FEAT_METAMAGIC_BABY_QUICKEND_SPELL">
+        <supports>Metamagic Baby</supports>
+        <description>
+            <p>When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.</description>
+        </sheet>
+    </element>
+    <element name="Metamagic (Subtle Spell)" type="Feat Feature" source="Player’s Handbook" id="ID_NOS_FEAT_METAMAGIC_BABY_SUBTLE_SPELL">
+        <supports>Metamagic Baby</supports>
+        <description>
+            <p>When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components.</description>
+        </sheet>
+    </element>
+    <element name="Metamagic (Twinned Spell)" type="Feat Feature" source="Player’s Handbook" id="ID_NOS_FEAT_METAMAGIC_BABY_TWINNED_SPELL">
+        <supports>Metamagic Baby</supports>
+        <description>
+            <p>When you cast a spell that targets only one creature and doesn’t have a range of self, you can spend a number of sorcery points equal to the spell’s level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that targets only one creature and doesn’t have a range of self, you can spend a number of sorcery points equal to the spell’s level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).</description>
+        </sheet>
+    </element>
+    <element name="Metamagic (Binding Spell)" type="Feat Feature" source="Player’s Handbook" id="ID_NOS_FEAT_METAMAGIC_BABY_BINDING_SPELL">
+        <supports>Metamagic Baby</supports>
+        <description>
+            <p>Your magic binds creatures with energy and continues to damage them. When you cast a damaging spell, you may choose any number of creatures affected by your spell. You may pay 3 sorcery points for each of the chosen creatures. If you do, each chosen creature becomes bound by strands of energy from the spell, holding them in place and continuing to harm them. Each affected creature becomes restrained and takes 1d6 damage of the spell’s type at the start of each of their turns. The creature may use their action to attempt to break free by making a STR saving throw against your spell save DC, freeing themselves on a successful save. This is like a concentration spell for you.</p>
+        </description>
+        <sheet>
+            <description> When you cast a damaging spell, you may choose any number of creatures affected by your spell. You may pay 3 sorcery points for each of the chosen creatures. If you do, each chosen creature becomes bound by strands of energy from the spell, holding them in place and continuing to harm them. Each affected creature becomes restrained and takes 1d6 damage of the spell’s type at the start of each of their turns. The creature may use their action to attempt to break free by making a STR saving throw against your spell save DC, freeing themselves on a successful save. This acts like a concentration spell for you.</description>
+        </sheet>
+    </element>
+    <element name="Metamagic (Burning Spell)" type="Feat Feature" source="Player’s Handbook" id="ID_NOS_FEAT_METAMAGIC_BABY_BURNING_SPELL">
+        <supports>Metamagic Baby</supports>
+        <description>
+            <p>When you cast a damaging spell, you may spend 1 sorcery point. If the spell affects an area or multiple targets, you must spend 2 sorcery points for each target you wish to affect. After a chosen target takes damage from the spell, they become afflicted with magical energy and take 1d10 damage each round thereafter of the same damage type. An affected creature can spend an Action and all of their movement to end this effect. This is like a concentration spell for you.</p>
+        </description>
+        <sheet>
+            <description>When you cast a damaging spell, you may spend 1 sorcery point. If the spell affects an area or multiple targets, you must spend 2 sorcery points for each target you wish to affect. After a chosen target takes damage from the spell, they become afflicted with magical energy and take 1d10 damage each round thereafter of the same damage type. An affected creature can spend an Action and all of their movement to end this effect. This is like a concentration spell for you.</description>
+        </sheet>
+    </element>
+    <element name="Metamagic (Dazzling Spell)" type="Feat Feature" source="Player’s Handbook" id="ID_NOS_FEAT_METAMAGIC_BABY_DAZZLING_SPELL">
+        <supports>Metamagic Baby</supports>
+        <description>
+            <p>When you cast a spell that targets one or more creatures, you may choose one of those creatures. If that creature isn’t immune to charm effects, you may spend 2 sorcery points to force that creature to make a WIS saving throw against your spell save DC. On a failed save, the creature is charmed by you for two turns.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that targets one or more creatures, you may choose one of those creatures. If that creature isn’t immune to charm effects, you may spend 1 sorcery point to force that creature to make a WIS saving throw against your spell save DC. On a failed save, the creature is charmed by you for two turns.</description>
+        </sheet>
+    </element>
+    <element name="Metamagic (Echoing Spell)" type="Feat Feature" source="Player’s Handbook" id="ID_NOS_FEAT_METAMAGIC_BABY_ECHOING_SPELL">
+        <supports>Metamagic Baby</supports>
+        <description>
+            <p>When you cast a damaging spell, you may spend a number of sorcery points equal to half the spell slot used (rounded up). If you do, you create an echo of the spell. You can cast the same spell of the same effective spell slot again using your action the following round without expending a spell slot, but the spell echo uses only half the original spell’s damage dice (rounded up). You may choose new targets for the spell echo</p>
+        </description>
+        <sheet>
+            <description>When you cast a damaging spell, you may spend a number of sorcery points equal to half the spell slot used (rounded up). If you do, you create an echo of the spell. You can cast the same spell of the same effective spell slot again using your action the following round without expending a spell slot, but the spell echo uses only half the original spell’s damage dice (rounded up). You may choose new targets for the spell echo</description>
+        </sheet>
+    </element>
+    <element name="Metamagic (Piercing Spell)" type="Feat Feature" source="Player’s Handbook" id="ID_NOS_FEAT_METAMAGIC_BABY_PIERCING_SPELL">
+        <supports>Metamagic Baby</supports>
+        <description>
+            <p>You can break through a creature’s magical defenses or natural resistances. When you cast a spell that deals damage, you may spend 1 sorcery point to cause creatures that are resistant to the spell’s damage type or types to lose that resistance when taking damage from your spell.</p>
+        </description>
+        <sheet>
+            <description>You can break through a creature’s magical defenses or natural resistances. When you cast a spell that deals damage, you may spend 1 sorcery point to cause creatures that are resistant to the spell’s damage type or types to lose that resistance when taking damage from your spell.</description>
+        </sheet>
+    </element>
+    <element name="Metamagic (Umbral Spell)" type="Feat Feature" source="Player’s Handbook" id="ID_NOS_FEAT_METAMAGIC_BABY_UMBRAL_SPELL">
+        <supports>Metamagic Baby</supports>
+        <description>
+            <p>When you cast a spell with an area effect, you may pay 2 sorcery points. If you do, the spell’s area is filled with darkness (as if with a Darkness spell) while the spell is active and up to 1d4+2 rounds after the spell ends</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell with an area effect, you may pay 2 sorcery points. If you do, the spell’s area is filled with darkness (as if with a Darkness spell) while the spell is active and up to 1d4+2 rounds after the spell ends</description>
+        </sheet>
+    </element>
+    <!-- /Metamagic Baby -->
+
   </elements>

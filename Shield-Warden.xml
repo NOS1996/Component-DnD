@@ -36,9 +36,9 @@
 		</description>
 		<sheet>
 			<description>
+			<p>Whenever you regain hit points, you can have your barrier regain those hit points instead, plus {{extra-hp}}.</p>
 			<p action="bonus action">You can activate or deactivate a magical barrier. This barrier has {{barrier-hp}} hit points and regains all hit points whenever you finish a long rest. While this barrier is active, you radiate dim light in a 5 foot radius. This barrier deactivates automatically whenever you become unconscious, or when it is reduced to 0 hit points.</p>
 			<p action="reaction">While your barrier is active, whenever a creature or object you can see would take damage while within 10 feet of you, you can use the barrier to take that damage instead. If this damage reduces the barrier to 0 hit points, that creature or object takes any remaining damage.</p>
-			<p>Further, whenever you regain hit points, you can have your barrier regain those hit points instead, plus {{extra-hp}}.</p>
 			</description>
 		</sheet>
 		<rules>
@@ -62,7 +62,7 @@
 			</description>
 		</sheet>
 		<rules>
-			<stat name="force-hpce" value="level:fighter" />
+			<stat name="force-hp" value="level:fighter" />
 			<stat name="force-hp" value="level:fighter:half" />
 			<stat name="force-dc" value="8" />
 			<stat name="force-dc" value="constitution:modifier" />
@@ -72,7 +72,7 @@
 	<element name="Swift Barrier" type="Archetype Feature" source="Surrealistik" id="ID_NOS_ARCHETYPE_FEATURE_SHIELD_WARDEN_SWIFT_BARRIER">
 		<description>
 			<p>At 10th level, utilizing your barrier has become all but second nature, allowing you to direct its energies with casual ease.</p>
-			<P class="indent">Twice per turn you can redirect damage to your Aegis without using your reaction.</p>
+			<p class="indent">Twice per turn you can redirect damage to your Aegis without using your reaction.</p>
 		</description>
 		<sheet usage="2/turn">
 			<description>Redirect damage to your Aegis without using your reaction.</description>
@@ -98,7 +98,7 @@
 			<p class="indent"><b><em>Prismatic Ward</em></b>Whenever you complete a short or long rest, choose two damage types (other than slashing, bludgeoning and piercing. Your Aegis has resistance to these damage types until the end of your next short or long rest.</p>
 		</description>
 		<sheet>
-			<descriptio>
+			<description>
 			 <p>You gain the following benefits:</p>
 			 <p class="indent"><b><em>None without Shelter</em></b>The range of your Aegis increases to 30 feet.</p>
 			 <p class="indent"><b><em>Bladebane Aegis</em></b>Your Aegis has resistance to damage from nonmagical attacks.</p>
