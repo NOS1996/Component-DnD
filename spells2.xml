@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <elements>
   <info>
     <name>Spells2</name>
@@ -11,7 +11,7 @@
   <element name="Bind to Service" type="Spell" source="NOS" id="ID_NOS_SPELL_BIND_TO_SERVICE">
     <supports>Wizard, Starlighter, Necromancer</supports>
     <description>
-      <p>Select a Creature you are currently able to directly communicate with, and design a contract. You cannot target yourself with this spell. The creature immediateky becomes aware of the terms of the contract. If they agree to the contract, they become a Walrlock bound to your service. if they are not already a warlock or a level 20 character, they gain 1 level in the Warlock class. You get to choose the Warlock pact. Additionally  you gain possesion of their soul. After death, you choose which plane it goes to and where exacly on that plane it goes to and you may do with it as you wish. You cannot cast this spell on the same creaure again. If your Warlock violates the terms of the pact, you can engage in a ritual to remove their Warlock abilities. YOu may either choose to remove their Warlock levels, which takes 1 hour per level or make them loose one Warlock Featur eof your hoice per hour of the ritaul held, you can choose do so only temporary if you wish. Once you cast this spell you cannot cast it again for 30 days.</p>
+      <p>Select a Creature you are currently able to directly communicate with, and design a contract. You cannot target yourself with this spell. The creature immediateky becomes aware of the terms of the contract. If they agree to the contract, they become a Walrlock bound to your service. if they are not already a warlock or a level 20 character, they gain 1 level in the Warlock class. You get to choose the Warlock pact. Additionally you gain possesion of their soul. After death, you choose which plane it goes to and where exacly on that plane it goes to and you may do with it as you wish. You cannot cast this spell on the same creaure again. If your Warlock violates the terms of the pact, you can engage in a ritual to remove their Warlock abilities. YOu may either choose to remove their Warlock levels, which takes 1 hour per level or make them loose one Warlock Featur eof your hoice per hour of the ritaul held, you can choose do so only temporary if you wish. Once you cast this spell you cannot cast it again for 30 days.</p>
     </description>
     <setters>
       <set name="keywords"></set>
@@ -22,8 +22,28 @@
       <set name="range">Special</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">´true</set>
+      <set name="hasMaterialComponent">true</set>
       <set name="materialComponent" >A jewel worth at least 5000gp</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Celestial Brigade" type="Spell" source="NOS" id="ID_NOS_SPELL_CELESTIAL_BRIGADE">
+    <supports>Paladin</supports>
+    <description>
+      <p>You mark a creature within range for wrath. The target can make a Charisma saving throw to avoid the celestial incursion. On a failure, celestials appear around the target, blitzing it with celestial weapons, dealing 5d6 radiant and 5d6 piercing damage. On a success the creature takes half damage.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">5</set>
+      <set name="school">conjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">90 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
       <set name="isConcentration">false</set>
       <set name="isRitual">false</set>
     </setters>
@@ -42,7 +62,7 @@
       <set name="range">120 feet</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">treu</set>
+      <set name="hasMaterialComponent">true</set>
       <set name="materialComponent" >An ornately crafted key worth a least 500gp</set>
       <set name="isConcentration">true</set>
       <set name="isRitual">false</set>
@@ -60,6 +80,27 @@
       <set name="time">1 reaction, which you take, when you take damage from bludgeoning, slashing or piercing damage</set>
       <set name="duration">Instantaneous</set>
       <set name="range">Self</set>
+      <set name="hasVerbalComponent">false</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Shimmer" type="Spell" source="NOS" id="ID_NOS_SPELL_SHIMMER">
+    <supports>Sorcerer, Cleric</supports>
+    <description>
+      <p>A shimmering whip strikes a target you can see within range. Make a melee spel attack against the target. On a hit, the target takes 3d8 radiant damage and it has disadvantage on the next weapon attack toll it makes before the end of its next turn. If the target is an undead or fiend, you have advantage on the attack roll.</p>
+      <p class="indent">At higher levels. When you cast this spell as a 2nd level spell or higher, the damage increases by 1d8 per spell slot above 1st.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">1</set>
+      <set name="school">evocation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">60 feet</set>
       <set name="hasVerbalComponent">false</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
@@ -89,20 +130,41 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Shimmer" type="Spell" source="NOS" id="ID_NOS_SPELL_SHIMMER">
-    <supports>Sorcerer, Cleric</supports>
+  <element name="Ice Tomb" type="Spell" source="NOS" id="ID_NOS_SPELL_ICE_TOMB">
+    <supports>Warlock, Sorcerer, Wizard, Necromancer, Druid</supports>
     <description>
-      <p>A shimmering whip strikes a target you can see within range. Make a melee spel attack against the target. On a hit, the target takes 3d8 radiant damage and it has disadvantage on the next weapon attack toll it makes before the end of its next turn. If the target is an undead or fiend, you have advantage on the attack roll.</p>
-      <p class="indent">At higher levels. When you cast this spell as a 2nd level spell or higher, the damage increases by 1d8 per spell slot above 1st.</p>
+      <p>Choose a creature you can see within range. The air around the creature freezes suddenly, trapping the creature in ice. The target takes 2d8 cold damage and must succeed on a Strength saving throw or be restrainedfor the duration. A creature restrained by the ice can use its action to make a stregth check against your spell save DC. If it succeeds, it is no longer restrained and the spell ends.At the end of each of its turns the target takes 1d8 cold damage. the ice can be melted. if the atrget is exposed to fire damage, the dspell ends.</p>
+      <p class="indent">At higher levels When you cast this spell using a spell slot of 4th level or higher, the initial damage increases by 1d8 for each slot level above 3rd. And the secondary damage increases by 1d8 every two spell slots above 3rd. (5th 4d8+ 2d8) (7th 6d8+ 3d8) (9th 8d8+ 4d8).</p>
     </description>
     <setters>
       <set name="keywords"></set>
-      <set name="level">1</set>
-      <set name="school">evocation</set>
+      <set name="level">3</set>
+      <set name="school">conjuration</set>
       <set name="time">1 action</set>
-      <set name="duration">Instantaneous</set>
+      <set name="duration">1 minute</set>
       <set name="range">60 feet</set>
-      <set name="hasVerbalComponent">false</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >a blue rose that only blooms in winter</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Elemental Shield" type="Spell" source="NOS" id="ID_NOS_SPELL_ELEMENTAL_SHIELD">
+    <supports>Warlock, Sorcerer, Wizard</supports>
+    <description>
+      <p>You manifest a warding energy around yourself. The ward nullifies and dissipates elemental energy. The spell can nullifie up to 35 points of damage. Whenever you recieve acid, cold, fire, lightning or thunder damage you reduce the damage from the wards hit points instead of taking it yourself. The spell ends when the shields hit points reach 0, you take any remaining damage.</p>
+      <p class="indent">At higher levels. When you cast this spell as a 4th level spell or higher, the ward gains an additional 15 hit points per level above 3rd. </p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">abjuration</set>
+      <set name="time">1 reaction</set>
+      <set name="duration">1 hour</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
       <set name="materialComponent" />
@@ -110,18 +172,40 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Celestial Brigade" type="Spell" source="NOS" id="ID_NOS_SPELL_CELESTIAL_BRIGADE">
-    <supports>Paladin</supports>
+  <element name="True Shield" type="Spell" source="NOS" id="ID_NOS_SPELL_TRUE_SHIELD">
+    <supports>Sorcerer, Wizard</supports>
     <description>
-      <p>You mark a creature within range for wrath. The target can make a Charisma saving throw to avoid the celestial incursion. On a failure, celestials appear around the target, blitzing it with celestial weapons, dealing 5d6 radiant and 5d6 piercing damage. On a success the creature takes half damage.</p>
+      <p>A sphere of energy erupts from you, encasing and protecting you. The spell can nullify up to 50 points of damage. Whenever you would recieve damage this damage is taken from the wards hit points instead. Line effects such as a lightning bolt stop completely at the sphere, if its damage is entirely absorbed. The shield reflects a magic missile back at its caster instead of absorbing the damage. The spell ends when the shields hit points reach 0, you take any remaining damage.</p>
+      <p class="indent"> At higher levels. When you cast this spell with a spell slot of 6th level or higher, the amount of damage the shield absorbs increases by 15 for eah slot level above 5th.</p>
     </description>
     <setters>
       <set name="keywords"></set>
       <set name="level">5</set>
-      <set name="school">conjuration</set>
+      <set name="school">abbjuration</set>
       <set name="time">1 action</set>
-      <set name="duration">Instantaneous</set>
-      <set name="range">90 feet</set>
+      <set name="duration">1 hour</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Safeguard" type="Spell" source="NOS" id="ID_NOS_SPELL_SAFEGUARD">
+    <supports>Warlock, Sorcerer, Wizard, Necromancer, Druid</supports>
+    <description>
+      <p>In the face of danger, you create a barrier that protects you and those around you, A faintly glowing sphere appears around you. It has a radius of your choice, up to 20 feet. Physical projectiles, as well as spells of 2nd level or lower cannot pass through the barrier for the duration. Divination spells of 2nd level or lower don't register anything within the sphere. Additionally creatures outside the dome have disadvantage on attack rolls against creatures inside the dome.</p>
+      <p class="indent">At higher levels. The maximum radius increases by 20 foot for every spell slot above 4th you use to cast this spell.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">4</set>
+      <set name="school">abjuration</set>
+      <set name="time">1 reaction</set>
+      <set name="duration">1 minute</set>
+      <set name="range">Self</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
       <set name="hasMaterialComponent">false</set>
