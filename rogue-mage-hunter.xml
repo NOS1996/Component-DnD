@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Mage Hunter</name>
+        <description>Rigorous assasins trained to hunt down mages.</description>
+        <update version="0.0.1">
+            <file name="rogue-mage-hunter.xml" url="https://github.com/NOS1996/Component-DnD/blob/master/rogue-mage-hunter.xml" />
+        </update>
+    </info>
+    <element name="Mage Hunter" type="Archetype" source="NOS" id="ID_NOS_ARCHETYPE_MAGE_HUNTER">
+        <supports>Roguish Archetype</supports>
+        <description>
+            <p>An ancient order that remembers the ruin that can be wrought by spellcasters. Watching those gifted with magic talent for any sign of becoming a danger to civilization. These Mage Hunters are trained from a very young age , their minds and bodys tempered into keen wapons. Mage Hunters undergo brutal training and have theri flesh marked with runes to ward off magic. They are the vigil, ever watchfull eye, poised to strike down any mage who's hubris grows too far. Mage Hunters have never been found to working without a Caster. There is always one Mage Hunter and One Caster working in a pair. The Mage Hunter embodying the Physis and the Caster embodying the Weave. Their teamwork makes it almost seem like there is a bond between them, or is there?</p>
+            <div element="ID_NOS_ARCHETYPE_FEATURE_MAGE_HUNTER_HUNTER_TRAINING" />
+            <div element="ID_NOS_ARCHETYPE_FEATURE_MAGE_HUNTER_ARCANE_ASSASIN" />
+            <div element="ID_NOS_ARCHETYPE_FEATURE_MAGE_HUNTER_NILL" />
+            <div element="ID_NOS_ARCHETYPE_FEATURE_MAGE_HUNTER_SPELLCASTING" />
+            <div element="ID_NOS_ARCHETYPE_FEATURE_MAGE_HUNTER_SPELLPIERCER" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_MAGE_HUNTER_HUNTER_TRAINING" level="1"/>
+            <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_MAGE_HUNTER_ARCANE_ASSASIN" level="3"/>
+            <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_MAGE_HUNTER_NILL" level="9"/>
+            <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_MAGE_HUNTER_SPELLCASTING" level="13"/>
+            <grant type="Archetype Feature" id="ID_NOS_ARCHETYPE_FEATURE_MAGE_HUNTER_SPELLPIERCER" level="17"/>
+        </rules>
+    </element>
+    <element name="Hunter Training" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_MAGE_HUNTER_HUNTER_TRAINING">
+        <description>
+            <p>when you choose this Archetype at 3rd level, you gain proficiency with the Arcana skill and have advantage on ability checks made to identify spellbooks, magical items, spell components, spell scrolls and aracane foci. Additionally you gain Proficiency with the Heavy Crossbow, scimitar and whip.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on ability checks made to identify spellbooks, magical items, spell components, spell scrolls and aracane foci.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP" />
+        </rules>
+    </element>
+    <element name="Arcane Assassin" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_MAGE_HUNTER_ARCANE_ASSASIN">
+        <description>
+            <p>Starting at 3rd level, you use yozur knwoledge of the martial arts to exploit your enemies weaknesses. You have advantage on attack rolls against any creature that hasn’t taken a turn in combat yet.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on attack rolls against any creature that hasn’t taken a turn in combat yet.</description>
+        </sheet>
+        <rules/>
+    </element>
+    <element name="Nill" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_MAGE_HUNTER_NILL">
+        <description>
+            <p>At 9th level, you gain the ability touse your knwowledge of the arcane to unweave the magicks of your enemies. You can cast the counterspell or dispel magic spells. Your spellcasting ability for these spells is Intelligence. The spell slot used to cast these spells is considereed to be 1/3rd of your Rogue level (rounded down). This ability can be used a number of times equal to 1 + your Intelligence modifier. You regain all uses of this ability after a long rest.</p>
+        </description>
+        <sheet>
+            <description>A numbr of times per long rest euql to 1+ your Intelligence modifier you may cast the dipel magic or counterspell spell. Your spellcasting ability for these spells is Intelligence and the spell slots used to cast those spells is considered to be 1/3rd of your Rogue level (rounded down)</description>
+        </sheet>
+        <rules/>
+    </element>
+    <element name="Magic Initiate" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_MAGE_HUNTER_SPELLCASTING">
+        <description>
+            <p>When you reach 13th level, you gain the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list.</p>
+            <p class="indent"><b><i>Cantrips.</i></b> You learn three cantrips: mage hand and two other cantrips of your choice from the wizard spell list. You learn another wizard cantrip of your choice at 15th level.</p>
+            <p class="indent"><b><i>Spell Slots.</i></b> The Mage Hunter Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+            <p class="indent">For example, if you know the 1st-level spell charm person and have a 1st-level and a 2nd-level spell slot available, you can cast charm person using either slot.</p>
+            <p class="indent"><b><i>Spells Known of 1st-Level and Higher.</i></b> You know three 1st-level wizard spells of your choice.</p>
+            <p class="indent">The Spells Known column of the Mage Hunter Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be of a level for which you have spell slots.</p>
+            <p class="indent">Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots.</p>
+            <p class="indent"><b><i>Spellcasting Ability.</i></b> Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</p>
+            <center>
+                <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+                <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+            </center>
+            <h5 class="caption">MAGE HUNTER SPELLCASTING</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-10">Rogue Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+                </thead>
+                <tr><td>13th</td><td>3</td><td> 9</td><td>4</td><td></td><td>—</td><td>—</td></tr>
+                <tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+                <tr><td>15th</td><td>4</td><td>10</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+                <tr><td>16th</td><td>4</td><td>11</td><td>4</td><td>4</td><td>1</td><td>—</td></tr>
+                <tr><td>17th</td><td>4</td><td>11</td><td>4</td><td>4</td><td>2</td><td>—</td></tr>
+                <tr><td>18th</td><td>4</td><td>11</td><td>4</td><td>4</td><td>4</td><td>—</td></tr>
+                <tr><td>19th</td><td>4</td><td>12</td><td>4</td><td>4</td><td>4</td><td>1</td></tr>
+                <tr><td>20th</td><td>4</td><td>13</td><td>4</td><td>4</td><td>4</td><td>2</td></tr>
+            </table>                
+        </description>
+        <sheet display="false"/>
+        <spellcasting name="Magic Initiate" ability="Intelligence">
+            <list>Wizard</list>
+        </spellcasting>
+        <rules>
+          <grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_ARCANE_FOCUS" />
+
+          <stat name="magic initiate:spellcasting:slots:1" value="4" level="13" />
+          <stat name="magic initiate:spellcasting:slots:2" value="2" level="14" />
+          <stat name="magic initiate:spellcasting:slots:2" value="1" level="15" />
+          <stat name="magic initiate:spellcasting:slots:2" value="1" level="16" />
+          <stat name="magic initiate:spellcasting:slots:3" value="1" level="16" />
+          <stat name="magic initiate:spellcasting:slots:3" value="1" level="17" />
+          <stat name="magic initiate:spellcasting:slots:3" value="2" level="18" />
+          <stat name="magic initiate:spellcasting:slots:4" value="1" level="19" />
+          <stat name="magic initiate:spellcasting:slots:4" value="1" level="20" />
+
+
+          <select type="Spell" name="Cantrip (Magic Initiate)" supports="$(spellcasting:list), 0" level="13" number="3" spellcasting="Magic Initiate" />
+          <select type="Spell" name="Cantrip (Magic Initiate)" supports="$(spellcasting:list), 0" level="15" number="2" spellcasting="Magic Initiate" />
+
+          
+          <select type="Spell" name="Spell (Magic Initiate)" supports="$(spellcasting:list), 1" level="13" number="4" spellcasting="Magic Initiate" />
+          <select type="Spell" name="Spell (Magic Initiate)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="5" spellcasting="Magic Initiate" />
+          <select type="Spell" name="Spell (Magic Initiate)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="1" spellcasting="Magic Initiate" />
+          <select type="Spell" name="Spell (Magic Initiate)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="1" spellcasting="Magic Initiate" />
+          <select type="Spell" name="Spell (Magic Initiate)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="1" spellcasting="Magic Initiate" />
+          <select type="Spell" name="Spell (Magic Initiate)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="1" spellcasting="Magic Initiate" />
+        </rules>
+    </element>
+    <element name="Spellpiercer" type="Archetype Feature" source="NOS" id="ID_NOS_ARCHETYPE_FEATURE_MAGE_HUNTER_SPELLPIERCER">
+        <description>
+            <p>Starting at 17th level, when you are attacking a creature that is under the effects of a spell that grants a bonus to AC or resistance to damage, you ignore those benefits while making attack or damage rolls. This does not affect spells such as swift ward, darkness or invisibility. However it does affect spells like bane.</p>
+            <p class="indent">When dealing damage, you also ignore temporary hit points, dealing damage directly to the creature, the temporary hit points stay unaffected.</p>
+            <p class="indent"> Examples of spells that would be ignored by this feature are: Aid, Armor of Agathys, Shield of Faith, False Life, Heroism, Stoneskin and Warding Bond.</p>
+        </description>
+        <sheet>
+            <description>When you are attacking a creature that is under the effects of a spell that grants a bonus to AC or resistance to damage, you ignore those benefits while making attack or damage rolls. This does not affect spells such as swift ward, darkness or invisibility. When dealing damage, you also ignore temporary hit points.</description>
+        </sheet>
+        <rules />
+    </element>
+</elements>

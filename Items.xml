@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items</name>
+		<description></description>
+		<update version="0.0.1">
+			<file name="weapons.xml" url="https://github.com/NOS1996/Component-DnD/edit/master/Items.xml" />
+		</update>
+	</info>
+
+	<element name="Spellshard" type="Magic Item" source="NOS" id="ID_NOS_MAGIC_ITEM_SPELLSHARD">
+		<description>
+			<p>This dagger grants a +2 bonus to attack and damage rolls made with it. While you hold it, you gain a +2 bonus to spell attack rolls.</p>
+			<p class="indent">The dagger has 50 charges for the following properties. It regains 4d6 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 20, the dagger regains 1d12 + 1 charges.</p>
+			<p class="indent"><strong><em>Spell Absorption.</em></strong> While holding the dagger, you have advantage on saving throws against spells. In addition, you can use your reaction when another creature casts a spell that targets only you. If you do, the dagger absorbs the magic of the spell, canceling its effect and gaining a number of charges equal to the absorbed spell’s level. However, if doing so brings the dagger’s total number of charges above 50, the dagger explodes as if you activated its retributive strike (see below).</p>
+			<p class="indent"><strong><em>Spells.</em></strong> While holding the dagger, you can use an action to expend some of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability: <em>conjure elemental</em> (7 charges), <em>dispel magic</em> (3 charges), <em>fireball</em> (7th-level version, 7 charges), <em>flaming sphere</em> (2 charges), <em>ice storm</em> (4 charges), <em>invisibility</em> (2 charges), <em>knock</em> (2 charges), <em>lightning bolt</em> (7th-level version, 7 charges), <em>passwall</em> (5 charges), <em>plane shift</em> (7 charges), <em>telekinesis</em> (5 charges), <em>wall of fire</em> (4 charges), or <em>web</em> (2 charges).</p>
+			<p class="indent">You can also use an action to cast one of the following spells from the dagger without using any charges: <em>arcane lock</em>, <em>detect magic</em>, <em>enlarge reduce</em>, <em>light</em>, <em>mage hand</em>, or <em>protection from evil and good</em>.</p>	
+			<p class="indent"><strong><em>Retributive Strike.</em></strong> You can use an action to make the dagger burst, performing a retributive strike. The dagger is destroyed and releases its remaining magic in an explosion that expands to fill a 30-foot-radius sphere centered on it.</p>
+			<p class="indent">You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take force damage equal to 16 x the number of charges in the dagger. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a successful save, a creature takes half as much damage.</p>
+			<table>
+				<thead>
+					<tr><td>Distance from Origin</td><td>Damage</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>10 ft. away or closer</td><td>8 x the number of charges in the dagger</td></tr>
+					<tr><td>11 to 20 ft. away</td><td>6 x the number of charges in the dagger</td></tr>
+					<tr><td>21 to 30 ft. away</td><td>4 x the number of charges in the dagger</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">sorcerer, warlock, wizard, druid, necromancer</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">50000</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Dagger</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="attunement" addition="by sorcerer, warlock, wizard, druid or necromancer">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">2</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="2" />
+		</rules>
+	</element>
+
+	<element name="Chain Whip" type="Weapon" source="NOS" id="ID_NOS_WEAPON_CHAIN_WHIP">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+		<description>
+			<p>Chain Whips are chains, that are worn on shakles on each of one's arm and then used as whips. Those weapons take a long time to master and are dangerous to both the wielder and the target if used incorrectly.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="17">17 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP</set>
+		</setters>
+	</element>
+
+</elements>

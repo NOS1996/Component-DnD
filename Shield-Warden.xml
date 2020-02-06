@@ -30,15 +30,17 @@
 	<element name="Aegis" type="Archetype Feature" source="Surrealistik" id="ID_NOS_ARCHETYPE_FEATURE_SHIELD_WARDEN_AEGIS">
 		<description>
 			<p>Upon choosing this archetype at 3rd level, you are able to create a faintly glowing shield of arcane force.</p>
-			<p class="indent">As a bonus action, you can activate or deactivate a magical barrier. This barrier has hit points equal to twice your Constitution modifier plus twice your Fighter level and regains all hit points whenever you finish a long rest. While this barrier is active, you radiate dim light in a 5 foot radius. This barrier deactivates automatically whenever you become unconscious, or when it is reduced to 0 hit points.</p>
+			<p class="indent">As a bonus action, you can activate or deactivate a magical barrier. This barrier has hit points equal to twice your Constitution modifier plus twice your Fighter level and regains all hit points whenever you finish a long rest. While this barrier is active, you radiate dim light in a 5 foot radius. This barrier deactivates automatically whenever it is reduced to 0 hit points.</p>
 			<p class="indent">While your barrier is active, whenever a creature or object you can see would take damage while within 10 feet of you, you can use your reaction to hae the barrier take that damage instead. If this damage reduces the barrier to 0 hit points, that creature or object takes any remaining damage.</p>
+			<p class="indent">You are also considered to be wearing a shield at all times and gain a bonus to your AC depending on your level. You gain no bonus from an additional shield.</p>
 			<p class="indent">Further, whenever you would regain hit points, you can have your barrier regain those hit points instead, plus extra hit points of half your Fighter level.</p>
 		</description>
 		<sheet>
 			<description>
-			<p action="bonus action">You can activate or deactivate a magical barrier. This barrier has {{barrier-hp}} hit points and regains all hit points whenever you finish a long rest. While this barrier is active, you radiate dim light in a 5 foot radius. This barrier deactivates automatically whenever you become unconscious, or when it is reduced to 0 hit points.</p>
+			<p action="bonus action">You can activate or deactivate a magical barrier. This barrier has {{barrier-hp}} hit points and regains all hit points whenever you finish a long rest. While this barrier is active, you radiate dim light in a 5 foot radius. This barrier deactivates automatically whenever it is reduced to 0 hit points.</p>
 			<p action="reaction">While your barrier is active, whenever a creature or object you can see would take damage while within 10 feet of you, you can use the barrier to take that damage instead. If this damage reduces the barrier to 0 hit points, that creature or object takes any remaining damage.</p>
-			<p>Whenever you regain hit points, you can have your barrier regain those hit points instead, plus {{extra-hp}}.</p>
+			<p class="indent">You are also considered to be wearing a shield at all times and gain a bonus to your AC depending on your level.</p>
+			<p>Whenever you regain hit points, you can have your barrier regain those hit points instead, plus {{extra-hp}} hit points.</p>
 			</description>
 		</sheet>
 		<rules>
@@ -49,17 +51,19 @@
 			<stat name="barrier-hp" value="constitution:modifier" />
 			<stat name="barrier-hp" value="constitution:modifier" />
 			<stat name="extra-hp" value="level:fighter:half:up" />
+			<stat name="ac:misc" value="2" equipped="[shield:none]" level="3" />
+			<stat name="ac:misc" value="3" equipped="[shield:none]" level="10" />
 		</rules>
 	</element>
 	<element name="Repelling Force" type="Archetype Feature" source="Surrealistik" id="ID_NOS_ARCHETYPE_FEATURE_SHIELD_WARDEN_REPELLING_FORCE">
 		<description>
 			<p>At 7th level you can shape your barrier's energies into a driving blast of nigh irresistible force.</p>
-			<p class="indent"> As a bonus action, you can expend an amount of your Aegis hit points equal to one and a half times your fighter level to deal an equal amount of force damage to a creature you can see within the barriers range. If you do so the target must succed on a Strength saving throw with a DC of 8 + your strength modifier + your consitution modifier. On a failure for each 5 points of damage dealt to the target, you can push it up  to 5 feet away from you.</p>
+			<p class="indent"> As a bonus action, you can expend an amount of your Aegis hit points equal to a maximum of one and a half times your fighter level to deal an equal amount of force damage to a creature you can see within the barriers range. If you do so the target must succed on a Strength saving throw with a DC of 8 + your strength modifier + your consitution modifier. On a failure for each 5 points of damage dealt to the target, you can push it up  to 5 feet away from you.</p>
 			<p class="indent">Furthermore, until the end of your next turn, while your barrier is active, spaces within its range count as difficult terrain to the target.</p>
 		</description>
 		<sheet>
 			<description>
-			<p action="bonus action">You can expend an amount of your Aegis hit points equal to {{force-hp}} to deal an equal amount of force damage to a creature you can see within the barriers range. If you do so the target must succed on a Strength saving throw with a DC of {{force-dc}} . On a failure for each 5 points of damage dealt to the target, you can push it up to 5 feet away from you.</p>
+			<p action="bonus action">You can expend an amount of your Aegis hit points equal to a maximum of {{force-hp}} to deal an equal amount of force damage to a creature you can see within the barriers range. If you do so the target must succed on a Strength saving throw with a DC of {{force-dc}} . On a failure for each 5 points of damage dealt to the target, you can push it up to 5 feet away from you.</p>
 			<p>Until the end of your next turn, while your barrier is active, spaces within its range count as difficult terrain to the target of your repelling force.</p>
 			</description>
 		</sheet>
@@ -90,6 +94,7 @@
 		</sheet>
 		<rules>
 			<stat name="regain-hp" value="constitution:modifier"/>
+			<stat name="regain-hp" value="constitution:modifier:half"/>
 		</rules>
 	</element>
 	<element name="Inviolable Protection" type="Archetype Feature" source="Surrealistik" id="ID_NOS_ARCHETYPE_FEATURE_SHIELD_WARDEN_INVIOLABLE_PROTECTION">

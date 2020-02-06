@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="various-races.xml" url=".xml" />
+		</update>
+	</info>	
+
+
+
+
+
+
+	<element name="Starforged" type="Race" source="NOS" id="ID_NOS_RACE_STARFORGED">
+		<description>
+			<p>I remember it so clearly, it was fleeting, but it was there, it came as soon as it arrived. My first thought, the first thing my core ever thought of, a simple phrase: Why am I here?</p>
+			<h4>SENTIENT CONSTRUCTS</h4>
+			<p>Constructs created from the parts of meteorites or comets, some of these mindless automatons develop sentience after a single catalyzing thought. This thought ruminates within the starforged as it continues its fulfilling designated function, but slowly grwos into more an d more thoughts, until flowering into sentience and a concept of self. Though this process varies between individual starforged, each ones first thought remains universally the single thing that it dedicates its life to unravelling.</p>
+			<h4>BORN OF SPACE</h4>
+			<p>Starforged are a singular bright and white core surrounded by rock and metal. The core acts as the brain, as well as the eyes and mouth of the creature. THe rock and metal that makes up their giant appearance, floats around this core, simulating a humanoid shape. They will rarely form heads however, letting their core rest in the middle of their chest instead.</p>
+			<h4>DRIVING QUESTION</h4>
+			<p>A Starforgeds life is dedicated to understanding its first thought, normally to answering its question or unravelling the meaning behin that thought. Starforged are innately curious about the world, learning by testing and observing their surroundings. They tend to be empathic towards other humanoids regarding those tinier than them as helples and cute, invoking their innate protective feelings. However upon being betrayed their white hot anger awakes, turning them into deadly machines of death.</p>
+			<h4>STARFORGED NAMES</h4>
+			<p>Nameless before achieving sentience, a starforged chooses one or is given a name after gaining a sense of self. Names given to a starforged by another creature might be abandoned if the name giver betrays their trust or cherished, if they have a good relationship to the Starforged.</p>
+			<p class="indent">Names chosen by a Starforged itself often relate to its first thought, sometimes creating anagrams of the thought. Thoughts such as "Who am I?" might be rearranged like Whaimo or abbreviated into names such as Ami.</p>
+			<h4>STARFORGED TRAITS</h4>
+			<p>Your starforged characterhas certain traits derived from its cosmic and constructed nature.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2, and one other ability score of your choice increases by 1.</p>
+			<p class="indent"><strong><em>Age</em></strong>After achieving senience, starforged mature at the same age as humans, at least emotionally, hence their constructed bodies. They can live until their core runs out of energy, a process that may take anywhere between 700 and 70.000 years.</p>
+			<p class="indent"><strong><em>Alignment</em></strong>Most Starforged are humble and kind, tending towards good alignments. However once their anger has been awakened there is no limit to the cruelties a Srarforged could commit.</p>
+			<p class="indent"><strong><em>Size</em></strong> Your size is Large. To set your height and weight randomly, start with rolling a size modifier:</p>
+			<p style="margin-left:10px;padding-bottom:10px;">Size modifier = 2d6<br/>Height = 10 feet + 10 inches + your size modifier in inches<br/>Weight in pounds = 270 + (4 x your size modifier)</p>
+			<p class="indent"><strong><em>Speed</em></strong> Your base walking speed is 50 feet.</p>
+			<p class="indent"><strong><em>Constructed Resilience.</em></strong> You were created to have remarkable fortitude, represented by the following benefits:</p>
+			<ul>
+				<li>You are immune to poison.</li>
+				<li>You don’t need to eat, drink, or breathe.</li>
+				<li>You are immune to disease.</li>
+				<li>You don’t need to sleep and don't suffer the effects of exhaustion due to lack of rest, and magic can’t put you to sleep.</li>
+				<li>You have resistance to cold damage, for you are made to endure the cold of space.</li>
+			</ul>
+			<p class="indent"><strong><em>Sentry’s Rest.</em></strong> When you take a long rest, you must spend at least six hours in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn’t render you unconscious, and you can see and hear as normal.</p>
+			<p class="indent"><strong><em>Integrated Protection.</em></strong> Your body has built-in defense layers:</p>
+			<ul>
+				<li>Your body is composed of metal, stone and strands of starlight. Your AC equals 13 + your Constitution modifier + your dexterity modifier.. A shield’s benefits apply as normal while you use your natural armor.</li>
+			</ul>
+			<p class="indent"><strong><em>Luminous Core.</em></strong> You know the light cantrip. Constitution is your spellcasting ability for it.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and one other language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" />
+			<select type="Ability Score Improvement" name="Ability Score Increase, Starforged" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_DEXTERITY|ID_INTERNAL_ASI_INTELLIGENCE|ID_INTERNAL_ASI_WISDOM|ID_INTERNAL_ASI_CHARISMA" />
+			<grant type="Size" id="ID_SIZE_LARGE" />
+			<stat name="innate speed" value="50" bonus="base" />
+			<grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_STARFORGED_CONSTRUCTED_RESILIENCE" />
+			<grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_STARFORGED_SENTRYS_REST" />
+			<grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_STARFORGED_NATURAL_ARMOR" />
+			<grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_STARFORGED_SPECIALIZED_DESIGN" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Language" name="Language, Starforged" supports="Standard||Exotic" />
+		</rules>
+	</element>
+	<element name="Constructed Resilience" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_STARFORGED_CONSTRUCTED_RESILIENCE">
+		<description>
+			<p>You were created to have remarkable fortitude, represented by the following benefits:</p>
+			<ul>
+				<li>You are immune to poison.</li>
+				<li>You don’t need to eat, drink, or breathe.</li>
+				<li>You are immune to disease.</li>
+				<li>You don’t need to sleep and don't suffer the effects of exhaustion due to lack of rest, and magic can’t put you to sleep.</li>
+				<li>You have resistance to cold damage, for you are made to endure the cold of space.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You are immune to poison.
+				You don’t need to eat, drink, or breathe.
+				You are immune to disease.
+				You don’t need to sleep and don't suffer the effects of exhaustion due to lack of rest, and magic can’t put you to sleep.
+				You have resistance to cold damage, for you are made to endure the cold of space.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Sentry’s Rest" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_STARFORGED_SENTRYS_REST">
+		<description>
+			<p>When you take a long rest, you must spend at least six hours in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn’t render you unconscious, and you can see and hear as normal.</p>
+		</description>
+		<sheet>
+			<description>When you take a long rest, you must spend at least six hours in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn’t render you unconscious, and you can see and hear as normal.</description>
+		</sheet>
+	</element>
+	<element name="Natural Armor" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_STARFORGED_NATURAL_ARMOR">
+		<description>
+			<p>Your body is composed of metal, stone and strands of starlight. Your AC equals 13 + your Constitution modifier + your dexterity modifier.. A shield’s benefits apply as normal while you use your natural armor.</p>
+		</description>
+		<sheet>
+			<description>When you aren’t wearing armor, your AC is {{starforged:natural armor}}.A shield’s benefits apply as normal while you use your natural armor.</description>
+		</sheet>
+		<rules>
+			<stat name="starforged:natural armor" value="13" />
+			<stat name="starforged:natural armor" value="constitution:modifier" />
+			<stat name="starforged:natural armor" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="starforged:natural armor" bonus="calculation" alt="Natural Armor (Starforged)" />
+		</rules>
+	</element>
+	<element name="Specialized Design" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_STARFORGED_SPECIALIZED_DESIGN">
+		<description>
+			<p></p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHT" />
+		</rules>
+	</element>
+
+
+
+
+
+
+
+
+
+	<element name="Leviakin" type="Race" source="u/its_just_corbin" id="ID_NOS_RACE_LEVIAKIN">
+		<description>
+			<p>The Leviakin truly are terrifying people. Not only are they descendants of the monster that bit off a quarter of this continents land, but they're also an unpredictable, warwaging society.</p>
+			<h4>BORN FROM THE DEPTHS</h4>
+			<p>Leviakin resmble the great beast they were borbn from, the legendary Leviathan. The Leviathan was reffered to be unstoppable. A few centuries ago, it faded away. The bonly thing left behind was the new race: the Leviakin. While there is few differences in appearance between the two genders, physically males are usually larger and more aggressive, wheras the females exhibit a darker coloration. The Leviakins bcks are covered in an azure shell-like carapace with a soft, beige scaled underbelly. They sport long necks with cobra like hoods, ending in their flattened head and long snout. Their heads are adorned with horns that vary in sizes from tiny to humongous. Additonally juttingfom the sides of a Leviakins neck are vibrant orange spines, which also protrude in a large amount from its back. With webbed hands and feet, aloong with their muscular paddle-like tails the Leviakin exhibit unmatched aquatic mobility. While amphibious and adapted to both land and water living, the hind legs Leviakin stand with are rather short and stocky, preventing them from incredibly dextrous movement out of the sea. Of course nothing stops them from getting on all fours and speeding after a target. which has indeed been proven to be a reliable strategy.</p>
+			<h4>AT THE APEX</h4>
+			<p>Being excellent hunters and immensly powerful, the leviakin lie at the top of the food chain in their marshy and aquatic habitat. They often raid villages and plunder towns killing those who stand against them with a cold, calculated rage.</p>
+			<h4>LEVIAKIN TRAITS</h4>
+			<p>Your leviakin character´has multiple unique traits due to its ancient ancestry</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2</p>
+			<p class="indent"><strong><em>Age</em></strong>Similar to Lizardfolk, Leviakin grow quickly. They walk, hours after hatching, attaining the size of a 10 year old human child by the age of 5. They reach adukthood with 20, getting to be up to 500 Years old.</p>
+			<p class="indent"><strong><em>Alignment</em></strong>Leviakin only see the world as a place of predator and prey, where life and death are natural processes. They wish only to sate their hunger and survive, however they deem fit. This leads toward the chaotic spectrum of alignments and possibly even towards evil.</p>
+			<p class="indent"><strong><em>Size</em></strong> Your size is Large.  Leviakin grow up to be between 10 and 14 feet tall and weigh between 450 and 600 pounds.</p>
+			<p class="indent"><strong><em>Speed</em></strong> Your base walking speed is 25 feet. You have a swimming speed of 40 feet and a climbing speed of 15 feet. You can climb on vertical surfaces and upside down without any hindrance thanks to your giants claws.</p>
+			<p class="indent"><strong><em>Leviathan Ancestry.</em></strong> You are distantly related to the Leviathan, gaining the following benefits:</p>
+			<ul>
+				<li>You are resistant to cold damage</li>
+				<li>You can breath both air and water.</li>
+				<li>You are resistant to lightning damage.</li>
+			</ul>
+			<p class="indent"><strong><em>Lightning Breath.</em></strong>You can use your action to exhale destructive electrical energy in a 5ft by 30ft line.  When you use your lightning breath, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 lighning damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Primordial.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong>The Leviakain come in two similar, but unique subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" />
+			<grant type="Size" id="ID_SIZE_LARGE" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<stat name="innate speed:swim" value="40" bonus="base" />
+            <stat name="innate speed:climb" value="15" bonus="base" />
+			<grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_LEVIAKIN_ANCESTRY" />
+			<grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_LEVIAKIN_LIGHTNING_BREATH" />
+			<grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_LEVIAKIN_SUBRACE" />
+			<grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_LEVIAKIN_NATURAL_ARMOR" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+		</rules>
+	</element>
+	<element name="Leviathan Ancestry" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_LEVIAKIN_ANCESTRY">
+		<description>
+			<p>You are distantly related to the Leviathan, gaining the following benefits:</p>
+			<ul>
+				<li>You are resistant to cold damage</li>
+				<li>You can breath both air and water.</li>
+				<li>You are resistant to lightning damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can breath both air and water.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Lightning Breath" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_LEVIAKIN_LIGHTNING_BREATH">
+		<description>
+			<p>You can use your action to exhale destructive electrical energy in a 5ft by 30ft line.  When you use your lightning breath, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 lighning damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>You can use your action to exhale destructive electrical energy in a 5ft by 30ft line.  When you use your lightning breath, each creature in the area of the exhalation must make a saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 lighning damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can’t use it again until you complete a short or long rest.</description>
+		</sheet>
+	</element>
+	<element name="Natural Armor" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_LEVIAKIN_NATURAL_ARMOR">
+		<description>
+			<p>Your body is protected by hard scales. Your AC equals 13 + your Constitution modifier + your dexterity modifier. A shield’s benefit does apply</p>
+		</description>
+		<sheet>
+			<description>When you aren’t wearing armor, your AC is {{leviakin:natural armor}}.A shield’s benefit does apply.</description>
+		</sheet>
+		<rules>
+			<stat name="leviakin:natural armor" value="13" />
+			<stat name="leviakin:natural armor" value="constitution:modifier" />
+			<stat name="leviakin:natural armor" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="leviakin:natural armor" bonus="calculation" equipped="[armor:none]" alt="Natural Armor (Leviakin)" />
+		</rules>
+	</element>
+	<element name="Subrace" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_LEVIAKIN_SUBRACE">
+		<description>
+			<p>the Leviakain come in two similar, but unique subraces.</p>
+		</description>
+		<sheet display="false">
+			<description>the Leviakain come in two similar, but unique subraces.</description>
+		</sheet>
+		<rules>
+			<select type="Sub Race" name="Leviakin Subrace" supports="Leviakin" />
+		</rules>
+	</element>
+
+	<element name="Greatfang" type="Sub Race" source="u/its_just_corbin" id="ID_SUB_RACE_GREATFANG">
+		<supports>Leviakin</supports>
+		<description>
+			<p>The greatfangs are large and muscular, armed with great gaping jaws, capable of snapping bone and piercing flesh, which they use to lat onto their prey</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Stength score increases by 1.</p>
+			<p class="indent"><strong><em>Continental Jaws.</em></strong>Your fanged maw is a natural weapon you are proficient with. It deals 1d6+ your strength modifier piercing damage. After succesfully attacking a creature, you may expend a bonus action to grapple the target if its is large or smaller.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="Strength" value="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CONTINENTAL_JAWS" />
+		</rules>
+	</element> 	
+	<element name="Continental Jaws" type="Racial Trait" source="u/its_just_corbin" id="ID_RACIAL_TRAIT_CONTINENTAL_JAWS">
+		<description>
+			<p>Your fanged maw is a natural weapon you are proficient with. It deals 1d6+ your strength modifier piercing damage. After succesfully attacking a creature, you may expend a bonus action to grapple the target if its is large or smaller.</p>
+		</description>
+		<sheet>
+			<description>Your fanged maw is a natural weapon you are proficient with. It deals 1d6+ your strength modifier piercing damage. After succesfully attacking a creature, you may expend a bonus action to grapple the target if its is large or smaller.</description>
+		</sheet>
+		<rules/>
+	</element>
+
+		<element name="Swiftneck" type="Sub Race" source="u/its_just_corbin" id="ID_SUB_RACE_SWIFTNECK">
+		<supports>Leviakin</supports>
+		<description>
+			<p>Smaller and more lithe than their relatives, swiftneck leviakin possess flexible necks that can stretch to bite prey from a distance in the blink of an eye.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>Viper Srike.</em></strong>Your fanged maw is a natural weapon with wich you are proficient. It has the reach and finesse properties and deals piercing damage equal to 1d4+ your strength modifier. You may grapple creatures within the reach of this natural weapon.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="Dexterity" value="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_VIPER_STRIKE" />
+		</rules>
+	</element> 	
+	<element name="Viper Strike" type="Racial Trait" source="u/its_just_corbin" id="ID_RACIAL_TRAIT_VIPER_STRIKE">
+		<description>
+			<p>Your fanged maw is a natural weapon with wich you are proficient. It has the reach and finesse properties and deals piercing damage equal to 1d4+ your strength modifier. You may grapple creatures within the reach of this natural weapon.</p>
+		</description>
+		<sheet>
+			<description>Your fanged maw is a natural weapon with wich you are proficient. It has the reach and finesse properties and deals piercing damage equal to 1d4+ your strength modifier. You may grapple creatures within the reach of this natural weapon.</description>
+		</sheet>
+		<rules/>
+	</element>
+
+
+
+
+
+
+
+
+    <element name="Starborn" type="Race" source="NOS" id="ID_NOS_RACE_STARBORN">
+        <description>
+            <p class="flavor">"Starborn might not fit in campaigns that start at a level below 5th or you might want to rule that your player can only user their humanoid form until they reach 5th level"</p>
+            <h4>BRIGHTBORN</h4>
+            <p>Starborn are a people of glowing balls of pure energy and light, effectively making them cousins to both Stars and Ben'nir. Starborn look like what you'd imagine a tiny star too look like, that you'd actually be capable too look at without burning your eyes out. They range in size from barely 3 to almost 4 feet, hovering around always on the hunt for another adventure. If seen at night they might be confused with will-o'-the-wisps. However you may rest assured they in no way share their harmful intentions.</p>
+            <h4>ELDER STARS</h4>
+            <p>Starborn form when two Elder Stars choose to collide. In effect they are the direct decendants of the elder stars. They are a species born from love so great that it sacrifices itself to form new life. Hence Starborn are extremely rare, even in the fra realms there are only a few thousand of them, and never more than a few hundred of them reside in the material plane. Instead of mourning the loss of their dead parents however one might find, that Starorn a re a happy people that cherish life and everything they can experience, effectively making them into adventure crazed hedonists. However they tend to have no problem with getting their hands dirty if they find the result to be pleasurable enough to compensate for their labour.</p>
+            <h4>STARBORN NAMES</h4>
+            <p>Starborn don't have names at the start of their live, rather they search for them their whole lives. Some of them might find a person they hold dear that gives them a name and they will adopt it as their true name, others might search for their name until the end of their life. However they might find their names, it is something deeply personal that might shape the personality of a Starborn forver.</p>
+            <h4>STARBORN TRAITS</h4>
+            <p>Starborn gain some unique traits from their celestial Parents.</p>
+            <p>
+                <span class="feature">Ability Score Increase.</span>Your Wisdom score increases by 3.<br/>
+                <span class="feature">Age.</span>You inherited the immortal nature of your ancestors.<br/>
+                <span class="feature">Alignment.</span>Starborn are even less "of this world" than their cousins the Ben'nir and thus have no inherent inclination towards any single alignment. Their behavior can rather be a whole storm of different felings, most of them unknown to humanoids, that might or might not dictate a Starborns behavior.<br/>
+                <span class="feature">Size.</span>You are as big as the legendary "Basque ete Bawl." Roughly 3 feet in diameter. Your size is Small.<br/>
+                <span class="feature">Speed.</span>Unlike humanoids you don't possess any feet that might keep you walking, instead you have been blessed with the ability to hover around at a speed of 50 feet.<br/>
+                <span class="feature">Eye of the Beholder.</span>You basically are an ominidirectional, allseeing eye. Granting you truesight within your normal line of vision.<br/>
+                <span class="feature">Immortality.</span> Due to your immortal nature you are immune to being blinded, charmed or frightened, and magic can’t put you to sleep. You do not need to eat, drink, breathe, or sleep. However you still benefit from short and long rests.<br/>
+                <span class="feature">Celestial Body.</span>Upon turning into your Starborn form, any items you posses are either absorbed by you and may be produced from your body as a bonus action or orbit your body like the rings of Saturn.<br/>
+                <span class="feature">Languages.</span>You can speak, read, and write Common and Celestial.<br/>
+                <span class="feature">Subrace.</span>There are two types of Starborn, the Golgri and Lytra.<br/>
+            </p>
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="height" modifier="1d4">3"</set>
+            <set name="weight" modifier="1d4">15 lb.</set>
+        </setters>
+        <rules>
+            <stat name="wisdom" value="3"/>
+            <select type="Sub Race" name="Starborn Subrace" supports="Starborn" />
+            <stat name="innate speed:fly" value="50" bonus="base"/>
+            <grant type="Size" id="ID_SIZE_SMALL" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+            <grant type="Vision" id="ID_VISION_TRUESIGHT" />
+            <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_STARBORN_IMMORTALITY" />
+            <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_STARBORN_CELESTIAL_BODY" />
+        </rules>
+    </element>
+    <element name="Immortality" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_STARBORN_IMMORTALITY">
+        <description>
+            <p>You are immune to being blinded, charmed, frightened and being put to sleep. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effect of starvation, thirst, exhaustion, or suffocation. However you still benefit from short and long rests.</p>
+        </description>
+        <sheet>
+            <description>You are immune to being blinded, charmed or frightened, and you can’t be put to sleep. You do not need to eat, drink, breathe, or sleep. You never make Endurance checks to resist the effect of starvation, thirst, exhaustion, or suffocation.</description>
+        </sheet>
+    </element>
+    <element name="Celestial Body" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_STARBORN_CELESTIAL_BODY">
+        <description>
+            <p>Upon turning into your Starborn form, any items you posses are either absorbed by you and may be produced from your body as a bonus action or orbit your body like the rings of Saturn.</p>
+        </description>
+        <sheet>
+            <description>Upon turning into your Starborn form, any items you posses are either absorbed by you and may be produced from your body as a bonus action or orbit your body like the rings of Saturn.
+            </description>
+        </sheet>
+    </element>
+
+
+	<element name="Golgri" type="Sub Race" source="NOS" id="ID_SUB_RACE_GOLGRI">
+		<supports>Starborn</supports>
+		<description>
+			<p>Golgri tend to be playful and curious and are often very optimistic, also you are naturally tougher than your Lytran counterparts, ready to bash into even the most dangerous situations at a whim. Golgri are the descendants of hot stars.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2.</p>
+			<p class="indent"><strong><em>Personification.</em></strong>In your Starborn form you are a ball of pure golden light, that shines dim light in a 5ft radius. You have the ability to change into an incredibly beautiful version of a male human in his early teens or his thirties at will. You may use your new limbs as a normal human would, having your hovering speed turned into a walking speed as long as you are in your human form.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_STARBORN_PERSONIFICATION" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" />
+		</rules>
+	</element> 	
+	<element name="Personification" type="Racial Trait" source="NOS" id="ID_RACIAL_TRAIT_STARBORN_PERSONIFICATION">
+		<description>
+			<p>You have the ability to change into an incredibly beautiful version of a male human in his early teens or his thirties at will. You may use your new limbs as a normal human would, having your hovering speed turned into a walking speed as long as you are in your human form.</p>
+		</description>
+		<sheet>
+			<description>You have the ability to change into an incredibly beautiful version of a male human in his early teens or his thirties at will. You may use your new limbs as a normal human would, having your hovering speed turned into a walking speed as long as you are in your human form.</description>
+		</sheet>
+	</element>
+		<element name="Lytra" type="Sub Race" source="NOS" id="ID_SUB_RACE_LYTRA">
+		<supports>Starborn</supports>
+		<description>
+			<p>Lytra tend to be of a softer Nature than Golgri and carefully interact with the world, also they are naturally swifter than them, ready to obseve anything feom a distance, rather than upfront. Lytra are the descendants of cold stars.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2.</p>
+			<p class="indent"><strong><em>Personification.</em></strong>In your Starborn form you are a  ball of pure silvery light, that shines dim light in a 5ft radius. You have the ability to change into an incredibly beautiful version of a female human in her early teens or her thirties at will. You may use your new limbs as a normal human would, having your hovering speed turned into a walking speed as long as you are in your human form.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_STARBORN_PERSONIFICATION_I" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" />
+		</rules>
+	</element> 	
+	<element name="Personification" type="Racial Trait" source="NOS" id="ID_RACIAL_TRAIT_STARBORN_PERSONIFICATION_I">
+		<description>
+			<p>You have the ability to change into an incredibly beautiful version of a female human in her early teens or her thirties at will. You may use your new limbs as a normal human would, having your hovering speed turned into a walking speed as long as you are in your human form.</p>
+		</description>
+		<sheet>
+			<description>You have the ability to change into an incredibly beautiful version of a female human in her early teens or her thirties at will. You may use your new limbs as a normal human would, having your hovering speed turned into a walking speed as long as you are in your human form.</description>
+		</sheet>
+	</element>
+
+
+
+
+
+
+
+
+
+    <element name="Shapeshifter" type="Race" source="NOS" id="ID_NOS_RACE_SHAPESHIFTER">
+        <description>
+            <p class="flavor">"Don't judge a book by it's cover."</p>
+            <h4>BRIGHTBLEND</h4>
+            <p>Shapeshifter in their true form appear as silver coloured, vaguely humanoid shapes, that strongly resemble humans, except for their glowing eyes. Rarely as never seen in their true form, shapeshifters like to keep it that way, shying away from wizards or other beings known to use truesight and will only reveal themselves if they deem ultimately necessary to protect either themselves or their friends. However not much is known about the nature of the Shapeshifters, as they adapt to the cultures they interact with and even remodelling their moral compass after those.</p>
+            <h4>ELDER STARS</h4>
+            <p>Shapeshifters are born when the blood of a Ben'nir is mixed with the tears of a Starborn. After blood and tears are mixed, the fluid is poured on the ground during a full moon and after exactly one year and a day, a small silvery plant has grown, bearing a single fruit. Upon midnight the fruit opens and exposes its silvery glowing core to the sky. If it rains when the fruit opens, a Shapeshifter is born, if it doesn't the fruit closes again and waits another century. If the fruit is however reaped on a full moon and a humanoid consumes it, the humanoid is transformed into a Shapeshifter. Hence the Ben'nir and Starborn being an already rare people, the Shifter folk are extremely rare, ocurring only once or twice in a population of millions.</p>
+            <h4>PREDATORS</h4>
+            <p>Shapeshifters are naturally born predators that feed on both humanoids and beasts during their adolescence, which prolongs until they reach an age of about 40 years. Equiped with everything a predator would need to hunt down humanoids, Shapeshifters prefer to literally hunt their prey, making them a reason for the fear people developed for vampires. Able to change their bodies in literally any way Shpaeshifters are impossible to pin or hunt down in response to their actions, let alone to even identifiy them, for they lack any DNA or blood, which would enable a policeforce to actually track them down. Hence anything short of magical means to find and catch a shapeshifter in all but the most strange societies, are doomed to fail. </p>
+            <h4>SHAPESHIFTER NAMES</h4>
+            <p>Shapeshifters often change their names as they change their form, or they might choose one name that is deemed androgynous and sometimes even bestial by the comumunities they most often interact with.</p>
+            <p>
+            <span class="feature">Shifter Names:</span>Asa, Luca, Leo, Vicorix, Anna, Alevinas, Coreks, Lerkon, Arihan, Cohren, Treye, Ashr, Saevi, Riya, Erisha, Caeryss, Atesios, Samac, Cenicus, Nerta, Corasia, Cenno, Nerreits, Eccik, Nons, Tim, Rel'ae, Zolak, Nat'ie, Erlisha, Bherqrith, Aq'iek, Zil, Aceok, Qhevrux, Elull, Ataneq, Kesuk, Jamie, Lina, Aan, Alan, Ila, Luna<br/>
+            </p>
+            <h4>SHAPESHIFTER TRAITS</h4>
+            <p>You have uniqe traits granted to you by your mysterious heritage.</p>
+            <p>
+                <span class="feature">Age.</span>Shapeshifter are just as Immortal as their cousins. Until they reach 40 years they are adulescent and require food in form of humanoids or beasts, after which they discard feeding alltogether.<br/>
+                <span class="feature">Alignment.</span>Shapeshifter tend towards chaotic alignments.<br/>
+                <span class="feature">Size.</span>You might change your physical appearance at a whim, however you count as medium for the determination of carrying weight and such.<br/>
+                <span class="feature">Speed.</span>Due to your ability of changing your shape at will, you are capable to create any kind of limbs you need.Your base speed is 40 feet.<br/>
+                <span class="feature">Illumination.</span>Your eyes are the only obvious phenotypical feature you share with your Ben'nir and Starborn cousins. They glow in a faint light, granting you truesight out to 120 feet, and you cannot be blinded.<br/>
+                <span class="feature">Immortality.</span>Like your cousins you inherited your immortal nature from youir ancestors. You do not need to eat, drink, breathe, or sleep. However you still benefit from short and long rests.<br/>
+	            <span class="feature">Shapeshifting.</span>
+	            	<p>You can change your whole body with a mere thought. You determine the specifics of the changes, including your coloration, hair length, and sex, voice how many limbs you have and how they are arranged etc. You can also adjust your height and weight, but you may only change it so much that you are on size category bigger or smaller than medium. You can make yourself appear as a member of another race, though none of your game statistics change except for those mentioned below. Additionally  You can’t duplicate the appearance of a creature you’ve never seen. Your clothing and equipment aren’t changed by this trait, however you may make your body look like you are wearing clothing. You stay in the new form until you choose to revert to your true form or until you die.</p>
+		            <p> <strong>Natural Weapons</strong> You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 +your dexterity modifier bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon counts as magical.</p>
+		     		<p> <strong>Movement</strong> You can grow wings, webbing between your fingers and a mermaids tail, claws that help you burrow your way through the earth, or tiny spider-like fybrills on your extremities, that grant you an upside-down climbing speed, a flying speed, a burrowing speed or a swiming speed of 40 feet.</p>
+		            <p> <strong>Vocal Adaption</strong> You adapt your speech for the different mediums you move through. You can adapt your voice and hearing to: Aquatic environments, using higher frequencies like whales. The void, using telekinesis out to 120 feet instead of normal speech. You adapt your vocal muscles to perfectly reproduce heard sounds, yes even chainsaws. You automatically adapt your vocalisation to perfectly intonate a language you speak, always sounding like a native speaker, even if you just reiterate phrases of a language you barely know.</p>
+		     		<p> <strong>Natural Armor</strong>. You shape your body in such a way that your dermis is tougher or that ýou have an exosekleton instead of a dermis that protects you. You gain a +2 bonus to your Armor Class.</p>.<br/>
+                <span class="feature">Languages.</span>You can speak, read, and write Common and Celestial.<br/>
+            </p>
+        </description>
+        <sheet display="false" />
+        <setters>
+            <set name="names" type="generic">Asa, Luca, Leo, Vicorix, Anna, Alevinas, Coreks, Lerkon, Arihan, Cohren, Treye, Ashr, Saevi, Riya, Erisha, Caeryss, Atesios, Samac, Cenicus, Nerta, Corasia, Cenno, Nerreits, Eccik, Nons, Tim, Rel'ae, Zolak, Nat'ie, Erlisha, Bherqrith, Aq'iek, Zil, Aceok, Qhevrux, Elull, Ataneq, Kesuk, Jamie, Lina, Aan, Alan, Ila, Luna</set>
+            <set name="names-format">{{generic}}</set>
+            <set name="weight" modifier="1d4">90 lb.</set>
+        </setters>
+        <rules>
+            <stat name="innate speed" value="40" bonus="base"/>
+            <stat name="innate speed:fly" value="40" bonus="base"/>
+            <stat name="innate speed:swim" value="40" bonus="base"/>
+            <stat name="innate speed:climb" value="40" bonus="base"/>
+            <stat name="innate speed:burrow" value="40" bonus="base"/>
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+            <grant type="Vision" id="ID_VISION_TRUESIGHT" />
+            <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_SHAPESHIFTER_IMMORTALITY" />
+            <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_SHAPESHIFTER_SHIFTING" />
+        </rules>
+    </element>
+    <element name="Immortality" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_SHAPESHIFTER_IMMORTALITY">
+        <description>
+            <p> You do not need to eat, drink, breathe, or sleep. However you still benefit from short and long rests. Your body is adapted to work without blood or DNA, and as such does not posses either of thwese two. Hence you cannot leave traces of such and cannot be targeted by magic or features that involve either of the two.</p>
+        </description>
+        <sheet>
+            <description>You do not need to eat, drink, breathe, or sleep and you cannot be blinded. You do not have blood or DNA and cannot be targeted by features or magic that involve either of them.</description>
+        </sheet>
+    </element>
+    <element name="Shifting" type="Racial Trait" source="NOS" id="ID_NOS_RACIAL_TRAIT_SHAPESHIFTER_SHIFTING">
+        <description>
+            <p>You can change your whole body with a mere thought. You determine the specifics of the changes, including your coloration, hair length, and sex, voice how many limbs you have and how they are arranged etc. You can also adjust your height and weight, but you may only change it so much that you are on size category bigger or smaller than medium. You can make yourself appear as a member of another race, though none of your game statistics change except for those mentioned below. Additionally  You can’t duplicate the appearance of a creature you’ve never seen. Your clothing and equipment aren’t changed by this trait, however you may make your body look like you are wearing clothing. You stay in the new form until you choose to revert to your true form or until you die.</p>
+            <p> <strong>Natural Weapons</strong> You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 +your dexterity modifier bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon counts as magical.</p>
+     		<p> <strong>Movement</strong> You can grow wings, webbing between your fingers and a mermaids tail, claws that help you burrow your way through the earth, or tiny spider-like fybrills on your extremities, that grant you an upside-down climbing speed, a flying speed, a burrowing speed or a swiming speed of 40 feet.</p>
+            <p> <strong>Vocal Adaption</strong> You adapt your speech for the different mediums you move through. You can adapt your voice and hearing to: Aquatic environments, using higher frequencies like whales. The void, using telekinesis out to 120 feet instead of normal speech. You adapt your vocal muscles to perfectly reproduce heard sounds, yes even chainsaws. You automatically adapt your vocalisation to perfectly intonate a language you speak, always sounding like a native speaker, even if you just reiterate phrases of a language you barely know.</p>
+     		<p> <strong>Natural Armor</strong>. You shape your body in such a way that your dermis is tougher or that ýou have an exosekleton instead of a dermis that protects you. You gain a +2 bonus to your Armor Class.</p>
+        </description>
+        <sheet action="Free Action">
+            <description>
+            <p>You can change your whole body with a mere thought. You determine the specifics of the changes, including your coloration, hair length, and sex, voice how many limbs you have and how they are arranged etc. You can also adjust your height and weight, but you may only change it so much that you are on size category bigger or smaller than medium. You can make yourself appear as a member of another race, though none of your game statistics change except for those mentioned below. Additionally  You can’t duplicate the appearance of a creature you’ve never seen. Your clothing and equipment aren’t changed by this trait, however you may make your body look like you are wearing clothing. You stay in the new form until you choose to revert to your true form or until you die. </p>
+            <p> <strong>Natural Weapons</strong> You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 +your dexterity modifier bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon counts as magical. </p>
+     		<p> <strong>Movement</strong> You can grow wings, webbing between your fingers and a mermaids tail, claws that help you burrow your way through the earth, or tiny spider-like fybrills on your extremities. </p>
+            <p> <strong>Vocal Adaption</strong> You can adapt your voice and hearing to: Aquatic environments, using higher frequencies like whales. The void, using telekinesis out to 120 feet instead of normal speech. You adapt your vocal muscles to perfectly reproduce heard sounds. You automatically adapt your vocalisation to perfectly intonate a language you speak, always sounding like a native speaker. </p>
+     		<p> <strong>Natural Armor</strong> You gain a +2 bonus to your Armor Class. </p></description>
+        </sheet>
+       	 <rules>
+			<stat name="ac:misc" value="2" /> 
+		 </rules>
+    </element>
+
+
+
+
+
+
+</elements>

@@ -18,7 +18,7 @@
       <h4>AGENTS OF BALANCE</h4>
       <p>The wisdom of the multiverse seeks to quench those who thirst for balance and peace and a deeper understanding of themselves and the nature of the multiverse. Unlike Other wizards or magic users, casters directly interact with the cosmic weave that suffuses the multiverse and in essence become pillars to the very fabric of magic itself, Agents of cosmic balance. They let the very river of pure magic flow through them, learning to direct it's current.</p>
       <h4>THE HUNT</h4>
-      <p>Some cultures understood that magic is best battled with magic. Casters feel the balance in the multiverse and strive for cosmic peace, which doesn't always mean conventional peace. Some Casters are Avatars of War, taking their peace to the enemies of cosmic balance. They often seek out evil beings and necromantic powers to reestablish balance in the deep flow of the magic suffusing the multiverse. </p>
+      <p>Some cultures understood that magic is best battled with magic. Casters feel the balance in the multiverse and strive for cosmic peace, which doesn't always mean conventional peace. Some Casters are Avatars of War, taking their peace to the enemies of cosmic balance. They often seek out evil beings and necromantic powers to reestablish balance in the deep flow of the magic suffusing the multiverse. Casters have never been found to be working without a Mage Hunter. There is always one Mage Hunter and one Caster working in a pair. The Mage Hunter embodying the Physis and the Caster embodying the Weave. Their teamwork makes it almost seem like there is a bond between them, or is there?</p>
       <h4>CREATING A CASTER</h4>
       <p>Creating a Caster character demands a backstory dominated by at least one extraordinary event. How did your character first come into contact with magic? How did you discover you had an aptitude for? When did you begin to feel the flow suffusing the multiverse and how to interpret it's will?</p>
       <h5>QUICK BUILD</h5>
@@ -58,7 +58,6 @@
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORDER" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_BLACK_HOLE" />
       <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_AEGIS" />
-      <div element="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELL_MASTERY" />
     </description>
     <sheet display="false">
       <description>A magic wielder trained to hunt down evil mages.</description>
@@ -77,6 +76,8 @@
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
+
 
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
       <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_NOS_MULTICLASS_STARLIGHTER"/>
@@ -91,7 +92,6 @@
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT" level="6" />
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORDER" level="10" />
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_BLACK_HOLE" level="15" />
-      <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELL_MASTERY" level="18" />
       <grant type="Class Feature" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_AEGIS" level="18" />
     </rules>
     <multiclass id="ID_NOS_MULTICLASS_STARLIGHTER">
@@ -110,9 +110,9 @@
       <h5>CANTRIPS</h5>
       <p>Cantrips are the very start for every mage and even Casters are no exception to that rule. You begin with a certain number of Cantrips and learn more later on.</p>
       <h5>SPELLS</h5>
-      <p>At 1st level, you gain some 1st-­level Caster spells of your choice, which are, as well as any later added spells fixed in your mind.</p>
+      <p>At 1st level, the spells of your class are added to the list of spells you know, which are, as well as any later added spells fixed in your mind. Casters can only learn new spells, that aren't already part of their classes spell list, by researching them themselves or by being granted insight into them by a being that masterd the spell, not however through spellbooks or magic scrolls.</p>
       <h5>CASTING SPELLS</h5>
-      <p>The Starlighter table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+      <p>The Caster table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
       <h5>SPELLCASTING ABILITY</h5>
       <p>Wisdom is your spellcasting ability for your Caster spells. You use Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a caster spell you cast and when making an attack roll with one.</p>
       <p> <strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
@@ -155,86 +155,13 @@
       <select type="Spell" name="Cantrip (Caster)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Starlighter" />
       <select type="Spell" name="Cantrip (Caster)" supports="$(spellcasting:list), 0" level="10" number="2" spellcasting="Starlighter" />
       
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="4" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="5" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="5" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="5" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="3" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="6" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="7" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="2" spellcasting="Starlighter" />
-      <select type="Spell" name="Spell (Caster)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="1" spellcasting="Starlighter" />
-    </rules>
-  </element>
-  <element name="Arcane Weave" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_MAGIC">
-    <spellcasting name="Starlighter" extend="true">
-      <extend>Cleric</extend>
-      <extend>Starlighter</extend>
-     </spellcasting>
-  </element>
-
-
-  <element name="Ability Score Improvement (Caster)" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_ABILITYSCOREIMPROVEMENT_STARLIGHTER">
-    <description>
-      <p>When you reach 4th level, and again at 8th, 12th, 14th, 16th, and 18th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
-    </description>
-    <sheet display="false" />
-    <rules>
-      <!-- <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_4_STARLIGHTER" level="4" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
-      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_8_STARLIGHTER" level="8" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
-      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_12_STARLIGHTER" level="12" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
-      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_14_STARLIGHTER" level="14" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
-      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_16_STARLIGHTER" level="16" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
-      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_18_STARLIGHTER" level="18" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" /> -->
-      <select type="Class Feature" name="Improvement Option (Caster 4)" supports="Improvement Option,Caster,4" level="4" />
-      <select type="Class Feature" name="Improvement Option (Caster 8)" supports="Improvement Option,Caster,8" level="8" />
-      <select type="Class Feature" name="Improvement Option (Caster 12)" supports="Improvement Option,Caster,12" level="12" />
-      <select type="Class Feature" name="Improvement Option (Caster 14)" supports="Improvement Option,Caster,14" level="14" />
-      <select type="Class Feature" name="Improvement Option (Caster 16)" supports="Improvement Option,Caster,16" level="16" />
-      <select type="Class Feature" name="Improvement Option (Caster 18)" supports="Improvement Option,Caster,18" level="18" />
-    </rules>
-  </element>
-
-
-  <element name="Agent of Cosmic Balance" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_FIRE">
-    <description>
-      <p>Becoming inured to the flow of the cosmos, you noticed, that you act like a sieve for the current of magic. You redirect a part of the cosmic flow into your body, causing your spells and attacks to deal an additional 1d8 force damage. Since your body contains a maelstrom of magical energy, upon your death fountains of magic erupt from within you, leaving no physical trace of the body except for a sphere of lightly radiating free magic.</p>
-    </description>
-    <sheet>
-      <description>Your attacks and spells deal an additional 1d8 force damage. </description>
-    </sheet>
-  </element>
-  <element name="Arcane Warfare" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER">
-    <description>
-      <p>As a Caster you meditate deeply inside the river of magic, that suffuses the multiverse, feeling it's current and becoming attuned to it's flow. Moving with the current you get a feeling for perfect timing and are capable of bypassing even the sturdiest defenses or magical barriers. Targets of your spells gain no benefit from advantage against your spells or spell saving throws, regardless of the source of their advantage. Furthermore your attacks and spells that deal force damage ignore resistance and immunity to force damage.</p>
-    </description>
-    <sheet>
-      <description>Targets of your spells gain no benefit from advantage against your spells or spell saving throws. Your attacks and spells that deal force damage ignore resistance and immunity to force damae.</description>
-    </sheet>
-    <rules>
-      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
-      <grant type="Spell" id="ID_GFP_COFSA_SPELL_ANGELIC_REBUKE" spellcasting="Starlighter"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_ANGELIC_REBUKE" spellcasting="Starlighter"/>
             <grant type="Spell" id="ID_GFP_COFSA_SPELL_FLASHING_BLADES" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_GFP_COFSA_SPELL_HALO" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_GFP_COFSA_SPELL_PUNISHING_SMITE" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_XGTE_SPELL_CROWN_OF_STARS" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_XGTE_SPELL_DAWN" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_XGTE_SPELL_FIND_GREATER_STEED" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_XGTE_SPELL_HOLY_WEAPON" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_XGTE_SPELL_WORD_OF_RADIANCE" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_CELESTIAL" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_DAZZLE" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_STARSTRIKE" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_SEARING_LIGHT" spellcasting="Starlighter" />
@@ -279,7 +206,6 @@
             <grant type="Spell" id="ID_NOS_SPELL_SUN_BODY" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_GOLEM" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_AUGMENT_FAMILIAR" spellcasting="Starlighter" />
-            <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_GLYPH_REVEALING" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_GULLSHIP" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_ANIMATE_ARMOR" spellcasting="Starlighter" />
@@ -465,27 +391,217 @@
             <grant type="Spell" id="ID_NOS_SPELL_ELEMENTAL_SHIELD" spellcasting="Starlighter"  />
             <grant type="Spell" id="ID_NOS_SPELL_TRUE_SHIELD" spellcasting="Starlighter" />
             <grant type="Spell" id="ID_NOS_SPELL_SAFEGUARD" spellcasting="Starlighter" />
-    </rules> 
+            <grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHIELD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_SLEEP" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_ALARM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_ANIMAL_SHAPES" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_ANTIMAGIC_FIELD" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_ARCANE_LOCK" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" spellcasting="Starlighter" />           
+            <grant type="Spell" id="ID_PHB_SPELL_BIGBYS_HAND" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLESS" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_BLINDING_SMITE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_CHAIN_LIGHTNING" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_CHROMATIC_ORB" spellcasting="Starlighter" />           
+            <grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_CLONE" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_COMPREHEND_LANGUAGES" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_CONFUSION" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_CELESTIAL" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONTINGENCY" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONTROL_WEATHER" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_DARKNESS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_DELAYED_BLAST_FIREBALL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_DEMIPLANE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" spellcasting="Starlighter" />           
+            <grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_MONSTER" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_DRAWMIJS_INSTANT_SUMMONS" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_DREAM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_FABRICATE" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_FEEBLEMIND" spellcasting="Starlighter" />           
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_STORM" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLESH_TO_STONE" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_FLY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_FORBIDDANCE" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_FORCECAGE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_GATE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_GEAS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_GLIBNESS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_GLOBE_OF_INVULNERABILITY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_GLYPH_OF_WARDING" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Starlighter" />           
+            <grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_HEAL" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_HEAT_METAL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_IMPRISONMENT" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_KNOCK" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_LEVITATE" spellcasting="Starlighter" />           
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_MAGIC_MISSILE" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_MAJOR_IMAGE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_MASS_HEAL" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_MASS_SUGGESTION" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_METEOR_SWARM" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_MIND_BLANK" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_MIRAGE_ARCANE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_MORDENKAINENS_PRIVATE_SANCTUM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_OTILUKES_FREEZING_SPHERE" spellcasting="Starlighter" />           
+            <grant type="Spell" id="ID_PHB_SPELL_PLANT_GROWTH" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_POWER_WORD_HEAL" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_POWER_WORD_KILL" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_POWER_WORD_STUN" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_PRISMATIC_WALL" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_PROJECT_IMAGE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_REGENERATE" spellcasting="Starlighter" />           
+            <grant type="Spell" id="ID_PHB_SPELL_REVERSE_GRAVITY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_SEEMING" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_SENDING" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_SILENCE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_SIMULACRUM" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_SLEEP" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_SLOW" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_SPIDER_CLIMB" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_SUNBEAM" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_SUNBURST" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_TELEKINESIS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_TIME_STOP" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_TRUE_POLYMORPH" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_TRUE_RESURRECTION" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_TSUNAMI" spellcasting="Starlighter" />           
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_WISH" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_PHB_SPELL_ZONE_OF_TRUTH" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_MASTERFUL_MECHANISM" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_NOS_SPELL_REPAIR" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_NOS_SPELL_THUNDERBOLT" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_GGTR_SPELL_ENCODE_THOUGHTS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_POTA_SPELL_ABIDALZIMSHORRIDWILTING" spellcasting="Starlighter" />           
+            <grant type="Spell" id="ID_POTA_SPELL_EARTHBIND" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_POTA_SPELL_PRIMORDIALWARD" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_POTA_SPELL_WHIRLWIND" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CROWN_OF_STARS" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_XGTE_SPELL_FIND_GREATER_STEED" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_XGTE_SPELL_INVULNERABILITY" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_XGTE_SPELL_MASS_POLYMORPH" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_XGTE_SPELL_MENTAL_PRISON" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_XGTE_SPELL_SKILL_EMPOWERMENT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_XGTE_SPELL_THUNDER_STEP" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_DMSG_TGD_SPELL_BALL_LIGHTNING" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_CARNAGE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_DETECT_INTERFERENCE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_DEFY_RUIN" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_FALLING_STAR" spellcasting="Starlighter" />           
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_FELL_ONSLAUGHT" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_LIGHTNING_SHARD" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_MASTERFUL_FOCUS" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_POWER_WORD_CRUSH" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_RESONANCE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_SEEK_PHRASE" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_STORMS_EYE" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_TOUCH_INFINITY" spellcasting="Starlighter" />           
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_UNDERTOW" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_GFP_COFSA_SPELL_WINDBLADE" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_KBP_MHH_SPELL_EIDETIC_MEMORY" spellcasting="Starlighter" />
+            <grant type="Spell" id="ID_PHB_SPELL_DISINTEGRATE" spellcasting="Starlighter" />            
+            <grant type="Spell" id="ID_NOS_SPELL_LESSER_CREATE_COIN" spellcasting="Starlighter" />          
+            <grant type="Spell" id="ID_NOS_SPELL_GREATER_CREATE_COIN" spellcasting="Starlighter" />     
+    </rules>
   </element>
-    <element name="Hunter Training" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
+  <element name="Arcane Weave" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_MAGIC">
+    <spellcasting name="Starlighter" extend="true">
+      <extend>Cleric</extend>
+      <extend>Starlighter</extend>
+     </spellcasting>
+  </element>
+
+
+  <element name="Ability Score Improvement (Caster)" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_ABILITYSCOREIMPROVEMENT_STARLIGHTER">
     <description>
-      <p>At 6th level, you can forge a magical bond with a weapon or summon a weapon of pure magical energy, that deals 1d8 radiant damage instead of its original damage type and glows with dim light in a 5 feet radius, attacks with it count as magical and you may use this weapon as a spellcasting focus. Choose a weapon with which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.</p>
+      <p>When you reach 4th level, and again at 8th, 12th, 14th, 16th, and 18th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <!-- <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_4_STARLIGHTER" level="4" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_8_STARLIGHTER" level="8" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_12_STARLIGHTER" level="12" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_14_STARLIGHTER" level="14" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_16_STARLIGHTER" level="16" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" />
+      <grant type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_ASI_18_STARLIGHTER" level="18" requirements="!ID_INTERNAL_OPTION_ALLOW_FEATS" /> -->
+      <select type="Class Feature" name="Improvement Option (Caster 4)" supports="Improvement Option,Caster,4" level="4" />
+      <select type="Class Feature" name="Improvement Option (Caster 8)" supports="Improvement Option,Caster,8" level="8" />
+      <select type="Class Feature" name="Improvement Option (Caster 12)" supports="Improvement Option,Caster,12" level="12" />
+      <select type="Class Feature" name="Improvement Option (Caster 14)" supports="Improvement Option,Caster,14" level="14" />
+      <select type="Class Feature" name="Improvement Option (Caster 16)" supports="Improvement Option,Caster,16" level="16" />
+      <select type="Class Feature" name="Improvement Option (Caster 18)" supports="Improvement Option,Caster,18" level="18" />
+    </rules>
+  </element>
+
+
+  <element name="Agent of Cosmic Balance" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_CELESTIAL_FIRE">
+    <description>
+      <p>Becoming inured to the flow of the cosmos, you noticed, that you act like a sieve for the current of magic. You redirect a part of the cosmic flow into your body, causing your spells and attacks to deal an additional 1d8 force damage, forcing your opponents to batter before the might of your spells. Since your body contains a maelstrom of magical energy, upon your death fountains of magic erupt from within you, leaving no physical trace of the body except for a sphere of lightly radiating free magic.</p>
+    </description>
+    <sheet>
+      <description>Your attacks and spells deal an additional 1d8 force damage and targets of your spells make their saving throws with disadvantage.</description>
+    </sheet>
+  </element>
+  <element name="Arcane Warfare" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_OZON_LAYER">
+    <description>
+      <p>As a Caster you meditate deeply inside the river of magic, that suffuses the multiverse, feeling it's current and becoming attuned to it's flow. Moving with the current you get a feeling for perfect timing and are capable of bypassing even the sturdiest defenses or magical barriers. Targets of your spells gain no benefit from advantage against your spells or spell saving throws, regardless of the source of their advantage. Furthermore if a spell rolls dice and is not a damaging spell, such as the sleep spell, you increase the number of dice rolled by your proficiency bonus (minimum of 1).</p>
+    </description>
+    <sheet>
+      <description>Targets of your spells gain no benefit from advantage against your spells or spell saving throws. If a spell rolls dice and is not a damaging spell, such as the sleep spell, you increase the number of dice rolled by your proficiency bonus.</description>
+    </sheet>
+    <rules/> 
+  </element>
+  <element name="Hunter Training" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORBIT">
+    <description>
+      <p>At 6th level, you can forge a magical bond with a weapon or summon a weapon of pure magical energy, that deals 1d8 force damage, attacks with it count as magical and you may use this weapon as a spellcasting focus. Choose a weapon with which you are proficient. Performing the bonding ritual takes 1 hour, which may be done during a short rest. The weapon must be within your reach throughout the ritual.</p>
       <p class="indent">You can’t be disarmed of your bonded weapon as long as you are conscious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.</p>
       <p class="indent">While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. At 10th level, your effectiveness with the weapon improves as it gains a bonus of +1 to attack and damage rolls, and then again to a +2 bonus at 14th level.</p>
     </description>
     <sheet>
-      <description>Choose a weapon with which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals 1d8 radiant damage and glows with dim light in a 5 feet radius,  attacks with it count as magical and you may use this weapon as a spellcasting focus.You can’t be disarmed of your bonded weapon as long as you are conscious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. You may use this weapon as a spellcasting focus.</description>
-      <description level="10">Choose a weapon in which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals 1d8 radiant damage and glows with dim light in a 5 feet radius,  attacks with it count as magical and you may use this weapon as a spellcasting focus.
-      You can’t be disarmed of your bonded weapon as long as you are conscious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.
+      <description>Choose a weapon with which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals 1d8 force damage, attacks with it count as magical and you may use this weapon as a spellcasting focus. You can’t be disarmed of your bonded weapon as long as you are conscious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. You may use this weapon as a spellcasting focus.</description>
+      <description level="10">Choose a weapon in which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals 1d8 force damage, attacks with it count as magical and you may use this weapon as a spellcasting focus. You can't be disarmed of your bonded weapon as long as you are conscious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.
       While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. It gains a bonus of +1 to attack and damage rolls.</description>
-      <description level="14">Choose a weapon in which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals 1d8 radiant damage and glows with dim light in a 5 feet radius,  attacks with it count as magical and you may use this weapon as a spellcasting focus.
-      You can’t be disarmed of your bonded weapon as long as you are concious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.
+      <description level="14">Choose a weapon in which you are proficient. The bonding ritual takes 1 hour (short rest). The weapon must be within your reach throughout the ritual or you may create a weapon of pure magical energy, that deals 1d8 force damage, attacks with it count as magical and you may use this weapon as a spellcasting focus. You can’t be disarmed of your bonded weapon as long as you are concious. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand. If you attempt to bond to another weapon, you break the bond with the first.
       While your bond exists, you can use your spellcasting ability for the attack and damage rolls of attacks using that weapon. The weapon also becomes magical, if it isn’t already. It gains a bonus of +2 to attack and damage rolls.</description>
     </sheet>
   </element>
-  <element name="Unbound Magic" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORDER">
+  <element name="Unbound Magium" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SOLAR_ORDER">
       <description>
-       <p> Through decades of training you have become a pillar to the very foundation of magic and a part of the comsic power of the positive plane is now permanently rooted through you. Beginning at 10th level, while you are concentrating on a spell, your concentration can only be broken by you ending the spell or by your death. However you can only concentrate on as many as 2 spells at once.</p>
+       <p> Through decades of training you have become a pillar to the very foundation of magic and a part of the comsic power of the positive plane is now permanently rooted through you. Beginning at 10th level, while you are concentrating on a spell, your concentration can only be broken by you ending the spell, by you going unconscious, or by your death. Granting you the ability to concentrate on as many as 2 spells at one.</p>
       </description>
       <sheet>
        <description>While you are concentrating on a spell, your concentration can’t be broken. However you can only concentrate on as many as 2 spells at once.</description>
@@ -493,49 +609,37 @@
   </element>
   <element name="Weave-Walker" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_BLACK_HOLE">
      <description>
-       <p>Starting at 15th level, you have learned to redirect strands of magic from nearby castings into yourself to fuel and empower yourself. Whenenver a spell is cast in a 90ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you regain hit points equal to the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received.</p>
+       <p>Starting at 15th level, you have learned to redirect strands of magic from nearby castings into yourself to fuel and empower your own spells. Whenenver a spell is cast in a 90ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you regain hit points equal to the level of the spell, if doing so would grant you more hit points than you can have, you gain stackable temporary hit points equal to the amount of excess hit points received. However you can ony benefit from the same area effect of a spell once per short rest. For example if you walk by a magic circle spell, you can only gain the benfits once from this magic circle, if you pass another magic circle, you gain benefits from this other magic circle too. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points equal to the amount of excess hit points received.</p>
        <p class="indent">Furthermore you gain a number of weave points equal to  half the level of the spell (rounded up). You may store weave points equal to your level. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level.</p>
        <p class="indent">Additionally, you can use your weave points to augment you spells. Chose two metamagic feats, each can be invoked upon a spell by expending weave points.</p>
-       <p class="indent">Whenever you have 5 or more weave points, you may spend them and transform into a being of pure magical energy for 10 minutes (per 5 weave points), gaining the following benefits:</p>
-       <p class="indent">You gain a flying speed of 60 feet.</p>
-       <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this ability. If you are inside an object or a creature at the when your transformation ends, you are shunted to the nearest unoccupied space and take 1d10 force damage</p>
-       <p class="indent">You gain resistance to nonmagical piercing, slashing and bludegeoning damage.</p> 
-       <p class="indent">You gain advantage on saving throws against spells.</p>
-       <p class="indent">You gain resistance to force damage.</p>
-      <p class="indent">You can invoke metamagic feats for half their price (rounded down)</p>
-
+       <p class="indent">You can spend 5 weave points to transform into a being of pure magical energy for 10 minutes (per 10 weave points), gaining the following benefits:</p>
+       <p class="indent">You gain a hovering speed of 120 feet.</p>
+       <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this ability. If you are inside an object or a creature when your transformation ends, you are shunted to the nearest unoccupied space and take 1d10 force damage</p>
+       <p class="indent">You gain resistance to piercing, slashing and bludegeoning damage.</p> 
+       <p class="indent">You gain advantage on saving throws against spells and spell like features.</p>
+       <p class="indent">You can invoke metamagic feats for half their price (rounded down)</p>
       </description>
       <sheet>
        <description>
-        <p>Whenenver a spell is cast in a 90ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you regain hit points equal to the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points, that do not vanish after long rests, equal to the amount of excess hit points received.</p>
-        <p class="indent">Furthermore you gain a number of weave points equal to the half level of the spell (rounded up). You may store up to {{weave-points}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells.</p>
-        <p class="indent">Whenever you have 5 or more weave points, you may spend them and transform into a being of pure magical energy for 10 minutes (per 5weave points), gaining the following benefits:</p>
-        <p class="indent">You gain a flying speed of 60 feet.</p>
+        <p>Whenenver a spell is cast in a 90ft. radius centered on you, you cast a spell, are subject of a spell, trigger a spell or enter the area effect of a spell, you regain hit points equal to the level of the spell. If doing so would grant you more hit points than you can have, you gain stackable temporary hit points equal to the amount of excess hit points received.</p>
+        <p class="indent">Furthermore you gain a number of weave points equal to the half level of the spell (rounded up). You may store up to {{weave-point}} weave points. You can consume weave points in order to regain up to a 8th level spell slot, which consumes 2 weave points per spell slot level. Additionally, you can use your weave points to augment you spells.</p>
+        <p class="indent">You may spend 5 weave points to transform into a being of pure magical energy for 1 minute, gaining the following benefits:</p>
+        <p class="indent">You gain a hovering speed of 120 feet.</p>
         <p class="indent">You become incorporeal and may move through objects. 1 foot of lead blocks this ability.</p>
-        <p class="indent">You gain resistance to nonmagical piercing, slashing and bludegeoning damage.</p> 
-        <p class="indent">You gain advantage on saving throws against spells.</p>
-        <p class="indent">You gain resistance to force damage.</p>
+        <p class="indent">You gain resistance to piercing, slashing and bludegeoning damage.</p> 
+        <p class="indent">You gain advantage on saving throws against spells and spell like features.</p>
         <p class="indent">You can invoke metamagic feats for half their cost (rounded down)</p>
        </description>
       </sheet>
        <rules>
-       <stat name="weave-points" value="level:starlighter" />
+       <stat name="weave-point" value="level:caster" />
        <select type="Class Feature" name="Weave Magic" supports="Weave Magic" level="15" number="2"/>
        <select type="Class Feature" name="Weave Magic" supports="Weave Magic" level="18" number="3"/>
        </rules>
     </element>
-    <element name="Magium" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_SPELL_MASTERY">
-    <description>
-      <p>After decades of training under an Eldritch being of magical power, you became inured to the very fabric of magic itself, learning to pour strands of magic out of the weave effortlessly. So much so that you may cast certain spells without expending spell slots. Choose a 1st-level and a 2nd-­level caster spell, that you know. You can cast those spells at their lowest level without expending a spell slot. If you want to cast either spell at a higher level, you must expend a spell slot as normal.</p>
-    </description>
-    <sheet>
-      <description>Choose a 1st-level starlighter spell and a 2nd-­level starlighter spell, that you know. You can cast those spells at their lowest level without expending a spell slot</description>
-    </sheet>
-    <rules />
-  </element>
   <element name="Aegis" type="Class Feature" source="NOS" id="ID_NOS_CLASS_FEATURE_STARLIGHTER_AEGIS">
     <description>
-      <p>Standing in the rivers of the Wevae for so long changed you. Bursting out from deep inside you, you subconsciously protect your physical form from damage creating an Aegis around you, that grants you resistance to the damage of spells.</p>
+      <p>Standing in the rivers of the Weave for so long changed you. Bursting out from deep inside you, you subconsciously protect your physical form from damage creating an Aegis around you, that grants you resistance to the damage of spells.</p>
     </description>
     <sheet>
       <description>You gain resistance to the damage of spells.</description>
@@ -547,7 +651,7 @@
     <supports>Weave Magic</supports>
     <requirements />
     <description>
-      <p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Widom modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.</p>
+      <p>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 weave point and choose a number of those creatures up to your Widom modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.</p>
     </description>
     <sheet>
       <description>When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 weave point and choose a number of those creatures equal to the weave points spent up to your wisdom modifier. A chosen creature automatically succeeds on its saving throw against the spell.</description>
@@ -591,10 +695,10 @@
     <supports>Weave Magic</supports>
     <requirements />
     <description>
-      <p>When you cast a spell that deals damage, you may expend a number of weave points equal to the spells level to overcome even the strongest defenses. Your spell ignores resistances and Features such as the Terrasque's Reflective Carrapace Feature and Shield spells of 4th level or lower such as magic armor, shield or barkskin. You can invoke this even if you have already used a different Metamagic option.</p>
+      <p>When you cast a spell that deals damage, you may expend 4 weave points to overcome even the strongest defenses. Your spell ignores resistances and Features such as the Terrasque's Reflective Carrapace Feature or the Smaragdine Golems Absorb Magic Feature and Shield spells of 4th level or lower such as magic armor, shield or barkskin. You can invoke this even if you have already used a different Metamagic option.</p>
     </description>
     <sheet>
-      <description>When you cast a spell that deals damage, you may expend a number of weave points equal to the spells level to overcome even the strongest defenses. Your spell ignores resistances and Features such as the Terrasque's Reflective Carrapace Feature and Shield spells of 4th level or lower such as magic armor, shield or barkskin. You can invoke this even if you have already used a different Metamagic option.</description>
+      <description>When you cast a spell that deals damage, you may expend 4 weave points to overcome even the strongest defenses. Your spell ignores resistances and Features such as the Terrasque's Reflective Carrapace Feature or the Smaragdine Golems Absorb Magic Feature and Shield spells of 4th level or lower such as magic armor, shield or barkskin. You can invoke this even if you have already used a different Metamagic option.</description>
     </sheet>
     <rules />
   </element>
@@ -624,10 +728,10 @@
     <supports>Weave Magic</supports>
     <requirements />
     <description>
-      <p>When you cast a spell with a duration of instantaneous that other creatures can see, you can expend 1 sorcery point to make any visual manifestations of the spell's casting invisible. You can use Invisible Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
+      <p>When you cast a spell with a duration of instantaneous that other creatures can see, you can expend 1 weave point to make any visual manifestations of the spell's casting invisible. You can use Invisible Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
     </description>
     <sheet>
-     <description>When you cast a spell with a duration of instantaneous that other creatures can see, you can expend 1 sorcery point to make any visual manifestations of the spell's casting invisible. You can use Invisible Spell even if you have already used a different Metamagic option during the casting of the spell.</description>
+     <description>When you cast a spell with a duration of instantaneous that other creatures can see, you can expend 1 weave point to make any visual manifestations of the spell's casting invisible. You can use Invisible Spell even if you have already used a different Metamagic option during the casting of the spell.</description>
     </sheet>
     <rules />
   </element>
@@ -635,10 +739,10 @@
     <supports>Weave Magic</supports>
     <requirements />
     <description>
-      <p>When you hit with a melee weapon attack, you can spend 3 sorcery points to expend a spell slot and add the damage and/or effect of one of your spells capable of targeting a single creature cast at the level of the expended slot to the weapon attack's damage. Any attack throw for the chosen spell is considered an automatic success due to the successful weapon attack, and any saving throw for the chosen spell is made with disadvantage. You can invoke this even if you have already used a different Metamagic option</p>
+      <p>When you hit with a melee weapon attack, you can spend 3 weave points to expend a spell slot and add the damage and/or effect of one of your spells capable of targeting a single creature cast at the level of the expended slot to the weapon attack's damage. Any attack throw for the chosen spell is considered an automatic success due to the successful weapon attack, and any saving throw for the chosen spell is made with disadvantage. You can invoke this even if you have already used a different Metamagic option</p>
     </description>
     <sheet>
-     <description>When you hit with a melee weapon attack, you can spend 3 sorcery points to expend a spell slot and add the damage and/or effect of one of your spells capable of targeting a single creature cast at the level of the expended slot to the weapon attack's damage. Any attack throw for the chosen spell is considered an automatic success due to the successful weapon attack, and any saving throw for the chosen spell is made with disadvantage. You can invoke this even if you have already used a different Metamagic option.</description>
+     <description>When you hit with a melee weapon attack, you can spend 3 weave points to expend a spell slot and add the damage and/or effect of one of your spells capable of targeting a single creature cast at the level of the expended slot to the weapon attack's damage. Any attack throw for the chosen spell is considered an automatic success due to the successful weapon attack, and any saving throw for the chosen spell is made with disadvantage. You can invoke this even if you have already used a different Metamagic option.</description>
     </sheet>
     <rules />
   </element>
@@ -646,10 +750,10 @@
     <supports>Weave Magic</supports>
     <requirements />
     <description>
-      <p>You can spend 2 sorcery points to increase the area of a spell's effect. Spells that have a cone, cube, cylinder or sphere area of effect have a 50% increase in dimension, to the nearest 5-foot increment.</p>
+      <p>You can spend 2 weave points to increase the area of a spell's effect. Spells that have a cone, cube, cylinder or sphere area of effect have a 50% increase in dimension, to the nearest 5-foot increment.</p>
     </description>
     <sheet>
-     <description>You can spend 2 sorcery points to increase the area of a spell's effect. Spells that have a cone, cube, cylinder or sphere area of effect have a 50% increase in dimension, to the nearest 5-foot increment.</description>
+     <description>You can spend 2 weave points to increase the area of a spell's effect. Spells that have a cone, cube, cylinder or sphere area of effect have a 50% increase in dimension, to the nearest 5-foot increment.</description>
     </sheet>
     <rules />
   </element>
@@ -657,10 +761,10 @@
     <supports>Weave Magic</supports>
     <requirements />
     <description>
-      <p>When you cast a spell, you can expend 2 sorcery points to change the origin of the spell to any space you choose within 30 feet of you. If the spell affects another creature, you must be able to see that creature.</p>
+      <p>When you cast a spell, you can expend 2 weave points to change the origin of the spell to any space you choose within 30 feet of you. If the spell affects another creature, you must be able to see that creature.</p>
     </description>
     <sheet>
-     <description>When you cast a spell, you can expend 2 sorcery points to change the origin of the spell to any space you choose within 30 feet of you. If the spell affects another creature, you must be able to see that creature.</description>
+     <description>When you cast a spell, you can expend 2 weave points to change the origin of the spell to any space you choose within 30 feet of you. If the spell affects another creature, you must be able to see that creature.</description>
     </sheet>
     <rules />
   </element>

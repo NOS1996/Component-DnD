@@ -9,17 +9,17 @@
         </update>
     </info>
 
-    <element name="Bennir" type="Race" source="NOS" id="ID_NOS_RACE_BENNIR">
+    <element name="Ben'nir" type="Race" source="NOS" id="ID_NOS_RACE_BENNIR">
         <description>
             <p class="flavor">"Radiant like their Ancestors"</p>
-            <h4>PHYSICAL DESCRIPTION</h4>
-            <p>Ben'nir tend to be daunting, looking almost dreamlike. Their physique closeley resembles those of elven children, however they tend to be more beautiful and endearing to the human eye. The only thing distinguishing this childlike people from their elven cousins are their white glowing irises, which eneable them to see where others don't.</p>
-            <h4>HISTORY</h4>
-            <p>Ben'nir are the children of long dead stars, that have been sent to the mortal realm to explore and quench the curiosity of their ancestors and bring light into every aspect of creation. Bennir don't reproduce, they are the seed, sown upon the universe, when one of the elder stars die.</p>
-            <h4>SOCIETY</h4>
-            <p>Ben'nir tend to be crafty marksmen and powerful magicians. So they often take the role of individuals that are secluded from the society they are currently living in, always on a hunt to explore new things.</p>
+            <h4>BRIGHTBLOOD</h4>
+            <p>With a physique that closely resembles those of elven children, only their glowing irises set Ben'nir apart from their fey cousins and relate them to another even stranger species: the beholders. Their relation to both their weird cousins as well as to their ancestors, the Elder Stars, that live deep in the far realms, equips them with a strange set of abilites: Childlike and playful, with faint glowing eyes, these immortal people are daunting, able to unravel even the darkest of lies and shine light into the deepest darkness. Their most disitnct feature however is their gold coloured blood, which sadly makes them a priced hunt for powerful merchants that hope to earn a fortune out of their Ben'nir slaves. How exactly their blood relations came to be hasn't been discovered yet, and the answers to this fundamental question may lie way beyond, hidden deep in the far realms of the Elder stars.</p>
+            <h4>ELDER STARS</h4>
+            <p> Upon the death of an Elder Star, in their final moment, when the wish to live on grows too strong, it might choose to shed a single tear, that travels all the way down to the material plane. Upon hitting the ground, a Ben'nir, a child of Nill and Nos is born, curious and playful it is the undying seed of the Far Realms sown into the mortal world. Ben'nir love to explore and thus often find themselves becoming an adventurer of sorts. Ben'nir often tend to react playful and enthusiastic towards concerning situations as they view them as a game or challenge rather than an actual threat.</p>
+            <h4>HUNT OR BE HUNTED</h4>
+            <p>Due to their golden blood Ben'nir are often hunted down by powerfull and rich merchants. However capturing a Ben'nir isn't as easy as one might think. Those starfolk are wiser then most and seem to be almost precogniciant in times of danger, thus escaping all but the most determined foes. Being hunted down, once a Ben'nir is granted power they might in turn become hunters themselves, tracking down their old or new foes. Or they might choose to be a helpful soul that does its deed to brighten the world for somebody else.</p>
             <h4>BENNIR NAMES</h4>
-            <p>Ben'nir take names from the societies they interact with, but pronounce them in a more guttural and primordial way, hence the different sound of many names.</p>
+            <p>Ben'nir take names from the societies they interact with, but due to their playful nature often pronounce them in a more guttural and primordial way often leaving out some syllabls, hence the different sound of many names.</p>
             <p>
                 <span class="feature">Male:</span>Leo, A'ira, 'ariel, Ga'anagan<br/>
                 <span class="feature">Female:</span>Rea, Gal'den, An'ara, 'aria<br/>
@@ -30,11 +30,11 @@
                 <span class="feature">Ability Score Increase.</span>Your Wisdom score increases by 3, and your Dexterity or Strength score increases by 2.<br/>
                 <span class="feature">Age.</span>Ben'nir being the children of elder stars inherited their immortal nature.<br/>
                 <span class="feature">Alignment.</span>Hence having no affiliation with the world, Ben'nir tend towards chaotic alignments.<br/>
-                <span class="feature">Size.</span>Ben'nir are the same size and build as human children. Your size is Medium or Small.<br/>
+                <span class="feature">Size.</span>Ben'nir are the same size and build as human children. Your size is Medium.<br/>
                 <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br/>
                 <span class="feature">Eyes of Radiance.</span>Your iris glows with a faint light. You have truesight out to 120 feet and cannot be blinded.<br/>
-                <span class="feature">Radiant Being.</span> Due to your heritage as a star you are immune to being blinded, charmed or frightened, and magic can’t put you to sleep. You do not need to eat, drink, breathe, or sleep. However you still benefit from short and long rests.<br/>
-                <span class="feature">Languages.</span>You can speak, read, and write Common, Celestial and Druidic.<br/>
+                <span class="feature">Radiant Being.</span> Due to your heritage you are immune to being blinded, charmed or frightened, and magic can’t put you to sleep. You do not need to eat, drink, breathe, or sleep. However you still benefit from short and long rests.<br/>
+                <span class="feature">Languages.</span>You can speak, read, and write Common, Celestial.<br/>
             </p>
         </description>
         <sheet display="false" />
@@ -52,7 +52,6 @@
             <grant type="Size" id="ID_SIZE_MEDIUM" />
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
             <grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
-            <grant type="Language" id="ID_LANGUAGE_DRUIDIC" />
             <grant type="Vision" id="ID_VISION_TRUESIGHT" />
             <grant type="Racial Trait" id="ID_NOS_RACIAL_TRAIT_BENNIR_RADIANT_BEING" />
         </rules>

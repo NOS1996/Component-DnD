@@ -36,6 +36,29 @@
         </rules>
     </element>
 
+
+    <element name="Tear of Power" type="Feat" source="NOS" id="ID_NOS_FEAT_TEAR_OF_POWER">
+        <prerequisite>Shapeshifter</prerequisite>
+        <requirements>ID_NOS_RACE_SHAPESHIFTER</requirements>
+        <description>
+            <p><i>Prerequisite: Shapeshifter</i></p>
+            <p>You drank the Tears of your ancestors and transformed into the Apex of the Shifter. You become immune to being charmed or frightened and magic can't put you to sleep anymore. Also you are immune to disease...no no Shapsehifter-Vampires! Now go to your room.</p>
+        </description>
+        <sheet>
+            <description>   
+            <p>You are immune to being charmed or frightened, and you can’t be put to sleep or contract a disease.</p>
+            </description>
+        </sheet>
+        <rules>
+            <stat name="wisdom" value="3" />
+            <stat name="dexterity" value="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" level="10" />
+        </rules>
+    </element>
+
         <element name="Metamagic Baby" type="Feat" source="NOS" id="ID_NOS_FEAT_METAMAGIC_BABY">
         <prerequisite>Sorcerer</prerequisite>
         <requirements>ID_WOTC_PHB_CLASS_SORCERER</requirements>

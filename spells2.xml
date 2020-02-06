@@ -214,4 +214,44 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
+  <element name="Lesser Create Coin" type="Spell" source="NOS" id="ID_NOS_SPELL_LESSER_CREATE_COIN">
+    <supports>Wizard, Necromancer</supports>
+    <description>
+      <p>You delve into deep mysteries, combining the forces of Conjuration and Transmutation to create gold. You create up to 1000gp in coin or in bars of gold, silver or copper.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">5</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent" >10 gp, which the sepell consumes</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>  
+  <element name="Greater Create Coin" type="Spell" source="NOS" id="ID_NOS_SPELL_GREATER_CREATE_COIN">
+    <supports>Warlock, Sorcerer, Wizard, Necromancer</supports>
+    <description>
+      <p>You delve into the deepest mysteries of your own mind, binding together the forces of imagination and conjuration to create your hearst desire. You create objects of up to huge size with a total worth of 15.000gp. You may create the exact value in coin or in up to 20 items of your choice.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">9</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 action</set>
+      <set name="duration">Instatnaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>  
 </elements>
